@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     if (!playerId || !playerName || !playerAvatar) {
       return NextResponse.json(
         { error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -27,10 +27,11 @@ export async function POST(request: NextRequest) {
         players: room.players,
       },
     });
-  } catch {
+  } catch (err) {
+    console.error("[/api/rooms] POST failed:", err);
     return NextResponse.json(
       { error: "Failed to create room" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
@@ -44,7 +45,7 @@ export async function PUT(request: NextRequest) {
     if (!code || !playerId || !playerName || !playerAvatar) {
       return NextResponse.json(
         { error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -77,7 +78,7 @@ export async function GET(request: NextRequest) {
     if (!code) {
       return NextResponse.json(
         { error: "Room code required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 

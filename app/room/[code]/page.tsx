@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { usePlayer } from "@/lib/player-context";
 import { firestore } from "@/lib/firebase-client";
-import type { Player, AvatarId } from "@/lib/game-types";
+import type { Player, AvatarId, GameMode } from "@/lib/game-types";
 import { 
   Copy, 
   Check, 
@@ -26,6 +26,7 @@ interface RoomData {
   status: "waiting" | "playing" | "finished";
   players: Record<string, Player>;
   hostId: string;
+  mode?: GameMode;
 }
 
 export default function RoomPage({ 
@@ -172,6 +173,9 @@ export default function RoomPage({
 
   if (!room) return null;
 
+  const modeLabel =
+    room.mode === "THAILAND" ? "Thailand Timeline" : "Global Timeline";
+
   // If game is playing, show game board
   if (room.status === "playing" || room.status === "finished") {
     return <GameBoard roomId={room.id} roomCode={room.code} />;
@@ -218,6 +222,9 @@ export default function RoomPage({
           </button>
           <p className="text-xs text-muted-foreground mt-2">
             Share this code with friends
+          </p>
+          <p className="text-xs text-muted-foreground mt-1">
+            Mode: {modeLabel}
           </p>
         </div>
 

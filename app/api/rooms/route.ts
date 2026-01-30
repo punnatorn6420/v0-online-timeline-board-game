@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { playerId, playerName, playerAvatar } = body;
+    const { playerId, playerName, playerAvatar, mode } = body;
 
     if (!playerId || !playerName || !playerAvatar) {
       return NextResponse.json(
@@ -16,7 +16,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const room = await createRoom(playerId, playerName, playerAvatar);
+    const roomMode = mode === "THAILAND" ? "THAILAND" : "GLOBAL";
+    const room = await createRoom(playerId, playerName, playerAvatar, roomMode);
 
     return NextResponse.json({
       success: true,
@@ -25,6 +26,7 @@ export async function POST(request: NextRequest) {
         code: room.code,
         status: room.status,
         players: room.players,
+        mode: room.mode,
       },
     });
   } catch (err) {
@@ -62,6 +64,7 @@ export async function PUT(request: NextRequest) {
         code: result.room!.code,
         status: result.room!.status,
         players: result.room!.players,
+        mode: result.room!.mode,
       },
     });
   } catch {
@@ -96,6 +99,7 @@ export async function GET(request: NextRequest) {
         status: room.status,
         players: room.players,
         hostId: room.hostId,
+        mode: room.mode,
       },
     });
   } catch {

@@ -4,6 +4,7 @@ import type {
   RoundType,
   TimelineRange,
   Category,
+  GameMode,
 } from "./game-types";
 import {
   generateRoomCode,
@@ -12,11 +13,12 @@ import {
   FINISH_POSITION,
 } from "./game-types";
 import {
-  GAME_EVENTS,
+  getEventsForMode,
   getRandomEvent,
   getEventById,
   getEventForClient,
   generateHint,
+  getCategoriesForMode,
 } from "./events";
 import { adminDb } from "./firebase-admin";
 
@@ -36,7 +38,8 @@ async function generateUniqueRoomCode(): Promise<string> {
 export async function createRoom(
   hostId: string,
   hostName: string,
-  hostAvatar: string
+  hostAvatar: string,
+  mode: GameMode
 ): Promise<GameRoom> {
   const roomId = roomsCollection.doc().id;
   const code = await generateUniqueRoomCode();
@@ -57,12 +60,13 @@ export async function createRoom(
     code,
     status: "waiting",
     hostId,
+    mode,
     players: { [hostId]: host },
     currentRound: 0,
     currentEventId: null,
     currentEvent: null,
     roundType: "NORMAL",
-    boardTiles: generateBoard(),
+    boardTiles: generateBoard(getCategoriesForMode(mode)),
     winnerId: null,
     roundResults: null,
     eventHistory: [],
@@ -255,13 +259,16 @@ function resetPlayers(players: Record<string, Player>): Record<string, Player> {
 
 function startNewRound(room: GameRoom): Partial<GameRoom> {
   const { roundType, category } = determineRoundType(room);
+  const mode = room.mode ?? "GLOBAL";
+  const eventsForMode = getEventsForMode(mode);
   const history = room.eventHistory ?? [];
-  const availableHistory = history.length >= GAME_EVENTS.length ? [] : history;
+  const availableHistory = history.length >= eventsForMode.length ? [] : history;
   const event = getRandomEvent(
     roundType === "CATEGORY" && category ? category : undefined,
-    availableHistory
+    availableHistory,
+    mode
   );
-  const clientEvent = getEventForClient(event.id);
+  const clientEvent = getEventForClient(event.id, mode);
   const nextHistory = availableHistory.includes(event.id)
     ? availableHistory
     : [...availableHistory, event.id];
@@ -356,7 +363,7 @@ export async function revealAndProcessRound(roomId: string): Promise<{
       return { success: false, error: "No event in progress" };
     }
 
-    const event = getEventById(room.currentEventId);
+    const event = getEventById(room.currentEventId, room.mode ?? "GLOBAL");
     if (!event) {
       return { success: false, error: "Event not found" };
     }

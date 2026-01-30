@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { usePlayer } from "@/lib/player-context";
+import type { GameMode } from "@/lib/game-types";
 import { Clock, Users, Plus, ArrowRight, LogOut } from "lucide-react";
 
 export function HomeScreen() {
@@ -16,6 +17,7 @@ export function HomeScreen() {
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
   const [error, setError] = useState("");
+  const [gameMode, setGameMode] = useState<GameMode>("GLOBAL");
 
   if (!player) return null;
 
@@ -31,6 +33,7 @@ export function HomeScreen() {
           playerId: player.id,
           playerName: player.displayName,
           playerAvatar: player.avatar,
+          mode: gameMode,
         }),
       });
 
@@ -118,6 +121,33 @@ export function HomeScreen() {
 
       {/* Actions */}
       <div className="w-full space-y-4">
+        <div className="space-y-3">
+          <Label>Game Mode</Label>
+          <div className="grid grid-cols-2 gap-3">
+            <Button
+              type="button"
+              variant={gameMode === "GLOBAL" ? "default" : "secondary"}
+              onClick={() => setGameMode("GLOBAL")}
+              className="h-12"
+            >
+              Global Timeline
+            </Button>
+            <Button
+              type="button"
+              variant={gameMode === "THAILAND" ? "default" : "secondary"}
+              onClick={() => setGameMode("THAILAND")}
+              className="h-12"
+            >
+              Thailand Timeline
+            </Button>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            {gameMode === "GLOBAL"
+              ? "Play the original worldwide timeline."
+              : "Play with events that happened in Thailand."}
+          </p>
+        </div>
+
         <Button
           onClick={handleCreateRoom}
           disabled={isCreating}

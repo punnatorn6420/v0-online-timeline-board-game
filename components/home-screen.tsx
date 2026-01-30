@@ -178,7 +178,7 @@ export function HomeScreen() {
           <li>1. Create a room or join with a code</li>
           <li>2. Answer timeline questions (0-9 eras)</li>
           <li>3. Correct answers move you forward</li>
-          <li>4. First to the finish line wins!</li>
+          <li>4. First to reach position 15 wins!</li>
         </ul>
       </div>
     </div>

@@ -20,6 +20,7 @@ import type {
   TimelineRange,
   Category,
   RoundResults,
+  MAX_ROUNDS,
 } from "@/lib/game-types";
 import { Loader2, Clock, Users, Languages } from "lucide-react";
 
@@ -250,7 +251,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
             <span>{players.length}</span>
           </div>
           <span className="text-sm font-medium text-foreground">
-            Round {game.currentRound}
+            Round {game.currentRound} / {MAX_ROUNDS}
           </span>
         </div>
       </header>

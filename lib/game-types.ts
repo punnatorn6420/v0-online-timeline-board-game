@@ -157,6 +157,7 @@ export type AvatarId = (typeof AVATARS)[number]["id"];
 // Board configuration
 export const BOARD_SIZE = 30;
 export const FINISH_POSITION = BOARD_SIZE - 1;
+export const MAX_ROUNDS = 15;
 
 // Generate default board with special tiles
 export function generateBoard(): BoardTile[] {

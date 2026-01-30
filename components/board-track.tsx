@@ -38,7 +38,7 @@ export function BoardTrack({ tiles, players, currentPlayerId }: BoardTrackProps)
   }
 
   return (
-    <div className="flex gap-1 items-center min-w-max">
+    <div className="flex gap-2 items-center min-w-max">
       {tiles.map((tile, index) => {
         const Icon = tileIcons[tile.type];
         const isFinish = index === lastTileIndex;
@@ -49,16 +49,17 @@ export function BoardTrack({ tiles, players, currentPlayerId }: BoardTrackProps)
             key={tile.position}
             className={cn(
               "relative flex flex-col items-center justify-center",
-              "w-12 h-12 rounded-lg border-2 transition-all",
+              "w-14 h-14 rounded-xl border-2 transition-all shadow-sm",
               tileColors[tile.type],
-              isFinish && "ring-2 ring-game-success ring-offset-2 ring-offset-background"
+              isFinish &&
+                "ring-2 ring-game-success ring-offset-2 ring-offset-background animate-pulse"
             )}
           >
             {/* Tile number or icon */}
             {isFinish ? (
               <Flag className="w-5 h-5 text-game-success" />
             ) : Icon ? (
-              <Icon className="w-4 h-4 opacity-60" />
+              <Icon className="w-5 h-5 opacity-70" />
             ) : (
               <span className="text-xs text-muted-foreground">{tile.position}</span>
             )}
@@ -71,18 +72,18 @@ export function BoardTrack({ tiles, players, currentPlayerId }: BoardTrackProps)
                     key={player.id}
                     className={cn(
                       "rounded-full ring-2 ring-background",
-                      player.id === currentPlayerId && "ring-primary"
+                      player.id === currentPlayerId && "ring-primary motion-safe:animate-bounce"
                     )}
                   >
                     <AvatarIcon
                       avatarId={player.avatar as AvatarId}
                       size="sm"
-                      className="w-6 h-6 p-1"
+                      className="w-7 h-7 p-1"
                     />
                   </div>
                 ))}
                 {playersOnTile.length > 3 && (
-                  <div className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-xs ring-2 ring-background">
+                  <div className="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-xs ring-2 ring-background">
                     +{playersOnTile.length - 3}
                   </div>
                 )}

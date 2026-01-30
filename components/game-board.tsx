@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { doc, onSnapshot } from "firebase/firestore";
 import { Button } from "@/components/ui/button";
@@ -18,9 +18,10 @@ import type {
   RoundType, 
   BoardTile, 
   TimelineRange,
-  Category 
+  Category,
+  RoundResults,
 } from "@/lib/game-types";
-import { Loader2, Clock, Users } from "lucide-react";
+import { Loader2, Clock, Users, Languages } from "lucide-react";
 
 interface GameEvent {
   id: string;
@@ -47,18 +48,7 @@ interface GameState {
     submitted: number;
     allSubmitted: boolean;
   };
-}
-
-interface RoundResults {
-  correctRange: TimelineRange;
-  players: Array<{
-    id: string;
-    displayName: string;
-    answer: TimelineRange | null;
-    correct: boolean;
-    movement: number;
-    newPosition: number;
-  }>;
+  roundResults?: RoundResults | null;
 }
 
 interface GameBoardProps {
@@ -78,7 +68,8 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState<RoundResults | null>(null);
   const [showWinner, setShowWinner] = useState(false);
-  const [isRevealing, setIsRevealing] = useState(false);
+  const lastRoundRef = useRef<number | null>(null);
+  const lastResultsRoundRef = useRef<number | null>(null);
 
   const buildSubmissionStatus = (players: Record<string, Player>) => {
     const total = Object.keys(players).length;
@@ -108,12 +99,8 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
           submissionStatus: buildSubmissionStatus(data.players),
         });
 
-        if (player && data.players[player.id]?.hasSubmitted) {
-          setHasSubmitted(true);
-        }
-
-        if (data.winnerId && data.status === "finished") {
-          setShowWinner(true);
+        if (player) {
+          setHasSubmitted(Boolean(data.players[player.id]?.hasSubmitted));
         }
 
         setIsLoading(false);
@@ -129,16 +116,41 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
 
   // Reset state when round changes
   useEffect(() => {
-    if (game && player) {
-      const currentPlayer = game.players[player.id];
-      if (currentPlayer && !currentPlayer.hasSubmitted) {
-        setHasSubmitted(false);
-        setSelectedAnswer(null);
-        setShowResults(false);
-        setResults(null);
-      }
+    if (!game || !player) return;
+
+    if (lastRoundRef.current === null) {
+      lastRoundRef.current = game.currentRound;
+      return;
+    }
+
+    if (lastRoundRef.current !== game.currentRound) {
+      setHasSubmitted(false);
+      setSelectedAnswer(null);
+      setShowResults(false);
+      setResults(null);
+      lastRoundRef.current = game.currentRound;
     }
   }, [game?.currentRound, game, player]);
+
+  useEffect(() => {
+    if (!game?.roundResults) return;
+    if (lastResultsRoundRef.current === game.roundResults.round) return;
+
+    setResults(game.roundResults);
+    setShowResults(true);
+    lastResultsRoundRef.current = game.roundResults.round;
+  }, [game?.roundResults]);
+
+  useEffect(() => {
+    if (!results || !game?.winnerId || game.status !== "finished") return;
+
+    const timer = setTimeout(() => {
+      setShowResults(false);
+      setShowWinner(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [results, game?.winnerId, game?.status]);
 
   const handleSubmit = async () => {
     if (!player || selectedAnswer === null || hasSubmitted) return;
@@ -166,43 +178,6 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
       setError("Failed to submit answer");
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const handleReveal = async () => {
-    if (!player || !game) return;
-
-    setIsRevealing(true);
-    try {
-      const response = await fetch("/api/game", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "reveal",
-          roomId,
-          playerId: player.id,
-        }),
-      });
-
-      const data = await response.json();
-      if (data.success) {
-        setResults(data.results);
-        setShowResults(true);
-        
-        if (data.gameFinished && data.winnerId) {
-          // Show results first, then winner
-          setTimeout(() => {
-            setShowResults(false);
-            setShowWinner(true);
-          }, 3000);
-        }
-      } else {
-        setError(data.error || "Failed to reveal results");
-      }
-    } catch {
-      setError("Failed to reveal results");
-    } finally {
-      setIsRevealing(false);
     }
   };
 
@@ -248,14 +223,20 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   if (!game || !game.currentEvent) return null;
 
   const players = Object.values(game.players);
-  const currentPlayer = game.players[player.id];
-  const isHost = player.id === game.hostId;
   const allSubmitted = game.submissionStatus.allSubmitted;
+  const translateEventText = () => {
+    if (!game.currentEvent) return;
+    const text = `${game.currentEvent.title} - ${game.currentEvent.description}`;
+    const url = `https://translate.google.com/?sl=en&tl=th&text=${encodeURIComponent(
+      text
+    )}&op=translate`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <main className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="flex items-center justify-between p-4 border-b border-border bg-card">
+      <header className="flex items-center justify-between p-4 border-b border-border bg-card/90 backdrop-blur">
         <div className="flex items-center gap-2">
           <Clock className="w-5 h-5 text-primary" />
           <span className="font-semibold text-foreground">Timeline</span>
@@ -283,21 +264,32 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
 
       {/* Board Track */}
       <div className="p-4 overflow-x-auto">
-        <BoardTrack 
-          tiles={game.boardTiles} 
-          players={players} 
-          currentPlayerId={player.id}
-        />
+        <div className="rounded-2xl border border-border/70 bg-gradient-to-br from-secondary/60 via-background to-primary/10 p-4 shadow-sm">
+          <BoardTrack 
+            tiles={game.boardTiles} 
+            players={players} 
+            currentPlayerId={player.id}
+          />
+        </div>
       </div>
 
       {/* Event Card */}
       <div className="flex-1 p-4">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-card rounded-xl border border-border p-6 mb-6">
-            <div className="flex items-center gap-2 mb-3">
+          <div className="bg-card rounded-xl border border-border p-6 mb-6 shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
               <span className="px-2 py-1 bg-secondary rounded text-xs font-medium text-muted-foreground">
                 {game.currentEvent.category}
               </span>
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                onClick={translateEventText}
+              >
+                <Languages className="w-4 h-4" />
+                Translate to Thai
+              </Button>
             </div>
             <h2 className="text-xl font-bold text-foreground mb-2">
               {game.currentEvent.title}
@@ -343,28 +335,9 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
                       {game.submissionStatus.submitted} / {game.submissionStatus.total} players submitted
                     </p>
 
-                    {/* Host can reveal when all submitted */}
-                    {isHost && allSubmitted && (
-                      <Button
-                        onClick={handleReveal}
-                        disabled={isRevealing}
-                        className="mt-4"
-                        size="lg"
-                      >
-                        {isRevealing ? (
-                          <>
-                            <Loader2 className="mr-2 animate-spin" size={20} />
-                            Revealing...
-                          </>
-                        ) : (
-                          "Reveal Answers"
-                        )}
-                      </Button>
-                    )}
-
-                    {!isHost && allSubmitted && (
+                    {allSubmitted && (
                       <p className="text-sm text-muted-foreground mt-4">
-                        Waiting for host to reveal answers...
+                        Auto-revealing answers for everyone...
                       </p>
                     )}
                   </div>

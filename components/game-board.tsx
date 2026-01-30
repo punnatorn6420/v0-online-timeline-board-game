@@ -153,7 +153,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   }, [results, game?.winnerId, game?.status]);
 
   const handleSubmit = async () => {
-    if (!player || selectedAnswer === null || hasSubmitted) return;
+    if (!player || selectedAnswer === null || hasSubmitted || game?.status !== "playing") return;
 
     setIsSubmitting(true);
     try {
@@ -182,6 +182,12 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   };
 
   const handleNextRound = () => {
+    if (game?.status === "finished" && game.winnerId) {
+      setShowResults(false);
+      setShowWinner(true);
+      return;
+    }
+
     setShowResults(false);
     setResults(null);
     setHasSubmitted(false);
@@ -313,7 +319,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
                 {!hasSubmitted ? (
                   <Button
                     onClick={handleSubmit}
-                    disabled={selectedAnswer === null || isSubmitting}
+                    disabled={selectedAnswer === null || isSubmitting || game.status !== "playing"}
                     className="w-full h-12"
                     size="lg"
                   >

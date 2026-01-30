@@ -1,21 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { TIMELINE_RANGES, type TimelineRange } from "@/lib/game-types";
+import { TIMELINE_RANGES, type RoundResults } from "@/lib/game-types";
 import { Check, X, ArrowUp, ArrowDown, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-interface RoundResults {
-  correctRange: TimelineRange;
-  players: Array<{
-    id: string;
-    displayName: string;
-    answer: TimelineRange | null;
-    correct: boolean;
-    movement: number;
-    newPosition: number;
-  }>;
-}
 
 interface ResultsModalProps {
   results: RoundResults;
@@ -32,7 +20,7 @@ export function ResultsModal({
 
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-      <div className="bg-card border border-border rounded-xl p-6 max-w-md w-full max-h-[80vh] overflow-y-auto">
+      <div className="bg-card border border-border rounded-xl p-6 max-w-md w-full max-h-[80vh] overflow-y-auto animate-in fade-in zoom-in-95">
         {/* Correct Answer */}
         <div className="text-center mb-6">
           <p className="text-sm text-muted-foreground mb-2">Correct Answer</p>

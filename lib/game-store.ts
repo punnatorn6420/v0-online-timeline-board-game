@@ -11,7 +11,13 @@ import {
   ROUND_EFFECTS,
   FINISH_POSITION,
 } from "./game-types";
-import { getRandomEvent, getEventById, getEventForClient, generateHint } from "./events";
+import {
+  GAME_EVENTS,
+  getRandomEvent,
+  getEventById,
+  getEventForClient,
+  generateHint,
+} from "./events";
 import { adminDb } from "./firebase-admin";
 
 const roomsCollection = adminDb.collection("rooms");
@@ -58,6 +64,8 @@ export async function createRoom(
     roundType: "NORMAL",
     boardTiles: generateBoard(),
     winnerId: null,
+    roundResults: null,
+    eventHistory: [],
     createdAt: Date.now(),
   };
 
@@ -247,10 +255,16 @@ function resetPlayers(players: Record<string, Player>): Record<string, Player> {
 
 function startNewRound(room: GameRoom): Partial<GameRoom> {
   const { roundType, category } = determineRoundType(room);
+  const history = room.eventHistory ?? [];
+  const availableHistory = history.length >= GAME_EVENTS.length ? [] : history;
   const event = getRandomEvent(
-    roundType === "CATEGORY" && category ? category : undefined
+    roundType === "CATEGORY" && category ? category : undefined,
+    availableHistory
   );
   const clientEvent = getEventForClient(event.id);
+  const nextHistory = availableHistory.includes(event.id)
+    ? availableHistory
+    : [...availableHistory, event.id];
 
   return {
     players: resetPlayers(room.players),
@@ -259,6 +273,7 @@ function startNewRound(room: GameRoom): Partial<GameRoom> {
     currentEventId: event.id,
     currentEvent: clientEvent ?? null,
     hint: roundType === "SUPPORT" ? generateHint(event.correctRange) : null,
+    eventHistory: nextHistory,
   };
 }
 
@@ -393,6 +408,11 @@ export async function revealAndProcessRound(roomId: string): Promise<{
       players: updatedPlayers,
       winnerId,
       status: winnerId ? "finished" : room.status,
+      roundResults: {
+        round: room.currentRound,
+        correctRange: event.correctRange,
+        players: results,
+      },
     };
 
     if (!winnerId) {

@@ -2,6 +2,19 @@
 
 import { TIMELINE_RANGES, type TimelineRange } from "@/lib/game-types";
 import { cn } from "@/lib/utils";
+import type { LucideIcon } from "lucide-react";
+import {
+  Mountain,
+  Landmark,
+  Shield,
+  Swords,
+  Compass,
+  Factory,
+  Cog,
+  Bomb,
+  Rocket,
+  Cpu,
+} from "lucide-react";
 
 interface TimelineSelectorProps {
   selected: TimelineRange | null;
@@ -15,16 +28,29 @@ export function TimelineSelector({
   disabled = false,
 }: TimelineSelectorProps) {
   const ranges = Object.entries(TIMELINE_RANGES) as [string, typeof TIMELINE_RANGES[0]][];
+  const rangeIcons: Record<TimelineRange, LucideIcon> = {
+    0: Mountain,
+    1: Landmark,
+    2: Shield,
+    3: Swords,
+    4: Compass,
+    5: Factory,
+    6: Cog,
+    7: Bomb,
+    8: Rocket,
+    9: Cpu,
+  };
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-4">
       <p className="text-sm font-medium text-foreground text-center">
         Select the time period
       </p>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {ranges.map(([key, range]) => {
           const num = parseInt(key) as TimelineRange;
           const isSelected = selected === num;
+          const Icon = rangeIcons[num];
 
           return (
             <button
@@ -33,34 +59,34 @@ export function TimelineSelector({
               onClick={() => !disabled && onSelect(num)}
               disabled={disabled}
               className={cn(
-                "flex flex-col items-center justify-center p-3 rounded-lg transition-all",
-                "border-2",
+                "flex items-center gap-3 p-3 rounded-xl transition-all",
+                "border-2 text-left shadow-sm",
                 disabled && "opacity-50 cursor-not-allowed",
                 isSelected
-                  ? "bg-primary border-primary text-primary-foreground"
-                  : "bg-secondary border-border hover:border-primary/50 text-foreground"
+                  ? "bg-primary/90 border-primary text-primary-foreground scale-[1.01]"
+                  : "bg-secondary border-border hover:border-primary/50 text-foreground hover:-translate-y-0.5"
               )}
             >
-              <span className="text-2xl font-bold">{num}</span>
-              <span className="text-[10px] leading-tight text-center mt-1 opacity-80">
-                {range.name}
+              <span
+                className={cn(
+                  "flex h-12 w-12 items-center justify-center rounded-full border",
+                  isSelected
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-background text-foreground border-border"
+                )}
+              >
+                <Icon className="h-6 w-6" />
               </span>
+              <div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-2xl font-bold">{num}</span>
+                  <span className="text-sm font-semibold">{range.name}</span>
+                </div>
+                <p className="text-xs opacity-80">{range.period}</p>
+              </div>
             </button>
           );
         })}
-      </div>
-      
-      {/* Legend */}
-      <div className="mt-4 p-3 bg-secondary/50 rounded-lg">
-        <p className="text-xs text-muted-foreground mb-2">Timeline Legend:</p>
-        <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-muted-foreground">
-          {ranges.map(([key, range]) => (
-            <div key={key} className="flex justify-between">
-              <span className="font-mono">{key}:</span>
-              <span>{range.period}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );

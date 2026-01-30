@@ -51,6 +51,7 @@ export async function GET(request: NextRequest) {
         forcedCategory: room.forcedCategory,
         currentEvent,
         submissionStatus,
+        roundResults: room.roundResults ?? null,
       },
     });
   } catch {
@@ -121,9 +122,25 @@ export async function POST(request: NextRequest) {
 
         const submissionStatus = await getSubmissionStatus(roomId);
 
+        if (result.allSubmitted) {
+          const revealResult = await revealAndProcessRound(roomId);
+          if (!revealResult.success) {
+            return NextResponse.json({ error: revealResult.error }, { status: 400 });
+          }
+
+          return NextResponse.json({
+            success: true,
+            allSubmitted: true,
+            submissionStatus,
+            results: revealResult.results,
+            winnerId: revealResult.winnerId,
+            gameFinished: revealResult.gameFinished,
+          });
+        }
+
         return NextResponse.json({
           success: true,
-          allSubmitted: result.allSubmitted,
+          allSubmitted: false,
           submissionStatus,
         });
       }

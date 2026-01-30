@@ -71,6 +71,19 @@ export interface GameEventClient {
   category: Category;
 }
 
+export interface RoundResults {
+  round: number;
+  correctRange: TimelineRange;
+  players: Array<{
+    id: string;
+    displayName: string;
+    answer: TimelineRange | null;
+    correct: boolean;
+    movement: number;
+    newPosition: number;
+  }>;
+}
+
 export type RoundType = "NORMAL" | "RISK" | "SUPPORT" | "CATEGORY";
 
 export type TileType =
@@ -113,6 +126,8 @@ export interface GameRoom {
   createdAt: number;
   hint?: string | null; // For SUPPORT rounds
   forcedCategory?: Category | null; // For CATEGORY rounds
+  roundResults?: RoundResults | null;
+  eventHistory?: string[];
 }
 
 // Avatar options
@@ -130,7 +145,7 @@ export const AVATARS = [
 export type AvatarId = (typeof AVATARS)[number]["id"];
 
 // Board configuration
-export const BOARD_SIZE = 20;
+export const BOARD_SIZE = 30;
 export const FINISH_POSITION = BOARD_SIZE - 1;
 
 // Generate default board with special tiles
@@ -145,7 +160,10 @@ export function generateBoard(): BoardTile[] {
     else if (i === 9) type = "RISK_TILE";
     else if (i === 12) type = "SUPPORT_TILE";
     else if (i === 15) type = "CATEGORY_TILE";
-    else if (i === 17) type = "RISK_TILE";
+    else if (i === 18) type = "RISK_TILE";
+    else if (i === 21) type = "SUPPORT_TILE";
+    else if (i === 24) type = "CATEGORY_TILE";
+    else if (i === 27) type = "RISK_TILE";
 
     const tile: BoardTile = {
       position: i,

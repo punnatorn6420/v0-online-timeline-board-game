@@ -1,10 +1,12 @@
 "use client";
 
-import { useState, useEffect, useCallback, use } from "react";
+import { useState, useEffect, use } from "react";
 import { useRouter } from "next/navigation";
+import { collection, limit, onSnapshot, query, where } from "firebase/firestore";
 import { Button } from "@/components/ui/button";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { usePlayer } from "@/lib/player-context";
+import { firestore } from "@/lib/firebase-client";
 import type { Player, AvatarId } from "@/lib/game-types";
 import { 
   Copy, 
@@ -40,37 +42,41 @@ export default function RoomPage({
   const [copied, setCopied] = useState(false);
   const [isStarting, setIsStarting] = useState(false);
 
-  const fetchRoom = useCallback(async () => {
-    try {
-      const response = await fetch(`/api/rooms?code=${resolvedParams.code}`);
-      const data = await response.json();
-
-      if (data.success) {
-        setRoom(data.room);
-        setError("");
-      } else {
-        setError(data.error || "Room not found");
-      }
-    } catch {
-      setError("Failed to load room");
-    } finally {
-      setIsLoading(false);
-    }
-  }, [resolvedParams.code]);
-
-  // Initial fetch and polling
   useEffect(() => {
-    fetchRoom();
+    const roomQuery = query(
+      collection(firestore, "rooms"),
+      where("code", "==", resolvedParams.code.toUpperCase()),
+      limit(1)
+    );
 
-    // Poll for updates every 2 seconds
-    const interval = setInterval(fetchRoom, 2000);
+    const unsubscribe = onSnapshot(
+      roomQuery,
+      (snapshot) => {
+        if (snapshot.empty) {
+          setRoom(null);
+          setError("Room not found");
+          setIsLoading(false);
+          return;
+        }
 
-    return () => clearInterval(interval);
-  }, [fetchRoom]);
+        const doc = snapshot.docs[0];
+        setRoom({ id: doc.id, ...(doc.data() as RoomData) });
+        setError("");
+        setIsLoading(false);
+      },
+      () => {
+        setError("Failed to load room");
+        setIsLoading(false);
+      }
+    );
+
+    return () => unsubscribe();
+  }, [resolvedParams.code]);
 
   // Auto-join if player exists but not in room
   useEffect(() => {
     if (!player || !room || room.players[player.id]) return;
+    if (room.status !== "waiting") return;
 
     const joinRoom = async () => {
       try {

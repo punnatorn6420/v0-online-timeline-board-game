@@ -24,6 +24,13 @@ export interface GameEvent {
   correctRange: TimelineRange;
 }
 
+export interface GameEventClient {
+  id: string;
+  title: string;
+  description: string;
+  category: Category;
+}
+
 export type RoundType = "NORMAL" | "RISK" | "SUPPORT" | "CATEGORY";
 
 export type TileType = "NORMAL_TILE" | "RISK_TILE" | "CATEGORY_TILE" | "SUPPORT_TILE";
@@ -55,12 +62,13 @@ export interface GameRoom {
   players: Record<string, Player>;
   currentRound: number;
   currentEventId: string | null;
+  currentEvent: GameEventClient | null;
   roundType: RoundType;
   boardTiles: BoardTile[];
   winnerId: string | null;
   createdAt: number;
-  hint?: string; // For SUPPORT rounds
-  forcedCategory?: Category; // For CATEGORY rounds
+  hint?: string | null; // For SUPPORT rounds
+  forcedCategory?: Category | null; // For CATEGORY rounds
 }
 
 // Avatar options

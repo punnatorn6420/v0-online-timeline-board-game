@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { doc, onSnapshot } from "firebase/firestore";
 import { Button } from "@/components/ui/button";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { TimelineSelector } from "@/components/timeline-selector";
@@ -10,6 +11,7 @@ import { BoardTrack } from "@/components/board-track";
 import { ResultsModal } from "@/components/results-modal";
 import { WinnerModal } from "@/components/winner-modal";
 import { usePlayer } from "@/lib/player-context";
+import { firestore } from "@/lib/firebase-client";
 import type { 
   Player, 
   AvatarId, 
@@ -37,9 +39,9 @@ interface GameState {
   roundType: RoundType;
   boardTiles: BoardTile[];
   winnerId: string | null;
-  hint?: string;
-  forcedCategory?: Category;
-  event: GameEvent | null;
+  hint?: string | null;
+  forcedCategory?: Category | null;
+  currentEvent: GameEvent | null;
   submissionStatus: {
     total: number;
     submitted: number;
@@ -77,40 +79,39 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   const [results, setResults] = useState<RoundResults | null>(null);
   const [showWinner, setShowWinner] = useState(false);
   const [isRevealing, setIsRevealing] = useState(false);
+  
+  useEffect(() => {
+    const roomRef = doc(firestore, "rooms", roomId);
+    const unsubscribe = onSnapshot(
+      roomRef,
+      (snapshot) => {
+        if (!snapshot.exists()) {
+          setError("Room not found");
+          setIsLoading(false);
+          return;
+        }
 
-  const fetchGame = useCallback(async () => {
-    try {
-      const response = await fetch(`/api/game?roomId=${roomId}`);
-      const data = await response.json();
+        const data = snapshot.data() as GameState;
+        setGame({ id: snapshot.id, ...data });
 
-      if (data.success) {
-        setGame(data.game);
-        
-        // Check if current player has submitted
-        if (player && data.game.players[player.id]?.hasSubmitted) {
+        if (player && data.players[player.id]?.hasSubmitted) {
           setHasSubmitted(true);
         }
-        
-        // Check for winner
-        if (data.game.winnerId && data.game.status === "finished") {
+
+        if (data.winnerId && data.status === "finished") {
           setShowWinner(true);
         }
-      } else {
-        setError(data.error || "Failed to load game");
-      }
-    } catch {
-      setError("Failed to load game");
-    } finally {
-      setIsLoading(false);
-    }
-  }, [roomId, player]);
 
-  // Initial fetch and polling
-  useEffect(() => {
-    fetchGame();
-    const interval = setInterval(fetchGame, 1500);
-    return () => clearInterval(interval);
-  }, [fetchGame]);
+        setIsLoading(false);
+      },
+      () => {
+        setError("Failed to load game");
+        setIsLoading(false);
+      }
+    );
+
+    return () => unsubscribe();
+  }, [roomId, player]);
 
   // Reset state when round changes
   useEffect(() => {
@@ -196,7 +197,6 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
     setResults(null);
     setHasSubmitted(false);
     setSelectedAnswer(null);
-    fetchGame();
   };
 
   if (!player) {
@@ -231,7 +231,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
     );
   }
 
-  if (!game || !game.event) return null;
+  if (!game || !game.currentEvent) return null;
 
   const players = Object.values(game.players);
   const currentPlayer = game.players[player.id];
@@ -282,14 +282,14 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
           <div className="bg-card rounded-xl border border-border p-6 mb-6">
             <div className="flex items-center gap-2 mb-3">
               <span className="px-2 py-1 bg-secondary rounded text-xs font-medium text-muted-foreground">
-                {game.event.category}
+                {game.currentEvent.category}
               </span>
             </div>
             <h2 className="text-xl font-bold text-foreground mb-2">
-              {game.event.title}
+              {game.currentEvent.title}
             </h2>
             <p className="text-muted-foreground">
-              {game.event.description}
+              {game.currentEvent.description}
             </p>
           </div>
 

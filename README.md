@@ -47,6 +47,28 @@ NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=...
 NEXT_PUBLIC_FIREBASE_APP_ID=...
 ```
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDWhLeZBun0W7ytwiboaCrgAC8gbHLqpLI",
+  authDomain: "timetrack-47197.firebaseapp.com",
+  projectId: "timetrack-47197",
+  storageBucket: "timetrack-47197.firebasestorage.app",
+  messagingSenderId: "433043549592",
+  appId: "1:433043549592:web:b673b04892743d0efe4fed",
+  measurementId: "G-B3CREZE8CG"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 ### 3) Server (Admin SDK) configuration
 
 Create a Firebase **Service Account** and set:

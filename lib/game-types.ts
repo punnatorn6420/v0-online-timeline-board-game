@@ -1,0 +1,130 @@
+// Timeline ranges 0-9 mapped to eras
+export const TIMELINE_RANGES = {
+  0: { name: "Prehistoric Age", period: "Before 500 BCE", description: "Stone age, before civilizations" },
+  1: { name: "Ancient Civilizations", period: "500 BCE - 500 CE", description: "Rise of empires" },
+  2: { name: "Early Middle Ages", period: "500 - 1000", description: "Dark ages, early medieval" },
+  3: { name: "Late Middle Ages", period: "1000 - 1500", description: "Crusades, feudalism" },
+  4: { name: "Renaissance & Exploration", period: "1500 - 1700", description: "Age of discovery" },
+  5: { name: "Revolution & Industry", period: "1700 - 1800", description: "Enlightenment era" },
+  6: { name: "Industrial & Nationalism", period: "1800 - 1900", description: "Industrial revolution" },
+  7: { name: "World Wars Era", period: "1900 - 1950", description: "Global conflicts" },
+  8: { name: "Cold War & Space Age", period: "1950 - 2000", description: "Space race, tech boom" },
+  9: { name: "Digital Age", period: "2000 - Present", description: "Internet era" },
+} as const;
+
+export type TimelineRange = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+
+export type Category = "HISTORY" | "SCI_TECH" | "CULTURE" | "TRAVEL" | "RANDOM";
+
+export interface GameEvent {
+  id: string;
+  title: string;
+  description: string;
+  category: Category;
+  correctRange: TimelineRange;
+}
+
+export type RoundType = "NORMAL" | "RISK" | "SUPPORT" | "CATEGORY";
+
+export type TileType = "NORMAL_TILE" | "RISK_TILE" | "CATEGORY_TILE" | "SUPPORT_TILE";
+
+export interface BoardTile {
+  position: number;
+  type: TileType;
+  category?: Category; // For CATEGORY_TILE
+}
+
+export type RoomStatus = "waiting" | "playing" | "finished";
+
+export interface Player {
+  id: string;
+  displayName: string;
+  avatar: string;
+  position: number;
+  isHost: boolean;
+  hasSubmitted: boolean;
+  currentAnswer: TimelineRange | null;
+  lastAnswerCorrect: boolean | null;
+}
+
+export interface GameRoom {
+  id: string;
+  code: string;
+  status: RoomStatus;
+  hostId: string;
+  players: Record<string, Player>;
+  currentRound: number;
+  currentEventId: string | null;
+  roundType: RoundType;
+  boardTiles: BoardTile[];
+  winnerId: string | null;
+  createdAt: number;
+  hint?: string; // For SUPPORT rounds
+  forcedCategory?: Category; // For CATEGORY rounds
+}
+
+// Avatar options
+export const AVATARS = [
+  { id: "explorer", name: "Explorer", icon: "compass" },
+  { id: "scholar", name: "Scholar", icon: "book-open" },
+  { id: "inventor", name: "Inventor", icon: "lightbulb" },
+  { id: "warrior", name: "Warrior", icon: "shield" },
+  { id: "artist", name: "Artist", icon: "palette" },
+  { id: "scientist", name: "Scientist", icon: "flask-conical" },
+  { id: "navigator", name: "Navigator", icon: "map" },
+  { id: "philosopher", name: "Philosopher", icon: "brain" },
+] as const;
+
+export type AvatarId = typeof AVATARS[number]["id"];
+
+// Board configuration
+export const BOARD_SIZE = 20;
+export const FINISH_POSITION = BOARD_SIZE - 1;
+
+// Generate default board with special tiles
+export function generateBoard(): BoardTile[] {
+  const tiles: BoardTile[] = [];
+  
+  for (let i = 0; i < BOARD_SIZE; i++) {
+    let type: TileType = "NORMAL_TILE";
+    
+    // Place special tiles at specific positions
+    if (i === 3) type = "SUPPORT_TILE";
+    else if (i === 6) type = "CATEGORY_TILE";
+    else if (i === 9) type = "RISK_TILE";
+    else if (i === 12) type = "SUPPORT_TILE";
+    else if (i === 15) type = "CATEGORY_TILE";
+    else if (i === 17) type = "RISK_TILE";
+    
+    tiles.push({
+      position: i,
+      type,
+      category: type === "CATEGORY_TILE" ? getRandomCategory() : undefined,
+    });
+  }
+  
+  return tiles;
+}
+
+function getRandomCategory(): Category {
+  const categories: Category[] = ["HISTORY", "SCI_TECH", "CULTURE", "TRAVEL"];
+  return categories[Math.floor(Math.random() * categories.length)];
+}
+
+// Round type effects
+export const ROUND_EFFECTS = {
+  NORMAL: { correctMove: 1, incorrectMove: 0, description: "Answer correctly to move +1" },
+  RISK: { correctMove: 2, incorrectMove: -1, description: "High stakes! +2 if correct, -1 if wrong" },
+  SUPPORT: { correctMove: 1, incorrectMove: 0, description: "Hint provided! +1 if correct" },
+  CATEGORY: { correctMove: 1, incorrectMove: 0, description: "Category locked! +1 if correct" },
+} as const;
+
+// Generate room code
+export function generateRoomCode(): string {
+  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let code = "";
+  for (let i = 0; i < 6; i++) {
+    code += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return code;
+}

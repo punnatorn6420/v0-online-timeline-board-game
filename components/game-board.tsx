@@ -79,6 +79,16 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   const [results, setResults] = useState<RoundResults | null>(null);
   const [showWinner, setShowWinner] = useState(false);
   const [isRevealing, setIsRevealing] = useState(false);
+
+  const buildSubmissionStatus = (players: Record<string, Player>) => {
+    const total = Object.keys(players).length;
+    const submitted = Object.values(players).filter((p) => p.hasSubmitted).length;
+    return {
+      total,
+      submitted,
+      allSubmitted: total > 0 && submitted === total,
+    };
+  };
   
   useEffect(() => {
     const roomRef = doc(firestore, "rooms", roomId);
@@ -92,7 +102,11 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
         }
 
         const data = snapshot.data() as GameState;
-        setGame({ id: snapshot.id, ...data });
+        setGame({
+          id: snapshot.id,
+          ...data,
+          submissionStatus: buildSubmissionStatus(data.players),
+        });
 
         if (player && data.players[player.id]?.hasSubmitted) {
           setHasSubmitted(true);

@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createRoom, joinRoom, getRoomByCode } from "@/lib/game-store";
 
+export const runtime = "nodejs";
+
 // Create a new room
 export async function POST(request: NextRequest) {
   try {
@@ -14,7 +16,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const room = createRoom(playerId, playerName, playerAvatar);
+    const room = await createRoom(playerId, playerName, playerAvatar);
 
     return NextResponse.json({
       success: true,
@@ -46,7 +48,7 @@ export async function PUT(request: NextRequest) {
       );
     }
 
-    const result = joinRoom(code, playerId, playerName, playerAvatar);
+    const result = await joinRoom(code, playerId, playerName, playerAvatar);
 
     if (!result.success) {
       return NextResponse.json({ error: result.error }, { status: 400 });
@@ -79,7 +81,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const room = getRoomByCode(code);
+    const room = await getRoomByCode(code);
 
     if (!room) {
       return NextResponse.json({ error: "Room not found" }, { status: 404 });

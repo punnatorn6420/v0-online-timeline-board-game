@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 interface RoundBannerProps {
   roundType: RoundType;
   hint?: string;
-  category?: Category;
+  category?: Category | null;
 }
 
 const roundStyles: Record<RoundType, { bg: string; icon: typeof Zap; label: string }> = {

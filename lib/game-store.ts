@@ -1,32 +1,40 @@
-// In-memory game store (for demo purposes - in production use Firebase Firestore)
-// This simulates real-time state management
-
-import type { 
-  GameRoom, 
-  Player, 
-  RoomStatus, 
-  RoundType, 
+import type {
+  GameRoom,
+  Player,
+  RoundType,
   TimelineRange,
-  TileType,
-  Category
+  Category,
 } from "./game-types";
-import { 
-  generateRoomCode, 
-  generateBoard, 
-  ROUND_EFFECTS, 
-  FINISH_POSITION 
+import {
+  generateRoomCode,
+  generateBoard,
+  ROUND_EFFECTS,
+  FINISH_POSITION,
 } from "./game-types";
-import { getRandomEvent, getEventById, generateHint } from "./events";
+import { getRandomEvent, getEventById, getEventForClient, generateHint } from "./events";
+import { adminDb } from "./firebase-admin";
 
-// In-memory storage
-const rooms: Map<string, GameRoom> = new Map();
-const roomsByCode: Map<string, string> = new Map(); // code -> roomId
+const roomsCollection = adminDb.collection("rooms");
 
-// Create a new room
-export function createRoom(hostId: string, hostName: string, hostAvatar: string): GameRoom {
-  const roomId = crypto.randomUUID();
-  const code = generateRoomCode();
-  
+async function generateUniqueRoomCode(): Promise<string> {
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const code = generateRoomCode();
+    const snapshot = await roomsCollection.where("code", "==", code).limit(1).get();
+    if (snapshot.empty) {
+      return code;
+    }
+  }
+  throw new Error("Failed to generate a unique room code");
+}
+
+export async function createRoom(
+  hostId: string,
+  hostName: string,
+  hostAvatar: string
+): Promise<GameRoom> {
+  const roomId = roomsCollection.doc().id;
+  const code = await generateUniqueRoomCode();
+
   const host: Player = {
     id: hostId,
     displayName: hostName,
@@ -37,7 +45,7 @@ export function createRoom(hostId: string, hostName: string, hostAvatar: string)
     currentAnswer: null,
     lastAnswerCorrect: null,
   };
-  
+
   const room: GameRoom = {
     id: roomId,
     code,
@@ -46,205 +54,263 @@ export function createRoom(hostId: string, hostName: string, hostAvatar: string)
     players: { [hostId]: host },
     currentRound: 0,
     currentEventId: null,
+    currentEvent: null,
     roundType: "NORMAL",
     boardTiles: generateBoard(),
     winnerId: null,
     createdAt: Date.now(),
   };
-  
-  rooms.set(roomId, room);
-  roomsByCode.set(code, roomId);
-  
+
+  await roomsCollection.doc(roomId).set(room);
+
   return room;
 }
 
-// Join a room by code
-export function joinRoom(
-  code: string, 
-  playerId: string, 
-  playerName: string, 
+export async function joinRoom(
+  code: string,
+  playerId: string,
+  playerName: string,
   playerAvatar: string
-): { success: boolean; room?: GameRoom; error?: string } {
-  const roomId = roomsByCode.get(code.toUpperCase());
-  
-  if (!roomId) {
+): Promise<{ success: boolean; room?: GameRoom; error?: string }> {
+  const snapshot = await roomsCollection
+    .where("code", "==", code.toUpperCase())
+    .limit(1)
+    .get();
+
+  if (snapshot.empty) {
     return { success: false, error: "Room not found" };
   }
-  
-  const room = rooms.get(roomId);
-  if (!room) {
-    return { success: false, error: "Room not found" };
-  }
-  
-  if (room.status !== "waiting") {
-    return { success: false, error: "Game already in progress" };
-  }
-  
-  if (Object.keys(room.players).length >= 8) {
-    return { success: false, error: "Room is full" };
-  }
-  
-  // Check if player already in room
-  if (room.players[playerId]) {
-    return { success: true, room };
-  }
-  
-  const player: Player = {
-    id: playerId,
-    displayName: playerName,
-    avatar: playerAvatar,
-    position: 0,
-    isHost: false,
-    hasSubmitted: false,
-    currentAnswer: null,
-    lastAnswerCorrect: null,
-  };
-  
-  room.players[playerId] = player;
-  
-  return { success: true, room };
+
+  const roomRef = snapshot.docs[0].ref;
+
+  return adminDb.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) {
+      return { success: false, error: "Room not found" };
+    }
+
+    const room = roomSnap.data() as GameRoom;
+
+    if (room.status !== "waiting") {
+      return { success: false, error: "Game already in progress" };
+    }
+
+    if (Object.keys(room.players).length >= 8) {
+      return { success: false, error: "Room is full" };
+    }
+
+    if (room.players[playerId]) {
+      return { success: true, room };
+    }
+
+    const player: Player = {
+      id: playerId,
+      displayName: playerName,
+      avatar: playerAvatar,
+      position: 0,
+      isHost: false,
+      hasSubmitted: false,
+      currentAnswer: null,
+      lastAnswerCorrect: null,
+    };
+
+    const updatedRoom: GameRoom = {
+      ...room,
+      players: {
+        ...room.players,
+        [playerId]: player,
+      },
+    };
+
+    transaction.update(roomRef, { players: updatedRoom.players });
+
+    return { success: true, room: updatedRoom };
+  });
 }
 
-// Get room by ID
-export function getRoom(roomId: string): GameRoom | undefined {
-  return rooms.get(roomId);
+export async function getRoom(roomId: string): Promise<GameRoom | undefined> {
+  const docSnap = await roomsCollection.doc(roomId).get();
+  if (!docSnap.exists) return undefined;
+  return docSnap.data() as GameRoom;
 }
 
-// Get room by code
-export function getRoomByCode(code: string): GameRoom | undefined {
-  const roomId = roomsByCode.get(code.toUpperCase());
-  if (!roomId) return undefined;
-  return rooms.get(roomId);
+export async function getRoomByCode(code: string): Promise<GameRoom | undefined> {
+  const snapshot = await roomsCollection
+    .where("code", "==", code.toUpperCase())
+    .limit(1)
+    .get();
+
+  if (snapshot.empty) return undefined;
+  return snapshot.docs[0].data() as GameRoom;
 }
 
-// Start the game
-export function startGame(roomId: string, playerId: string): { success: boolean; error?: string } {
-  const room = rooms.get(roomId);
-  
-  if (!room) {
-    return { success: false, error: "Room not found" };
-  }
-  
-  if (room.hostId !== playerId) {
-    return { success: false, error: "Only the host can start the game" };
-  }
-  
-  if (Object.keys(room.players).length < 1) {
-    return { success: false, error: "Need at least 1 player to start" };
-  }
-  
-  room.status = "playing";
-  room.currentRound = 1;
-  
-  // Start first round
-  startNewRound(room);
-  
-  return { success: true };
+export async function startGame(
+  roomId: string,
+  playerId: string
+): Promise<{ success: boolean; error?: string }> {
+  const roomRef = roomsCollection.doc(roomId);
+
+  return adminDb.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) {
+      return { success: false, error: "Room not found" };
+    }
+
+    const room = roomSnap.data() as GameRoom;
+
+    if (room.hostId !== playerId) {
+      return { success: false, error: "Only the host can start the game" };
+    }
+
+    if (Object.keys(room.players).length < 1) {
+      return { success: false, error: "Need at least 1 player to start" };
+    }
+
+    const roundUpdate = startNewRound(room);
+
+    const updatedRoom: GameRoom = {
+      ...room,
+      status: "playing",
+      currentRound: 1,
+      ...roundUpdate,
+    };
+
+    transaction.update(roomRef, updatedRoom);
+
+    return { success: true };
+  });
 }
 
-// Determine round type based on board tiles and random selection
-function determineRoundType(room: GameRoom): { roundType: RoundType; category?: Category } {
-  // Check if any player is on a special tile
+function determineRoundType(
+  room: GameRoom
+): { roundType: RoundType; category?: Category } {
   const specialEffects: { type: RoundType; category?: Category }[] = [];
-  
+
   for (const player of Object.values(room.players)) {
     const tile = room.boardTiles[player.position];
-    if (tile) {
-      switch (tile.type) {
-        case "RISK_TILE":
-          specialEffects.push({ type: "RISK" });
-          break;
-        case "CATEGORY_TILE":
-          specialEffects.push({ type: "CATEGORY", category: tile.category });
-          break;
-        case "SUPPORT_TILE":
-          specialEffects.push({ type: "SUPPORT" });
-          break;
-      }
+    if (!tile) continue;
+
+    switch (tile.type) {
+      case "RISK_TILE":
+        specialEffects.push({ type: "RISK" });
+        break;
+      case "CATEGORY_TILE":
+        specialEffects.push({ type: "CATEGORY", category: tile.category });
+        break;
+      case "SUPPORT_TILE":
+        specialEffects.push({ type: "SUPPORT" });
+        break;
+      default:
+        break;
     }
   }
-  
-  // Priority: RISK > CATEGORY > SUPPORT > NORMAL
-  if (specialEffects.some(e => e.type === "RISK")) {
+
+  if (specialEffects.some((effect) => effect.type === "RISK")) {
     return { roundType: "RISK" };
   }
-  if (specialEffects.some(e => e.type === "CATEGORY")) {
-    const categoryEffect = specialEffects.find(e => e.type === "CATEGORY");
+
+  if (specialEffects.some((effect) => effect.type === "CATEGORY")) {
+    const categoryEffect = specialEffects.find(
+      (effect) => effect.type === "CATEGORY"
+    );
     return { roundType: "CATEGORY", category: categoryEffect?.category };
   }
-  if (specialEffects.some(e => e.type === "SUPPORT")) {
+
+  if (specialEffects.some((effect) => effect.type === "SUPPORT")) {
     return { roundType: "SUPPORT" };
   }
-  
-  // Random selection if no special tiles
-  const types: RoundType[] = ["NORMAL", "NORMAL", "NORMAL", "RISK", "SUPPORT", "CATEGORY"];
+
+  const types: RoundType[] = [
+    "NORMAL",
+    "NORMAL",
+    "NORMAL",
+    "RISK",
+    "SUPPORT",
+    "CATEGORY",
+  ];
   return { roundType: types[Math.floor(Math.random() * types.length)] };
 }
 
-// Start a new round
-function startNewRound(room: GameRoom): void {
-  // Reset player submissions
-  for (const player of Object.values(room.players)) {
-    player.hasSubmitted = false;
-    player.currentAnswer = null;
-    player.lastAnswerCorrect = null;
-  }
-  
-  // Determine round type
+function resetPlayers(players: Record<string, Player>): Record<string, Player> {
+  return Object.fromEntries(
+    Object.entries(players).map(([playerId, player]) => [
+      playerId,
+      {
+        ...player,
+        hasSubmitted: false,
+        currentAnswer: null,
+        lastAnswerCorrect: null,
+      },
+    ])
+  );
+}
+
+function startNewRound(room: GameRoom): Partial<GameRoom> {
   const { roundType, category } = determineRoundType(room);
-  room.roundType = roundType;
-  room.forcedCategory = category;
-  
-  // Get random event
   const event = getRandomEvent(
     roundType === "CATEGORY" && category ? category : undefined
   );
-  room.currentEventId = event.id;
-  
-  // Generate hint for SUPPORT rounds
-  if (roundType === "SUPPORT") {
-    room.hint = generateHint(event.correctRange);
-  } else {
-    room.hint = undefined;
-  }
+  const clientEvent = getEventForClient(event.id);
+
+  return {
+    players: resetPlayers(room.players),
+    roundType,
+    forcedCategory: roundType === "CATEGORY" ? category ?? null : null,
+    currentEventId: event.id,
+    currentEvent: clientEvent ?? null,
+    hint: roundType === "SUPPORT" ? generateHint(event.correctRange) : null,
+  };
 }
 
-// Submit answer
-export function submitAnswer(
-  roomId: string, 
-  playerId: string, 
+export async function submitAnswer(
+  roomId: string,
+  playerId: string,
   answer: TimelineRange
-): { success: boolean; error?: string; allSubmitted?: boolean } {
-  const room = rooms.get(roomId);
-  
-  if (!room) {
-    return { success: false, error: "Room not found" };
-  }
-  
-  if (room.status !== "playing") {
-    return { success: false, error: "Game is not in progress" };
-  }
-  
-  const player = room.players[playerId];
-  if (!player) {
-    return { success: false, error: "Player not in room" };
-  }
-  
-  if (player.hasSubmitted) {
-    return { success: false, error: "Already submitted" };
-  }
-  
-  player.currentAnswer = answer;
-  player.hasSubmitted = true;
-  
-  // Check if all players have submitted
-  const allSubmitted = Object.values(room.players).every(p => p.hasSubmitted);
-  
-  return { success: true, allSubmitted };
+): Promise<{ success: boolean; error?: string; allSubmitted?: boolean }>
+{
+  const roomRef = roomsCollection.doc(roomId);
+
+  return adminDb.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) {
+      return { success: false, error: "Room not found" };
+    }
+
+    const room = roomSnap.data() as GameRoom;
+
+    if (room.status !== "playing") {
+      return { success: false, error: "Game is not in progress" };
+    }
+
+    const player = room.players[playerId];
+    if (!player) {
+      return { success: false, error: "Player not in room" };
+    }
+
+    if (player.hasSubmitted) {
+      return { success: false, error: "Already submitted" };
+    }
+
+    const updatedPlayers: Record<string, Player> = {
+      ...room.players,
+      [playerId]: {
+        ...player,
+        currentAnswer: answer,
+        hasSubmitted: true,
+      },
+    };
+
+    const allSubmitted = Object.values(updatedPlayers).every(
+      (p) => p.hasSubmitted
+    );
+
+    transaction.update(roomRef, { players: updatedPlayers });
+
+    return { success: true, allSubmitted };
+  });
 }
 
-// Reveal answers and process round
-export function revealAndProcessRound(roomId: string): {
+export async function revealAndProcessRound(roomId: string): Promise<{
   success: boolean;
   error?: string;
   results?: {
@@ -260,88 +326,116 @@ export function revealAndProcessRound(roomId: string): {
   };
   winnerId?: string;
   gameFinished?: boolean;
-} {
-  const room = rooms.get(roomId);
-  
-  if (!room) {
-    return { success: false, error: "Room not found" };
-  }
-  
-  if (!room.currentEventId) {
-    return { success: false, error: "No event in progress" };
-  }
-  
-  const event = getEventById(room.currentEventId);
-  if (!event) {
-    return { success: false, error: "Event not found" };
-  }
-  
-  const effects = ROUND_EFFECTS[room.roundType];
-  const results: Array<{
-    id: string;
-    displayName: string;
-    answer: TimelineRange | null;
-    correct: boolean;
-    movement: number;
-    newPosition: number;
-  }> = [];
-  
-  // Process each player
-  for (const player of Object.values(room.players)) {
-    const correct = player.currentAnswer === event.correctRange;
-    const movement = correct ? effects.correctMove : effects.incorrectMove;
-    
-    player.lastAnswerCorrect = correct;
-    player.position = Math.max(0, Math.min(FINISH_POSITION, player.position + movement));
-    
-    results.push({
-      id: player.id,
-      displayName: player.displayName,
-      answer: player.currentAnswer,
-      correct,
-      movement,
-      newPosition: player.position,
-    });
-    
-    // Check for winner
-    if (player.position >= FINISH_POSITION) {
-      room.winnerId = player.id;
-      room.status = "finished";
+}> {
+  const roomRef = roomsCollection.doc(roomId);
+
+  return adminDb.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) {
+      return { success: false, error: "Room not found" };
     }
-  }
-  
-  // If no winner, prepare next round
-  if (!room.winnerId) {
-    room.currentRound++;
-    startNewRound(room);
-  }
-  
-  return {
-    success: true,
-    results: {
-      correctRange: event.correctRange,
-      players: results,
-    },
-    winnerId: room.winnerId ?? undefined,
-    gameFinished: room.status === "finished",
-  };
+
+    const room = roomSnap.data() as GameRoom;
+
+    if (!room.currentEventId) {
+      return { success: false, error: "No event in progress" };
+    }
+
+    const event = getEventById(room.currentEventId);
+    if (!event) {
+      return { success: false, error: "Event not found" };
+    }
+
+    const effects = ROUND_EFFECTS[room.roundType];
+    const results: Array<{
+      id: string;
+      displayName: string;
+      answer: TimelineRange | null;
+      correct: boolean;
+      movement: number;
+      newPosition: number;
+    }> = [];
+
+    let winnerId: string | null = null;
+
+    const updatedPlayers: Record<string, Player> = {};
+
+    for (const player of Object.values(room.players)) {
+      const correct = player.currentAnswer === event.correctRange;
+      const movement = correct ? effects.correctMove : effects.incorrectMove;
+      const newPosition = Math.max(
+        0,
+        Math.min(FINISH_POSITION, player.position + movement)
+      );
+
+      updatedPlayers[player.id] = {
+        ...player,
+        lastAnswerCorrect: correct,
+        position: newPosition,
+      };
+
+      results.push({
+        id: player.id,
+        displayName: player.displayName,
+        answer: player.currentAnswer,
+        correct,
+        movement,
+        newPosition,
+      });
+
+      if (newPosition >= FINISH_POSITION && !winnerId) {
+        winnerId = player.id;
+      }
+    }
+
+    let updatedRoom: GameRoom = {
+      ...room,
+      players: updatedPlayers,
+      winnerId,
+      status: winnerId ? "finished" : room.status,
+    };
+
+    if (!winnerId) {
+      const nextRound = startNewRound({
+        ...room,
+        players: updatedPlayers,
+      });
+
+      updatedRoom = {
+        ...updatedRoom,
+        currentRound: room.currentRound + 1,
+        ...nextRound,
+      };
+    }
+
+    transaction.update(roomRef, updatedRoom);
+
+    return {
+      success: true,
+      results: {
+        correctRange: event.correctRange,
+        players: results,
+      },
+      winnerId: winnerId ?? undefined,
+      gameFinished: Boolean(winnerId),
+    };
+  });
 }
 
-// Check submission status
-export function getSubmissionStatus(roomId: string): {
+export async function getSubmissionStatus(roomId: string): Promise<{
   total: number;
   submitted: number;
   allSubmitted: boolean;
-} {
-  const room = rooms.get(roomId);
-  
+}> {
+  const room = await getRoom(roomId);
+
   if (!room) {
     return { total: 0, submitted: 0, allSubmitted: false };
   }
-  
+
   const players = Object.values(room.players);
-  const submitted = players.filter(p => p.hasSubmitted).length;
-  
+  const submitted = players.filter((p) => p.hasSubmitted).length;
+
   return {
     total: players.length,
     submitted,
@@ -349,39 +443,54 @@ export function getSubmissionStatus(roomId: string): {
   };
 }
 
-// Leave room
-export function leaveRoom(roomId: string, playerId: string): void {
-  const room = rooms.get(roomId);
-  if (!room) return;
-  
-  delete room.players[playerId];
-  
-  // If room is empty, delete it
-  if (Object.keys(room.players).length === 0) {
-    roomsByCode.delete(room.code);
-    rooms.delete(roomId);
-    return;
-  }
-  
-  // If host left, assign new host
-  if (room.hostId === playerId) {
-    const newHost = Object.values(room.players)[0];
-    if (newHost) {
-      newHost.isHost = true;
-      room.hostId = newHost.id;
+export async function leaveRoom(roomId: string, playerId: string): Promise<void> {
+  const roomRef = roomsCollection.doc(roomId);
+
+  await adminDb.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) return;
+
+    const room = roomSnap.data() as GameRoom;
+    const updatedPlayers = { ...room.players };
+    delete updatedPlayers[playerId];
+
+    if (Object.keys(updatedPlayers).length === 0) {
+      transaction.delete(roomRef);
+      return;
     }
-  }
+
+    const updatedRoom: Partial<GameRoom> = {
+      players: updatedPlayers,
+    };
+
+    if (room.hostId === playerId) {
+      const newHost = Object.values(updatedPlayers)[0];
+      if (newHost) {
+        updatedPlayers[newHost.id] = {
+          ...newHost,
+          isHost: true,
+        };
+        updatedRoom.hostId = newHost.id;
+      }
+    }
+
+    transaction.update(roomRef, updatedRoom);
+  });
 }
 
-// Clean up old rooms (call periodically)
-export function cleanupOldRooms(): void {
+export async function cleanupOldRooms(): Promise<void> {
   const now = Date.now();
-  const maxAge = 24 * 60 * 60 * 1000; // 24 hours
-  
-  for (const [roomId, room] of rooms) {
+  const maxAge = 24 * 60 * 60 * 1000;
+
+  const snapshot = await roomsCollection.get();
+  const batch = adminDb.batch();
+
+  snapshot.forEach((doc) => {
+    const room = doc.data() as GameRoom;
     if (now - room.createdAt > maxAge) {
-      roomsByCode.delete(room.code);
-      rooms.delete(roomId);
+      batch.delete(doc.ref);
     }
-  }
+  });
+
+  await batch.commit();
 }

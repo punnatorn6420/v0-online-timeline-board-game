@@ -6,8 +6,9 @@ import {
   revealAndProcessRound,
   getSubmissionStatus,
 } from "@/lib/game-store";
-import { getEventForClient } from "@/lib/events";
 import type { TimelineRange } from "@/lib/game-types";
+
+export const runtime = "nodejs";
 
 // Get game state
 export async function GET(request: NextRequest) {
@@ -22,19 +23,17 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const room = getRoom(roomId);
+    const room = await getRoom(roomId);
 
     if (!room) {
       return NextResponse.json({ error: "Room not found" }, { status: 404 });
     }
 
     // Get current event (without correctRange)
-    const event = room.currentEventId
-      ? getEventForClient(room.currentEventId)
-      : null;
+    const currentEvent = room.currentEvent ?? null;
 
     // Get submission status
-    const submissionStatus = getSubmissionStatus(roomId);
+    const submissionStatus = await getSubmissionStatus(roomId);
 
     return NextResponse.json({
       success: true,
@@ -50,7 +49,7 @@ export async function GET(request: NextRequest) {
         winnerId: room.winnerId,
         hint: room.hint,
         forcedCategory: room.forcedCategory,
-        event,
+        currentEvent,
         submissionStatus,
       },
     });
@@ -75,23 +74,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const room = getRoom(roomId);
+    const room = await getRoom(roomId);
     if (!room) {
       return NextResponse.json({ error: "Room not found" }, { status: 404 });
     }
 
     switch (action) {
       case "start": {
-        const result = startGame(roomId, playerId);
+        const result = await startGame(roomId, playerId);
         if (!result.success) {
           return NextResponse.json({ error: result.error }, { status: 400 });
         }
 
         // Get updated room state
-        const updatedRoom = getRoom(roomId);
-        const event = updatedRoom?.currentEventId
-          ? getEventForClient(updatedRoom.currentEventId)
-          : null;
+        const updatedRoom = await getRoom(roomId);
+        const currentEvent = updatedRoom?.currentEvent ?? null;
 
         return NextResponse.json({
           success: true,
@@ -102,7 +99,7 @@ export async function POST(request: NextRequest) {
             roundType: updatedRoom!.roundType,
             hint: updatedRoom!.hint,
             forcedCategory: updatedRoom!.forcedCategory,
-            event,
+            currentEvent,
             players: updatedRoom!.players,
             boardTiles: updatedRoom!.boardTiles,
           },
@@ -117,12 +114,12 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        const result = submitAnswer(roomId, playerId, answer as TimelineRange);
+        const result = await submitAnswer(roomId, playerId, answer as TimelineRange);
         if (!result.success) {
           return NextResponse.json({ error: result.error }, { status: 400 });
         }
 
-        const submissionStatus = getSubmissionStatus(roomId);
+        const submissionStatus = await getSubmissionStatus(roomId);
 
         return NextResponse.json({
           success: true,
@@ -132,16 +129,14 @@ export async function POST(request: NextRequest) {
       }
 
       case "reveal": {
-        const result = revealAndProcessRound(roomId);
+        const result = await revealAndProcessRound(roomId);
         if (!result.success) {
           return NextResponse.json({ error: result.error }, { status: 400 });
         }
 
         // Get updated room state for next round
-        const updatedRoom = getRoom(roomId);
-        const nextEvent = updatedRoom?.currentEventId
-          ? getEventForClient(updatedRoom.currentEventId)
-          : null;
+        const updatedRoom = await getRoom(roomId);
+        const nextEvent = updatedRoom?.currentEvent ?? null;
 
         return NextResponse.json({
           success: true,
@@ -155,7 +150,7 @@ export async function POST(request: NextRequest) {
                 roundType: updatedRoom!.roundType,
                 hint: updatedRoom!.hint,
                 forcedCategory: updatedRoom!.forcedCategory,
-                event: nextEvent,
+                currentEvent: nextEvent,
               },
           players: updatedRoom!.players,
           boardTiles: updatedRoom!.boardTiles,

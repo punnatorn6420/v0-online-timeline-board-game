@@ -54,7 +54,17 @@ export const TIMELINE_RANGES = {
 
 export type TimelineRange = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
-export type Category = "HISTORY" | "SCI_TECH" | "CULTURE" | "TRAVEL" | "RANDOM";
+export type Category =
+  | "HISTORY"
+  | "SCI_TECH"
+  | "CULTURE"
+  | "TRAVEL"
+  | "LANDMARKS"
+  | "DISCOVERIES"
+  | "POLITICS"
+  | "SPORTS"
+  | "NATURE"
+  | "RANDOM";
 
 export interface GameEvent {
   id: string;
@@ -181,7 +191,17 @@ export function generateBoard(): BoardTile[] {
 }
 
 function getRandomCategory(): Category {
-  const categories: Category[] = ["HISTORY", "SCI_TECH", "CULTURE", "TRAVEL"];
+  const categories: Category[] = [
+    "HISTORY",
+    "SCI_TECH",
+    "CULTURE",
+    "TRAVEL",
+    "LANDMARKS",
+    "DISCOVERIES",
+    "POLITICS",
+    "SPORTS",
+    "NATURE",
+  ];
   return categories[Math.floor(Math.random() * categories.length)];
 }
 

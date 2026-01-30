@@ -1,4 +1,4 @@
-import type { GameEvent, TimelineRange, Category } from "./game-types";
+import type { GameEvent, TimelineRange, Category, GameMode } from "./game-types";
 
 export const GAME_EVENTS: GameEvent[] = [
   // HISTORY events
@@ -4495,39 +4495,418 @@ export const GAME_EVENTS: GameEvent[] = [
   },
 ];
 
-// Get events by category
-export function getEventsByCategory(category: Category): GameEvent[] {
-  if (category === "RANDOM") {
-    return GAME_EVENTS;
+export const THAILAND_EVENTS: GameEvent[] = [
+  {
+    id: "th-001",
+    title: "แหล่งโบราณคดีบ้านเชียง",
+    description: "หลักฐานชุมชนก่อนประวัติศาสตร์ที่บ้านเชียง จ.อุดรธานี",
+    category: "HISTORY",
+    correctRange: 0,
+  },
+  {
+    id: "th-002",
+    title: "ภาพเขียนสีผาแต้ม",
+    description: "ภาพเขียนสีโบราณริมโขงสะท้อนวิถีชีวิตก่อนประวัติศาสตร์",
+    category: "CULTURE",
+    correctRange: 0,
+  },
+  {
+    id: "th-003",
+    title: "วัฒนธรรมทวารวดีรุ่งเรือง",
+    description: "ชุมชนและศิลปะทวารวดีแพร่หลายในภาคกลางของไทย",
+    category: "CULTURE",
+    correctRange: 1,
+  },
+  {
+    id: "th-004",
+    title: "อิทธิพลฟูนันในดินแดนไทยตอนล่าง",
+    description: "การค้าและวัฒนธรรมฟูนันส่งผลต่อคาบสมุทรไทย",
+    category: "HISTORY",
+    correctRange: 1,
+  },
+  {
+    id: "th-005",
+    title: "ศรีวิชัยขยายอิทธิพลคาบสมุทรไทย",
+    description: "อาณาจักรศรีวิชัยครอบคลุมเส้นทางการค้าในภาคใต้",
+    category: "POLITICS",
+    correctRange: 2,
+  },
+  {
+    id: "th-006",
+    title: "อาณาจักรหริภุญชัยก่อตั้ง",
+    description: "ศูนย์กลางวัฒนธรรมมอญในภาคเหนือของไทย",
+    category: "HISTORY",
+    correctRange: 2,
+  },
+  {
+    id: "th-007",
+    title: "ก่อตั้งอาณาจักรสุโขทัย",
+    description: "พ่อขุนศรีอินทราทิตย์สถาปนาสุโขทัยเป็นราชธานี",
+    category: "HISTORY",
+    correctRange: 3,
+  },
+  {
+    id: "th-008",
+    title: "ศิลาจารึกพ่อขุนรามคำแหง",
+    description: "กำเนิดลายสือไทยและบันทึกเรื่องราวสุโขทัย",
+    category: "DISCOVERIES",
+    correctRange: 3,
+  },
+  {
+    id: "th-009",
+    title: "สถาปนากรุงศรีอยุธยา",
+    description: "พระเจ้าอู่ทองตั้งกรุงศรีอยุธยาเป็นราชธานี",
+    category: "HISTORY",
+    correctRange: 3,
+  },
+  {
+    id: "th-010",
+    title: "การค้าทางทะเลอยุธยาเฟื่องฟู",
+    description: "อยุธยากลายเป็นศูนย์กลางการค้าระหว่างประเทศ",
+    category: "TRAVEL",
+    correctRange: 4,
+  },
+  {
+    id: "th-011",
+    title: "โปรตุเกสทำสนธิสัญญากับสยาม",
+    description: "ชาติตะวันตกชาติแรกที่ติดต่อค้าขายกับอยุธยา",
+    category: "POLITICS",
+    correctRange: 4,
+  },
+  {
+    id: "th-012",
+    title: "พระนเรศวรประกาศอิสรภาพ",
+    description: "ยกเลิกการเป็นเมืองขึ้นของพม่า",
+    category: "POLITICS",
+    correctRange: 4,
+  },
+  {
+    id: "th-013",
+    title: "ยุทธหัตถี",
+    description: "สมเด็จพระนเรศวรทรงมีชัยเหนือพระมหาอุปราชา",
+    category: "HISTORY",
+    correctRange: 4,
+  },
+  {
+    id: "th-014",
+    title: "คณะราชทูตฝรั่งเศสเยือนอยุธยา",
+    description: "อยุธยาติดต่อทางการทูตกับฝรั่งเศสอย่างเป็นทางการ",
+    category: "TRAVEL",
+    correctRange: 4,
+  },
+  {
+    id: "th-015",
+    title: "เสียกรุงศรีอยุธยาครั้งที่สอง",
+    description: "พม่ายึดกรุงศรีอยุธยาได้ในปี 1767",
+    category: "HISTORY",
+    correctRange: 5,
+  },
+  {
+    id: "th-016",
+    title: "สถาปนากรุงธนบุรี",
+    description: "สมเด็จพระเจ้าตากสินตั้งราชธานีที่ธนบุรี",
+    category: "POLITICS",
+    correctRange: 5,
+  },
+  {
+    id: "th-017",
+    title: "สถาปนากรุงรัตนโกสินทร์",
+    description: "รัชกาลที่ 1 ย้ายราชธานีมายังกรุงเทพฯ",
+    category: "HISTORY",
+    correctRange: 5,
+  },
+  {
+    id: "th-018",
+    title: "สร้างวัดพระแก้วและพระบรมมหาราชวัง",
+    description: "ศูนย์กลางศาสนาและสัญลักษณ์ของกรุงรัตนโกสินทร์",
+    category: "LANDMARKS",
+    correctRange: 5,
+  },
+  {
+    id: "th-019",
+    title: "รามเกียรติ์ฉบับรัชกาลที่ 1",
+    description: "วรรณคดีสำคัญถูกชำระและเรียบเรียงใหม่",
+    category: "CULTURE",
+    correctRange: 5,
+  },
+  {
+    id: "th-020",
+    title: "สนธิสัญญาเบาว์ริง",
+    description: "สยามทำสนธิสัญญาการค้าเสรีกับอังกฤษ",
+    category: "POLITICS",
+    correctRange: 6,
+  },
+  {
+    id: "th-021",
+    title: "เลิกทาสในสยาม",
+    description: "รัชกาลที่ 5 ทรงประกาศเลิกทาส",
+    category: "POLITICS",
+    correctRange: 6,
+  },
+  {
+    id: "th-022",
+    title: "ตั้งไปรษณีย์และโทรเลขสยาม",
+    description: "การสื่อสารสมัยใหม่เริ่มต้นในสยาม",
+    category: "SCI_TECH",
+    correctRange: 6,
+  },
+  {
+    id: "th-023",
+    title: "รถไฟสายกรุงเทพฯ-อยุธยาเปิดใช้",
+    description: "จุดเริ่มต้นเครือข่ายรถไฟไทย",
+    category: "SCI_TECH",
+    correctRange: 6,
+  },
+  {
+    id: "th-024",
+    title: "ก่อตั้งโรงเรียนสวนกุหลาบวิทยาลัย",
+    description: "โรงเรียนสมัยใหม่ยุคแรกของไทย",
+    category: "CULTURE",
+    correctRange: 6,
+  },
+  {
+    id: "th-025",
+    title: "รัชกาลที่ 5 เสด็จประพาสยุโรป",
+    description: "การทูตและการเรียนรู้ตะวันตกในศตวรรษที่ 19",
+    category: "TRAVEL",
+    correctRange: 6,
+  },
+  {
+    id: "th-026",
+    title: "ก่อตั้งจุฬาลงกรณ์มหาวิทยาลัย",
+    description: "มหาวิทยาลัยแห่งแรกของไทยเปิดการศึกษา",
+    category: "CULTURE",
+    correctRange: 7,
+  },
+  {
+    id: "th-027",
+    title: "สะพานพระราม 6 เปิดใช้",
+    description: "สะพานรถไฟข้ามแม่น้ำเจ้าพระยาแห่งแรกของไทย",
+    category: "LANDMARKS",
+    correctRange: 7,
+  },
+  {
+    id: "th-028",
+    title: "เปลี่ยนแปลงการปกครอง พ.ศ. 2475",
+    description: "สยามเปลี่ยนเป็นระบอบประชาธิปไตยแบบรัฐธรรมนูญ",
+    category: "POLITICS",
+    correctRange: 7,
+  },
+  {
+    id: "th-029",
+    title: "ก่อตั้งมหาวิทยาลัยธรรมศาสตร์",
+    description: "สถาบันอุดมศึกษาสำคัญของไทยก่อตั้งขึ้น",
+    category: "CULTURE",
+    correctRange: 7,
+  },
+  {
+    id: "th-030",
+    title: "ไทยเข้าร่วมสงครามโลกครั้งที่สอง",
+    description: "ไทยเข้าร่วมสงครามภายใต้รัฐบาลจอมพล ป.",
+    category: "HISTORY",
+    correctRange: 7,
+  },
+  {
+    id: "th-031",
+    title: "ก่อตั้งธนาคารแห่งประเทศไทย",
+    description: "ธนาคารกลางของไทยเริ่มทำหน้าที่ดูแลเศรษฐกิจ",
+    category: "SCI_TECH",
+    correctRange: 7,
+  },
+  {
+    id: "th-032",
+    title: "ไทยเข้าร่วมสหประชาชาติ",
+    description: "ไทยเป็นสมาชิกสหประชาชาติหลังสงครามโลก",
+    category: "POLITICS",
+    correctRange: 7,
+  },
+  {
+    id: "th-033",
+    title: "สร้างเขื่อนภูมิพล",
+    description: "เขื่อนขนาดใหญ่ช่วยผลิตไฟฟ้าและชลประทาน",
+    category: "SCI_TECH",
+    correctRange: 8,
+  },
+  {
+    id: "th-034",
+    title: "เจ้าภาพกีฬาซีเกมส์ครั้งแรก",
+    description: "ไทยเป็นเจ้าภาพกีฬาแหลมทองที่กรุงเทพฯ",
+    category: "SPORTS",
+    correctRange: 8,
+  },
+  {
+    id: "th-035",
+    title: "ก่อตั้งอาเซียนที่กรุงเทพฯ",
+    description: "ไทยร่วมลงนามก่อตั้งสมาคมประชาชาติเอเชียตะวันออกเฉียงใต้",
+    category: "POLITICS",
+    correctRange: 8,
+  },
+  {
+    id: "th-036",
+    title: "เหตุการณ์ 14 ตุลาคม 2516",
+    description: "การลุกฮือของประชาชนเรียกร้องประชาธิปไตย",
+    category: "POLITICS",
+    correctRange: 8,
+  },
+  {
+    id: "th-037",
+    title: "เหตุการณ์ 6 ตุลาคม 2519",
+    description: "เหตุการณ์ความรุนแรงที่มหาวิทยาลัยธรรมศาสตร์",
+    category: "POLITICS",
+    correctRange: 8,
+  },
+  {
+    id: "th-038",
+    title: "เปิดใช้ทางด่วนเฉลิมมหานคร",
+    description: "ทางด่วนสายแรกในกรุงเทพฯ ช่วยลดการจราจร",
+    category: "TRAVEL",
+    correctRange: 8,
+  },
+  {
+    id: "th-039",
+    title: "สมรักษ์ คำสิงห์คว้าเหรียญทองโอลิมปิก",
+    description: "เหรียญทองโอลิมปิกแรกของไทยในกีฬามวยสากล",
+    category: "SPORTS",
+    correctRange: 8,
+  },
+  {
+    id: "th-040",
+    title: "วิกฤตต้มยำกุ้ง",
+    description: "วิกฤตการเงินเอเชียเริ่มจากค่าเงินบาทลอยตัว",
+    category: "HISTORY",
+    correctRange: 8,
+  },
+  {
+    id: "th-041",
+    title: "รัฐธรรมนูญ พ.ศ. 2540",
+    description: "รัฐธรรมนูญฉบับประชาชนประกาศใช้",
+    category: "POLITICS",
+    correctRange: 8,
+  },
+  {
+    id: "th-042",
+    title: "เปิดใช้รถไฟฟ้า BTS",
+    description: "ระบบรถไฟฟ้าบนดินสายแรกของกรุงเทพฯ",
+    category: "TRAVEL",
+    correctRange: 8,
+  },
+  {
+    id: "th-043",
+    title: "สึนามิอันดามัน",
+    description: "เหตุการณ์คลื่นยักษ์ถล่มชายฝั่งภาคใต้",
+    category: "NATURE",
+    correctRange: 9,
+  },
+  {
+    id: "th-044",
+    title: "เปิดใช้รถไฟฟ้าใต้ดิน MRT",
+    description: "ระบบรถไฟฟ้าใต้ดินสายแรกของกรุงเทพฯ",
+    category: "TRAVEL",
+    correctRange: 9,
+  },
+  {
+    id: "th-045",
+    title: "เปิดใช้สนามบินสุวรรณภูมิ",
+    description: "สนามบินนานาชาติหลักของไทยเปิดให้บริการ",
+    category: "TRAVEL",
+    correctRange: 9,
+  },
+  {
+    id: "th-046",
+    title: "รัฐประหาร พ.ศ. 2549",
+    description: "กองทัพยึดอำนาจการปกครองของประเทศ",
+    category: "POLITICS",
+    correctRange: 9,
+  },
+  {
+    id: "th-047",
+    title: "น้ำท่วมใหญ่ พ.ศ. 2554",
+    description: "อุทกภัยครั้งใหญ่ส่งผลกระทบทั่วประเทศ",
+    category: "NATURE",
+    correctRange: 9,
+  },
+  {
+    id: "th-048",
+    title: "เปิดใช้แอร์พอร์ตเรลลิงก์",
+    description: "รถไฟเชื่อมสนามบินสุวรรณภูมิกับใจกลางกรุงเทพฯ",
+    category: "TRAVEL",
+    correctRange: 9,
+  },
+  {
+    id: "th-049",
+    title: "รัฐประหาร พ.ศ. 2557",
+    description: "คณะรักษาความสงบแห่งชาติยึดอำนาจ",
+    category: "POLITICS",
+    correctRange: 9,
+  },
+  {
+    id: "th-050",
+    title: "โควิด-19 ระบาดในไทย",
+    description: "ประเทศไทยเผชิญการระบาดใหญ่ของไวรัสโคโรนา",
+    category: "NATURE",
+    correctRange: 9,
+  },
+];
+
+export function getEventsForMode(mode: GameMode = "GLOBAL"): GameEvent[] {
+  return mode === "THAILAND" ? THAILAND_EVENTS : GAME_EVENTS;
+}
+
+export function getCategoriesForMode(mode: GameMode = "GLOBAL"): Category[] {
+  const categories = new Set<Category>();
+  for (const event of getEventsForMode(mode)) {
+    categories.add(event.category);
   }
-  return GAME_EVENTS.filter((event) => event.category === category);
+  return categories.size ? Array.from(categories) : ["HISTORY"];
+}
+
+// Get events by category
+export function getEventsByCategory(
+  category: Category,
+  mode: GameMode = "GLOBAL"
+): GameEvent[] {
+  if (category === "RANDOM") {
+    return getEventsForMode(mode);
+  }
+  return getEventsForMode(mode).filter((event) => event.category === category);
 }
 
 // Get random event
-export function getRandomEvent(category?: Category, excludeIds?: string[]): GameEvent {
-  let events = category && category !== "RANDOM" 
-    ? getEventsByCategory(category) 
-    : GAME_EVENTS;
+export function getRandomEvent(
+  category?: Category,
+  excludeIds?: string[],
+  mode: GameMode = "GLOBAL"
+): GameEvent {
+  let events =
+    category && category !== "RANDOM"
+      ? getEventsByCategory(category, mode)
+      : getEventsForMode(mode);
   
   if (excludeIds && excludeIds.length > 0) {
     events = events.filter((e) => !excludeIds.includes(e.id));
   }
   
   if (events.length === 0) {
-    events = GAME_EVENTS;
+    events = getEventsForMode(mode);
   }
   
   return events[Math.floor(Math.random() * events.length)];
 }
 
 // Get event by ID (server-side only - includes correctRange)
-export function getEventById(id: string): GameEvent | undefined {
-  return GAME_EVENTS.find((event) => event.id === id);
+export function getEventById(
+  id: string,
+  mode: GameMode = "GLOBAL"
+): GameEvent | undefined {
+  return getEventsForMode(mode).find((event) => event.id === id);
 }
 
 // Get event for client (excludes correctRange)
-export function getEventForClient(id: string): Omit<GameEvent, "correctRange"> | undefined {
-  const event = getEventById(id);
+export function getEventForClient(
+  id: string,
+  mode: GameMode = "GLOBAL"
+): Omit<GameEvent, "correctRange"> | undefined {
+  const event = getEventById(id, mode);
   if (!event) return undefined;
   
   const { correctRange, ...clientEvent } = event;

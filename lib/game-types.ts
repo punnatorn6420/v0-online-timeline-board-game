@@ -54,6 +54,8 @@ export const TIMELINE_RANGES = {
 
 export type TimelineRange = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
+export type GameMode = "GLOBAL" | "THAILAND";
+
 export type Category =
   | "HISTORY"
   | "SCI_TECH"
@@ -126,6 +128,7 @@ export interface GameRoom {
   code: string;
   status: RoomStatus;
   hostId: string;
+  mode: GameMode;
   players: Record<string, Player>;
   currentRound: number;
   currentEventId: string | null;
@@ -157,9 +160,22 @@ export type AvatarId = (typeof AVATARS)[number]["id"];
 // Board configuration
 export const BOARD_SIZE = 16;
 export const FINISH_POSITION = 15;
+export const DEFAULT_CATEGORIES: Category[] = [
+  "HISTORY",
+  "SCI_TECH",
+  "CULTURE",
+  "TRAVEL",
+  "LANDMARKS",
+  "DISCOVERIES",
+  "POLITICS",
+  "SPORTS",
+  "NATURE",
+];
 
 // Generate default board with special tiles
-export function generateBoard(): BoardTile[] {
+export function generateBoard(
+  categories: Category[] = DEFAULT_CATEGORIES
+): BoardTile[] {
   const tiles: BoardTile[] = [];
 
   for (let i = 0; i < BOARD_SIZE; i++) {
@@ -177,7 +193,7 @@ export function generateBoard(): BoardTile[] {
     };
 
     if (type === "CATEGORY_TILE") {
-      tile.category = getRandomCategory();
+      tile.category = getRandomCategory(categories);
     }
 
     tiles.push(tile);
@@ -186,18 +202,7 @@ export function generateBoard(): BoardTile[] {
   return tiles;
 }
 
-function getRandomCategory(): Category {
-  const categories: Category[] = [
-    "HISTORY",
-    "SCI_TECH",
-    "CULTURE",
-    "TRAVEL",
-    "LANDMARKS",
-    "DISCOVERIES",
-    "POLITICS",
-    "SPORTS",
-    "NATURE",
-  ];
+function getRandomCategory(categories: Category[]): Category {
   return categories[Math.floor(Math.random() * categories.length)];
 }
 

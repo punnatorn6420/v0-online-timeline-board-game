@@ -10,7 +10,6 @@ import {
   generateBoard,
   ROUND_EFFECTS,
   FINISH_POSITION,
-  MAX_ROUNDS,
 } from "./game-types";
 import {
   GAME_EVENTS,
@@ -375,7 +374,6 @@ export async function revealAndProcessRound(roomId: string): Promise<{
     let winnerId: string | null = null;
 
     const updatedPlayers: Record<string, Player> = {};
-    let bestPlayer: Player | null = null;
 
     for (const player of Object.values(room.players)) {
       const correct = player.currentAnswer === event.correctRange;
@@ -403,13 +401,6 @@ export async function revealAndProcessRound(roomId: string): Promise<{
       if (newPosition >= FINISH_POSITION && !winnerId) {
         winnerId = player.id;
       }
-
-      if (!bestPlayer || newPosition > bestPlayer.position) {
-        bestPlayer = {
-          ...player,
-          position: newPosition,
-        };
-      }
     }
 
     let updatedRoom: GameRoom = {
@@ -424,14 +415,7 @@ export async function revealAndProcessRound(roomId: string): Promise<{
       },
     };
 
-    if (!winnerId && room.currentRound >= MAX_ROUNDS) {
-      updatedRoom = {
-        ...updatedRoom,
-        winnerId: bestPlayer?.id ?? null,
-        status: "finished",
-      };
-      winnerId = bestPlayer?.id ?? null;
-    } else if (!winnerId) {
+    if (!winnerId) {
       const nextRound = startNewRound({
         ...room,
         players: updatedPlayers,

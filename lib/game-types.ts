@@ -155,9 +155,8 @@ export const AVATARS = [
 export type AvatarId = (typeof AVATARS)[number]["id"];
 
 // Board configuration
-export const BOARD_SIZE = 30;
-export const FINISH_POSITION = BOARD_SIZE - 1;
-export const MAX_ROUNDS = 15;
+export const BOARD_SIZE = 16;
+export const FINISH_POSITION = 15;
 
 // Generate default board with special tiles
 export function generateBoard(): BoardTile[] {
@@ -170,11 +169,7 @@ export function generateBoard(): BoardTile[] {
     else if (i === 6) type = "CATEGORY_TILE";
     else if (i === 9) type = "RISK_TILE";
     else if (i === 12) type = "SUPPORT_TILE";
-    else if (i === 15) type = "CATEGORY_TILE";
-    else if (i === 18) type = "RISK_TILE";
-    else if (i === 21) type = "SUPPORT_TILE";
-    else if (i === 24) type = "CATEGORY_TILE";
-    else if (i === 27) type = "RISK_TILE";
+    else if (i === 14) type = "CATEGORY_TILE";
 
     const tile: BoardTile = {
       position: i,

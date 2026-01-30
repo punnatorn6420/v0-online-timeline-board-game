@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { usePlayer } from "@/lib/player-context";
-import { MAX_ROUNDS } from "@/lib/game-types";
 import { Clock, Users, Plus, ArrowRight, LogOut } from "lucide-react";
 
 export function HomeScreen() {
@@ -179,8 +178,7 @@ export function HomeScreen() {
           <li>1. Create a room or join with a code</li>
           <li>2. Answer timeline questions (0-9 eras)</li>
           <li>3. Correct answers move you forward</li>
-          <li>4. First to the finish line wins!</li>
-          <li>5. If no one finishes, highest position after {MAX_ROUNDS} rounds wins.</li>
+          <li>4. First to reach position 15 wins!</li>
         </ul>
       </div>
     </div>

@@ -12,15 +12,14 @@ import { ResultsModal } from "@/components/results-modal";
 import { WinnerModal } from "@/components/winner-modal";
 import { usePlayer } from "@/lib/player-context";
 import { firestore } from "@/lib/firebase-client";
-import type { 
-  Player, 
-  AvatarId, 
-  RoundType, 
-  BoardTile, 
+import type {
+  Player,
+  AvatarId,
+  RoundType,
+  BoardTile,
   TimelineRange,
   Category,
   RoundResults,
-  MAX_ROUNDS,
 } from "@/lib/game-types";
 import { Loader2, Clock, Users, Languages } from "lucide-react";
 
@@ -251,7 +250,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
             <span>{players.length}</span>
           </div>
           <span className="text-sm font-medium text-foreground">
-            Round {game.currentRound} / {MAX_ROUNDS}
+            Round {game.currentRound}
           </span>
         </div>
       </header>

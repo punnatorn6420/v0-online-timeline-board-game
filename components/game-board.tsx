@@ -19,6 +19,7 @@ import type {
   BoardTile,
   TimelineRange,
   Category,
+  GameMode,
   RoundResults,
 } from "@/lib/game-types";
 import { Loader2, Clock, Users, Languages } from "lucide-react";
@@ -34,6 +35,7 @@ interface GameState {
   id: string;
   code: string;
   status: "waiting" | "playing" | "finished";
+  mode: GameMode;
   players: Record<string, Player>;
   hostId: string;
   currentRound: number;
@@ -309,6 +311,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
           {!showResults && (
             <>
               <TimelineSelector
+                mode={game.mode}
                 selected={selectedAnswer}
                 onSelect={setSelectedAnswer}
                 disabled={hasSubmitted}
@@ -385,6 +388,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
       {showResults && results && (
         <ResultsModal
           results={results}
+          mode={game.mode}
           currentPlayerId={player.id}
           onContinue={handleNextRound}
         />

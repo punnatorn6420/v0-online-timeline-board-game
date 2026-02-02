@@ -1,22 +1,25 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { TIMELINE_RANGES, type RoundResults } from "@/lib/game-types";
+import { getRangesForMode, type GameMode, type RoundResults } from "@/lib/game-types";
 import { Check, X, ArrowUp, ArrowDown, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface ResultsModalProps {
   results: RoundResults;
+  mode: GameMode;
   currentPlayerId: string;
   onContinue: () => void;
 }
 
 export function ResultsModal({
   results,
+  mode,
   currentPlayerId,
   onContinue,
 }: ResultsModalProps) {
-  const correctRangeInfo = TIMELINE_RANGES[results.correctRange];
+  const ranges = getRangesForMode(mode);
+  const correctRangeInfo = ranges[results.correctRange];
 
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
@@ -29,12 +32,18 @@ export function ResultsModal({
               {results.correctRange}
             </span>
             <div className="text-left">
-              <p className="font-medium text-foreground">
-                {correctRangeInfo.name}
-              </p>
-              <p className="text-xs text-muted-foreground">
-                {correctRangeInfo.period}
-              </p>
+              {correctRangeInfo ? (
+                <>
+                  <p className="font-medium text-foreground">
+                    {correctRangeInfo.name}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    {correctRangeInfo.period}
+                  </p>
+                </>
+              ) : (
+                <p className="font-medium text-foreground">Unknown range</p>
+              )}
             </div>
           </div>
         </div>

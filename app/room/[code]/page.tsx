@@ -174,7 +174,11 @@ export default function RoomPage({
   if (!room) return null;
 
   const modeLabel =
-    room.mode === "THAILAND" ? "Thailand Timeline" : "Global Timeline";
+    room.mode === "THAILAND"
+      ? "Thailand Timeline"
+      : room.mode === "SCIENCE"
+        ? "Science Timeline"
+        : "Global Timeline";
 
   // If game is playing, show game board
   if (room.status === "playing" || room.status === "finished") {

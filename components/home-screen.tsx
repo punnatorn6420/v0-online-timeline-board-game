@@ -123,7 +123,7 @@ export function HomeScreen() {
       <div className="w-full space-y-4">
         <div className="space-y-3">
           <Label>Game Mode</Label>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <Button
               type="button"
               variant={gameMode === "GLOBAL" ? "default" : "secondary"}
@@ -148,13 +148,23 @@ export function HomeScreen() {
             >
               Science Timeline
             </Button>
+            <Button
+              type="button"
+              variant={gameMode === "MOVIES" ? "default" : "secondary"}
+              onClick={() => setGameMode("MOVIES")}
+              className="h-12"
+            >
+              Movie Hints
+            </Button>
           </div>
           <p className="text-xs text-muted-foreground">
             {gameMode === "GLOBAL"
               ? "Play the original worldwide timeline."
               : gameMode === "THAILAND"
                 ? "Play with events that happened in Thailand."
-                : "Play with science discoveries and technology milestones."}
+                : gameMode === "SCIENCE"
+                  ? "Play with science discoveries and technology milestones."
+                  : "Guess movie titles from story hints."}
           </p>
         </div>
 

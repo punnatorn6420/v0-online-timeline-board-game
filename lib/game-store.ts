@@ -10,7 +10,8 @@ import {
   generateRoomCode,
   generateBoard,
   ROUND_EFFECTS,
-  FINISH_POSITION,
+  getBoardSize,
+  getFinishPosition,
 } from "./game-types";
 import {
   getEventsForMode,
@@ -66,7 +67,7 @@ export async function createRoom(
     currentEventId: null,
     currentEvent: null,
     roundType: "NORMAL",
-    boardTiles: generateBoard(getCategoriesForMode(mode)),
+    boardTiles: generateBoard(getCategoriesForMode(mode), getBoardSize(mode)),
     winnerId: null,
     roundResults: null,
     eventHistory: [],
@@ -196,6 +197,9 @@ export async function startGame(
 function determineRoundType(
   room: GameRoom
 ): { roundType: RoundType; category?: Category } {
+  if (room.mode === "MOVIE_GUESS") {
+    return { roundType: "NORMAL" };
+  }
   const specialEffects: { type: RoundType; category?: Category }[] = [];
 
   for (const player of Object.values(room.players)) {
@@ -385,9 +389,10 @@ export async function revealAndProcessRound(roomId: string): Promise<{
     for (const player of Object.values(room.players)) {
       const correct = player.currentAnswer === event.correctRange;
       const movement = correct ? effects.correctMove : effects.incorrectMove;
+      const finishPosition = getFinishPosition(room.mode ?? "GLOBAL");
       const newPosition = Math.max(
         0,
-        Math.min(FINISH_POSITION, player.position + movement)
+        Math.min(finishPosition, player.position + movement)
       );
 
       updatedPlayers[player.id] = {
@@ -405,7 +410,7 @@ export async function revealAndProcessRound(roomId: string): Promise<{
         newPosition,
       });
 
-      if (newPosition >= FINISH_POSITION && !winnerId) {
+      if (newPosition >= finishPosition && !winnerId) {
         winnerId = player.id;
       }
     }
@@ -418,6 +423,10 @@ export async function revealAndProcessRound(roomId: string): Promise<{
       roundResults: {
         round: room.currentRound,
         correctRange: event.correctRange,
+        correctAnswerText:
+          room.mode === "MOVIE_GUESS" ? event.title : undefined,
+        answerLabels:
+          room.mode === "MOVIE_GUESS" ? event.choices : undefined,
         players: results,
       },
     };

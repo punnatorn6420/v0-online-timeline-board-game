@@ -6,6 +6,7 @@ import { doc, onSnapshot } from "firebase/firestore";
 import { Button } from "@/components/ui/button";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { TimelineSelector } from "@/components/timeline-selector";
+import { MovieGuessSelector } from "@/components/movie-guess-selector";
 import { RoundBanner } from "@/components/round-banner";
 import { BoardTrack } from "@/components/board-track";
 import { ResultsModal } from "@/components/results-modal";
@@ -29,6 +30,7 @@ interface GameEvent {
   title: string;
   description: string;
   category: Category;
+  choices?: string[];
 }
 
 interface GameState {
@@ -232,9 +234,12 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
 
   const players = Object.values(game.players);
   const allSubmitted = game.submissionStatus.allSubmitted;
+  const isMovieGuess = game.mode === "MOVIE_GUESS";
   const translateEventText = () => {
     if (!game.currentEvent) return;
-    const text = `${game.currentEvent.title} - ${game.currentEvent.description}`;
+    const text = isMovieGuess
+      ? game.currentEvent.description
+      : `${game.currentEvent.title} - ${game.currentEvent.description}`;
     const url = `https://translate.google.com/?sl=en&tl=th&text=${encodeURIComponent(
       text
     )}&op=translate`;
@@ -300,7 +305,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
               </Button>
             </div>
             <h2 className="text-xl font-bold text-foreground mb-2">
-              {game.currentEvent.title}
+              {isMovieGuess ? "Movie Synopsis" : game.currentEvent.title}
             </h2>
             <p className="text-muted-foreground">
               {game.currentEvent.description}
@@ -310,12 +315,21 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
           {/* Timeline Selector */}
           {!showResults && (
             <>
-              <TimelineSelector
-                mode={game.mode}
-                selected={selectedAnswer}
-                onSelect={setSelectedAnswer}
-                disabled={hasSubmitted}
-              />
+              {isMovieGuess ? (
+                <MovieGuessSelector
+                  choices={game.currentEvent.choices ?? []}
+                  selected={selectedAnswer}
+                  onSelect={(value) => setSelectedAnswer(value as TimelineRange)}
+                  disabled={hasSubmitted}
+                />
+              ) : (
+                <TimelineSelector
+                  mode={game.mode}
+                  selected={selectedAnswer}
+                  onSelect={setSelectedAnswer}
+                  disabled={hasSubmitted}
+                />
+              )}
 
               {/* Submit / Status */}
               <div className="mt-6">
@@ -373,7 +387,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
               <div className="text-sm">
                 <p className="font-medium text-foreground">{p.displayName}</p>
                 <p className="text-xs text-muted-foreground">
-                  Position: {p.position}
+                  {isMovieGuess ? "Score" : "Position"}: {p.position}
                 </p>
               </div>
               {p.hasSubmitted && (

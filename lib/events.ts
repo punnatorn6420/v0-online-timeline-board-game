@@ -7716,6 +7716,218 @@ export const MOVIE_EVENTS: GameEvent[] = MOVIE_DATA.map((movie) => ({
   correctRange: getMovieRangeIndex(movie.year),
 }));
 
+const MOVIE_GUESS_DATA = [
+  {
+    id: "mg-001",
+    title: "Inception",
+    description:
+      "จอมโจรผู้เชี่ยวชาญการขโมยความลับในความฝันถูกจ้างให้ “ปลูก” ความคิดแทน",
+    choices: ["Inception", "Interstellar", "Tenet", "The Matrix"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-002",
+    title: "Interstellar",
+    description:
+      "ทีมสำรวจอวกาศเดินทางผ่านรูหนอนเพื่อหาบ้านใหม่ให้มนุษยชาติ",
+    choices: ["Interstellar", "The Martian", "Gravity", "Arrival"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-003",
+    title: "The Matrix",
+    description:
+      "แฮ็กเกอร์หนุ่มค้นพบว่าโลกที่เขาอยู่เป็นเพียงการจำลองและต้องเข้าร่วมการต่อต้าน",
+    choices: [
+      "The Matrix",
+      "Ready Player One",
+      "Ghost in the Shell",
+      "Tron",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-004",
+    title: "The Dark Knight",
+    description:
+      "แบทแมนต้องเผชิญอาชญากรจอมปั่นอย่างโจ๊กเกอร์ที่ท้าทายศีลธรรมของเขา",
+    choices: ["The Dark Knight", "Batman Begins", "Joker", "The Dark Knight Rises"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-005",
+    title: "Avengers: Endgame",
+    description:
+      "เหล่าฮีโร่รวมพลังอีกครั้งเพื่อแก้ไขโศกนาฏกรรมด้วยการย้อนเวลา",
+    choices: [
+      "Avengers: Endgame",
+      "Avengers: Infinity War",
+      "Avengers: Age of Ultron",
+      "Captain America: Civil War",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-006",
+    title: "Titanic",
+    description:
+      "รักต้องห้ามบนเรือสำราญยักษ์ที่กำลังมุ่งหน้าสู่โศกนาฏกรรมกลางมหาสมุทร",
+    choices: ["Titanic", "The Notebook", "Atonement", "Pearl Harbor"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-007",
+    title: "Parasite",
+    description:
+      "ครอบครัวยากจนค่อย ๆ แทรกซึมเข้าไปในบ้านของครอบครัวมหาเศรษฐี",
+    choices: ["Parasite", "The Handmaiden", "Snowpiercer", "Oldboy"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-008",
+    title: "Harry Potter and the Sorcerer's Stone",
+    description:
+      "เด็กกำพร้าค้นพบว่าตัวเองเป็นพ่อมดและได้รับจดหมายเชิญไปเรียนที่โรงเรียนเวทมนตร์",
+    choices: [
+      "Harry Potter and the Sorcerer's Stone",
+      "Harry Potter and the Chamber of Secrets",
+      "The Golden Compass",
+      "Percy Jackson: The Lightning Thief",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-009",
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    description:
+      "ฮอบบิทตัวเล็กได้รับภารกิจพาแหวนต้องสาปออกจากบ้านเพื่อหยุดจอมมืด",
+    choices: [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Lord of the Rings: The Two Towers",
+      "The Hobbit: An Unexpected Journey",
+      "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-010",
+    title: "Star Wars: A New Hope",
+    description:
+      "หนุ่มชาวไร่เข้าร่วมกลุ่มกบฏเพื่อต่อกรกับจักรวรรดิและอาวุธทำลายล้าง",
+    choices: [
+      "Star Wars: A New Hope",
+      "Star Wars: The Empire Strikes Back",
+      "Rogue One: A Star Wars Story",
+      "Guardians of the Galaxy",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-011",
+    title: "Frozen",
+    description:
+      "เจ้าหญิงพลังน้ำแข็งเผลอปล่อยพายุหิมะจนต้องออกผจญภัยร่วมกับน้องสาวเพื่อแก้ไข",
+    choices: ["Frozen", "Tangled", "Moana", "Brave"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-012",
+    title: "Toy Story",
+    description:
+      "ของเล่นมีชีวิตและเกิดความขัดแย้งระหว่างของเล่นตัวโปรดกับของเล่นใหม่",
+    choices: ["Toy Story", "Monsters, Inc.", "Finding Nemo", "Cars"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-013",
+    title: "Spirited Away",
+    description:
+      "เด็กหญิงติดอยู่ในโลกวิญญาณและต้องทำงานในโรงอาบน้ำเพื่อช่วยพ่อแม่",
+    choices: [
+      "Spirited Away",
+      "Princess Mononoke",
+      "Howl's Moving Castle",
+      "My Neighbor Totoro",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-014",
+    title: "Your Name",
+    description:
+      "วัยรุ่นสองคนสลับร่างกันผ่านกาลเวลาและพยายามตามหากันให้พบ",
+    choices: [
+      "Your Name",
+      "Weathering with You",
+      "A Silent Voice",
+      "The Girl Who Leapt Through Time",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-015",
+    title: "Attack on Titan",
+    description:
+      "มนุษย์ต้องอยู่หลังกำแพงเพื่อหนีจากยักษ์กินคน และวัยรุ่นคนหนึ่งสาบานจะแก้แค้น",
+    choices: [
+      "Attack on Titan",
+      "Fullmetal Alchemist: Brotherhood",
+      "Demon Slayer",
+      "Tokyo Ghoul",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-016",
+    title: "Demon Slayer",
+    description:
+      "เด็กหนุ่มเข้าร่วมกองพิฆาตอสูรเพื่อรักษาน้องสาวที่กลายเป็นปีศาจ",
+    choices: ["Demon Slayer", "Jujutsu Kaisen", "Bleach", "One Piece"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-017",
+    title: "Naruto",
+    description:
+      "นินจาหนุ่มกำพร้าผู้มีจิ้งจอกเก้าหางในตัวฝันอยากเป็นโฮคาเงะของหมู่บ้าน",
+    choices: ["Naruto", "Dragon Ball", "One Piece", "My Hero Academia"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-018",
+    title: "Stranger Things",
+    description:
+      "เด็กกลุ่มหนึ่งในเมืองเล็กพบเด็กสาวพลังพิเศษและมิติกลับด้านที่น่าสะพรึง",
+    choices: ["Stranger Things", "Dark", "The X-Files", "The OA"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-019",
+    title: "Breaking Bad",
+    description:
+      "ครูเคมีที่ป่วยหนักหันไปผลิตยาบ้าเพื่อหาเงินให้ครอบครัวและชีวิตก็เปลี่ยนไป",
+    choices: ["Breaking Bad", "Better Call Saul", "Narcos", "Ozark"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-020",
+    title: "Money Heist",
+    description:
+      "อาชญากรกลุ่มหนึ่งบุกปล้นโรงกษาปณ์/ธนาคารด้วยแผนการซับซ้อนและหน้ากากสีแดง",
+    choices: ["Money Heist", "Prison Break", "Lupin", "Inside Man"],
+    correctIndex: 0,
+  },
+];
+
+export const MOVIE_GUESS_EVENTS: GameEvent[] = MOVIE_GUESS_DATA.map((entry) => ({
+  id: entry.id,
+  title: entry.title,
+  description: entry.description,
+  category: "MOVIES",
+  correctRange: entry.correctIndex as TimelineRange,
+  choices: entry.choices,
+}));
+
 
 export const THAILAND_EVENTS: GameEvent[] = [
   {
@@ -8080,6 +8292,9 @@ export function getEventsForMode(mode: GameMode = "GLOBAL"): GameEvent[] {
   if (mode === "MOVIES") {
     return MOVIE_EVENTS;
   }
+  if (mode === "MOVIE_GUESS") {
+    return MOVIE_GUESS_EVENTS;
+  }
   return GAME_EVENTS;
 }
 
@@ -8141,6 +8356,12 @@ export function getEventForClient(
   if (!event) return undefined;
   
   const { correctRange, ...clientEvent } = event;
+  if (mode === "MOVIE_GUESS") {
+    return {
+      ...clientEvent,
+      title: "Movie Synopsis",
+    };
+  }
   return clientEvent;
 }
 

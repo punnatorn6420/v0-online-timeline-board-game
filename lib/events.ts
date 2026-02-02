@@ -7716,6 +7716,468 @@ export const MOVIE_EVENTS: GameEvent[] = MOVIE_DATA.map((movie) => ({
   correctRange: getMovieRangeIndex(movie.year),
 }));
 
+const MOVIE_GUESS_DATA = [
+  {
+    id: "mg-001",
+    title: "Inception",
+    description:
+      "ผู้เชี่ยวชาญงานจารกรรมแบบไม่ใช้ปืนรับภารกิจที่ผิดธรรมชาติ—แทนที่จะขโมย เขาต้อง “ปลูก” ความคิดในจิตใต้สำนึกของเป้าหมาย ระหว่างชั้นความฝันที่ซ้อนกันหลายระดับ เขาต้องจัดทีมและออกแบบสถาปัตยกรรมของการหลับให้รอดจากกลไกป้องกันของจิตใจ",
+    choices: ["Inception", "Interstellar", "Tenet", "The Matrix"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-002",
+    title: "Interstellar",
+    description:
+      "โลกกำลังร้างไร้พืชผลและฝุ่นคลุ้งไม่หยุด นักบินที่กลายเป็นชาวนาถูกดึงกลับเข้าสู่ภารกิจลับ ผ่านช่องทางลึกลับที่ไม่ใช่แค่หลุมหนอนธรรมดา เวลาเดินไม่เท่ากัน ความรักและข้อมูลเดินทางสวนทางกันเพื่อหาบ้านใหม่ให้มนุษยชาติ",
+    choices: ["Interstellar", "The Martian", "Gravity", "Arrival"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-003",
+    title: "The Matrix",
+    description:
+      "ชายหนุ่มผู้ถูกไล่ล่าจากโลกดิจิทัลค้นพบว่าสิ่งที่เขาเรียกว่าความจริงเป็นเพียงระบบจำลองขนาดยักษ์ มีการตื่นจากฝันที่เจ็บปวดและการฝึกฝนเพื่อทำลายกฎของโลกที่มองไม่เห็น",
+    choices: ["The Matrix", "Ready Player One", "Ghost in the Shell", "Tron"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-004",
+    title: "The Dark Knight",
+    description:
+      "เมืองที่กำลังฟื้นจากอาชญากรรมถูกท้าทายด้วยศัตรูที่ไม่ต้องการเงินหรืออำนาจ แต่ต้องการพิสูจน์ความเปราะบางของศีลธรรม ชายสวมหน้ากากต้องเลือกเส้นทางระหว่างความยุติธรรมและการเสียสละต่อคนที่เขาปกป้อง",
+    choices: ["The Dark Knight", "Batman Begins", "Joker", "The Dark Knight Rises"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-005",
+    title: "Avengers: Endgame",
+    description:
+      "หลังจากความสูญเสียครั้งใหญ่ เหล่าผู้กล้ารวมตัวครั้งสุดท้ายเพื่อจัดการกับอดีตด้วยวิธีที่เสี่ยงที่สุด พวกเขาต้องเดินทางผ่านช่วงเวลาต่าง ๆ เพื่อรวบรวมโอกาสแก้ไขสิ่งที่พังทลาย แม้ต้องแลกด้วยการลาจาก",
+    choices: [
+      "Avengers: Endgame",
+      "Avengers: Infinity War",
+      "Avengers: Age of Ultron",
+      "Captain America: Civil War",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-006",
+    title: "Titanic",
+    description:
+      "เรือสำราญลำมหึมาที่ถูกขนานนามว่าไม่อาจจมได้ กลับกลายเป็นเวทีของความรักที่มาจากชนชั้นต่างกัน เสียงเพลง งานเลี้ยง และภาพวาดบนกระดาษมีค่ากว่าชีวิตเมื่อหายนะค่อย ๆ คืบคลาน",
+    choices: ["Titanic", "The Notebook", "Atonement", "Pearl Harbor"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-007",
+    title: "Parasite",
+    description:
+      "ครอบครัวหนึ่งเริ่มจากการได้งานเล็ก ๆ ในบ้านคนรวย แล้วค่อย ๆ สวมบทบาทใหม่ทีละตำแหน่งอย่างแนบเนียน ความแตกต่างทางชนชั้นถูกขับเน้นด้วยบ้านสมัยใหม่ บันได และสายฝนที่ไม่ยุติธรรม",
+    choices: ["Parasite", "The Handmaiden", "Snowpiercer", "Oldboy"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-008",
+    title: "Harry Potter and the Sorcerer's Stone",
+    description:
+      "เด็กชายที่เติบโตท่ามกลางความอึดอัดได้รับจดหมายจำนวนมากจนบ้านแทบแตก เขาถูกพาไปสู่โลกเวทมนตร์ที่ซ่อนอยู่ มีโรงเรียนลับ พิธีคัดสรร กลุ่มเพื่อนใหม่ และปริศนาของวัตถุที่ทำให้คนอมตะ",
+    choices: [
+      "Harry Potter and the Sorcerer's Stone",
+      "Harry Potter and the Chamber of Secrets",
+      "The Golden Compass",
+      "Percy Jackson: The Lightning Thief",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-009",
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    description:
+      "วัตถุเล็ก ๆ ที่มีอำนาจมหาศาลตกอยู่ในมือของสิ่งมีชีวิตที่ไม่คู่ควร การเดินทางเริ่มต้นจากบ้านชนบทไปยังดินแดนแปลกตา ผ่านเหมืองใต้ภูเขาและเมืองเอลฟ์ พร้อมการรวมตัวของกลุ่มผู้พิทักษ์ที่มีความหวังเปราะบาง",
+    choices: [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Lord of the Rings: The Two Towers",
+      "The Hobbit: An Unexpected Journey",
+      "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-010",
+    title: "Star Wars: A New Hope",
+    description:
+      "ข้อความลับจากนักสู้ฝ่ายกบฏถูกซ่อนในหุ่นยนต์ และเด็กหนุ่มจากดาวทะเลทรายถูกดึงเข้าสู่สงครามอวกาศ เขาได้พบอัศวินโบราณ นักลักลอบขนของ และภารกิจโจมตีสถานีอาวุธขนาดมหึมา",
+    choices: [
+      "Star Wars: A New Hope",
+      "Star Wars: The Empire Strikes Back",
+      "Rogue One: A Star Wars Story",
+      "Guardians of the Galaxy",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-011",
+    title: "Frozen",
+    description:
+      "พลังที่ควบคุมไม่ได้ทำให้เมืองตกอยู่ในฤดูหนาวนิรันดร์ เจ้าหญิงคนหนึ่งหนีออกจากพระราชวัง อีกคนออกตามหา ระหว่างทางมีผู้ร่วมเดินทางที่ไม่คาดคิด เพลงดัง และการเสียสละที่ท้าทายความรักรูปแบบเดิม",
+    choices: ["Frozen", "Tangled", "Moana", "Brave"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-012",
+    title: "Toy Story",
+    description:
+      "ของเล่นมีโลกของตัวเองและกฎเกณฑ์เพื่อไม่ให้มนุษย์รู้ เมื่อของเล่นตัวโปรดต้องรับมือกับคู่แข่งหน้าใหม่ ความอิจฉาและมิตรภาพถูกทดสอบ จนทั้งคู่ต้องเอาชีวิตรอดในโลกภายนอกที่พวกเขาไม่คุ้นเคย",
+    choices: ["Toy Story", "Monsters, Inc.", "Finding Nemo", "Cars"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-013",
+    title: "Spirited Away",
+    description:
+      "เด็กหญิงหลงเข้าสู่โลกที่กฎของมนุษย์ใช้ไม่ได้ ผู้ใหญ่ถูกสาปให้กลายเป็นสัตว์ เธอต้องทำงานในสถานที่ที่เต็มไปด้วยวิญญาณและเทพ เพื่อรักษาชื่อของตัวเองและหาทางกลับบ้าน",
+    choices: [
+      "Spirited Away",
+      "Princess Mononoke",
+      "Howl's Moving Castle",
+      "My Neighbor Totoro",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-014",
+    title: "Your Name",
+    description:
+      "วัยรุ่นสองคนที่ไม่เคยพบกันกลับตื่นขึ้นมาในร่างของอีกฝ่ายเป็นระยะ การทิ้งข้อความบนมือถือและกระดาษกลายเป็นสายสัมพันธ์ เมื่อพวกเขาพยายามพบกัน ความจริงเรื่องเวลาและโศกนาฏกรรมค่อย ๆ เปิดเผย",
+    choices: [
+      "Your Name",
+      "Weathering with You",
+      "A Silent Voice",
+      "The Girl Who Leapt Through Time",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-015",
+    title: "Attack on Titan",
+    description:
+      "มนุษย์ใช้กำแพงสูงกั้นชีวิตจากยักษ์ลึกลับ หลังเหตุการณ์ทำลายล้างครั้งหนึ่ง เด็กหนุ่มสาบานจะทำลายศัตรูทุกตัว ความจริงเกี่ยวกับกำแพงและตัวตนของยักษ์ค่อย ๆ แตกออกเหมือนผิวหนัง",
+    choices: [
+      "Attack on Titan",
+      "Fullmetal Alchemist: Brotherhood",
+      "Demon Slayer",
+      "Tokyo Ghoul",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-016",
+    title: "Demon Slayer",
+    description:
+      "ครอบครัวหนึ่งถูกสังหาร เหลือเพียงน้องสาวที่ถูกเปลี่ยนเป็นปีศาจ พี่ชายออกเดินทางฝึกฝนอย่างทรหดเพื่อเข้าร่วมองค์กรนักล่าปีศาจ หวังรักษาน้องสาวและล้างแค้นให้ครอบครัว",
+    choices: ["Demon Slayer", "Jujutsu Kaisen", "Bleach", "One Piece"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-017",
+    title: "Naruto",
+    description:
+      "เด็กกำพร้าถูกชาวบ้านรังเกียจเพราะมีสิ่งที่น่ากลัวถูกผนึกไว้ในตัว เขาไม่ยอมแพ้และตั้งเป้าเป็นผู้นำหมู่บ้าน ผ่านการฝึกหนัก การสอบนินจา และความผูกพันกับเพื่อนร่วมทีมที่ซับซ้อน",
+    choices: ["Naruto", "Dragon Ball", "One Piece", "My Hero Academia"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-018",
+    title: "Stranger Things",
+    description:
+      "เด็กชายหายตัวไปอย่างลึกลับในเมืองเล็ก ๆ กลุ่มเพื่อนออกตามหาและพบเด็กสาวพลังพิเศษ ขณะเดียวกัน โลกกลับด้านที่มืดมิดก็เริ่มแทรกซึมเข้ามาพร้อมสิ่งมีชีวิตที่ไม่มีใครเข้าใจ",
+    choices: ["Stranger Things", "Dark", "The X-Files", "The OA"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-019",
+    title: "Breaking Bad",
+    description:
+      "ครูเคมีที่ถูกบีบด้วยโรคร้ายตัดสินใจเข้าสู่วงการผิดกฎหมายเพื่อหาเงินให้ครอบครัว จากการทดลองในรถบ้าน สู่การเป็นอาณาจักรสีฟ้าที่ควบคุมด้วยกฎของตัวเองและศีลธรรมที่ถดถอย",
+    choices: ["Breaking Bad", "Better Call Saul", "Narcos", "Ozark"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-020",
+    title: "Money Heist",
+    description:
+      "หัวหน้าอาชญากรวางแผนปล้นที่ซับซ้อนเกินกว่าจะเป็นเพียงการชิงเงิน เป้าหมายคือการพิมพ์เงินเองในสถานที่ที่ถูกยึดเป็นตัวประกัน หน้ากากและชุดสีเด่นกลายเป็นสัญลักษณ์ของการต่อต้าน",
+    choices: ["Money Heist", "Prison Break", "Lupin", "Inside Man"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-021",
+    title: "The Godfather",
+    description:
+      "ครอบครัวอิตาเลียนผู้มีอำนาจในโลกเงามีประเพณีและกติกาของตนเอง ลูกชายผู้ไม่ต้องการยุ่งเกี่ยวค่อย ๆ ถูกดึงเข้าสู่บทบาทสำคัญ ผ่านพิธี งานเลี้ยง และคำสั่งที่เปลี่ยนชีวิตคนได้",
+    choices: ["The Godfather", "Goodfellas", "Casino", "The Irishman"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-022",
+    title: "The Shawshank Redemption",
+    description:
+      "ชายผู้ถูกตัดสินว่ามีความผิดอย่างไม่ยุติธรรมเข้าไปในคุกที่โหดร้าย เขาใช้ความเฉียบแหลมสร้างเส้นทางรอดอย่างช้า ๆ ผ่านมิตรภาพ ความหวัง และงานอดิเรกที่ดูไร้พิษภัย",
+    choices: ["The Shawshank Redemption", "The Green Mile", "Prisoners", "Escape Plan"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-023",
+    title: "Forrest Gump",
+    description:
+      "ชายผู้มีปัญญาแบบตรงไปตรงมาเดินทางผ่านเหตุการณ์สำคัญของสหรัฐฯ โดยไม่ตั้งใจ เขาวิ่งไปทั่วประเทศ พบเจอผู้คนมากมาย และยึดมั่นคำสอนของแม่เกี่ยวกับชีวิตและความรัก",
+    choices: ["Forrest Gump", "The Pursuit of Happyness", "Big Fish", "A Beautiful Mind"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-024",
+    title: "The Lion King",
+    description:
+      "เจ้าชายหนุ่มต้องหนีจากบ้านเกิดหลังเหตุการณ์น่าสลด เขาเติบโตในป่าด้วยปรัชญาใช้ชีวิตแบบไม่คิดมาก ก่อนจะกลับมาทวงคืนสมดุลแห่งผืนดินจากผู้แย่งชิง",
+    choices: ["The Lion King", "Tarzan", "The Jungle Book", "Bambi"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-025",
+    title: "Jurassic Park",
+    description:
+      "สวนสนุกที่สร้างจากวิทยาศาสตร์เกินขอบเขตมนุษย์กำลังจะเปิด แต่เมื่อระบบรักษาความปลอดภัยล้มเหลว ผู้มาเยือนต้องเอาชีวิตรอดจากสิ่งมีชีวิตที่ถูกชุบชีวิตด้วยพันธุกรรม",
+    choices: ["Jurassic Park", "Jurassic World", "King Kong", "Godzilla"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-026",
+    title: "The Avengers",
+    description:
+      "กลุ่มฮีโร่ที่ไม่น่าจะเข้ากันต้องรวมทีมเพื่อรับมือภัยจากนอกโลก มีทั้งอาวุธพลังงานมหาศาล เรื่องราวของศักดิ์ศรี และการรวมพลังครั้งแรกที่เปลี่ยนโลก",
+    choices: ["The Avengers", "Avengers: Age of Ultron", "Justice League", "X-Men"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-027",
+    title: "Spider-Man: Into the Spider-Verse",
+    description:
+      "วัยรุ่นธรรมดาถูกแมงมุมกัดและได้พลังเหนือมนุษย์ แต่สิ่งที่ตามมาคือการเปิดประตูสู่จักรวาลอื่นที่มี “สไปเดอร์” หลายแบบ พร้อมภารกิจที่ต้องเรียนรู้การเป็นฮีโร่ในแบบของตัวเอง",
+    choices: [
+      "Spider-Man: Into the Spider-Verse",
+      "Spider-Man: No Way Home",
+      "Spider-Man: Homecoming",
+      "Doctor Strange in the Multiverse of Madness",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-028",
+    title: "Black Panther",
+    description:
+      "อาณาจักรลับที่ซ่อนเทคโนโลยีล้ำสมัยต้องรับมือผู้ท้าชิงบัลลังก์ ผู้ปกครองคนใหม่ต้องรักษาประเพณีและปกป้องโลกจากการเปิดเผยทรัพยากรที่ทรงพลัง",
+    choices: ["Black Panther", "Aquaman", "Shang-Chi and the Legend of the Ten Rings", "Thor: Ragnarok"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-029",
+    title: "Joker",
+    description:
+      "ชายผู้ต่อสู้กับชีวิตในเมืองใหญ่ค่อย ๆ ถูกผลักจนหลุดออกจากกรอบสังคม การหัวเราะที่ไม่เหมาะเวลาและหน้ากากสีฉูดฉาดกลายเป็นสัญลักษณ์ของการปะทุของชนชั้น",
+    choices: ["Joker", "The Dark Knight", "Taxi Driver", "Nightcrawler"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-030",
+    title: "The Social Network",
+    description:
+      "โปรเจกต์ในหอพักมหาวิทยาลัยกลายเป็นบริษัทระดับโลก เรื่องราวถูกเล่าในห้องศาลผ่านการฟ้องร้องของเพื่อนและคู่แข่ง การเขียนโค้ดและความสัมพันธ์ที่แตกร้าวเดินคู่กัน",
+    choices: ["The Social Network", "Steve Jobs", "The Big Short", "Moneyball"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-031",
+    title: "The Wolf of Wall Street",
+    description:
+      "ชายหนุ่มจากฐานะธรรมดาก้าวเข้าสู่โลกการเงินที่เต็มไปด้วยความโลภ งานเลี้ยงสุดเหวี่ยง และการหลอกลวงลูกค้า ระบบที่ไร้ขอบเขตนำไปสู่การล่มสลายครั้งใหญ่",
+    choices: ["The Wolf of Wall Street", "The Big Short", "Margin Call", "Boiler Room"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-032",
+    title: "The Big Short",
+    description:
+      "กลุ่มคนวงในเห็นสัญญาณฟองสบู่ในตลาดอสังหาฯ ก่อนใคร พวกเขาเดิมพันสวนกระแส พร้อมอธิบายกลไกการเงินที่ซับซ้อนจนต้องหยุดเล่าให้ผู้ชมเข้าใจเป็นช่วง ๆ",
+    choices: ["The Big Short", "The Wolf of Wall Street", "Margin Call", "Inside Job"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-033",
+    title: "The Prestige",
+    description:
+      "นักมายากลสองคนแข่งกันด้วยกลอุบายที่อันตรายยิ่งขึ้นเรื่อย ๆ ขณะเดียวกันก็ทำลายชีวิตส่วนตัวของกันและกัน ความลับของ “กล” สุดท้ายเกี่ยวข้องกับวิทยาศาสตร์และการเสียสละที่คาดไม่ถึง",
+    choices: ["The Prestige", "Now You See Me", "The Illusionist", "Memento"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-034",
+    title: "Fight Club",
+    description:
+      "ชายผู้เบื่อหน่ายชีวิตในระบบองค์กรพบคนแปลกหน้าที่ชวนเขาเข้าร่วมการชกต่อยใต้ดิน สิ่งที่เริ่มจากการปลดปล่อยความอัดอั้นกลับกลายเป็นขบวนการที่คุกคามสังคมทั้งเมือง",
+    choices: ["Fight Club", "Se7en", "American Psycho", "Gone Girl"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-035",
+    title: "Pulp Fiction",
+    description:
+      "เรื่องราวหลายเส้นที่ไม่ได้เรียงตามเวลาเกี่ยวกับมือปืน นักมวย เจ้าพ่อ และผู้คนธรรมดาที่ถูกลากเข้าสู่เหตุการณ์รุนแรง เพลงประกอบติดหูและบทสนทนาประหลาดกลายเป็นเอกลักษณ์",
+    choices: ["Pulp Fiction", "Reservoir Dogs", "Snatch", "Once Upon a Time in Hollywood"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-036",
+    title: "The Silence of the Lambs",
+    description:
+      "เจ้าหน้าที่ฝึกหัดต้องขอคำปรึกษาจากฆาตกรต่อเนื่องที่ถูกขัง เพื่อจับอีกคนที่โหดร้ายกว่า การสนทนาผ่านกระจกและปริศนาทางจิตวิทยาเป็นกุญแจสำคัญในการไขคดี",
+    choices: ["The Silence of the Lambs", "Se7en", "Zodiac", "Mindhunter"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-037",
+    title: "Se7en",
+    description:
+      "ตำรวจสองคนตามล่าฆาตกรที่ลงมือโดยอ้างบาปเจ็ดประการ การสืบสวนเต็มไปด้วยความมืดมนและจบลงด้วยกล่องที่เปลี่ยนชีวิตของทุกคน",
+    choices: ["Se7en", "Zodiac", "The Silence of the Lambs", "Prisoners"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-038",
+    title: "The Green Mile",
+    description:
+      "ผู้คุมในเรือนจำประหารพบผู้ต้องขังร่างใหญ่ที่มีพรสวรรค์เหนือธรรมชาติ เขาต้องเผชิญคำถามด้านศีลธรรมเมื่อปาฏิหาริย์และความยุติธรรมไม่ได้ไปด้วยกันเสมอ",
+    choices: ["The Green Mile", "The Shawshank Redemption", "The Mist", "Dead Man Walking"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-039",
+    title: "Gladiator",
+    description:
+      "แม่ทัพผู้ถูกหักหลังถูกขายเป็นทาสและถูกบังคับเข้าสู่อารีนา เขากลับมาเพื่อแก้แค้นจักรพรรดิผู้ชิงบัลลังก์ ระหว่างนั้นต้องชนะใจผู้ชมและอดีตของตัวเอง",
+    choices: ["Gladiator", "Troy", "300", "Braveheart"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-040",
+    title: "Braveheart",
+    description:
+      "ชายชาวสก็อตลุกขึ้นต่อต้านการกดขี่จากจักรวรรดิ เขานำกองทัพด้วยคำพูดปลุกใจและการเสียสละ แม้รู้ว่าชัยชนะอาจมาพร้อมกับจุดจบของตนเอง",
+    choices: ["Braveheart", "Gladiator", "Kingdom of Heaven", "The Patriot"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-041",
+    title: "Howl's Moving Castle",
+    description:
+      "หญิงสาวถูกสาปให้แก่ชราและต้องออกเดินทางเพื่อหาทางแก้ เธอได้พบปราสาทเคลื่อนที่ที่ขับเคลื่อนด้วยเวทมนตร์ เจ้าของปราสาทเป็นพ่อมดลึกลับที่หนีสงครามและต้องรับมือคำสาปของตัวเอง",
+    choices: [
+      "Howl's Moving Castle",
+      "Spirited Away",
+      "Princess Mononoke",
+      "Kiki's Delivery Service",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-042",
+    title: "One Piece",
+    description:
+      "เด็กหนุ่มผู้มีพลังจากผลไม้ปริศนาออกเดินทางตามหาสมบัติในตำนาน เขารวมทีมที่มีเป้าหมายของตัวเอง เรือโจรสลัดเล็ก ๆ ต้องเผชิญกองทัพ อาณาจักร และระบบโลกที่กดขี่",
+    choices: ["One Piece", "Naruto", "Fairy Tail", "Bleach"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-043",
+    title: "Fullmetal Alchemist: Brotherhood",
+    description:
+      "พี่น้องนักเล่นแร่แปรธาตุทำพิธีต้องห้ามเพื่อชุบชีวิตคนรัก แล้วต้องชดใช้ด้วยอวัยวะและร่างกาย พวกเขาออกตามหาศิลาในตำนานท่ามกลางสงครามและความลับของรัฐ",
+    choices: [
+      "Fullmetal Alchemist: Brotherhood",
+      "Attack on Titan",
+      "Demon Slayer",
+      "Jujutsu Kaisen",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-044",
+    title: "Jujutsu Kaisen",
+    description:
+      "เด็กหนุ่มกินวัตถุต้องสาปเข้าไปเพื่อช่วยเพื่อน ทำให้กลายเป็นภาชนะของคำสาปอันตราย เขาถูกดึงเข้าสู่โรงเรียนผู้ใช้คุณไสยและต้องต่อสู้กับวิญญาณร้ายที่เกิดจากความกลัวของมนุษย์",
+    choices: ["Jujutsu Kaisen", "Bleach", "Demon Slayer", "Tokyo Ghoul"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-045",
+    title: "Death Note",
+    description:
+      "นักเรียนมัธยมพบสมุดที่สามารถฆ่าคนได้ด้วยการเขียนชื่อ เขาเริ่มสร้างโลกที่ปราศจากอาชญากรรม แต่ต้องเผชิญนักสืบอัจฉริยะที่คอยไล่ตามผ่านตรรกะและกับดักทางจิตใจ",
+    choices: ["Death Note", "Code Geass", "Psycho-Pass", "Monster"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-046",
+    title: "Code Geass",
+    description:
+      "เจ้าชายผู้ถูกเนรเทศได้รับพลังคำสั่งที่บังคับจิตใจคนได้ เขาจึงสร้างตัวตนลับเพื่อโค่นล้มจักรวรรดิ การเมือง สงครามหุ่นยนต์ และแผนการที่ซับซ้อนทับซ้อนกันเรื่อย ๆ",
+    choices: ["Code Geass", "Death Note", "Aldnoah.Zero", "Gundam 00"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-047",
+    title: "The Mandalorian",
+    description:
+      "นักล่าค่าหัวในจักรวาลไกลโพ้นได้พบสิ่งมีชีวิตลึกลับที่เปลี่ยนชีวิตเขา การเดินทางผ่านดาวเคราะห์ต่าง ๆ ทำให้เขาต้องเลือกระหว่างกฎของนักล่าหรือการปกป้องเด็กตัวเล็กผู้เป็นที่ต้องการของหลายฝ่าย",
+    choices: ["The Mandalorian", "The Book of Boba Fett", "Obi-Wan Kenobi", "Andor"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-048",
+    title: "Squid Game",
+    description:
+      "ผู้คนที่เป็นหนี้จำนวนมากถูกเชิญให้เข้าร่วมเกมเด็กที่ดูง่าย แต่เดิมพันด้วยชีวิต พวกเขาต้องตัดสินใจระหว่างศีลธรรมกับเงินมหาศาล ขณะเดียวกันก็มีผู้สังเกตการณ์สวมหน้ากากคอยควบคุมทุกอย่าง",
+    choices: ["Squid Game", "Alice in Borderland", "The Hunger Games", "The Platform"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-049",
+    title: "The Last of Us",
+    description:
+      "เชื้อราที่ทำให้มนุษย์กลายเป็นสิ่งมีชีวิตอันตรายแพร่ระบาด ชายผู้สูญเสียทุกอย่างได้รับมอบหมายให้พาเด็กหญิงคนหนึ่งข้ามประเทศ เพราะเธออาจเป็นกุญแจในการรักษาโลก",
+    choices: ["The Last of Us", "The Walking Dead", "28 Days Later", "I Am Legend"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-050",
+    title: "Game of Thrones",
+    description:
+      "หลายตระกูลใหญ่แข่งขันเพื่อชิงบัลลังก์เหล็กในทวีปที่เต็มไปด้วยการทรยศและสงคราม ขณะเดียวกัน ภัยหนาวจากแดนเหนือกำลังคุกคามทุกคนและมีมังกรกลับมาเป็นตำนานอีกครั้ง",
+    choices: ["Game of Thrones", "The Witcher", "Vikings", "House of the Dragon"],
+    correctIndex: 0,
+  },
+];
+
+export const MOVIE_GUESS_EVENTS: GameEvent[] = MOVIE_GUESS_DATA.map((entry) => ({
+  id: entry.id,
+  title: entry.title,
+  description: entry.description,
+  category: "MOVIES",
+  correctRange: entry.correctIndex as TimelineRange,
+  choices: entry.choices,
+}));
+
 
 export const THAILAND_EVENTS: GameEvent[] = [
   {
@@ -8080,6 +8542,9 @@ export function getEventsForMode(mode: GameMode = "GLOBAL"): GameEvent[] {
   if (mode === "MOVIES") {
     return MOVIE_EVENTS;
   }
+  if (mode === "MOVIE_GUESS") {
+    return MOVIE_GUESS_EVENTS;
+  }
   return GAME_EVENTS;
 }
 
@@ -8141,6 +8606,12 @@ export function getEventForClient(
   if (!event) return undefined;
   
   const { correctRange, ...clientEvent } = event;
+  if (mode === "MOVIE_GUESS") {
+    return {
+      ...clientEvent,
+      title: "Movie Synopsis",
+    };
+  }
   return clientEvent;
 }
 

@@ -17,7 +17,10 @@ export async function POST(request: NextRequest) {
     }
 
     const roomMode =
-      mode === "THAILAND" || mode === "SCIENCE" || mode === "MOVIES"
+      mode === "THAILAND" ||
+      mode === "SCIENCE" ||
+      mode === "MOVIES" ||
+      mode === "MOVIE_GUESS"
         ? mode
         : "GLOBAL";
     const room = await createRoom(playerId, playerName, playerAvatar, roomMode);

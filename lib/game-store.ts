@@ -279,7 +279,7 @@ function startNewRound(room: GameRoom): Partial<GameRoom> {
     forcedCategory: roundType === "CATEGORY" ? category ?? null : null,
     currentEventId: event.id,
     currentEvent: clientEvent ?? null,
-    hint: roundType === "SUPPORT" ? generateHint(event.correctRange) : null,
+    hint: roundType === "SUPPORT" ? generateHint(event.correctRange, mode) : null,
     eventHistory: nextHistory,
   };
 }

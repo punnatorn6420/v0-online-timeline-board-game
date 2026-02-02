@@ -1,5 +1,11 @@
 // Timeline ranges 0-9 mapped to eras
-export const TIMELINE_RANGES = {
+export type RangeInfo = {
+  name: string;
+  period: string;
+  description: string;
+};
+
+export const TIMELINE_RANGES: Record<number, RangeInfo> = {
   0: {
     name: "Prehistoric Age",
     period: "Before 500 BCE",
@@ -50,11 +56,50 @@ export const TIMELINE_RANGES = {
     period: "2000 - Present",
     description: "Internet era",
   },
-} as const;
+};
 
-export type TimelineRange = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+export const MOVIE_RANGE_START_YEAR = 1930;
+export const MOVIE_RANGE_STEP = 5;
+export const MOVIE_RANGE_COUNT = 20;
 
-export type GameMode = "GLOBAL" | "THAILAND" | "SCIENCE";
+export const MOVIE_RANGES: Record<number, RangeInfo> = Object.fromEntries(
+  Array.from({ length: MOVIE_RANGE_COUNT }, (_, index) => {
+    const start = MOVIE_RANGE_START_YEAR + MOVIE_RANGE_STEP * index;
+    const end = start + MOVIE_RANGE_STEP - 1;
+    return [
+      index,
+      {
+        name: `${start}-${end}`,
+        period: `${start}-${end}`,
+        description: `Movie releases from ${start} to ${end}`,
+      },
+    ];
+  })
+);
+
+export type TimelineRange =
+  | 0
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12
+  | 13
+  | 14
+  | 15
+  | 16
+  | 17
+  | 18
+  | 19;
+
+export type GameMode = "GLOBAL" | "THAILAND" | "SCIENCE" | "MOVIES";
 
 export type Category =
   | "HISTORY"
@@ -66,6 +111,7 @@ export type Category =
   | "POLITICS"
   | "SPORTS"
   | "NATURE"
+  | "MOVIES"
   | "RANDOM";
 
 export interface GameEvent {
@@ -204,6 +250,16 @@ export function generateBoard(
 
 function getRandomCategory(categories: Category[]): Category {
   return categories[Math.floor(Math.random() * categories.length)];
+}
+
+export function getRangesForMode(mode: GameMode): Record<number, RangeInfo> {
+  return mode === "MOVIES" ? MOVIE_RANGES : TIMELINE_RANGES;
+}
+
+export function getMovieRangeIndex(year: number): TimelineRange {
+  const index = Math.floor((year - MOVIE_RANGE_START_YEAR) / MOVIE_RANGE_STEP);
+  const clamped = Math.min(Math.max(index, 0), MOVIE_RANGE_COUNT - 1);
+  return clamped as TimelineRange;
 }
 
 // Round type effects

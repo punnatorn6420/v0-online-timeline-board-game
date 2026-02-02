@@ -1,6 +1,10 @@
 "use client";
 
-import { TIMELINE_RANGES, type TimelineRange } from "@/lib/game-types";
+import {
+  getRangesForMode,
+  type GameMode,
+  type TimelineRange,
+} from "@/lib/game-types";
 import { cn } from "@/lib/utils";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -14,21 +18,24 @@ import {
   Bomb,
   Rocket,
   Cpu,
+  Film,
 } from "lucide-react";
 
 interface TimelineSelectorProps {
+  mode: GameMode;
   selected: TimelineRange | null;
   onSelect: (range: TimelineRange) => void;
   disabled?: boolean;
 }
 
 export function TimelineSelector({
+  mode,
   selected,
   onSelect,
   disabled = false,
 }: TimelineSelectorProps) {
-  const ranges = Object.entries(TIMELINE_RANGES) as [string, typeof TIMELINE_RANGES[0]][];
-  const rangeIcons: Record<TimelineRange, LucideIcon> = {
+  const ranges = Object.entries(getRangesForMode(mode));
+  const rangeIcons: Record<number, LucideIcon> = {
     0: Mountain,
     1: Landmark,
     2: Shield,
@@ -40,17 +47,18 @@ export function TimelineSelector({
     8: Rocket,
     9: Cpu,
   };
+  const fallbackIcon = mode === "MOVIES" ? Film : Cpu;
 
   return (
     <div className="space-y-4">
       <p className="text-sm font-medium text-foreground text-center">
-        Select the time period
+        {mode === "MOVIES" ? "Select the release window" : "Select the time period"}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {ranges.map(([key, range]) => {
-          const num = parseInt(key) as TimelineRange;
+          const num = parseInt(key, 10) as TimelineRange;
           const isSelected = selected === num;
-          const Icon = rangeIcons[num];
+          const Icon = mode === "MOVIES" ? Film : rangeIcons[num] ?? fallbackIcon;
 
           return (
             <button

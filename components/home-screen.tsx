@@ -123,7 +123,7 @@ export function HomeScreen() {
       <div className="w-full space-y-4">
         <div className="space-y-3">
           <Label>Game Mode</Label>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-3">
             <Button
               type="button"
               variant={gameMode === "GLOBAL" ? "default" : "secondary"}
@@ -148,13 +148,23 @@ export function HomeScreen() {
             >
               Science Timeline
             </Button>
+            <Button
+              type="button"
+              variant={gameMode === "MOVIES" ? "default" : "secondary"}
+              onClick={() => setGameMode("MOVIES")}
+              className="h-12"
+            >
+              Movie Hints
+            </Button>
           </div>
           <p className="text-xs text-muted-foreground">
             {gameMode === "GLOBAL"
               ? "Play the original worldwide timeline."
               : gameMode === "THAILAND"
                 ? "Play with events that happened in Thailand."
-                : "Play with science discoveries and technology milestones."}
+                : gameMode === "SCIENCE"
+                  ? "Play with science discoveries and technology milestones."
+                  : "Guess movie titles from story hints."}
           </p>
         </div>
 
@@ -216,7 +226,7 @@ export function HomeScreen() {
         </h3>
         <ul className="text-sm text-muted-foreground space-y-2">
           <li>1. Create a room or join with a code</li>
-          <li>2. Answer timeline questions (0-9 eras)</li>
+          <li>2. Answer questions by choosing the matching range</li>
           <li>3. Correct answers move you forward</li>
           <li>4. First to reach position 15 wins!</li>
         </ul>

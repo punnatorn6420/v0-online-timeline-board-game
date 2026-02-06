@@ -178,11 +178,13 @@ export default function RoomPage({
       ? "Thailand Timeline"
       : room.mode === "SCIENCE"
         ? "Science Timeline"
-        : room.mode === "MOVIES"
+      : room.mode === "MOVIES"
           ? "Movie Timeline"
           : room.mode === "MOVIE_GUESS"
             ? "Movie Guess"
-            : "Global Timeline";
+            : room.mode === "HARRY_POTTER"
+              ? "Wizarding World"
+              : "Global Timeline";
 
   // If game is playing, show game board
   if (room.status === "playing" || room.status === "finished") {

@@ -234,10 +234,12 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
 
   const players = Object.values(game.players);
   const allSubmitted = game.submissionStatus.allSubmitted;
-  const isMovieGuess = game.mode === "MOVIE_GUESS";
+  const isChoiceMode = game.mode === "MOVIE_GUESS" || game.mode === "HARRY_POTTER";
+  const choiceTitle =
+    game.mode === "MOVIE_GUESS" ? "Movie Synopsis" : "Wizarding World Question";
   const translateEventText = () => {
     if (!game.currentEvent) return;
-    const text = isMovieGuess
+    const text = isChoiceMode
       ? game.currentEvent.description
       : `${game.currentEvent.title} - ${game.currentEvent.description}`;
     const url = `https://translate.google.com/?sl=en&tl=th&text=${encodeURIComponent(
@@ -305,7 +307,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
               </Button>
             </div>
             <h2 className="text-xl font-bold text-foreground mb-2">
-              {isMovieGuess ? "Movie Synopsis" : game.currentEvent.title}
+              {isChoiceMode ? choiceTitle : game.currentEvent.title}
             </h2>
             <p className="text-muted-foreground">
               {game.currentEvent.description}
@@ -315,7 +317,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
           {/* Timeline Selector */}
           {!showResults && (
             <>
-              {isMovieGuess ? (
+              {isChoiceMode ? (
                 <MovieGuessSelector
                   choices={game.currentEvent.choices ?? []}
                   selected={selectedAnswer}
@@ -387,7 +389,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
               <div className="text-sm">
                 <p className="font-medium text-foreground">{p.displayName}</p>
                 <p className="text-xs text-muted-foreground">
-                  {isMovieGuess ? "Score" : "Position"}: {p.position}
+                  {isChoiceMode ? "Score" : "Position"}: {p.position}
                 </p>
               </div>
               {p.hasSubmitted && (

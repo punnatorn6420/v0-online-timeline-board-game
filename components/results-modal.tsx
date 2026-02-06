@@ -20,6 +20,7 @@ export function ResultsModal({
 }: ResultsModalProps) {
   const ranges = getRangesForMode(mode);
   const correctRangeInfo = ranges[results.correctRange];
+  const isMovieGuess = mode === "MOVIE_GUESS";
 
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
@@ -28,23 +29,33 @@ export function ResultsModal({
         <div className="text-center mb-6">
           <p className="text-sm text-muted-foreground mb-2">Correct Answer</p>
           <div className="inline-flex items-center gap-3 px-4 py-3 bg-game-success/20 rounded-lg">
-            <span className="text-3xl font-bold text-game-success">
-              {results.correctRange}
-            </span>
-            <div className="text-left">
-              {correctRangeInfo ? (
-                <>
-                  <p className="font-medium text-foreground">
-                    {correctRangeInfo.name}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {correctRangeInfo.period}
-                  </p>
-                </>
-              ) : (
-                <p className="font-medium text-foreground">Unknown range</p>
-              )}
-            </div>
+            {isMovieGuess ? (
+              <div className="text-left">
+                <p className="text-lg font-semibold text-game-success">
+                  {results.correctAnswerText ?? "Unknown title"}
+                </p>
+              </div>
+            ) : (
+              <>
+                <span className="text-3xl font-bold text-game-success">
+                  {results.correctRange}
+                </span>
+                <div className="text-left">
+                  {correctRangeInfo ? (
+                    <>
+                      <p className="font-medium text-foreground">
+                        {correctRangeInfo.name}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {correctRangeInfo.period}
+                      </p>
+                    </>
+                  ) : (
+                    <p className="font-medium text-foreground">Unknown range</p>
+                  )}
+                </div>
+              </>
+            )}
           </div>
         </div>
 
@@ -85,7 +96,10 @@ export function ResultsModal({
                     )}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    Answered: {player.answer !== null ? player.answer : "—"}
+                    Answered:{" "}
+                    {player.answer !== null
+                      ? results.answerLabels?.[player.answer] ?? player.answer
+                      : "—"}
                   </p>
                 </div>
 

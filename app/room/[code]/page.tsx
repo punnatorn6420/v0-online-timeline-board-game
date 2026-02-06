@@ -179,8 +179,10 @@ export default function RoomPage({
       : room.mode === "SCIENCE"
         ? "Science Timeline"
         : room.mode === "MOVIES"
-          ? "Movie Hints"
-          : "Global Timeline";
+          ? "Movie Timeline"
+          : room.mode === "MOVIE_GUESS"
+            ? "Movie Guess"
+            : "Global Timeline";
 
   // If game is playing, show game board
   if (room.status === "playing" || room.status === "finished") {

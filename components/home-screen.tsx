@@ -154,7 +154,15 @@ export function HomeScreen() {
               onClick={() => setGameMode("MOVIES")}
               className="h-12"
             >
-              Movie Hints
+              Movie Timeline
+            </Button>
+            <Button
+              type="button"
+              variant={gameMode === "MOVIE_GUESS" ? "default" : "secondary"}
+              onClick={() => setGameMode("MOVIE_GUESS")}
+              className="h-12"
+            >
+              Movie Guess
             </Button>
           </div>
           <p className="text-xs text-muted-foreground">
@@ -164,7 +172,9 @@ export function HomeScreen() {
                 ? "Play with events that happened in Thailand."
                 : gameMode === "SCIENCE"
                   ? "Play with science discoveries and technology milestones."
-                  : "Guess movie titles from story hints."}
+                  : gameMode === "MOVIE_GUESS"
+                    ? "Guess the movie, anime, or series from a synopsis."
+                    : "Place famous movies in the correct release window."}
           </p>
         </div>
 
@@ -226,9 +236,19 @@ export function HomeScreen() {
         </h3>
         <ul className="text-sm text-muted-foreground space-y-2">
           <li>1. Create a room or join with a code</li>
-          <li>2. Answer questions by choosing the matching range</li>
+          <li>
+            2.{" "}
+            {gameMode === "MOVIE_GUESS"
+              ? "Choose the correct title from the choices."
+              : "Answer questions by choosing the matching range."}
+          </li>
           <li>3. Correct answers move you forward</li>
-          <li>4. First to reach position 15 wins!</li>
+          <li>
+            4.{" "}
+            {gameMode === "MOVIE_GUESS"
+              ? "First to guess 5 titles correctly wins!"
+              : "First to reach position 15 wins!"}
+          </li>
         </ul>
       </div>
     </div>

@@ -197,7 +197,7 @@ export async function startGame(
 function determineRoundType(
   room: GameRoom
 ): { roundType: RoundType; category?: Category } {
-  if (room.mode === "MOVIE_GUESS") {
+  if (room.mode === "MOVIE_GUESS" || room.mode === "HARRY_POTTER") {
     return { roundType: "NORMAL" };
   }
   const specialEffects: { type: RoundType; category?: Category }[] = [];
@@ -424,9 +424,13 @@ export async function revealAndProcessRound(roomId: string): Promise<{
         round: room.currentRound,
         correctRange: event.correctRange,
         correctAnswerText:
-          room.mode === "MOVIE_GUESS" ? event.title : undefined,
+          room.mode === "MOVIE_GUESS" || room.mode === "HARRY_POTTER"
+            ? event.title
+            : undefined,
         answerLabels:
-          room.mode === "MOVIE_GUESS" ? event.choices : undefined,
+          room.mode === "MOVIE_GUESS" || room.mode === "HARRY_POTTER"
+            ? event.choices
+            : undefined,
         players: results,
       },
     };

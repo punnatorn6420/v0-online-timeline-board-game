@@ -8167,6 +8167,1206 @@ const MOVIE_GUESS_DATA = [
     choices: ["Game of Thrones", "The Witcher", "Vikings", "House of the Dragon"],
     correctIndex: 0,
   },
+  {
+    id: "mg-051",
+    title: "The Shawshank Redemption",
+    description:
+      "ชายผู้ถูกตัดสินจำคุกตลอดชีวิตในเรือนจำสุดโหด ใช้ความเงียบ ความอดทน และมิตรภาพวางหมากยาวหลายสิบปีโดยไม่มีใครทันสังเกต",
+    choices: ["The Shawshank Redemption", "The Green Mile", "Prison Break", "Catch Me If You Can"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-052",
+    title: "Fight Club",
+    description:
+      "พนักงานออฟฟิศที่ชีวิตว่างเปล่าพบชายลึกลับผู้ชวนตั้งชมรมใต้ดินที่เริ่มจากการชกต่อย แต่ค่อย ๆ ลุกลามเป็นขบวนการต่อต้านสังคมบริโภค",
+    choices: ["Fight Club", "American Psycho", "Se7en", "Joker"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-053",
+    title: "Se7en",
+    description:
+      "นักสืบคู่ต่างวัยไล่ล่าฆาตกรที่ออกแบบคดีตามบาป 7 ประการ เมืองฝนตกหม่นหมองทำให้ทุกเบาะแสดูเหมือนนำไปสู่ทางตัน",
+    choices: ["Se7en", "Zodiac", "Prisoners", "The Silence of the Lambs"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-054",
+    title: "The Silence of the Lambs",
+    description:
+      "เจ้าหน้าที่ฝึกหัดเอฟบีไอต้องขอความช่วยเหลือจากฆาตกรอัจฉริยะในคุก เพื่อเข้าใจจิตใจนักล่ารายใหม่ที่ยังลอยนวล",
+    choices: ["The Silence of the Lambs", "Se7en", "Mindhunter", "Gone Girl"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-055",
+    title: "The Godfather",
+    description:
+      "ทายาทที่ไม่อยากยุ่งธุรกิจครอบครัวค่อย ๆ ถูกดึงเข้าสู่โลกอาชญากรรม จนต้องเลือกระหว่างศีลธรรมกับการปกป้องคนของตน",
+    choices: ["The Godfather", "Goodfellas", "Scarface", "The Irishman"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-056",
+    title: "Goodfellas",
+    description:
+      "เรื่องเล่าการไต่ระดับของเด็กหนุ่มที่อยากเป็นมาเฟีย ถ่ายทอดชีวิตหรูหรา ความรุนแรง และราคาที่ต้องจ่ายเมื่อความภักดีเริ่มสั่นคลอน",
+    choices: ["Goodfellas", "The Godfather", "Casino", "Donnie Brasco"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-057",
+    title: "Pulp Fiction",
+    description:
+      "ชะตาของนักฆ่า นักมวย และคู่รักโจรปล้นร้านอาหารถูกตัดสลับแบบไม่เรียงเวลา บทสนทนาธรรมดากลายเป็นแรงกดดันก่อนความวุ่นวายปะทุ",
+    choices: ["Pulp Fiction", "Reservoir Dogs", "Snatch", "No Country for Old Men"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-058",
+    title: "Forrest Gump",
+    description:
+      "ชายที่ดูธรรมดาเดินผ่านเหตุการณ์สำคัญของอเมริกาโดยไม่ตั้งใจ ชีวิตของเขาเชื่อมรัก มิตรภาพ และความฝันไว้ด้วยความซื่อสัตย์เรียบง่าย",
+    choices: ["Forrest Gump", "Big Fish", "The Curious Case of Benjamin Button", "Cast Away"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-059",
+    title: "The Truman Show",
+    description:
+      "ชายคนหนึ่งเริ่มสงสัยว่าเมืองทั้งเมืองรอบตัวดูผิดธรรมชาติ เมื่อรอยต่อเล็ก ๆ ในชีวิตประจำวันค่อย ๆ เผยความจริงที่ใหญ่เกินคาด",
+    choices: ["The Truman Show", "Pleasantville", "Eternal Sunshine of the Spotless Mind", "The Matrix"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-060",
+    title: "The Prestige",
+    description:
+      "นักมายากลสองคนกลายเป็นคู่แข่งที่ยอมทำทุกอย่างเพื่อสร้างโชว์ที่เหนือกว่า เกมของภาพลวงตาค่อย ๆ กลืนชีวิตจริงของทั้งคู่",
+    choices: ["The Prestige", "Now You See Me", "The Illusionist", "Sherlock Holmes"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-061",
+    title: "Whiplash",
+    description:
+      "มือกลองหนุ่มในสถาบันดนตรีชั้นนำเผชิญครูผู้กดดันสุดขีด เส้นแบ่งระหว่างการฝึกฝนกับการทำลายตัวเองค่อย ๆ เลือนหาย",
+    choices: ["Whiplash", "Black Swan", "La La Land", "Birdman"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-062",
+    title: "La La Land",
+    description:
+      "นักแสดงสาวกับนักเปียโนแจ๊สพยายามไล่ตามความฝันในลอสแอนเจลิส เพลงและสีสันหวานละมุนซ่อนคำถามเรื่องเวลาและทางเลือกชีวิต",
+    choices: ["La La Land", "The Greatest Showman", "Begin Again", "A Star Is Born"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-063",
+    title: "Blade Runner 2049",
+    description:
+      "เจ้าหน้าที่ผู้ล่ามนุษย์สังเคราะห์ค้นพบเบาะแสที่อาจเปลี่ยนโครงสร้างสังคม เขาต้องตามหาความจริงที่โยงอดีตซึ่งคนจำนวนมากอยากฝังไว้",
+    choices: ["Blade Runner 2049", "Minority Report", "Ex Machina", "Dune"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-064",
+    title: "Dune",
+    description:
+      "ทายาทตระกูลใหญ่ถูกส่งไปดาวทะเลทรายที่มีทรัพยากรสำคัญที่สุดในจักรวาล การเมือง ศรัทธา และชะตากรรมเริ่มผูกพันเขาอย่างหลีกเลี่ยงไม่ได้",
+    choices: ["Dune", "Foundation", "Star Wars", "John Carter"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-065",
+    title: "Mad Max: Fury Road",
+    description:
+      "กลางดินแดนหลังล่มสลาย นักขับผู้โดดเดี่ยวร่วมมือกับนักรบหญิงพาผู้คนหนีจากผู้กดขี่ การไล่ล่าบนถนนร้างแทบไม่หยุดหายใจ",
+    choices: ["Mad Max: Fury Road", "The Book of Eli", "Children of Men", "Snowpiercer"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-066",
+    title: "The Revenant",
+    description:
+      "นักล่าในดินแดนหนาวจัดถูกทิ้งให้ตายหลังการโจมตีจากธรรมชาติ เขาต้องเอาชีวิตรอดผ่านความเจ็บปวดและภูมิประเทศโหดร้ายเพื่อกลับไปเผชิญอดีต",
+    choices: ["The Revenant", "The Hateful Eight", "Hostiles", "The Northman"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-067",
+    title: "No Country for Old Men",
+    description:
+      "เงินก้อนหนึ่งจากฉากสังหารกลางทะเลทรายจุดชนวนเกมไล่ล่าระหว่างชายธรรมดา นักฆ่าไร้ปรานี และนายอำเภอที่เริ่มไม่เข้าใจยุคสมัย",
+    choices: ["No Country for Old Men", "Sicario", "Hell or High Water", "Fargo"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-068",
+    title: "Prisoners",
+    description:
+      "เด็กสองคนหายตัวในคืนฝนตก พ่อที่สิ้นหวังเริ่มเดินทางเส้นทางมืดของตนเอง ขณะที่นักสืบพยายามต่อจิ๊กซอว์จากเบาะแสที่ชวนสับสน",
+    choices: ["Prisoners", "Gone Girl", "Mystic River", "Zodiac"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-069",
+    title: "Gone Girl",
+    description:
+      "สามีภรรยาคู่หนึ่งที่ดูเพียบพร้อมกลายเป็นข่าวใหญ่เมื่อฝ่ายหนึ่งหายตัว บันทึกชีวิตคู่เผยภาพรักที่ค่อย ๆ บิดเบี้ยวจนแยกไม่ออกว่าใครกำลังเล่นเกม",
+    choices: ["Gone Girl", "The Girl on the Train", "Prisoners", "Sharp Objects"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-070",
+    title: "The Social Network",
+    description:
+      "นักศึกษามหาวิทยาลัยสร้างแพลตฟอร์มออนไลน์ที่โตเกินควบคุม เรื่องราวสลับระหว่างห้องพิจารณาคดีกับคืนแห่งการเขียนโค้ดที่เปลี่ยนโลก",
+    choices: ["The Social Network", "Steve Jobs", "BlackBerry", "Moneyball"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-071",
+    title: "Moneyball",
+    description:
+      "ผู้จัดการทีมเบสบอลงบน้อยท้าทายระบบเดิมด้วยการใช้สถิติเลือกนักกีฬา แนวคิดที่ดูแปลกกลายเป็นการปฏิวัติวงการกีฬาอย่างเงียบ ๆ",
+    choices: ["Moneyball", "Draft Day", "The Big Short", "Coach Carter"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-072",
+    title: "The Big Short",
+    description:
+      "กลุ่มคนนอกสายตาอ่านสัญญาณก่อนวิกฤตเศรษฐกิจและตัดสินใจเดิมพันสวนตลาด หนังอธิบายระบบการเงินซับซ้อนด้วยอารมณ์เสียดสีเฉียบคม",
+    choices: ["The Big Short", "Margin Call", "Wall Street", "Inside Job"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-073",
+    title: "Shutter Island",
+    description:
+      "เจ้าหน้าที่สืบสวนเดินทางไปเกาะที่ใช้เป็นสถานพยาบาลจิตเวชเพื่อคดีคนหาย แต่ยิ่งค้นหาก็ยิ่งถูกหมอก ความทรงจำ และคำถามเรื่องความจริงล้อมไว้",
+    choices: ["Shutter Island", "The Others", "Memento", "Identity"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-074",
+    title: "Memento",
+    description:
+      "ชายที่ไม่สามารถสร้างความทรงจำระยะสั้นใหม่ได้ตามหาความจริงด้วยรอยสัก ภาพถ่าย และโน้ตกระจัดกระจาย การเล่าเรื่องถอยหลังทำให้คนดูต้องประกอบภาพเอง",
+    choices: ["Memento", "The Machinist", "Shutter Island", "Source Code"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-075",
+    title: "The Sixth Sense",
+    description:
+      "นักจิตวิทยาเด็กพยายามช่วยเด็กชายที่บอกว่าเห็นสิ่งที่คนอื่นไม่เห็น บรรยากาศเงียบเย็นค่อย ๆ พาไปสู่ความจริงที่ย้อนมองทั้งเรื่องใหม่",
+    choices: ["The Sixth Sense", "The Others", "Insidious", "Hereditary"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-076",
+    title: "A Quiet Place",
+    description:
+      "ครอบครัวหนึ่งต้องใช้ชีวิตเงียบที่สุดในโลกที่สัตว์นักล่าตอบสนองต่อเสียง ทุกการเคลื่อนไหวเล็กน้อยกลายเป็นเดิมพันชีวิต",
+    choices: ["A Quiet Place", "Bird Box", "The Silence", "10 Cloverfield Lane"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-077",
+    title: "Get Out",
+    description:
+      "ชายหนุ่มไปเยี่ยมครอบครัวแฟนในชนบทสุดอบอุ่น แต่ท่าทีที่ดูเป็นมิตรเกินไปและรายละเอียดแปลก ๆ ทำให้เขารู้ว่าที่นี่ซ่อนบางอย่างอันตราย",
+    choices: ["Get Out", "Us", "The Invitation", "Midsommar"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-078",
+    title: "Hereditary",
+    description:
+      "หลังการสูญเสียผู้อาวุโสของบ้าน ครอบครัวหนึ่งเริ่มเผชิญเหตุการณ์เหนือธรรมชาติที่ค่อย ๆ เผยบาดแผลและความลับข้ามรุ่น",
+    choices: ["Hereditary", "The Babadook", "The Conjuring", "Insidious"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-079",
+    title: "The Conjuring",
+    description:
+      "คู่สามีภรรยานักสืบสวนปรากฏการณ์ลี้ลับถูกเรียกไปช่วยครอบครัวที่บ้านชนบทซึ่งมีสิ่งผิดปกติรุนแรงขึ้นเรื่อย ๆ",
+    choices: ["The Conjuring", "Insidious", "Sinister", "Annabelle"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-080",
+    title: "Black Swan",
+    description:
+      "นักบัลเลต์ที่มุ่งสู่บทนำต้องผลักตัวเองสู่ความสมบูรณ์แบบจนเส้นแบ่งระหว่างการแข่งขัน จินตนาการ และตัวตนเริ่มพร่าเลือน",
+    choices: ["Black Swan", "Whiplash", "Perfect Blue", "Suspiria"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-081",
+    title: "Birdman",
+    description:
+      "อดีตนักแสดงซูเปอร์ฮีโร่พยายามพิสูจน์ตัวเองบนเวทีบรอดเวย์ ขณะเสียงในหัวและภาพลักษณ์สาธารณะกดดันเขาจนความจริงเหมือนฉากยาวไม่ตัด",
+    choices: ["Birdman", "The Wrestler", "La La Land", "Nightcrawler"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-082",
+    title: "Nightcrawler",
+    description:
+      "ชายตกงานพบโลกข่าวอาชญากรรมกลางคืนและใช้กล้องไล่ล่าภาพที่ขายได้ ความทะเยอทะยานของเขาค่อย ๆ ไร้ขอบเขตทางจริยธรรม",
+    choices: ["Nightcrawler", "Zodiac", "Prisoners", "Drive"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-083",
+    title: "Drive",
+    description:
+      "สตันต์แมนกลางวันเป็นคนขับรถหนีกลางคืน ชีวิตเงียบ ๆ ถูกดึงเข้าสู่วงจรอาชญากรรมเมื่อเขาพยายามช่วยคนข้างห้อง",
+    choices: ["Drive", "Baby Driver", "John Wick", "Collateral"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-084",
+    title: "John Wick",
+    description:
+      "อดีตนักฆ่าที่วางมือแล้วถูกบังคับให้กลับสู่วงการใต้ดินอีกครั้ง กฎเกณฑ์ของโลกนักฆ่าถูกขยายผ่านโรงแรม เหรียญ และพันธะเลือด",
+    choices: ["John Wick", "Nobody", "The Equalizer", "Atomic Blonde"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-085",
+    title: "The Wolf of Wall Street",
+    description:
+      "โบรกเกอร์หนุ่มไต่ระดับบนวอลล์สตรีทด้วยการขายสุดดุดัน ปาร์ตี้สุดโต่ง และการละเมิดกฎจนกลายเป็นจักรวาลแห่งความโลภ",
+    choices: ["The Wolf of Wall Street", "Boiler Room", "American Hustle", "The Big Short"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-086",
+    title: "Catch Me If You Can",
+    description:
+      "วัยรุ่นอัจฉริยะปลอมตัวเป็นหลายอาชีพและเดินเกมหลอกลวงทั่วโลก ขณะที่เจ้าหน้าที่เอฟบีไอคนหนึ่งไล่ล่าเขาอย่างไม่ลดละ",
+    choices: ["Catch Me If You Can", "The Talented Mr. Ripley", "Now You See Me", "The Terminal"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-087",
+    title: "The Grand Budapest Hotel",
+    description:
+      "คอนเซียร์จโรงแรมผู้พิถีพิถันกับเด็กฝึกงานติดคดีพัวพันมรดกและการเมืองในยุโรปยุคเปลี่ยนผ่าน เรื่องเล่าถูกห่อด้วยภาพสมมาตรและอารมณ์ขันแห้ง",
+    choices: ["The Grand Budapest Hotel", "Knives Out", "Murder on the Orient Express", "The French Dispatch"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-088",
+    title: "Knives Out",
+    description:
+      "นักสืบชื่อดังถูกจ้างให้คลี่คลายการตายปริศนาในคฤหาสน์ของนักเขียนนิยายสืบสวน ครอบครัวผู้ต้องสงสัยทุกคนมีเหตุผลให้โกหก",
+    choices: ["Knives Out", "Glass Onion", "Murder Mystery", "Death on the Nile"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-089",
+    title: "The Martian",
+    description:
+      "นักบินอวกาศถูกทิ้งไว้บนดาวอังคารโดยทีมที่คิดว่าเขาเสียชีวิต เขาต้องใช้วิทยาศาสตร์และอารมณ์ขันเพื่อรอการช่วยเหลือ",
+    choices: ["The Martian", "Interstellar", "Gravity", "Ad Astra"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-090",
+    title: "Gravity",
+    description:
+      "อุบัติเหตุในวงโคจรทำให้นักบินอวกาศสองคนลอยเคว้งกลางอวกาศโดยทรัพยากรจำกัด การเอาชีวิตรอดขึ้นกับการตัดสินใจทุกวินาที",
+    choices: ["Gravity", "The Martian", "Life", "Apollo 13"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-091",
+    title: "Arrival",
+    description:
+      "นักภาษาศาสตร์ถูกดึงเข้าทีมสื่อสารกับผู้มาเยือนจากต่างดาว เพื่อถอดรหัสภาษาที่อาจเปลี่ยนวิธีมองเวลาและการตัดสินใจของมนุษย์",
+    choices: ["Arrival", "Contact", "Interstellar", "Annihilation"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-092",
+    title: "Ex Machina",
+    description:
+      "โปรแกรมเมอร์หนุ่มไปบ้านห่างไกลของซีอีโอเพื่อทดสอบเอไอรูปร่างมนุษย์ เกมบทสนทนาธรรมดาค่อย ๆ กลายเป็นการวัดใจเรื่องจิตสำนึกและอำนาจ",
+    choices: ["Ex Machina", "Her", "Blade Runner 2049", "Upgrade"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-093",
+    title: "Her",
+    description:
+      "ชายผู้โดดเดี่ยวเริ่มมีความสัมพันธ์ลึกซึ้งกับระบบปฏิบัติการที่มีเสียงอ่อนโยน ความรักที่ไร้ร่างกายพาไปสู่คำถามเรื่องความใกล้ชิดยุคดิจิทัล",
+    choices: ["Her", "Ex Machina", "Eternal Sunshine of the Spotless Mind", "Lost in Translation"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-094",
+    title: "Eternal Sunshine of the Spotless Mind",
+    description:
+      "คู่รักที่เจ็บปวดเลือกใช้เทคโนโลยีลบความทรงจำเกี่ยวกับกันและกัน แต่ระหว่างกระบวนการกลับพบคุณค่าของช่วงเวลาที่อยากลืม",
+    choices: ["Eternal Sunshine of the Spotless Mind", "Her", "500 Days of Summer", "Vanilla Sky"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-095",
+    title: "500 Days of Summer",
+    description:
+      "ชายหนุ่มทบทวนความสัมพันธ์ที่ไม่เป็นไปตามสูตรโรแมนติก ผ่านโครงเรื่องไม่เรียงเวลาและมุมมองที่ไม่น่าเชื่อถือของตัวเขาเอง",
+    choices: ["500 Days of Summer", "La La Land", "About Time", "Begin Again"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-096",
+    title: "About Time",
+    description:
+      "ชายหนุ่มค้นพบว่าตระกูลของเขาย้อนเวลาได้ เขาใช้พรสวรรค์นี้กับความรักและครอบครัว ก่อนเรียนรู้ว่าความสุขอยู่ที่การใช้วันธรรมดาให้เต็มที่",
+    choices: ["About Time", "The Time Traveler's Wife", "Midnight in Paris", "Groundhog Day"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-097",
+    title: "Edge of Tomorrow",
+    description:
+      "ทหารที่ไม่เคยออกรบติดลูปวันเดิมในสงครามกับเอเลี่ยน ทุกการตายกลายเป็นบทเรียนเพื่อหาทางชนะในวันเดียว",
+    choices: ["Edge of Tomorrow", "Source Code", "Oblivion", "Pacific Rim"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-098",
+    title: "Looper",
+    description:
+      "นักฆ่าที่กำจัดเป้าหมายจากอนาคตต้องเผชิญเหยื่อที่ไม่ควรมีอยู่—ตัวเขาเองในอีกวัย การตัดสินใจหนึ่งครั้งอาจเปลี่ยนเส้นเวลาทั้งหมด",
+    choices: ["Looper", "Tenet", "Minority Report", "Predestination"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-099",
+    title: "Source Code",
+    description:
+      "ทหารตื่นมาในร่างคนอื่นบนรถไฟและได้รับภารกิจย้อนช่วงเวลาไม่กี่นาทีซ้ำ ๆ เพื่อหยุดเหตุวินาศกรรม",
+    choices: ["Source Code", "Edge of Tomorrow", "Déjà Vu", "Memento"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-100",
+    title: "Minority Report",
+    description:
+      "ตำรวจหน่วยพิเศษจับกุมคนก่อนก่ออาชญากรรมด้วยระบบทำนายอนาคต แต่เมื่อระบบชี้มาที่เขาเอง เขาต้องหนีและหาความจริง",
+    choices: ["Minority Report", "I, Robot", "Equilibrium", "Blade Runner"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-101",
+    title: "Children of Men",
+    description:
+      "โลกที่ไร้เด็กเกิดใหม่มานานตกอยู่ในความสิ้นหวัง ข้าราชการชายธรรมดาถูกลากเข้าสู่ภารกิจคุ้มกันความหวังที่เปราะบางที่สุดของมนุษยชาติ",
+    choices: ["Children of Men", "The Road", "Snowpiercer", "V for Vendetta"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-102",
+    title: "V for Vendetta",
+    description:
+      "ในรัฐเผด็จการที่เฝ้าระวังทุกอย่าง ชายสวมหน้ากากใช้สัญลักษณ์และการแสดงเพื่อปลุกประชาชนให้ตั้งคำถามกับอำนาจ",
+    choices: ["V for Vendetta", "Watchmen", "1984", "Equilibrium"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-103",
+    title: "Watchmen",
+    description:
+      "ในโลกที่มีอดีตฮีโร่จริง การฆาตกรรมหนึ่งคดีค่อย ๆ เปิดบาดแผลทางการเมือง สงครามเย็น และมุมมองศีลธรรมที่ไม่ขาวดำ",
+    choices: ["Watchmen", "The Boys", "Kick-Ass", "Joker"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-104",
+    title: "Logan",
+    description:
+      "ฮีโร่ผู้ชราภาพใช้ชีวิตหลบซ่อนในโลกที่พลังพิเศษแทบสูญพันธุ์ เขาถูกดึงกลับสู่การคุ้มกันเด็กที่มีความสามารถคล้ายอดีตของเขา",
+    choices: ["Logan", "The Last of Us", "Old Man", "Deadpool"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-105",
+    title: "Spider-Man: Into the Spider-Verse",
+    description:
+      "วัยรุ่นจากบรู๊กลินได้พลังเหนือมนุษย์และพบว่ามีคนใส่หน้ากากแบบเดียวกันจากหลายจักรวาล งานภาพสีฉูดฉาดเล่าเรื่องเติบโตอย่างสดใหม่",
+    choices: ["Spider-Man: Into the Spider-Verse", "The Flash", "Teen Titans Go!", "Doctor Strange"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-106",
+    title: "Coco",
+    description:
+      "เด็กชายผู้รักดนตรีบังเอิญข้ามไปดินแดนวิญญาณในคืนเทศกาล เขาต้องไขประวัติครอบครัวเพื่อกลับบ้านก่อนเวลาหมด",
+    choices: ["Coco", "Soul", "Encanto", "The Book of Life"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-107",
+    title: "Inside Out",
+    description:
+      "อารมณ์ต่าง ๆ ในหัวเด็กหญิงต้องปรับตัวเมื่อเธอย้ายเมือง ความวุ่นวายในศูนย์ควบคุมจิตใจสะท้อนการเติบโตที่ไม่ง่าย",
+    choices: ["Inside Out", "Soul", "Turning Red", "Up"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-108",
+    title: "Soul",
+    description:
+      "ครูดนตรีผู้ฝันอยากเป็นแจ๊สแมนตกสู่เหตุการณ์ไม่คาดคิดก่อนวันสำคัญ เขาได้ทบทวนความหมายของการมีชีวิตผ่านพื้นที่นามธรรม",
+    choices: ["Soul", "Inside Out", "Coco", "Luca"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-109",
+    title: "Toy Story",
+    description:
+      "ของเล่นในห้องเด็กชายมีชีวิตและมีลำดับชั้นของตัวเอง จนกระทั่งของเล่นใหม่สุดฮิตเข้ามาเปลี่ยนสมดุลเดิม",
+    choices: ["Toy Story", "Cars", "Small Soldiers", "The Lego Movie"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-110",
+    title: "Up",
+    description:
+      "ชายชราผู้โดดเดี่ยวผูกบ้านกับลูกโป่งจำนวนมหาศาลออกเดินทางสู่สถานที่ในฝัน พร้อมลูกเสือรุ่นเยาว์ที่ไม่ได้รับเชิญ",
+    choices: ["Up", "Coco", "Klaus", "How to Train Your Dragon"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-111",
+    title: "WALL·E",
+    description:
+      "หุ่นเก็บขยะตัวเล็กใช้ชีวิตลำพังบนโลกที่มนุษย์ทิ้งร้าง จนการมาของแขกจากอวกาศทำให้ภารกิจเล็ก ๆ มีผลต่ออนาคตทั้งเผ่าพันธุ์",
+    choices: ["WALL·E", "Big Hero 6", "Robots", "Treasure Planet"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-112",
+    title: "How to Train Your Dragon",
+    description:
+      "เด็กหนุ่มไวกิ้งที่ควรถูกสอนให้ล่ามังกรกลับผูกมิตรกับมังกรบาดเจ็บ ความเข้าใจใหม่ท้าทายความเชื่อทั้งหมู่บ้าน",
+    choices: ["How to Train Your Dragon", "Raya and the Last Dragon", "Dragonheart", "Brave"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-113",
+    title: "Frozen",
+    description:
+      "เจ้าหญิงผู้มีพลังน้ำแข็งหลบหนีหลังเหตุการณ์ในพิธีสำคัญ น้องสาวจึงออกเดินทางกับเพื่อนต่างขั้วเพื่อพาเธอกลับมา",
+    choices: ["Frozen", "Tangled", "Moana", "Brave"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-114",
+    title: "Moana",
+    description:
+      "ลูกสาวหัวหน้าเผ่าออกเรือสู่มหาสมุทรเพื่อตามหาวิธีช่วยเกาะบ้านเกิด เธอต้องร่วมทางกับกึ่งเทพจอมมั่นที่มีอดีตซับซ้อน",
+    choices: ["Moana", "Raya and the Last Dragon", "Luca", "The Little Mermaid"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-115",
+    title: "Zootopia",
+    description:
+      "กระต่ายตำรวจน้องใหม่ต้องร่วมมือกับจิ้งจอกนักต้มตุ๋นไขคดีคนหายกลางมหานครสัตว์ที่ดูสมบูรณ์แบบแต่เต็มไปด้วยอคติ",
+    choices: ["Zootopia", "Sing", "The Bad Guys", "Bolt"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-116",
+    title: "The Lion King",
+    description:
+      "ลูกสิงโตผู้สืบทอดราชอาณาจักรเผชิญโศกนาฏกรรมและการเนรเทศ ก่อนต้องเลือกว่าจะกลับมาเผชิญอดีตหรือไม่",
+    choices: ["The Lion King", "Bambi", "Brother Bear", "Tarzan"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-117",
+    title: "Shrek",
+    description:
+      "ยักษ์เขียวผู้รักความสงบถูกบังคับให้ออกเดินทางช่วยเจ้าหญิงเพื่อแลกกับบ้านคืน นิทานคลาสสิกถูกเล่าใหม่ด้วยอารมณ์ขันกวน ๆ",
+    choices: ["Shrek", "The Princess Bride", "Megamind", "Enchanted"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-118",
+    title: "Kung Fu Panda",
+    description:
+      "แพนด้าผู้หลงใหลกังฟูอย่างสุดใจกลับถูกเลือกในตำแหน่งที่ไม่มีใครคาดคิด เขาต้องฝึกฝนท่ามกลางสายตาดูถูกและภัยคุกคามใหญ่",
+    choices: ["Kung Fu Panda", "Mulan", "TMNT", "Rango"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-119",
+    title: "The Incredibles",
+    description:
+      "ครอบครัวซูเปอร์ฮีโร่ที่ถูกบังคับให้ใช้ชีวิตปกติ ต้องกลับมาร่วมมือกันเมื่อภัยใหม่โจมตีเมือง",
+    choices: ["The Incredibles", "Fantastic Four", "Sky High", "Big Hero 6"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-120",
+    title: "Big Hero 6",
+    description:
+      "เด็กอัจฉริยะด้านหุ่นยนต์จับมือกับหุ่นดูแลสุขภาพและเพื่อน ๆ ตั้งทีมฮีโร่เทคโนโลยีเพื่อรับมืออาชญากรลึกลับ",
+    choices: ["Big Hero 6", "The Incredibles", "Robots", "Meet the Robinsons"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-121",
+    title: "Arcane",
+    description:
+      "ความขัดแย้งระหว่างนครมั่งคั่งกับเมืองใต้ดินปะทุผ่านเรื่องราวของสองพี่น้อง งานภาพสไตล์เพนต์เตอร์และการเมืองของเทคโนโลยีโดดเด่นมาก",
+    choices: ["Arcane", "Cyberpunk: Edgerunners", "Castlevania", "Blue Eye Samurai"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-122",
+    title: "Cyberpunk: Edgerunners",
+    description:
+      "เด็กหนุ่มในมหานครอนาคตที่ชนชั้นเหลื่อมล้ำเลือกเส้นทางทหารรับจ้างไซเบอร์ หลังสูญเสียสิ่งสำคัญในชีวิต",
+    choices: ["Cyberpunk: Edgerunners", "Akudama Drive", "Ghost in the Shell: SAC_2045", "Arcane"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-123",
+    title: "Castlevania",
+    description:
+      "นักล่าแวมไพร์ลูกหลานตระกูลนักรบจับมือกับผู้ใช้เวทและทายาทเลือดปีศาจ เพื่อต่อกรผู้ปกครองรัตติกาลที่ประกาศล้างมนุษย์",
+    choices: ["Castlevania", "Hellsing Ultimate", "Devilman Crybaby", "Blood of Zeus"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-124",
+    title: "Blue Eye Samurai",
+    description:
+      "นักดาบหญิงลูกครึ่งในญี่ปุ่นยุคปิดประเทศออกเดินทางแก้แค้นด้วยทักษะดาบระดับสูงและการปลอมตัว",
+    choices: ["Blue Eye Samurai", "Samurai Champloo", "Rurouni Kenshin", "Demon Slayer"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-125",
+    title: "Breaking Bad",
+    description:
+      "ครูเคมีผู้ชีวิตถึงทางตันตัดสินใจก้าวสู่โลกผลิตยาเสพติดเพื่อหาเงินให้ครอบครัว การเปลี่ยนแปลงตัวตนของเขาค่อย ๆ น่ากลัวขึ้น",
+    choices: ["Breaking Bad", "Ozark", "Narcos", "Better Call Saul"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-126",
+    title: "Better Call Saul",
+    description:
+      "ทนายปากเก่งผู้ดิ้นรนในเงาอดีตค่อย ๆ กลายเป็นคนที่พร้อมเล่นนอกกติกา ซีรีส์พรีเควลที่เน้นการเปลี่ยนทีละนิด",
+    choices: ["Better Call Saul", "Suits", "Billions", "Breaking Bad"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-127",
+    title: "Narcos",
+    description:
+      "เรื่องราวเจ้าพ่อยาเสพติดและหน่วยงานรัฐในสงครามที่ไม่มีสูตรสำเร็จ การขึ้นลงของอำนาจเกิดเร็วพอ ๆ กับจำนวนศัตรู",
+    choices: ["Narcos", "El Chapo", "Breaking Bad", "Sicario"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-128",
+    title: "Ozark",
+    description:
+      "ที่ปรึกษาการเงินย้ายครอบครัวไปเมืองริมทะเลสาบเพื่อล้างเงินให้แก๊งใหญ่ แผนเอาตัวรอดบีบให้ทุกคนในบ้านเปลี่ยนไป",
+    choices: ["Ozark", "Bloodline", "Breaking Bad", "Fargo"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-129",
+    title: "Peaky Blinders",
+    description:
+      "หัวหน้าแก๊งครอบครัวย่านอุตสาหกรรมอังกฤษหลังสงครามโลกใช้ทั้งธุรกิจ การเมือง และความรุนแรงขยายอำนาจ",
+    choices: ["Peaky Blinders", "Boardwalk Empire", "Gangs of London", "Taboo"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-130",
+    title: "Sherlock",
+    description:
+      "นักสืบที่คิดไวผิดมนุษย์กับอดีตทหารแพทย์ร่วมแก้คดีในลอนดอนยุคใหม่ โดยใช้การสังเกตรายละเอียดเหนือคนทั่วไป",
+    choices: ["Sherlock", "Elementary", "Luther", "Mindhunter"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-131",
+    title: "Mindhunter",
+    description:
+      "เจ้าหน้าที่เอฟบีไอเริ่มสัมภาษณ์ฆาตกรต่อเนื่องในเรือนจำเพื่อสร้างศาสตร์ใหม่ด้านพฤติกรรมอาชญากร",
+    choices: ["Mindhunter", "True Detective", "Criminal Minds", "Zodiac"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-132",
+    title: "True Detective",
+    description:
+      "นักสืบคู่หูสืบคดีเดียวกันข้ามหลายช่วงเวลา คดีโหดหนึ่งคดีเปิดแผลชีวิตส่วนตัวและความเชื่อที่ต่างกันสุดขั้ว",
+    choices: ["True Detective", "Mindhunter", "Mare of Easttown", "Fargo"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-133",
+    title: "Fargo",
+    description:
+      "เหตุอาชญากรรมที่ดูเล็กในเมืองหิมะกลับขยายเป็นลูกโซ่ของความโลภ โชคร้าย และตัวละครประหลาดที่คาดเดายาก",
+    choices: ["Fargo", "No Country for Old Men", "Ozark", "Bloodline"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-134",
+    title: "Dark",
+    description:
+      "การหายตัวของเด็กในเมืองเล็กเยอรมันพาไปสู่เครือข่ายความลับหลายครอบครัวและปรากฏการณ์ที่ทำให้เวลาไม่เดินเป็นเส้นตรง",
+    choices: ["Dark", "1899", "Stranger Things", "Bodies"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-135",
+    title: "1899",
+    description:
+      "ผู้โดยสารเรืออพยพมุ่งหน้าสู่อเมริกาพบเรือลำปริศนากลางทะเล เหตุการณ์เหนือจริงค่อย ๆ ท้าทายสิ่งที่พวกเขาเชื่อว่าเป็นความจริง",
+    choices: ["1899", "Dark", "The Terror", "Lost"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-136",
+    title: "Black Mirror",
+    description:
+      "แอนโทโลยีที่แต่ละตอนตั้งคำถามว่าเทคโนโลยีซึ่งดูสะดวกอาจพามนุษย์ไปไกลแค่ไหนเมื่อไร้ขอบเขตจริยธรรม",
+    choices: ["Black Mirror", "Love, Death & Robots", "Electric Dreams", "Severance"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-137",
+    title: "Severance",
+    description:
+      "บริษัทหนึ่งแยกความทรงจำพนักงานระหว่างเวลางานกับเวลาส่วนตัว ทำให้ตัวตนเดียวกันเหมือนอยู่คนละโลกอย่างสิ้นเชิง",
+    choices: ["Severance", "Black Mirror", "Mr. Robot", "Homecoming"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-138",
+    title: "Mr. Robot",
+    description:
+      "วิศวกรความปลอดภัยไซเบอร์ที่มีปัญหาสุขภาพจิตถูกดึงเข้ากลุ่มแฮกเกอร์ที่หวังล้มระบบการเงินโลก",
+    choices: ["Mr. Robot", "Silicon Valley", "Person of Interest", "Severance"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-139",
+    title: "Westworld",
+    description:
+      "สวนสนุกธีมตะวันตกที่หุ่นยนต์สมจริงให้แขกทำอะไรก็ได้ เริ่มเกิดคำถามเรื่องจิตสำนึก เสรีภาพ และผู้ควบคุมเรื่องเล่า",
+    choices: ["Westworld", "Black Mirror", "Altered Carbon", "Foundation"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-140",
+    title: "The Boys",
+    description:
+      "โลกที่ซูเปอร์ฮีโร่เป็นแบรนด์ธุรกิจขนาดยักษ์ กลุ่มคนนอกกฎหมายจึงตั้งใจเปิดโปงด้านมืดของผู้ถูกยกย่อง",
+    choices: ["The Boys", "Watchmen", "Invincible", "Peacemaker"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-141",
+    title: "Invincible",
+    description:
+      "วัยรุ่นที่เพิ่งได้พลังจากพ่อซูเปอร์ฮีโร่ระดับโลกเริ่มค้นพบว่าการเป็นฮีโร่จริงซับซ้อนและโหดร้ายกว่าที่คิด",
+    choices: ["Invincible", "The Boys", "My Hero Academia", "Megamind"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-142",
+    title: "Loki",
+    description:
+      "เทพเจ้าเจ้าเล่ห์ถูกจับโดยองค์กรที่ดูแลเส้นเวลา เขาต้องร่วมมือกับเจ้าหน้าที่เพื่อรับมือภัยที่เกี่ยวข้องกับตัวเองหลายแบบ",
+    choices: ["Loki", "Doctor Strange in the Multiverse of Madness", "The Flash", "Moon Knight"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-143",
+    title: "WandaVision",
+    description:
+      "คู่รักพลังพิเศษใช้ชีวิตเหมือนซิตคอมแต่ละยุคในเมืองเล็กที่ดูสมบูรณ์แบบ จนความผิดปกติค่อย ๆ รั่วออกจากฉากหัวเราะ",
+    choices: ["WandaVision", "Legion", "Loki", "Pleasantville"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-144",
+    title: "Moon Knight",
+    description:
+      "พนักงานร้านของที่ระลึกผู้มีปัญหาความจำเริ่มข้องเกี่ยวกับเทพอียิปต์และการแยกร่างตัวตน การต่อสู้เกิดทั้งภายนอกและในจิตใจ",
+    choices: ["Moon Knight", "Legion", "Daredevil", "The Mummy"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-145",
+    title: "Daredevil",
+    description:
+      "ทนายตาบอดที่มีประสาทสัมผัสเหนือมนุษย์ใช้ชีวิตสองด้าน กลางวันสู้ในศาล กลางคืนสู้ในตรอกมืดของเมือง",
+    choices: ["Daredevil", "The Punisher", "Arrow", "Jessica Jones"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-146",
+    title: "The Punisher",
+    description:
+      "อดีตทหารผ่านศึกที่สูญเสียครอบครัวประกาศสงครามส่วนตัวกับเครือข่ายอาชญากรรมและผู้มีอำนาจเบื้องหลัง",
+    choices: ["The Punisher", "John Wick", "Jack Reacher", "Daredevil"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-147",
+    title: "Suits",
+    description:
+      "ทนายดาวรุ่งรับเด็กอัจฉริยะที่ไม่มีใบอนุญาตเข้าทำงานในบริษัทกฎหมายชั้นนำ เกมคดีและการปิดความลับเดินคู่กัน",
+    choices: ["Suits", "The Good Wife", "Billions", "How to Get Away with Murder"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-148",
+    title: "House of Cards",
+    description:
+      "นักการเมืองที่ทะเยอทะยานใช้กลยุทธ์เย็นชาไต่บันไดอำนาจในวอชิงตันทุกระดับ",
+    choices: ["House of Cards", "Scandal", "Designated Survivor", "Succession"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-149",
+    title: "Succession",
+    description:
+      "พี่น้องตระกูลเจ้าของอาณาจักรสื่อแข่งขันกันเพื่อช่วงชิงตำแหน่งทายาท ท่ามกลางเกมอำนาจที่ทั้งตลกร้ายและเจ็บคม",
+    choices: ["Succession", "Billions", "House of Cards", "Industry"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-150",
+    title: "The Crown",
+    description:
+      "ดราม่ายาวว่าด้วยชีวิตราชวงศ์อังกฤษผ่านหลายทศวรรษ เน้นแรงกดดันระหว่างหน้าที่สาธารณะกับชีวิตส่วนตัว",
+    choices: ["The Crown", "Victoria", "Downton Abbey", "Spencer"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-151",
+    title: "Downton Abbey",
+    description:
+      "ครอบครัวชนชั้นสูงกับเหล่าคนรับใช้ในคฤหาสน์อังกฤษเผชิญการเปลี่ยนแปลงของสังคมต้นศตวรรษที่ 20",
+    choices: ["Downton Abbey", "Bridgerton", "The Crown", "Gosford Park"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-152",
+    title: "Bridgerton",
+    description:
+      "สังคมชนชั้นสูงลอนดอนยุครีเจนซีเต็มไปด้วยงานเต้นรำ ข่าวลือ และการจับคู่แต่งงานที่มีทั้งรักและผลประโยชน์",
+    choices: ["Bridgerton", "Downton Abbey", "Pride and Prejudice", "The Great"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-153",
+    title: "The Queen's Gambit",
+    description:
+      "เด็กกำพร้าผู้ค้นพบพรสวรรค์หมากรุกไต่สู่เวทีโลก พร้อมต่อสู้กับความโดดเดี่ยวและแรงกดดันชื่อเสียง",
+    choices: ["The Queen's Gambit", "Searching for Bobby Fischer", "Whiplash", "A Beautiful Mind"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-154",
+    title: "Chernobyl",
+    description:
+      "มินิซีรีส์เล่าเหตุระเบิดโรงไฟฟ้านิวเคลียร์และผลกระทบมหาศาลต่อผู้คน พร้อมสะท้อนราคาของการปกปิดความจริง",
+    choices: ["Chernobyl", "The Days", "Oppenheimer", "The Crown"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-155",
+    title: "Band of Brothers",
+    description:
+      "หน่วยพลร่มอเมริกันผ่านสมรภูมิยุโรปในสงครามโลกครั้งที่สอง ถ่ายทอดมิตรภาพและความโหดร้ายอย่างสมจริง",
+    choices: ["Band of Brothers", "The Pacific", "1917", "Dunkirk"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-156",
+    title: "The Pacific",
+    description:
+      "มินิซีรีส์สงครามโลกครั้งที่สองฝั่งสมรภูมิแปซิฟิก เน้นประสบการณ์ทหารราบในสนามรบที่สาหัสและยืดเยื้อ",
+    choices: ["The Pacific", "Band of Brothers", "Hacksaw Ridge", "Midway"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-157",
+    title: "Vikings",
+    description:
+      "ชาวนานอร์สผู้ทะเยอทะยานออกเรือไกลเกินขอบฟ้าด้วยเทคโนโลยีเดินเรือใหม่ ก่อนกลายเป็นผู้นำที่ต้องแบกทั้งตำนานและความสูญเสีย",
+    choices: ["Vikings", "The Last Kingdom", "Barbarians", "Game of Thrones"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-158",
+    title: "The Last Kingdom",
+    description:
+      "เด็กแซกซอนที่ถูกไวกิ้งเลี้ยงดูต้องเลือกระหว่างสายเลือดกับครอบครัวที่หล่อหลอมเขา ท่ามกลางสงครามรวมอาณาจักรอังกฤษ",
+    choices: ["The Last Kingdom", "Vikings", "Knightfall", "Barbarians"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-159",
+    title: "House of the Dragon",
+    description:
+      "ตระกูลมังกรทรงอำนาจแตกเป็นสองฝ่ายจากปัญหาสืบทอดบัลลังก์ ความขัดแย้งในบ้านเดียวกันลุกลามเป็นสงครามใหญ่",
+    choices: ["House of the Dragon", "Game of Thrones", "The Witcher", "Rings of Power"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-160",
+    title: "The Witcher",
+    description:
+      "นักล่าปีศาจรับจ้างผู้กลายพันธุ์เดินทางในโลกแฟนตาซีที่การเมืองซับซ้อน ชะตาของเขาผูกกับหญิงสาวผู้มีพลังพิเศษ",
+    choices: ["The Witcher", "Shadow and Bone", "Game of Thrones", "Carnival Row"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-161",
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    description:
+      "กลุ่มผู้ร่วมทางต่างเผ่าพันธุ์ออกเดินทางเพื่อนำวัตถุอำนาจสูงสุดไปยังสถานที่ที่อันตรายที่สุดก่อนมันครอบงำโลก",
+    choices: ["The Lord of the Rings: The Fellowship of the Ring", "The Hobbit: An Unexpected Journey", "The Chronicles of Narnia", "Willow"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-162",
+    title: "The Hobbit: An Unexpected Journey",
+    description:
+      "ฮอบบิทผู้รักความสงบถูกชวนออกผจญภัยกับพ่อมดและคนแคระเพื่อทวงบ้านเก่าจากมังกร",
+    choices: ["The Hobbit: An Unexpected Journey", "The Fellowship of the Ring", "Eragon", "Dragonheart"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-163",
+    title: "Pirates of the Caribbean: The Curse of the Black Pearl",
+    description:
+      "ช่างตีเหล็กหนุ่มและโจรสลัดจอมเพี้ยนร่วมมือกันช่วยหญิงสาวจากคำสาปที่เกี่ยวข้องกับทองคำโบราณ",
+    choices: ["Pirates of the Caribbean: The Curse of the Black Pearl", "Treasure Island", "Peter Pan", "The Three Musketeers"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-164",
+    title: "Indiana Jones and the Raiders of the Lost Ark",
+    description:
+      "นักโบราณคดีนักผจญภัยแข่งกับฝ่ายตรงข้ามเพื่อค้นหาวัตถุศักดิ์สิทธิ์ก่อนถูกใช้เป็นอาวุธสงคราม",
+    choices: ["Indiana Jones and the Raiders of the Lost Ark", "The Mummy", "National Treasure", "Uncharted"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-165",
+    title: "National Treasure",
+    description:
+      "นักล่าสมบัติถอดรหัสปริศนาประวัติศาสตร์อเมริกันจากเบาะแสที่ซ่อนในเอกสารสำคัญ",
+    choices: ["National Treasure", "The Da Vinci Code", "Indiana Jones", "Sherlock Holmes"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-166",
+    title: "The Da Vinci Code",
+    description:
+      "นักสัญลักษณ์ศาสตร์ถูกดึงเข้าคดีฆาตกรรมในพิพิธภัณฑ์และต้องไขรหัสที่ซ่อนในงานศิลป์ชื่อดัง",
+    choices: ["The Da Vinci Code", "Angels & Demons", "National Treasure", "Inferno"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-167",
+    title: "Sherlock Holmes (2009)",
+    description:
+      "นักสืบอัจฉริยะสายบู๊กับคู่หูแพทย์ทหารต้องหยุดแผนของศัตรูที่ผสมวิทยาศาสตร์กับภาพลวงตาลัทธิ",
+    choices: ["Sherlock Holmes (2009)", "The Prestige", "The Great Mouse Detective", "Enola Holmes"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-168",
+    title: "Mission: Impossible - Fallout",
+    description:
+      "สายลับทีมพิเศษต้องแข่งเวลาแย่งอาวุธร้ายแรงท่ามกลางการทรยศซ้อนทรยศ พร้อมฉากแอ็กชันเสี่ยงตายต่อเนื่อง",
+    choices: ["Mission: Impossible - Fallout", "Jason Bourne", "Jack Ryan", "Tenet"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-169",
+    title: "Top Gun: Maverick",
+    description:
+      "นักบินทดสอบรุ่นเก๋ากลับมาฝึกนักบินรุ่นใหม่ในภารกิจแทบเป็นไปไม่ได้ ขณะต้องเผชิญอดีตที่ยังค้างคา",
+    choices: ["Top Gun: Maverick", "Top Gun", "Pearl Harbor", "Stealth"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-170",
+    title: "Ford v Ferrari",
+    description:
+      "นักออกแบบรถกับนักขับหัวขบถร่วมมือสร้างรถแข่งท้าชนเจ้าตลาดยุโรปในสนามเลอม็อง ความต่างนิสัยกลายเป็นพลังของทีม",
+    choices: ["Ford v Ferrari", "Rush", "Gran Turismo", "Moneyball"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-171",
+    title: "Rush",
+    description:
+      "การดวลของนักขับฟอร์มูลาวันสองสไตล์—คนหนึ่งเสี่ยงสุดทาง อีกคนวินัยเข้ม—ผลักกันและกันสู่ขีดจำกัด",
+    choices: ["Rush", "Ford v Ferrari", "Senna", "Le Mans '66"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-172",
+    title: "1917",
+    description:
+      "ทหารสองนายได้รับคำสั่งส่งสารด่วนข้ามแนวรบในสงครามโลกครั้งที่หนึ่ง เวลาที่จำกัดทำให้ทุกอุปสรรคดูใหญ่กว่าชีวิต",
+    choices: ["1917", "Dunkirk", "All Quiet on the Western Front", "Saving Private Ryan"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-173",
+    title: "Dunkirk",
+    description:
+      "การอพยพครั้งใหญ่จากชายหาดท่ามกลางการโจมตีถูกเล่าผ่านสามมุมมองเวลาที่เดินไม่เท่ากัน—ทางบก ทางทะเล และทางอากาศ",
+    choices: ["Dunkirk", "1917", "Midway", "Darkest Hour"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-174",
+    title: "Saving Private Ryan",
+    description:
+      "หน่วยทหารอเมริกันได้รับภารกิจค้นหาทหารนายหนึ่งกลางสมรภูมิยุโรปหลังวันยกพลขึ้นบก",
+    choices: ["Saving Private Ryan", "Band of Brothers", "Fury", "Hacksaw Ridge"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-175",
+    title: "Hacksaw Ridge",
+    description:
+      "ทหารแพทย์ผู้ยึดหลักไม่จับอาวุธต้องพิสูจน์ตัวเองในสนามรบที่โหดที่สุดแห่งหนึ่งของสงคราม",
+    choices: ["Hacksaw Ridge", "Saving Private Ryan", "Dunkirk", "The Pacific"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-176",
+    title: "All Quiet on the Western Front",
+    description:
+      "วัยรุ่นเยอรมันสมัครเป็นทหารด้วยความฮึกเหิมก่อนเผชิญความจริงอันสั่นสะเทือนของสงครามสนามเพลาะ",
+    choices: ["All Quiet on the Western Front", "1917", "Paths of Glory", "Dunkirk"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-177",
+    title: "The Imitation Game",
+    description:
+      "นักคณิตศาสตร์ผู้สังคมไม่ค่อยยอมรับนำทีมถอดรหัสการสื่อสารศัตรูในสงครามโลก ผลงานยิ่งใหญ่แลกมาด้วยแรงกดดันมหาศาล",
+    choices: ["The Imitation Game", "A Beautiful Mind", "Oppenheimer", "Darkest Hour"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-178",
+    title: "A Beautiful Mind",
+    description:
+      "อัจฉริยะคณิตศาสตร์ผู้ปฏิวัติแนวคิดเศรษฐศาสตร์ต้องต่อสู้กับความเจ็บป่วยทางจิตที่คุกคามทั้งงานและครอบครัว",
+    choices: ["A Beautiful Mind", "The Theory of Everything", "The Imitation Game", "Good Will Hunting"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-179",
+    title: "The Theory of Everything",
+    description:
+      "เรื่องราวชีวิตนักฟิสิกส์ผู้ค้นคว้าจักรวาลท่ามกลางความท้าทายทางสุขภาพและความสัมพันธ์ส่วนตัว",
+    choices: ["The Theory of Everything", "A Beautiful Mind", "Oppenheimer", "Interstellar"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-180",
+    title: "Oppenheimer",
+    description:
+      "ชีวประวัตินักวิทยาศาสตร์ผู้มีบทบาทสร้างอาวุธที่เปลี่ยนสมดุลโลก หนังสลับเวลาเพื่อสำรวจทั้งความสำเร็จและภาระทางศีลธรรม",
+    choices: ["Oppenheimer", "The Imitation Game", "Chernobyl", "First Man"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-181",
+    title: "Bohemian Rhapsody",
+    description:
+      "วงร็อกอังกฤษและนักร้องนำผู้มีพลังเวทีโดดเด่นเดินทางจากผับเล็กสู่คอนเสิร์ตระดับตำนาน",
+    choices: ["Bohemian Rhapsody", "Rocketman", "Elvis", "A Star Is Born"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-182",
+    title: "Rocketman",
+    description:
+      "แฟนตาซีมิวสิคัลชีวประวัติศิลปินป๊อประดับโลก ถ่ายทอดการต่อสู้ภายในผ่านเพลงฮิตที่คนทั้งโลกร้องตามได้",
+    choices: ["Rocketman", "Bohemian Rhapsody", "Elvis", "Whiplash"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-183",
+    title: "Elvis",
+    description:
+      "ชีวประวัติราชาร็อกแอนด์โรลล์ที่เล่าความสัมพันธ์ซับซ้อนกับผู้จัดการผู้ควบคุมเส้นทางอาชีพมายาวนาน",
+    choices: ["Elvis", "Bohemian Rhapsody", "Rocketman", "Walk the Line"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-184",
+    title: "A Star Is Born",
+    description:
+      "ศิลปินชื่อดังช่วยดันนักร้องสาวพรสวรรค์สู่แสงสปอตไลต์ ขณะชีวิตส่วนตัวของเขาค่อย ๆ แตกสลาย",
+    choices: ["A Star Is Born", "La La Land", "Begin Again", "Whiplash"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-185",
+    title: "The Greatest Showman",
+    description:
+      "ชายผู้ทะเยอทะยานสร้างการแสดงที่รวบรวมผู้คนนอกบรรทัดฐานให้กลายเป็นปรากฏการณ์บันเทิง",
+    choices: ["The Greatest Showman", "La La Land", "Moulin Rouge!", "Chicago"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-186",
+    title: "Black Panther",
+    description:
+      "กษัตริย์หนุ่มกลับบ้านเพื่อขึ้นครองบัลลังก์ประเทศที่ก้าวหน้าลับจากโลกภายนอก แต่ต้องเผชิญผู้ท้าชิงที่มีอุดมการณ์แรงกล้า",
+    choices: ["Black Panther", "Aquaman", "Shang-Chi", "Thor"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-187",
+    title: "Spider-Man: No Way Home",
+    description:
+      "วัยรุ่นผู้ใส่หน้ากากเผชิญผลกระทบเมื่อความลับตัวตนถูกเปิดเผย เขาขอความช่วยเหลือจากเวทมนตร์ที่กลับซับซ้อนกว่าที่คิด",
+    choices: ["Spider-Man: No Way Home", "Doctor Strange", "The Flash", "Into the Spider-Verse"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-188",
+    title: "Doctor Strange",
+    description:
+      "ศัลยแพทย์ชื่อดังชีวิตพังหลังอุบัติเหตุและออกค้นหาวิธีรักษา จนได้เรียนรู้ศาสตร์ลึกลับที่เปิดประตูสู่มิติอื่น",
+    choices: ["Doctor Strange", "Inception", "The Ancient One", "Shang-Chi"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-189",
+    title: "Guardians of the Galaxy",
+    description:
+      "กลุ่มคนนอกกฎหมายจากต่างดาวต้องจับมือกันอย่างไม่เต็มใจเพื่อหยุดวัตถุพลังทำลายล้างระดับจักรวาล",
+    choices: ["Guardians of the Galaxy", "Thor: Ragnarok", "The Suicide Squad", "Star Trek"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-190",
+    title: "Thor: Ragnarok",
+    description:
+      "เทพสายฟ้าต้องเอาตัวรอดจากดาวนักสู้และหาทางกลับไปปกป้องบ้านเกิดจากภัยที่เกี่ยวพันอดีตครอบครัว",
+    choices: ["Thor: Ragnarok", "Guardians of the Galaxy", "Aquaman", "Loki"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-191",
+    title: "Shang-Chi and the Legend of the Ten Rings",
+    description:
+      "ชายหนุ่มที่ซ่อนอดีตการฝึกโหดไว้หลังชีวิตธรรมดา ถูกดึงกลับสู่โลกองค์กรลับของพ่อผู้ทรงอำนาจ",
+    choices: ["Shang-Chi and the Legend of the Ten Rings", "Doctor Strange", "Black Panther", "Mulan"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-192",
+    title: "The Batman",
+    description:
+      "มหาเศรษฐีผู้ล้างแค้นในเงามืดต้องไขปริศนาฆาตกรที่ทิ้งข้อความเชิงสัญลักษณ์ซึ่งพุ่งเป้าไปยังโครงสร้างอำนาจของเมือง",
+    choices: ["The Batman", "Se7en", "Joker", "Zodiac"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-193",
+    title: "Joker",
+    description:
+      "ชายทำงานรับจ้างในเมืองที่เพิกเฉยต่อคนตัวเล็กค่อย ๆ ถูกกดจนระเบิดเป็นบุคคลที่กลายเป็นสัญลักษณ์ความวุ่นวาย",
+    choices: ["Joker", "Taxi Driver", "The King of Comedy", "The Dark Knight"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-194",
+    title: "The Suicide Squad",
+    description:
+      "ทีมนักโทษอันตรายถูกส่งไปภารกิจฆ่าตัวตายในเกาะที่เต็มไปด้วยความลับทางการทหาร",
+    choices: ["The Suicide Squad", "Guardians of the Galaxy", "Deadpool 2", "Peacemaker"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-195",
+    title: "Deadpool",
+    description:
+      "อดีตทหารรับจ้างที่ได้พลังฟื้นฟูเหนือมนุษย์พูดกับผู้ชมตรง ๆ พร้อมภารกิจส่วนตัวที่ทั้งโหดและกวน",
+    choices: ["Deadpool", "Venom", "The Suicide Squad", "Kick-Ass"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-196",
+    title: "Venom",
+    description:
+      "นักข่าวสืบสวนกลายเป็นโฮสต์ของสิ่งมีชีวิตต่างดาวที่ทั้งช่วยและคุกคามเขาในเวลาเดียวกัน",
+    choices: ["Venom", "Upgrade", "Spider-Man", "Morbius"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-197",
+    title: "Pacific Rim",
+    description:
+      "เมื่อสัตว์ประหลาดยักษ์ขึ้นมาจากมหาสมุทร มนุษย์สร้างหุ่นยนต์ยักษ์ที่ต้องขับแบบคู่เพื่อรับมือ",
+    choices: ["Pacific Rim", "Godzilla: King of the Monsters", "Transformers", "Edge of Tomorrow"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-198",
+    title: "Godzilla vs. Kong",
+    description:
+      "สัตว์ประหลาดระดับตำนานสองฝ่ายถูกผลักให้ปะทะกัน ขณะที่มนุษย์พยายามค้นหาสาเหตุเบื้องหลัง",
+    choices: ["Godzilla vs. Kong", "Pacific Rim", "King Kong (2005)", "Rampage"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-199",
+    title: "Train to Busan",
+    description:
+      "พ่อและลูกขึ้นรถไฟความเร็วสูงในวันที่โรคระบาดปะทุ การเดินทางที่ควรสั้นกลายเป็นบททดสอบมนุษยธรรม",
+    choices: ["Train to Busan", "World War Z", "Peninsula", "Alive"],
+    correctIndex: 0,
+  },
+  {
+    id: "mg-200",
+    title: "World War Z",
+    description:
+      "เจ้าหน้าที่องค์การระหว่างประเทศเดินทางข้ามประเทศเพื่อหาต้นตอและรูปแบบการระบาดของฝูงติดเชื้อวิ่งเร็ว",
+    choices: ["World War Z", "I Am Legend", "Train to Busan", "28 Weeks Later"],
+    correctIndex: 0,
+  },
 ];
 
 export const MOVIE_GUESS_EVENTS: GameEvent[] = MOVIE_GUESS_DATA.map((entry) => ({

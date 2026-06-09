@@ -164,6 +164,14 @@ export function HomeScreen() {
             >
               Movie Guess
             </Button>
+            <Button
+              type="button"
+              variant={gameMode === "HARRY_POTTER" ? "default" : "secondary"}
+              onClick={() => setGameMode("HARRY_POTTER")}
+              className="h-12"
+            >
+              Wizarding World
+            </Button>
           </div>
           <p className="text-xs text-muted-foreground">
             {gameMode === "GLOBAL"
@@ -174,7 +182,9 @@ export function HomeScreen() {
                   ? "Play with science discoveries and technology milestones."
                   : gameMode === "MOVIE_GUESS"
                     ? "Guess the movie, anime, or series from a synopsis."
-                    : "Place famous movies in the correct release window."}
+                    : gameMode === "HARRY_POTTER"
+                      ? "Answer Wizarding World questions across Harry Potter and Fantastic Beasts."
+                      : "Place famous movies in the correct release window."}
           </p>
         </div>
 
@@ -238,15 +248,17 @@ export function HomeScreen() {
           <li>1. Create a room or join with a code</li>
           <li>
             2.{" "}
-            {gameMode === "MOVIE_GUESS"
-              ? "Choose the correct title from the choices."
+            {gameMode === "MOVIE_GUESS" || gameMode === "HARRY_POTTER"
+              ? "Choose the correct answer from the choices."
               : "Answer questions by choosing the matching range."}
           </li>
           <li>3. Correct answers move you forward</li>
           <li>
             4.{" "}
             {gameMode === "MOVIE_GUESS"
-              ? "First to guess 5 titles correctly wins!"
+              ? "First to guess 10 titles correctly wins!"
+              : gameMode === "HARRY_POTTER"
+                ? "First to answer 10 questions correctly wins!"
               : "First to reach position 15 wins!"}
           </li>
         </ul>

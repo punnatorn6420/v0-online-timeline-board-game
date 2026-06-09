@@ -104,7 +104,8 @@ export type GameMode =
   | "THAILAND"
   | "SCIENCE"
   | "MOVIES"
-  | "MOVIE_GUESS";
+  | "MOVIE_GUESS"
+  | "HARRY_POTTER";
 
 export type Category =
   | "HISTORY"
@@ -215,7 +216,7 @@ export type AvatarId = (typeof AVATARS)[number]["id"];
 // Board configuration
 export const BOARD_SIZE = 16;
 export const FINISH_POSITION = 15;
-export const MOVIE_GUESS_TARGET = 5;
+export const MOVIE_GUESS_TARGET = 10;
 export const MOVIE_GUESS_BOARD_SIZE = MOVIE_GUESS_TARGET + 1;
 export const DEFAULT_CATEGORIES: Category[] = [
   "HISTORY",
@@ -269,11 +270,15 @@ export function getRangesForMode(mode: GameMode): Record<number, RangeInfo> {
 }
 
 export function getBoardSize(mode: GameMode): number {
-  return mode === "MOVIE_GUESS" ? MOVIE_GUESS_BOARD_SIZE : BOARD_SIZE;
+  return mode === "MOVIE_GUESS" || mode === "HARRY_POTTER"
+    ? MOVIE_GUESS_BOARD_SIZE
+    : BOARD_SIZE;
 }
 
 export function getFinishPosition(mode: GameMode): number {
-  return mode === "MOVIE_GUESS" ? MOVIE_GUESS_TARGET : FINISH_POSITION;
+  return mode === "MOVIE_GUESS" || mode === "HARRY_POTTER"
+    ? MOVIE_GUESS_TARGET
+    : FINISH_POSITION;
 }
 
 export function getMovieRangeIndex(year: number): TimelineRange {

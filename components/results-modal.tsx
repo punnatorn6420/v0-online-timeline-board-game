@@ -20,7 +20,7 @@ export function ResultsModal({
 }: ResultsModalProps) {
   const ranges = getRangesForMode(mode);
   const correctRangeInfo = ranges[results.correctRange];
-  const isMovieGuess = mode === "MOVIE_GUESS";
+  const isChoiceMode = mode === "MOVIE_GUESS" || mode === "HARRY_POTTER";
 
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
@@ -29,7 +29,7 @@ export function ResultsModal({
         <div className="text-center mb-6">
           <p className="text-sm text-muted-foreground mb-2">Correct Answer</p>
           <div className="inline-flex items-center gap-3 px-4 py-3 bg-game-success/20 rounded-lg">
-            {isMovieGuess ? (
+            {isChoiceMode ? (
               <div className="text-left">
                 <p className="text-lg font-semibold text-game-success">
                   {results.correctAnswerText ?? "Unknown title"}

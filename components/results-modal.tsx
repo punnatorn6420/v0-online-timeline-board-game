@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { getRangesForMode, type GameMode, type RoundResults } from "@/lib/game-types";
-import { Check, X, ArrowUp, ArrowDown, Minus } from "lucide-react";
+import { Check, X, ArrowUp, ArrowDown, Minus, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface ResultsModalProps {
@@ -28,13 +28,16 @@ export function ResultsModal({
         {/* Correct Answer */}
         <div className="text-center mb-6">
           <p className="text-sm text-muted-foreground mb-2">Correct Answer</p>
-          <div className="inline-flex items-center gap-3 px-4 py-3 bg-game-success/20 rounded-lg">
+          <div className="inline-flex items-center gap-3 px-4 py-3 bg-game-success/20 rounded-lg motion-safe:animate-in motion-safe:zoom-in-95">
             {isChoiceMode ? (
-              <div className="text-left">
+              <>
+                <Trophy className="h-5 w-5 text-game-success" />
+                <div className="text-left">
                 <p className="text-lg font-semibold text-game-success">
                   {results.correctAnswerText ?? "Unknown title"}
                 </p>
-              </div>
+                </div>
+              </>
             ) : (
               <>
                 <span className="text-3xl font-bold text-game-success">
@@ -69,9 +72,10 @@ export function ResultsModal({
               <div
                 key={player.id}
                 className={cn(
-                  "flex items-center gap-3 p-3 rounded-lg",
+                  "flex items-center gap-3 p-3 rounded-lg motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-1",
                   isCurrentPlayer ? "bg-primary/10" : "bg-secondary"
                 )}
+                style={{ animationDelay: `${results.players.indexOf(player) * 40}ms` }}
               >
                 {/* Correct/Wrong indicator */}
                 <div
@@ -127,7 +131,7 @@ export function ResultsModal({
 
                 {/* New position */}
                 <div className="text-sm text-muted-foreground">
-                  Pos: {player.newPosition}
+                  {isChoiceMode ? "Score" : "Pos"}: {player.newPosition}
                 </div>
               </div>
             );

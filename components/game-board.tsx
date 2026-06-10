@@ -22,8 +22,10 @@ import type {
   Category,
   GameMode,
   RoundResults,
+  MovieGuessWinTarget,
 } from "@/lib/game-types";
-import { Loader2, Clock, Users, Languages } from "lucide-react";
+import { DEFAULT_MOVIE_GUESS_TARGET } from "@/lib/game-types";
+import { Loader2, Clock, Users, Languages, Film, Trophy } from "lucide-react";
 
 interface GameEvent {
   id: string;
@@ -38,6 +40,7 @@ interface GameState {
   code: string;
   status: "waiting" | "playing" | "finished";
   mode: GameMode;
+  winTarget?: MovieGuessWinTarget;
   players: Record<string, Player>;
   hostId: string;
   currentRound: number;
@@ -72,6 +75,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState<RoundResults | null>(null);
   const [showWinner, setShowWinner] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
   const lastRoundRef = useRef<number | null>(null);
   const lastResultsRoundRef = useRef<number | null>(null);
 
@@ -98,8 +102,8 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
 
         const data = snapshot.data() as GameState;
         setGame({
-          id: snapshot.id,
           ...data,
+          id: snapshot.id,
           submissionStatus: buildSubmissionStatus(data.players),
         });
 
@@ -198,6 +202,36 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
     setSelectedAnswer(null);
   };
 
+  const handlePlayAgain = async () => {
+    if (!player || !game) return;
+
+    setIsResetting(true);
+    try {
+      const response = await fetch("/api/game", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "playAgain",
+          roomId,
+          playerId: player.id,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setShowWinner(false);
+        setShowResults(false);
+        setResults(null);
+      } else {
+        setError(data.error || "Failed to play again");
+      }
+    } catch {
+      setError("Failed to play again");
+    } finally {
+      setIsResetting(false);
+    }
+  };
+
   if (!player) {
     return (
       <main className="min-h-screen flex items-center justify-center p-4">
@@ -235,6 +269,11 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
   const players = Object.values(game.players);
   const allSubmitted = game.submissionStatus.allSubmitted;
   const isChoiceMode = game.mode === "MOVIE_GUESS" || game.mode === "HARRY_POTTER";
+  const winTarget = game.winTarget ?? DEFAULT_MOVIE_GUESS_TARGET;
+  const submittedPercent =
+    game.submissionStatus.total > 0
+      ? (game.submissionStatus.submitted / game.submissionStatus.total) * 100
+      : 0;
   const choiceTitle =
     game.mode === "MOVIE_GUESS" ? "Movie Synopsis" : "Wizarding World Question";
   const translateEventText = () => {
@@ -260,6 +299,12 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
           </span>
         </div>
         <div className="flex items-center gap-4">
+          {isChoiceMode && (
+            <div className="hidden sm:flex items-center gap-2 text-sm text-accent">
+              <Trophy size={16} />
+              <span>Goal {winTarget}</span>
+            </div>
+          )}
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Users size={16} />
             <span>{players.length}</span>
@@ -273,7 +318,7 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
       {/* Round Banner */}
       <RoundBanner 
         roundType={game.roundType} 
-        hint={game.hint}
+        hint={game.hint ?? undefined}
         category={game.forcedCategory}
       />
 
@@ -291,11 +336,18 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
       {/* Event Card */}
       <div className="flex-1 p-4">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-card rounded-xl border border-border p-6 mb-6 shadow-sm">
+          <div className="bg-card rounded-xl border border-border p-6 mb-6 shadow-sm motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-              <span className="px-2 py-1 bg-secondary rounded text-xs font-medium text-muted-foreground">
-                {game.currentEvent.category}
-              </span>
+              <div className="flex items-center gap-2">
+                {isChoiceMode && (
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/15 text-primary">
+                    <Film className="w-4 h-4" />
+                  </span>
+                )}
+                <span className="px-2 py-1 bg-secondary rounded text-xs font-medium text-muted-foreground">
+                  {game.currentEvent.category}
+                </span>
+              </div>
               <Button
                 type="button"
                 variant="outline"
@@ -311,6 +363,15 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
             </h2>
             <p className="text-muted-foreground">
               {game.currentEvent.description}
+            </p>
+            <div className="mt-5 h-2 overflow-hidden rounded-full bg-secondary">
+              <div
+                className="h-full rounded-full bg-primary transition-all duration-500"
+                style={{ width: `${submittedPercent}%` }}
+              />
+            </div>
+            <p className="mt-2 text-xs text-muted-foreground">
+              {game.submissionStatus.submitted} / {game.submissionStatus.total} players locked in
             </p>
           </div>
 
@@ -415,6 +476,9 @@ export function GameBoard({ roomId, roomCode }: GameBoardProps) {
         <WinnerModal
           winner={game.players[game.winnerId]}
           isCurrentPlayer={game.winnerId === player.id}
+          canPlayAgain={player.id === game.hostId}
+          isResetting={isResetting}
+          onPlayAgain={handlePlayAgain}
           onClose={() => router.push("/")}
         />
       )}

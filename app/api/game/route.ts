@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   getRoom,
   startGame,
+  resetGame,
   submitAnswer,
   revealAndProcessRound,
   getSubmissionStatus,
@@ -43,6 +44,8 @@ export async function GET(request: NextRequest) {
         status: room.status,
         players: room.players,
         hostId: room.hostId,
+        mode: room.mode,
+        winTarget: room.winTarget,
         currentRound: room.currentRound,
         roundType: room.roundType,
         boardTiles: room.boardTiles,
@@ -98,12 +101,37 @@ export async function POST(request: NextRequest) {
             status: updatedRoom!.status,
             currentRound: updatedRoom!.currentRound,
             roundType: updatedRoom!.roundType,
+            winTarget: updatedRoom!.winTarget,
             hint: updatedRoom!.hint,
             forcedCategory: updatedRoom!.forcedCategory,
             currentEvent,
             players: updatedRoom!.players,
             boardTiles: updatedRoom!.boardTiles,
           },
+        });
+      }
+
+      case "playAgain": {
+        const result = await resetGame(roomId, playerId);
+        if (!result.success) {
+          return NextResponse.json({ error: result.error }, { status: 400 });
+        }
+
+        const updatedRoom = await getRoom(roomId);
+
+        return NextResponse.json({
+          success: true,
+          room: updatedRoom
+            ? {
+                id: updatedRoom.id,
+                code: updatedRoom.code,
+                status: updatedRoom.status,
+                players: updatedRoom.players,
+                hostId: updatedRoom.hostId,
+                mode: updatedRoom.mode,
+                winTarget: updatedRoom.winTarget,
+              }
+            : null,
         });
       }
 

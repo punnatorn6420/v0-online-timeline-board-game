@@ -7,8 +7,13 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { usePlayer } from "@/lib/player-context";
-import type { GameMode } from "@/lib/game-types";
-import { Clock, Users, Plus, ArrowRight, LogOut } from "lucide-react";
+import {
+  DEFAULT_MOVIE_GUESS_TARGET,
+  MOVIE_GUESS_WIN_TARGETS,
+  type GameMode,
+  type MovieGuessWinTarget,
+} from "@/lib/game-types";
+import { Clock, Users, Plus, ArrowRight, LogOut, Trophy } from "lucide-react";
 
 export function HomeScreen() {
   const router = useRouter();
@@ -18,6 +23,9 @@ export function HomeScreen() {
   const [isJoining, setIsJoining] = useState(false);
   const [error, setError] = useState("");
   const [gameMode, setGameMode] = useState<GameMode>("GLOBAL");
+  const [winTarget, setWinTarget] = useState<MovieGuessWinTarget>(
+    DEFAULT_MOVIE_GUESS_TARGET
+  );
 
   if (!player) return null;
 
@@ -34,6 +42,7 @@ export function HomeScreen() {
           playerName: player.displayName,
           playerAvatar: player.avatar,
           mode: gameMode,
+          winTarget,
         }),
       });
 
@@ -188,6 +197,28 @@ export function HomeScreen() {
           </p>
         </div>
 
+        {gameMode === "MOVIE_GUESS" && (
+          <div className="space-y-3 rounded-xl border border-border bg-card/70 p-4">
+            <Label className="flex items-center gap-2">
+              <Trophy className="w-4 h-4 text-accent" />
+              Points to Win
+            </Label>
+            <div className="grid grid-cols-3 gap-2">
+              {MOVIE_GUESS_WIN_TARGETS.map((target) => (
+                <Button
+                  key={target}
+                  type="button"
+                  variant={winTarget === target ? "default" : "secondary"}
+                  onClick={() => setWinTarget(target)}
+                  className="h-11"
+                >
+                  {target}
+                </Button>
+              ))}
+            </div>
+          </div>
+        )}
+
         <Button
           onClick={handleCreateRoom}
           disabled={isCreating}
@@ -256,7 +287,7 @@ export function HomeScreen() {
           <li>
             4.{" "}
             {gameMode === "MOVIE_GUESS"
-              ? "First to guess 10 titles correctly wins!"
+              ? `First to guess ${winTarget} titles correctly wins!`
               : gameMode === "HARRY_POTTER"
                 ? "First to answer 10 questions correctly wins!"
               : "First to reach position 15 wins!"}

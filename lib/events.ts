@@ -13020,7 +13020,1299 @@ const MOVIE_GUESS_DATA = [
   },
 ];
 
-export const MOVIE_GUESS_EVENTS: GameEvent[] = MOVIE_GUESS_DATA.map((entry) => {
+type MovieGuessSeed = [
+  title: string,
+  description: string,
+  choices: [string, string, string, string],
+];
+
+const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
+  [
+    "The Wizard of Oz",
+    "A Kansas girl is swept into a colorful land and follows a yellow road with three unusual friends.",
+    [
+      "The Wizard of Oz",
+      "Mary Poppins",
+      "Alice in Wonderland",
+      "Willy Wonka & the Chocolate Factory",
+    ],
+  ],
+  [
+    "Casablanca",
+    "A nightclub owner in wartime Morocco must choose between old love and a dangerous act of resistance.",
+    ["Casablanca", "Notorious", "The Third Man", "To Have and Have Not"],
+  ],
+  [
+    "Citizen Kane",
+    "A reporter investigates the final word of a powerful newspaper tycoon by tracing his rise and loneliness.",
+    [
+      "Citizen Kane",
+      "Mr. Smith Goes to Washington",
+      "The Magnificent Ambersons",
+      "Sunset Boulevard",
+    ],
+  ],
+  [
+    "Psycho",
+    "A woman on the run stops at a remote motel where the quiet owner hides a terrifying secret.",
+    ["Psycho", "Halloween", "The Birds", "Rosemary's Baby"],
+  ],
+  [
+    "Vertigo",
+    "A retired detective becomes obsessed with a woman he is hired to follow through San Francisco.",
+    ["Vertigo", "Rear Window", "North by Northwest", "Chinatown"],
+  ],
+  [
+    "Rear Window",
+    "A photographer stuck in his apartment watches neighbors and begins to suspect one of murder.",
+    ["Rear Window", "Vertigo", "Dial M for Murder", "The Conversation"],
+  ],
+  [
+    "North by Northwest",
+    "An advertising man is mistaken for a spy and chased across America by agents and aircraft.",
+    [
+      "North by Northwest",
+      "The Man Who Knew Too Much",
+      "Charade",
+      "The 39 Steps",
+    ],
+  ],
+  [
+    "12 Angry Men",
+    "One juror questions an easy guilty vote and slowly turns a tense room into a test of doubt.",
+    [
+      "12 Angry Men",
+      "Anatomy of a Murder",
+      "Witness for the Prosecution",
+      "A Few Good Men",
+    ],
+  ],
+  [
+    "Singin' in the Rain",
+    "A silent film star struggles through Hollywood's jump to sound while falling for a new performer.",
+    [
+      "Singin' in the Rain",
+      "An American in Paris",
+      "The Band Wagon",
+      "Top Hat",
+    ],
+  ],
+  [
+    "Gone with the Wind",
+    "A headstrong Southern woman fights to survive love, war, and ruin during the American Civil War.",
+    ["Gone with the Wind", "Doctor Zhivago", "Giant", "The English Patient"],
+  ],
+  [
+    "Lawrence of Arabia",
+    "A British officer becomes a legend in the desert while helping Arab forces fight the Ottoman Empire.",
+    [
+      "Lawrence of Arabia",
+      "Ben-Hur",
+      "Spartacus",
+      "The Bridge on the River Kwai",
+    ],
+  ],
+  [
+    "Ben-Hur",
+    "A betrayed nobleman survives slavery and returns for revenge in an epic famous for its chariot race.",
+    ["Ben-Hur", "The Ten Commandments", "Quo Vadis", "Spartacus"],
+  ],
+  [
+    "The Sound of Music",
+    "A spirited governess brings music into a strict household as Europe moves toward war.",
+    ["The Sound of Music", "My Fair Lady", "Mary Poppins", "Oliver!"],
+  ],
+  [
+    "Mary Poppins",
+    "A magical nanny arrives by umbrella and changes a London family's home with songs and impossible tricks.",
+    [
+      "Mary Poppins",
+      "The Sound of Music",
+      "Bedknobs and Broomsticks",
+      "Chitty Chitty Bang Bang",
+    ],
+  ],
+  [
+    "Breakfast at Tiffany's",
+    "A stylish New York dreamer and a writer become neighbors while both avoid the truth about themselves.",
+    ["Breakfast at Tiffany's", "Roman Holiday", "Sabrina", "Funny Face"],
+  ],
+  [
+    "Roman Holiday",
+    "A runaway princess explores Rome with an American reporter who realizes he has found a story and a romance.",
+    ["Roman Holiday", "Sabrina", "Charade", "To Catch a Thief"],
+  ],
+  [
+    "Some Like It Hot",
+    "Two musicians witness a crime and hide in an all-female band while gangsters close in.",
+    [
+      "Some Like It Hot",
+      "The Apartment",
+      "Bringing Up Baby",
+      "His Girl Friday",
+    ],
+  ],
+  [
+    "The Apartment",
+    "An office worker lends his apartment to executives and discovers the cost of chasing promotion.",
+    ["The Apartment", "Some Like It Hot", "Network", "The Graduate"],
+  ],
+  [
+    "Dr. Strangelove",
+    "A nuclear crisis turns into a savage comedy about generals, politicians, and the end of the world.",
+    ["Dr. Strangelove", "Fail Safe", "MASH", "Network"],
+  ],
+  [
+    "2001: A Space Odyssey",
+    "A mysterious black monolith links human evolution, a lunar discovery, and a voyage with a calm computer.",
+    [
+      "2001: A Space Odyssey",
+      "Solaris",
+      "Silent Running",
+      "The Andromeda Strain",
+    ],
+  ],
+  [
+    "A Clockwork Orange",
+    "A violent young man is captured and subjected to a disturbing experiment meant to erase his impulses.",
+    ["A Clockwork Orange", "Brazil", "THX 1138", "The Warriors"],
+  ],
+  [
+    "Dog Day Afternoon",
+    "A desperate bank robbery turns into a tense public spectacle on a hot New York day.",
+    ["Dog Day Afternoon", "Serpico", "Mean Streets", "The French Connection"],
+  ],
+  [
+    "Apocalypse Now",
+    "A soldier travels up a jungle river to find a rogue colonel during the Vietnam War.",
+    ["Apocalypse Now", "Platoon", "Full Metal Jacket", "The Deer Hunter"],
+  ],
+  [
+    "Alien",
+    "A commercial spaceship answers a distress signal and brings aboard a creature that hunts the crew.",
+    ["Alien", "The Thing", "Predator", "Event Horizon"],
+  ],
+  [
+    "The Exorcist",
+    "A desperate mother asks priests for help when her daughter appears possessed by a violent force.",
+    ["The Exorcist", "The Omen", "Poltergeist", "Carrie"],
+  ],
+  [
+    "Jaws",
+    "A seaside town is terrorized by a great white shark while officials try to protect tourism.",
+    ["Jaws", "Orca", "Deep Blue Sea", "The Meg"],
+  ],
+  [
+    "The Rocky Horror Picture Show",
+    "A stranded couple enters a strange mansion and lands inside a campy midnight musical nightmare.",
+    [
+      "The Rocky Horror Picture Show",
+      "Little Shop of Horrors",
+      "Phantom of the Paradise",
+      "Hedwig and the Angry Inch",
+    ],
+  ],
+  [
+    "Close Encounters of the Third Kind",
+    "Ordinary people are drawn by visions and music toward a mountain where visitors from space arrive.",
+    [
+      "Close Encounters of the Third Kind",
+      "E.T. the Extra-Terrestrial",
+      "Contact",
+      "Starman",
+    ],
+  ],
+  [
+    "Superman",
+    "An alien raised in Kansas becomes Earth's bright heroic protector while hiding as a mild reporter.",
+    ["Superman", "Batman Begins", "The Rocketeer", "The Phantom"],
+  ],
+  [
+    "Grease",
+    "A summer romance returns to high school with leather jackets, pink ladies, and big musical numbers.",
+    ["Grease", "Footloose", "Hairspray", "Dirty Dancing"],
+  ],
+  [
+    "Annie Hall",
+    "A neurotic comedian looks back at a witty romance and why it fell apart.",
+    ["Annie Hall", "Manhattan", "When Harry Met Sally...", "The Apartment"],
+  ],
+  [
+    "The Deer Hunter",
+    "Friends from a steel town are changed forever by war, captivity, and trauma.",
+    ["The Deer Hunter", "Coming Home", "Platoon", "Born on the Fourth of July"],
+  ],
+  [
+    "Raging Bull",
+    "A gifted boxer destroys his relationships as jealousy and rage follow him outside the ring.",
+    ["Raging Bull", "Rocky", "The Fighter", "Million Dollar Baby"],
+  ],
+  [
+    "The Shining",
+    "A family spends winter in an isolated hotel where the father unravels under supernatural pressure.",
+    ["The Shining", "Misery", "Carrie", "Doctor Sleep"],
+  ],
+  [
+    "E.T. the Extra-Terrestrial",
+    "A lonely child hides a gentle alien and tries to help him contact home.",
+    [
+      "E.T. the Extra-Terrestrial",
+      "Close Encounters of the Third Kind",
+      "Starman",
+      "Cocoon",
+    ],
+  ],
+  [
+    "Blade Runner",
+    "A weary detective hunts artificial humans in a rain-soaked future Los Angeles.",
+    ["Blade Runner", "Total Recall", "Minority Report", "Ghost in the Shell"],
+  ],
+  [
+    "Scarface",
+    "A Cuban immigrant builds a Miami drug empire and is consumed by power and paranoia.",
+    ["Scarface", "Carlito's Way", "Casino", "Donnie Brasco"],
+  ],
+  [
+    "The Terminator",
+    "A machine assassin travels from the future to kill the woman whose son will lead a resistance.",
+    ["The Terminator", "RoboCop", "Predator", "Total Recall"],
+  ],
+  [
+    "Ghostbusters",
+    "A team of paranormal investigators starts a business catching ghosts in New York City.",
+    ["Ghostbusters", "Beetlejuice", "Men in Black", "Gremlins"],
+  ],
+  [
+    "Back to the Future",
+    "A teenager accidentally travels to the past and must make his parents fall in love.",
+    [
+      "Back to the Future",
+      "Bill & Ted's Excellent Adventure",
+      "The Time Machine",
+      "Peggy Sue Got Married",
+    ],
+  ],
+  [
+    "The Breakfast Club",
+    "Five students from different cliques spend Saturday detention discovering what they share.",
+    [
+      "The Breakfast Club",
+      "Sixteen Candles",
+      "Pretty in Pink",
+      "Fast Times at Ridgemont High",
+    ],
+  ],
+  [
+    "Ferris Bueller's Day Off",
+    "A charming teen skips school and turns one day in Chicago into a legendary escape.",
+    [
+      "Ferris Bueller's Day Off",
+      "Risky Business",
+      "The Breakfast Club",
+      "Weird Science",
+    ],
+  ],
+  [
+    "Platoon",
+    "A young soldier in Vietnam is pulled between two sergeants and the moral collapse around him.",
+    ["Platoon", "Full Metal Jacket", "Hamburger Hill", "Apocalypse Now"],
+  ],
+  [
+    "Stand by Me",
+    "Four boys hike to find a rumored body and face friendship, fear, and growing up.",
+    ["Stand by Me", "The Goonies", "The Sandlot", "My Girl"],
+  ],
+  [
+    "RoboCop",
+    "A murdered police officer is rebuilt as a corporate-controlled machine in a violent future Detroit.",
+    ["RoboCop", "The Terminator", "Judge Dredd", "Total Recall"],
+  ],
+  [
+    "Die Hard",
+    "An off-duty cop fights terrorists inside a Los Angeles skyscraper during a Christmas party.",
+    ["Die Hard", "Lethal Weapon", "Under Siege", "Speed"],
+  ],
+  [
+    "Rain Man",
+    "A selfish man discovers his autistic brother and takes him on a cross-country trip.",
+    ["Rain Man", "Awakenings", "Forrest Gump", "The Savages"],
+  ],
+  [
+    "Dead Poets Society",
+    "An English teacher inspires boarding-school students to think freely and seize the day.",
+    [
+      "Dead Poets Society",
+      "Good Will Hunting",
+      "Finding Forrester",
+      "Mona Lisa Smile",
+    ],
+  ],
+  [
+    "When Harry Met Sally...",
+    "Two friends argue about love for years before realizing their own chemistry.",
+    [
+      "When Harry Met Sally...",
+      "Sleepless in Seattle",
+      "You've Got Mail",
+      "Notting Hill",
+    ],
+  ],
+  [
+    "Edward Scissorhands",
+    "A gentle artificial man with blades for hands is brought into a pastel suburban neighborhood.",
+    ["Edward Scissorhands", "Beetlejuice", "Big Fish", "Sleepy Hollow"],
+  ],
+  [
+    "Home Alone",
+    "A boy accidentally left behind defends his house from two burglars with elaborate traps.",
+    ["Home Alone", "Uncle Buck", "The Santa Clause", "Mrs. Doubtfire"],
+  ],
+  [
+    "Thelma & Louise",
+    "Two friends flee across the American Southwest after one violent night changes everything.",
+    [
+      "Thelma & Louise",
+      "Bonnie and Clyde",
+      "Fried Green Tomatoes",
+      "A League of Their Own",
+    ],
+  ],
+  [
+    "Beauty and the Beast",
+    "A book-loving young woman becomes prisoner in an enchanted castle and sees kindness in a cursed prince.",
+    ["Beauty and the Beast", "The Little Mermaid", "Aladdin", "Cinderella"],
+  ],
+  [
+    "The Bodyguard",
+    "A former Secret Service agent protects a superstar singer while danger and romance grow.",
+    ["The Bodyguard", "Pretty Woman", "Ghost", "Sleepless in Seattle"],
+  ],
+  [
+    "Groundhog Day",
+    "A cynical weather reporter relives the same small-town day until he changes himself.",
+    ["Groundhog Day", "Multiplicity", "Palm Springs", "Click"],
+  ],
+  [
+    "Schindler's List",
+    "A German businessman saves Jewish workers during the Holocaust by turning his factory into refuge.",
+    ["Schindler's List", "The Pianist", "Life Is Beautiful", "The Reader"],
+  ],
+  [
+    "The Fugitive",
+    "A wrongly convicted doctor escapes custody and searches for the one-armed man who killed his wife.",
+    ["The Fugitive", "U.S. Marshals", "The Client", "Air Force One"],
+  ],
+  [
+    "Speed",
+    "A cop tries to save passengers on a bus rigged to explode if it slows down.",
+    ["Speed", "Die Hard with a Vengeance", "Con Air", "The Rock"],
+  ],
+  [
+    "The Crow",
+    "A murdered musician returns from the dead to avenge himself and his fiancee.",
+    ["The Crow", "Dark City", "Spawn", "Blade"],
+  ],
+  [
+    "Leon: The Professional",
+    "A lonely hitman takes in a young girl after corrupt cops murder her family.",
+    ["Leon: The Professional", "Nikita", "Ronin", "The Transporter"],
+  ],
+  [
+    "Heat",
+    "A master thief and a driven detective circle each other in Los Angeles.",
+    ["Heat", "Collateral", "Point Break", "Ronin"],
+  ],
+  [
+    "Apollo 13",
+    "NASA engineers and astronauts fight to bring a damaged moon mission safely home.",
+    ["Apollo 13", "The Right Stuff", "First Man", "October Sky"],
+  ],
+  [
+    "Clueless",
+    "A rich Beverly Hills teen plays matchmaker and slowly learns she has growing up to do.",
+    ["Clueless", "Mean Girls", "10 Things I Hate About You", "Legally Blonde"],
+  ],
+  [
+    "Before Sunrise",
+    "Two strangers meet on a train and spend one night walking and talking in Vienna.",
+    ["Before Sunrise", "Lost in Translation", "Once", "In the Mood for Love"],
+  ],
+  [
+    "Babe",
+    "A small pig raised by sheepdogs dreams of proving he can herd sheep too.",
+    ["Babe", "Charlotte's Web", "Stuart Little", "Paddington"],
+  ],
+  [
+    "Trainspotting",
+    "A group of young friends in Edinburgh chase thrills while addiction wrecks their lives.",
+    [
+      "Trainspotting",
+      "Lock, Stock and Two Smoking Barrels",
+      "Snatch",
+      "Shallow Grave",
+    ],
+  ],
+  [
+    "Scream",
+    "A masked killer targets teens who know every rule of scary movies.",
+    [
+      "Scream",
+      "I Know What You Did Last Summer",
+      "Urban Legend",
+      "The Faculty",
+    ],
+  ],
+  [
+    "Jerry Maguire",
+    "A sports agent loses everything after writing an honest memo and rebuilding with one client.",
+    ["Jerry Maguire", "Moneyball", "Draft Day", "Any Given Sunday"],
+  ],
+  [
+    "The Fifth Element",
+    "A cab driver and a mysterious woman must save the future from cosmic evil.",
+    [
+      "The Fifth Element",
+      "Valerian and the City of a Thousand Planets",
+      "Total Recall",
+      "Stargate",
+    ],
+  ],
+  [
+    "Men in Black",
+    "Secret agents police aliens living on Earth while keeping humanity unaware.",
+    ["Men in Black", "Ghostbusters", "Evolution", "Galaxy Quest"],
+  ],
+  [
+    "Good Will Hunting",
+    "A brilliant janitor is pushed by a therapist and friends to face his future.",
+    [
+      "Good Will Hunting",
+      "Dead Poets Society",
+      "A Beautiful Mind",
+      "Finding Forrester",
+    ],
+  ],
+  [
+    "L.A. Confidential",
+    "Three very different cops uncover corruption and celebrity scandal in 1950s Los Angeles.",
+    ["L.A. Confidential", "Chinatown", "Mulholland Falls", "The Black Dahlia"],
+  ],
+  [
+    "Armageddon",
+    "Oil drillers are sent into space to stop an asteroid from destroying Earth.",
+    ["Armageddon", "Deep Impact", "The Core", "Independence Day"],
+  ],
+  [
+    "The Mummy",
+    "Adventurers awaken an ancient cursed priest while searching for treasure in Egypt.",
+    ["The Mummy", "The Scorpion King", "Van Helsing", "National Treasure"],
+  ],
+  [
+    "The Blair Witch Project",
+    "Student filmmakers enter the woods to investigate a legend and leave behind frightening footage.",
+    ["The Blair Witch Project", "Paranormal Activity", "REC", "Cloverfield"],
+  ],
+  [
+    "American Beauty",
+    "A suburban father has a midlife crisis while his family and neighbors hide their own cracks.",
+    ["American Beauty", "Magnolia", "The Ice Storm", "Revolutionary Road"],
+  ],
+  [
+    "The Insider",
+    "A whistleblower and a television producer risk careers to expose the tobacco industry.",
+    ["The Insider", "Spotlight", "All the President's Men", "The Post"],
+  ],
+  [
+    "Notting Hill",
+    "A shy London bookseller unexpectedly falls for one of the world's biggest movie stars.",
+    [
+      "Notting Hill",
+      "Four Weddings and a Funeral",
+      "Love Actually",
+      "Bridget Jones's Diary",
+    ],
+  ],
+  [
+    "Being John Malkovich",
+    "A puppeteer discovers a portal into the mind of a famous actor.",
+    [
+      "Being John Malkovich",
+      "Adaptation",
+      "Synecdoche, New York",
+      "Eternal Sunshine of the Spotless Mind",
+    ],
+  ],
+  [
+    "Crouching Tiger, Hidden Dragon",
+    "Warriors, hidden love, and a stolen sword collide in a graceful martial arts epic.",
+    [
+      "Crouching Tiger, Hidden Dragon",
+      "Hero",
+      "House of Flying Daggers",
+      "Fearless",
+    ],
+  ],
+  [
+    "Amelie",
+    "A whimsical Parisian waitress secretly improves other people's lives while avoiding her own heart.",
+    ["Amelie", "Chocolat", "Midnight in Paris", "The Science of Sleep"],
+  ],
+  [
+    "Moulin Rouge!",
+    "A poor writer falls for a cabaret star in a feverish musical love story.",
+    ["Moulin Rouge!", "Chicago", "Nine", "Dreamgirls"],
+  ],
+  [
+    "Donnie Darko",
+    "A troubled teen sees a sinister rabbit figure and becomes caught in a strange timeline.",
+    ["Donnie Darko", "The Butterfly Effect", "Dark City", "Southland Tales"],
+  ],
+  [
+    "The Lord of the Rings: The Two Towers",
+    "The fellowship is broken while kingdoms prepare for war and two hobbits near Mordor.",
+    [
+      "The Lord of the Rings: The Two Towers",
+      "The Hobbit: The Desolation of Smaug",
+      "Willow",
+      "Eragon",
+    ],
+  ],
+  [
+    "The Lord of the Rings: The Return of the King",
+    "Final battles decide the fate of Middle-earth as two hobbits reach the mountain.",
+    [
+      "The Lord of the Rings: The Return of the King",
+      "The Two Towers",
+      "The Hobbit: The Battle of the Five Armies",
+      "Kingdom of Heaven",
+    ],
+  ],
+  [
+    "City of God",
+    "Young people grow up amid crime and violence in a Rio de Janeiro neighborhood.",
+    ["City of God", "Elite Squad", "Amores Perros", "Tsotsi"],
+  ],
+  [
+    "Finding Nemo",
+    "A cautious clownfish crosses the ocean to rescue his son from a dentist's aquarium.",
+    ["Finding Nemo", "Shark Tale", "The Little Mermaid", "Luca"],
+  ],
+  [
+    "Oldboy",
+    "A man imprisoned for years without explanation is released and hunts the person behind it.",
+    ["Oldboy", "I Saw the Devil", "Memories of Murder", "The Chaser"],
+  ],
+  [
+    "The Notebook",
+    "An elderly man reads a sweeping romance about young lovers separated by class and time.",
+    ["The Notebook", "Dear John", "The Vow", "A Walk to Remember"],
+  ],
+  [
+    "Shaun of the Dead",
+    "A slacker tries to win back his girlfriend during a zombie outbreak.",
+    ["Shaun of the Dead", "Hot Fuzz", "Zombieland", "Warm Bodies"],
+  ],
+  [
+    "Mean Girls",
+    "A homeschooled teen enters public school and gets pulled into a ruthless popular clique.",
+    ["Mean Girls", "Clueless", "Easy A", "Bring It On"],
+  ],
+  [
+    "Million Dollar Baby",
+    "A determined woman trains as a boxer under a guarded old coach.",
+    ["Million Dollar Baby", "The Fighter", "Creed", "Cinderella Man"],
+  ],
+  [
+    "Batman Begins",
+    "A billionaire trains with a secretive order and returns home to become a masked vigilante.",
+    ["Batman Begins", "The Dark Knight", "The Batman", "Man of Steel"],
+  ],
+  [
+    "Brokeback Mountain",
+    "Two cowboys begin a hidden relationship that shapes their lives for years.",
+    ["Brokeback Mountain", "Call Me by Your Name", "Carol", "Moonlight"],
+  ],
+  [
+    "The Departed",
+    "An undercover cop and a police mole race to expose each other inside Boston crime networks.",
+    ["The Departed", "Infernal Affairs", "Donnie Brasco", "Black Mass"],
+  ],
+  [
+    "The Devil Wears Prada",
+    "A young assistant enters the brutal world of high fashion under a legendary editor.",
+    [
+      "The Devil Wears Prada",
+      "Confessions of a Shopaholic",
+      "The Intern",
+      "Julie & Julia",
+    ],
+  ],
+  [
+    "Little Miss Sunshine",
+    "A chaotic family road trip forms around a child's beauty pageant dream.",
+    ["Little Miss Sunshine", "Juno", "The Royal Tenenbaums", "Garden State"],
+  ],
+  [
+    "Casino Royale",
+    "A newly promoted spy faces a high-stakes poker game and a dangerous romance.",
+    ["Casino Royale", "Skyfall", "Quantum of Solace", "The Bourne Identity"],
+  ],
+  [
+    "Ratatouille",
+    "A rat with a gift for cooking secretly helps a clumsy Paris kitchen worker.",
+    [
+      "Ratatouille",
+      "Chef",
+      "Julie & Julia",
+      "Cloudy with a Chance of Meatballs",
+    ],
+  ],
+  [
+    "There Will Be Blood",
+    "An oil prospector builds an empire while clashing with faith, family, and greed.",
+    [
+      "There Will Be Blood",
+      "The Master",
+      "No Country for Old Men",
+      "Gangs of New York",
+    ],
+  ],
+  [
+    "Juno",
+    "A sharp-tongued teen faces an unexpected pregnancy and chooses an adoptive couple.",
+    ["Juno", "Lady Bird", "Easy A", "Little Miss Sunshine"],
+  ],
+  [
+    "Iron Man",
+    "A billionaire weapons maker builds a powered suit after captivity changes his view of his legacy.",
+    [
+      "Iron Man",
+      "Doctor Strange",
+      "Ant-Man",
+      "Captain America: The First Avenger",
+    ],
+  ],
+  [
+    "Slumdog Millionaire",
+    "A young man from Mumbai explains how his life gave him answers on a quiz show.",
+    [
+      "Slumdog Millionaire",
+      "Lion",
+      "The Best Exotic Marigold Hotel",
+      "Life of Pi",
+    ],
+  ],
+  [
+    "The Hangover",
+    "Three friends wake up after a wild Las Vegas night and must find the missing groom.",
+    ["The Hangover", "Superbad", "Wedding Crashers", "Old School"],
+  ],
+  [
+    "Avatar",
+    "A marine uses an alien body on a lush moon and becomes torn between orders and belonging.",
+    [
+      "Avatar",
+      "Valerian and the City of a Thousand Planets",
+      "John Carter",
+      "After Earth",
+    ],
+  ],
+  [
+    "District 9",
+    "An alien refugee zone in Johannesburg becomes the center of corporate cruelty and transformation.",
+    ["District 9", "Elysium", "Chappie", "Arrival"],
+  ],
+  [
+    "Up in the Air",
+    "A corporate downsizer who lives in airports begins to question his detached lifestyle.",
+    ["Up in the Air", "The Terminal", "Lost in Translation", "Sideways"],
+  ],
+  [
+    "The Hurt Locker",
+    "A bomb disposal team in Iraq faces danger, stress, and addiction to war.",
+    ["The Hurt Locker", "Zero Dark Thirty", "American Sniper", "Jarhead"],
+  ],
+  [
+    "The King's Speech",
+    "A reluctant king works with an unconventional speech therapist before a defining wartime broadcast.",
+    ["The King's Speech", "Darkest Hour", "The Queen", "The Iron Lady"],
+  ],
+  [
+    "The Fighter",
+    "A boxer tries to step out of his troubled brother's shadow and earn a title shot.",
+    ["The Fighter", "Raging Bull", "Cinderella Man", "Southpaw"],
+  ],
+  [
+    "Bridesmaids",
+    "A struggling woman spirals while trying to be maid of honor for her best friend.",
+    ["Bridesmaids", "Girls Trip", "The Heat", "Trainwreck"],
+  ],
+  [
+    "The Help",
+    "Women in 1960s Mississippi share stories that challenge the racial rules around them.",
+    ["The Help", "Hidden Figures", "Fried Green Tomatoes", "The Color Purple"],
+  ],
+  [
+    "The Artist",
+    "A silent film star faces fading fame as Hollywood embraces sound.",
+    ["The Artist", "Hugo", "La La Land", "Mank"],
+  ],
+  [
+    "The Cabin in the Woods",
+    "A group of friends visits a remote cabin where horror movie rules are secretly engineered.",
+    [
+      "The Cabin in the Woods",
+      "Evil Dead",
+      "Tucker and Dale vs. Evil",
+      "The Final Girls",
+    ],
+  ],
+  [
+    "Argo",
+    "A CIA rescue plan uses a fake science fiction movie to extract Americans from Iran.",
+    ["Argo", "Munich", "Zero Dark Thirty", "Bridge of Spies"],
+  ],
+  [
+    "Silver Linings Playbook",
+    "Two wounded people bond through dance practice, family pressure, and second chances.",
+    [
+      "Silver Linings Playbook",
+      "Crazy, Stupid, Love",
+      "The Big Sick",
+      "Garden State",
+    ],
+  ],
+  [
+    "The Hunger Games",
+    "A teenage girl volunteers for a deadly televised contest run by a dystopian government.",
+    ["The Hunger Games", "Divergent", "The Maze Runner", "Battle Royale"],
+  ],
+  [
+    "Skyfall",
+    "A spy's loyalty is tested when a former agent attacks the intelligence service from within.",
+    ["Skyfall", "Casino Royale", "Spectre", "Mission: Impossible - Fallout"],
+  ],
+  [
+    "Les Miserables",
+    "Fugitives, revolutionaries, and lost souls sing through love and suffering in 19th-century France.",
+    ["Les Miserables", "Moulin Rouge!", "The Phantom of the Opera", "Chicago"],
+  ],
+  [
+    "The Great Gatsby",
+    "A mysterious millionaire throws lavish parties while chasing a lost love across Long Island.",
+    [
+      "The Great Gatsby",
+      "Revolutionary Road",
+      "Atonement",
+      "The Age of Innocence",
+    ],
+  ],
+  [
+    "12 Years a Slave",
+    "A free Black man is kidnapped and forced into slavery before fighting to reclaim his life.",
+    [
+      "12 Years a Slave",
+      "Amistad",
+      "The Birth of a Nation",
+      "Django Unchained",
+    ],
+  ],
+  [
+    "The Lego Movie",
+    "An ordinary construction figure is mistaken for the chosen one in a world made of bricks.",
+    ["The Lego Movie", "Wreck-It Ralph", "Megamind", "The Boss Baby"],
+  ],
+  [
+    "Boyhood",
+    "A boy grows from childhood to college age across years of small family moments.",
+    ["Boyhood", "The Tree of Life", "Moonlight", "Lady Bird"],
+  ],
+  [
+    "The Babadook",
+    "A grieving mother and her son face a frightening figure from a mysterious children's book.",
+    ["The Babadook", "Hereditary", "It Follows", "The Witch"],
+  ],
+  [
+    "Spotlight",
+    "Boston journalists investigate a massive abuse cover-up inside the Catholic Church.",
+    ["Spotlight", "The Post", "All the President's Men", "The Insider"],
+  ],
+  [
+    "Room",
+    "A young mother and her child escape captivity and try to understand the outside world.",
+    ["Room", "Short Term 12", "The Lovely Bones", "Wild"],
+  ],
+  [
+    "Sicario",
+    "An FBI agent joins a shadowy operation against a cartel and questions what justice means.",
+    ["Sicario", "Traffic", "Zero Dark Thirty", "Prisoners"],
+  ],
+  [
+    "Carol",
+    "A shopgirl and an elegant older woman begin a forbidden romance in 1950s New York.",
+    ["Carol", "Far from Heaven", "Brokeback Mountain", "A Single Man"],
+  ],
+  [
+    "Moonlight",
+    "A boy grows into a man across three chapters shaped by identity, love, and survival.",
+    ["Moonlight", "Boyhood", "Precious", "If Beale Street Could Talk"],
+  ],
+  [
+    "Fences",
+    "A former baseball player wrestles with pride, bitterness, and family responsibility in Pittsburgh.",
+    [
+      "Fences",
+      "A Raisin in the Sun",
+      "Ma Rainey's Black Bottom",
+      "The Color Purple",
+    ],
+  ],
+  [
+    "Three Billboards Outside Ebbing, Missouri",
+    "A grieving mother challenges local police with roadside signs after her daughter's murder remains unsolved.",
+    [
+      "Three Billboards Outside Ebbing, Missouri",
+      "Wind River",
+      "Mystic River",
+      "In Bruges",
+    ],
+  ],
+  [
+    "Call Me by Your Name",
+    "A teenager in northern Italy experiences a life-changing summer romance with a visiting scholar.",
+    [
+      "Call Me by Your Name",
+      "Brokeback Mountain",
+      "Portrait of a Lady on Fire",
+      "Before Sunrise",
+    ],
+  ],
+  [
+    "I, Tonya",
+    "A controversial figure skater's rise and scandal are retold with dark comedy and unreliable memories.",
+    ["I, Tonya", "Black Swan", "Battle of the Sexes", "Foxcatcher"],
+  ],
+  [
+    "Roma",
+    "A housekeeper's life unfolds amid family change and political unrest in 1970s Mexico City.",
+    ["Roma", "Y Tu Mama Tambien", "Babel", "Amores Perros"],
+  ],
+  [
+    "The Favourite",
+    "Two cousins compete for influence over a frail queen in a vicious royal court.",
+    ["The Favourite", "Marie Antoinette", "The Duchess", "Amadeus"],
+  ],
+  [
+    "Jojo Rabbit",
+    "A boy in Nazi Germany has an imaginary dictator friend and discovers his mother is hiding someone.",
+    ["Jojo Rabbit", "The Book Thief", "Life Is Beautiful", "Moonrise Kingdom"],
+  ],
+  [
+    "Uncut Gems",
+    "A New York jeweler risks everything through gambling, debts, and one rare opal.",
+    ["Uncut Gems", "Good Time", "The Gambler", "Rounders"],
+  ],
+  [
+    "Promising Young Woman",
+    "A woman lives a double life as she targets predatory men after a traumatic loss.",
+    [
+      "Promising Young Woman",
+      "Gone Girl",
+      "Hard Candy",
+      "The Girl with the Dragon Tattoo",
+    ],
+  ],
+  [
+    "Minari",
+    "A Korean American family starts a farm in Arkansas while chasing a fragile dream.",
+    ["Minari", "The Farewell", "Past Lives", "Shoplifters"],
+  ],
+  [
+    "The Power of the Dog",
+    "A harsh rancher torments his brother's new family until quiet tensions turn dangerous.",
+    [
+      "The Power of the Dog",
+      "There Will Be Blood",
+      "Brokeback Mountain",
+      "The Assassination of Jesse James",
+    ],
+  ],
+  [
+    "CODA",
+    "The hearing daughter of a Deaf fishing family dreams of singing while her family needs her voice.",
+    ["CODA", "Sound of Metal", "Sing Street", "The Bélier Family"],
+  ],
+  [
+    "The Fabelmans",
+    "A young filmmaker falls in love with movies while uncovering painful family truths.",
+    ["The Fabelmans", "Hugo", "Cinema Paradiso", "Super 8"],
+  ],
+  [
+    "The Whale",
+    "A reclusive teacher tries to reconnect with his daughter while his health fails.",
+    ["The Whale", "The Wrestler", "Leaving Las Vegas", "The Father"],
+  ],
+  [
+    "Glass Onion",
+    "A detective attends a billionaire's island party where a murder mystery gets dangerously real.",
+    [
+      "Glass Onion",
+      "Knives Out",
+      "Murder on the Orient Express",
+      "See How They Run",
+    ],
+  ],
+  [
+    "May December",
+    "An actress studies a controversial couple whose past scandal still shapes their family.",
+    ["May December", "Carol", "Notes on a Scandal", "The Reader"],
+  ],
+  [
+    "The Zone of Interest",
+    "A commandant's family lives beside a concentration camp while domestic routine hides horror.",
+    ["The Zone of Interest", "Son of Saul", "The White Ribbon", "The Pianist"],
+  ],
+  [
+    "Killers of the Flower Moon",
+    "A series of murders targets wealthy Osage people while greed and betrayal spread through a community.",
+    [
+      "Killers of the Flower Moon",
+      "There Will Be Blood",
+      "The Revenant",
+      "Wind River",
+    ],
+  ],
+  [
+    "Godzilla Minus One",
+    "Postwar Japan faces a massive monster as survivors struggle with guilt, loss, and courage.",
+    ["Godzilla Minus One", "Shin Godzilla", "Pacific Rim", "Cloverfield"],
+  ],
+  [
+    "Seven Samurai",
+    "Poor farmers hire masterless warriors to defend their village from bandits.",
+    ["Seven Samurai", "Yojimbo", "Rashomon", "13 Assassins"],
+  ],
+  [
+    "Rashomon",
+    "A crime in the forest is retold through conflicting accounts that question truth itself.",
+    ["Rashomon", "Seven Samurai", "Ugetsu", "Harakiri"],
+  ],
+  [
+    "Yojimbo",
+    "A wandering samurai plays two rival gangs against each other in a corrupt town.",
+    ["Yojimbo", "Sanjuro", "Seven Samurai", "The Hidden Fortress"],
+  ],
+  [
+    "The Seventh Seal",
+    "A knight returning from the Crusades plays chess with Death during a plague.",
+    ["The Seventh Seal", "Wild Strawberries", "Persona", "Stalker"],
+  ],
+  [
+    "Persona",
+    "A silent actress and her nurse retreat to an island where identities begin to blur.",
+    ["Persona", "Cries and Whispers", "The Seventh Seal", "Mulholland Drive"],
+  ],
+  [
+    "Cinema Paradiso",
+    "A filmmaker remembers his childhood friendship with a projectionist in a small Italian town.",
+    ["Cinema Paradiso", "Life Is Beautiful", "The Postman", "Amarcord"],
+  ],
+  [
+    "Bicycle Thieves",
+    "A poor father searches Rome for his stolen bicycle because his job depends on it.",
+    ["Bicycle Thieves", "Umberto D.", "La Strada", "Rome, Open City"],
+  ],
+  [
+    "The 400 Blows",
+    "A misunderstood Paris boy drifts into rebellion and trouble with school, family, and police.",
+    ["The 400 Blows", "Breathless", "Jules and Jim", "Au Revoir les Enfants"],
+  ],
+  [
+    "Breathless",
+    "A small-time criminal and an American student wander Paris while police close in.",
+    ["Breathless", "The 400 Blows", "Pierrot le Fou", "Band of Outsiders"],
+  ],
+  [
+    "La Dolce Vita",
+    "A gossip journalist moves through Rome's glamorous nightlife while searching for meaning.",
+    ["La Dolce Vita", "8 1/2", "L'Avventura", "The Great Beauty"],
+  ],
+  [
+    "8 1/2",
+    "A blocked film director escapes into memory and fantasy while his production collapses around him.",
+    ["8 1/2", "La Dolce Vita", "Amarcord", "Fellini Satyricon"],
+  ],
+  [
+    "The Battle of Algiers",
+    "Urban guerrilla warfare and colonial power clash in a tense reconstruction of Algeria's struggle.",
+    ["The Battle of Algiers", "Z", "Army of Shadows", "The Conformist"],
+  ],
+  [
+    "Once Upon a Time in the West",
+    "A mysterious harmonica player, a widow, and outlaws collide around a railroad land grab.",
+    [
+      "Once Upon a Time in the West",
+      "The Good, the Bad and the Ugly",
+      "High Noon",
+      "Unforgiven",
+    ],
+  ],
+  [
+    "The Good, the Bad and the Ugly",
+    "Three gunslingers race across the Civil War frontier to find buried gold.",
+    [
+      "The Good, the Bad and the Ugly",
+      "For a Few Dollars More",
+      "High Plains Drifter",
+      "Once Upon a Time in the West",
+    ],
+  ],
+  [
+    "Amores Perros",
+    "A car crash connects stories of love, violence, and dogs across Mexico City.",
+    ["Amores Perros", "Babel", "21 Grams", "City of God"],
+  ],
+  [
+    "Y Tu Mama Tambien",
+    "Two teenagers and an older woman take a road trip that exposes desire, friendship, and class.",
+    ["Y Tu Mama Tambien", "Roma", "Motorcycle Diaries", "The Dreamers"],
+  ],
+  [
+    "The Motorcycle Diaries",
+    "A young medical student travels across South America and begins to see injustice differently.",
+    ["The Motorcycle Diaries", "Central Station", "The Mission", "Frida"],
+  ],
+  [
+    "The Lives of Others",
+    "An East German surveillance officer secretly changes while spying on artists.",
+    ["The Lives of Others", "Good Bye Lenin!", "Downfall", "The Conversation"],
+  ],
+  [
+    "Downfall",
+    "The final days inside Hitler's bunker are shown as Berlin collapses around the Nazi regime.",
+    ["Downfall", "Valkyrie", "Das Boot", "The Lives of Others"],
+  ],
+  [
+    "Amour",
+    "An elderly couple's devotion is tested when illness changes their life together.",
+    ["Amour", "The Father", "Still Alice", "Away from Her"],
+  ],
+  [
+    "The Intouchables",
+    "A wealthy quadriplegic man hires an unconventional caregiver and forms an unlikely friendship.",
+    ["The Intouchables", "The Upside", "Green Book", "A Man Called Ove"],
+  ],
+  [
+    "The Hunt",
+    "A teacher's life is shattered when a child's accusation spreads through his small community.",
+    ["The Hunt", "Another Round", "Doubt", "The Celebration"],
+  ],
+  [
+    "Another Round",
+    "Teachers test a theory about maintaining alcohol in their blood and confront midlife emptiness.",
+    ["Another Round", "The Hunt", "Sideways", "The World's End"],
+  ],
+  [
+    "A Separation",
+    "A couple's divorce decision triggers a moral crisis involving another family.",
+    ["A Separation", "The Salesman", "About Elly", "The Past"],
+  ],
+  [
+    "Shoplifters",
+    "A poor found family survives through petty theft until a rescued child changes everything.",
+    ["Shoplifters", "Nobody Knows", "Like Father, Like Son", "Broker"],
+  ],
+  [
+    "Burning",
+    "A young man becomes suspicious of a wealthy stranger after a woman disappears.",
+    ["Burning", "Decision to Leave", "Memories of Murder", "The Handmaiden"],
+  ],
+  [
+    "Memories of Murder",
+    "Detectives in rural Korea hunt a serial killer with limited tools and mounting frustration.",
+    ["Memories of Murder", "Zodiac", "The Chaser", "Mother"],
+  ],
+  [
+    "The Wailing",
+    "A village policeman investigates strange deaths after a mysterious outsider arrives.",
+    ["The Wailing", "Train to Busan", "The Host", "I Saw the Devil"],
+  ],
+  [
+    "Decision to Leave",
+    "A detective investigating a mountain death becomes fascinated by the victim's widow.",
+    ["Decision to Leave", "Burning", "The Handmaiden", "Vertigo"],
+  ],
+  [
+    "Hero",
+    "An assassin tells a king different versions of encounters with warriors in ancient China.",
+    [
+      "Hero",
+      "House of Flying Daggers",
+      "Crouching Tiger, Hidden Dragon",
+      "Red Cliff",
+    ],
+  ],
+  [
+    "House of Flying Daggers",
+    "An undercover officer and a blind dancer become entangled in rebellion and romance.",
+    ["House of Flying Daggers", "Hero", "Shadow", "Curse of the Golden Flower"],
+  ],
+  [
+    "Infernal Affairs",
+    "A police mole and an undercover cop inside a triad try to discover each other's identity.",
+    ["Infernal Affairs", "The Departed", "Hard Boiled", "Election"],
+  ],
+  [
+    "In the Mood for Love",
+    "Two neighbors in 1960s Hong Kong form a restrained bond after suspecting their spouses.",
+    ["In the Mood for Love", "Chungking Express", "2046", "Days of Being Wild"],
+  ],
+  [
+    "Chungking Express",
+    "Two lovesick Hong Kong policemen drift through neon nights, food stalls, and chance encounters.",
+    [
+      "Chungking Express",
+      "Fallen Angels",
+      "In the Mood for Love",
+      "Happy Together",
+    ],
+  ],
+  [
+    "Hard Boiled",
+    "A tough cop and an undercover officer battle gun runners in explosive Hong Kong action.",
+    ["Hard Boiled", "The Killer", "Police Story", "A Better Tomorrow"],
+  ],
+  [
+    "Police Story",
+    "A Hong Kong cop protects a witness and launches into dangerous stunt-filled battles.",
+    ["Police Story", "Drunken Master", "Project A", "Rush Hour"],
+  ],
+  [
+    "Drunken Master",
+    "A reckless martial artist learns an unpredictable fighting style from an eccentric master.",
+    [
+      "Drunken Master",
+      "Police Story",
+      "Snake in the Eagle's Shadow",
+      "Once Upon a Time in China",
+    ],
+  ],
+  [
+    "Ip Man",
+    "A Wing Chun master in Foshan is pulled into conflict during Japanese occupation.",
+    ["Ip Man", "Fearless", "The Grandmaster", "Man of Tai Chi"],
+  ],
+  [
+    "Shaolin Soccer",
+    "Former monks combine martial arts with football to form a wildly powerful team.",
+    [
+      "Shaolin Soccer",
+      "Kung Fu Hustle",
+      "The God of Cookery",
+      "Bend It Like Beckham",
+    ],
+  ],
+  [
+    "Kung Fu Hustle",
+    "A wannabe gangster stumbles into a slum filled with hidden martial arts masters.",
+    [
+      "Kung Fu Hustle",
+      "Shaolin Soccer",
+      "Drunken Master",
+      "Journey to the West",
+    ],
+  ],
+  [
+    "RRR",
+    "Two legendary rebels form a brotherhood and fight colonial power in explosive style.",
+    ["RRR", "Baahubali: The Beginning", "Pathaan", "Kantara"],
+  ],
+  [
+    "3 Idiots",
+    "Three engineering students challenge a pressure-cooker education system and search for a missing friend.",
+    ["3 Idiots", "PK", "Taare Zameen Par", "Dangal"],
+  ],
+  [
+    "Dangal",
+    "A former wrestler trains his daughters to compete at elite levels despite social resistance.",
+    ["Dangal", "Sultan", "Chak De! India", "Mary Kom"],
+  ],
+  [
+    "Lagaan",
+    "Villagers under British rule wager their taxes on a cricket match they barely understand.",
+    ["Lagaan", "Swades", "Jodhaa Akbar", "Rang De Basanti"],
+  ],
+  [
+    "Baahubali: The Beginning",
+    "A young warrior discovers his royal heritage and the truth behind a legendary kingdom.",
+    ["Baahubali: The Beginning", "RRR", "K.G.F: Chapter 1", "Magadheera"],
+  ],
+  [
+    "Baahubali 2: The Conclusion",
+    "A prince's betrayal, exile, and revenge reveal why a beloved king was killed.",
+    [
+      "Baahubali 2: The Conclusion",
+      "Baahubali: The Beginning",
+      "RRR",
+      "K.G.F: Chapter 2",
+    ],
+  ],
+  [
+    "The Raid",
+    "An elite police squad is trapped inside a high-rise controlled by a crime lord.",
+    ["The Raid", "Dredd", "Ong-Bak", "Headshot"],
+  ],
+  [
+    "The Raid 2",
+    "A cop goes undercover after prison to infiltrate Jakarta's criminal underworld.",
+    ["The Raid 2", "The Night Comes for Us", "The Raid", "Infernal Affairs"],
+  ],
+  [
+    "The Princess Bride",
+    "A farmhand, a princess, pirates, giants, and swordplay collide in a storybook adventure.",
+    ["The Princess Bride", "Stardust", "Willow", "Labyrinth"],
+  ],
+  [
+    "Willy Wonka & the Chocolate Factory",
+    "Children tour a mysterious candy factory run by an eccentric maker of sweets.",
+    [
+      "Willy Wonka & the Chocolate Factory",
+      "The Wizard of Oz",
+      "Chitty Chitty Bang Bang",
+      "Matilda",
+    ],
+  ],
+  [
+    "One Flew Over the Cuckoo's Nest",
+    "A rebellious patient challenges the authority of a strict nurse inside a mental institution.",
+    [
+      "One Flew Over the Cuckoo's Nest",
+      "Awakenings",
+      "Rain Man",
+      "Girl, Interrupted",
+    ],
+  ],
+  [
+    "The Graduate",
+    "A confused college graduate drifts into an affair and then falls for the woman's daughter.",
+    ["The Graduate", "The Apartment", "Harold and Maude", "Annie Hall"],
+  ],
+];
+
+const EXTRA_MOVIE_GUESS_DATA = EXTRA_MOVIE_GUESS_SEEDS.map(
+  ([title, description, choices], index) => ({
+    title,
+    description,
+    choices,
+    correctIndex: 0,
+    id: `mg-${String(index + 501).padStart(3, "0")}`,
+  }),
+);
+
+export const MOVIE_GUESS_EVENTS: GameEvent[] = [
+  ...MOVIE_GUESS_DATA,
+  ...EXTRA_MOVIE_GUESS_DATA,
+].map((entry) => {
   const shuffled = shuffleChoices(entry.choices, entry.correctIndex);
   return {
     id: entry.id,

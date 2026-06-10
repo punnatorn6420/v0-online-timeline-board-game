@@ -185,6 +185,7 @@ export interface GameRoom {
   status: RoomStatus;
   hostId: string;
   mode: GameMode;
+  winTarget: MovieGuessWinTarget;
   players: Record<string, Player>;
   currentRound: number;
   currentEventId: string | null;
@@ -216,8 +217,10 @@ export type AvatarId = (typeof AVATARS)[number]["id"];
 // Board configuration
 export const BOARD_SIZE = 16;
 export const FINISH_POSITION = 15;
-export const MOVIE_GUESS_TARGET = 10;
-export const MOVIE_GUESS_BOARD_SIZE = MOVIE_GUESS_TARGET + 1;
+export const MOVIE_GUESS_WIN_TARGETS = [10, 20, 30] as const;
+export type MovieGuessWinTarget = (typeof MOVIE_GUESS_WIN_TARGETS)[number];
+export const DEFAULT_MOVIE_GUESS_TARGET: MovieGuessWinTarget = 10;
+export const MOVIE_GUESS_BOARD_SIZE = DEFAULT_MOVIE_GUESS_TARGET + 1;
 export const DEFAULT_CATEGORIES: Category[] = [
   "HISTORY",
   "SCI_TECH",
@@ -269,15 +272,29 @@ export function getRangesForMode(mode: GameMode): Record<number, RangeInfo> {
   return mode === "MOVIES" ? MOVIE_RANGES : TIMELINE_RANGES;
 }
 
-export function getBoardSize(mode: GameMode): number {
+export function normalizeMovieGuessTarget(value: unknown): MovieGuessWinTarget {
+  const numericValue =
+    typeof value === "number" ? value : Number.parseInt(String(value), 10);
+  return MOVIE_GUESS_WIN_TARGETS.includes(numericValue as MovieGuessWinTarget)
+    ? (numericValue as MovieGuessWinTarget)
+    : DEFAULT_MOVIE_GUESS_TARGET;
+}
+
+export function getBoardSize(
+  mode: GameMode,
+  winTarget: MovieGuessWinTarget = DEFAULT_MOVIE_GUESS_TARGET
+): number {
   return mode === "MOVIE_GUESS" || mode === "HARRY_POTTER"
-    ? MOVIE_GUESS_BOARD_SIZE
+    ? winTarget + 1
     : BOARD_SIZE;
 }
 
-export function getFinishPosition(mode: GameMode): number {
+export function getFinishPosition(
+  mode: GameMode,
+  winTarget: MovieGuessWinTarget = DEFAULT_MOVIE_GUESS_TARGET
+): number {
   return mode === "MOVIE_GUESS" || mode === "HARRY_POTTER"
-    ? MOVIE_GUESS_TARGET
+    ? winTarget
     : FINISH_POSITION;
 }
 

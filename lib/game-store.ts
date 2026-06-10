@@ -12,6 +12,7 @@ import {
   ROUND_EFFECTS,
   getBoardSize,
   getFinishPosition,
+  normalizeMovieGuessTarget,
 } from "./game-types";
 import {
   getEventsForMode,
@@ -40,10 +41,12 @@ export async function createRoom(
   hostId: string,
   hostName: string,
   hostAvatar: string,
-  mode: GameMode
+  mode: GameMode,
+  winTarget?: unknown
 ): Promise<GameRoom> {
   const roomId = roomsCollection.doc().id;
   const code = await generateUniqueRoomCode();
+  const normalizedWinTarget = normalizeMovieGuessTarget(winTarget);
 
   const host: Player = {
     id: hostId,
@@ -62,12 +65,16 @@ export async function createRoom(
     status: "waiting",
     hostId,
     mode,
+    winTarget: normalizedWinTarget,
     players: { [hostId]: host },
     currentRound: 0,
     currentEventId: null,
     currentEvent: null,
     roundType: "NORMAL",
-    boardTiles: generateBoard(getCategoriesForMode(mode), getBoardSize(mode)),
+    boardTiles: generateBoard(
+      getCategoriesForMode(mode),
+      getBoardSize(mode, normalizedWinTarget)
+    ),
     winnerId: null,
     roundResults: null,
     eventHistory: [],
@@ -188,7 +195,69 @@ export async function startGame(
       ...roundUpdate,
     };
 
-    transaction.update(roomRef, updatedRoom);
+    transaction.set(roomRef, updatedRoom);
+
+    return { success: true };
+  });
+}
+
+export async function resetGame(
+  roomId: string,
+  playerId: string
+): Promise<{ success: boolean; error?: string }> {
+  const roomRef = roomsCollection.doc(roomId);
+
+  return adminDb.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) {
+      return { success: false, error: "Room not found" };
+    }
+
+    const room = roomSnap.data() as GameRoom;
+
+    if (room.hostId !== playerId) {
+      return { success: false, error: "Only the host can play again" };
+    }
+
+    if (room.status !== "finished") {
+      return { success: false, error: "Game has not finished yet" };
+    }
+
+    const winTarget = normalizeMovieGuessTarget(room.winTarget);
+    const resetPlayers = Object.fromEntries(
+      Object.entries(room.players).map(([id, player]) => [
+        id,
+        {
+          ...player,
+          position: 0,
+          hasSubmitted: false,
+          currentAnswer: null,
+          lastAnswerCorrect: null,
+        },
+      ])
+    );
+
+    const updatedRoom: GameRoom = {
+      ...room,
+      status: "waiting",
+      winTarget,
+      players: resetPlayers,
+      currentRound: 0,
+      currentEventId: null,
+      currentEvent: null,
+      roundType: "NORMAL",
+      boardTiles: generateBoard(
+        getCategoriesForMode(room.mode ?? "GLOBAL"),
+        getBoardSize(room.mode ?? "GLOBAL", winTarget)
+      ),
+      winnerId: null,
+      hint: null,
+      forcedCategory: null,
+      roundResults: null,
+      eventHistory: [],
+    };
+
+    transaction.set(roomRef, updatedRoom);
 
     return { success: true };
   });
@@ -389,7 +458,10 @@ export async function revealAndProcessRound(roomId: string): Promise<{
     for (const player of Object.values(room.players)) {
       const correct = player.currentAnswer === event.correctRange;
       const movement = correct ? effects.correctMove : effects.incorrectMove;
-      const finishPosition = getFinishPosition(room.mode ?? "GLOBAL");
+      const finishPosition = getFinishPosition(
+        room.mode ?? "GLOBAL",
+        normalizeMovieGuessTarget(room.winTarget)
+      );
       const newPosition = Math.max(
         0,
         Math.min(finishPosition, player.position + movement)
@@ -448,7 +520,7 @@ export async function revealAndProcessRound(roomId: string): Promise<{
       };
     }
 
-    transaction.update(roomRef, updatedRoom);
+    transaction.set(roomRef, updatedRoom);
 
     return {
       success: true,
@@ -514,7 +586,7 @@ export async function leaveRoom(roomId: string, playerId: string): Promise<void>
       }
     }
 
-    transaction.update(roomRef, updatedRoom);
+    transaction.update(roomRef, updatedRoom as Record<string, unknown>);
   });
 }
 

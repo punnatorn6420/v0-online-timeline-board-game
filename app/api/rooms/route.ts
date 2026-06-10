@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createRoom, joinRoom, getRoomByCode } from "@/lib/game-store";
+import { normalizeMovieGuessTarget } from "@/lib/game-types";
 
 export const runtime = "nodejs";
 
@@ -7,7 +8,7 @@ export const runtime = "nodejs";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { playerId, playerName, playerAvatar, mode } = body;
+    const { playerId, playerName, playerAvatar, mode, winTarget } = body;
 
     if (!playerId || !playerName || !playerAvatar) {
       return NextResponse.json(
@@ -24,7 +25,13 @@ export async function POST(request: NextRequest) {
       mode === "HARRY_POTTER"
         ? mode
         : "GLOBAL";
-    const room = await createRoom(playerId, playerName, playerAvatar, roomMode);
+    const room = await createRoom(
+      playerId,
+      playerName,
+      playerAvatar,
+      roomMode,
+      normalizeMovieGuessTarget(winTarget),
+    );
 
     return NextResponse.json({
       success: true,
@@ -34,6 +41,7 @@ export async function POST(request: NextRequest) {
         status: room.status,
         players: room.players,
         mode: room.mode,
+        winTarget: room.winTarget,
       },
     });
   } catch (err) {
@@ -72,6 +80,7 @@ export async function PUT(request: NextRequest) {
         status: result.room!.status,
         players: result.room!.players,
         mode: result.room!.mode,
+        winTarget: result.room!.winTarget,
       },
     });
   } catch {
@@ -107,6 +116,7 @@ export async function GET(request: NextRequest) {
         players: room.players,
         hostId: room.hostId,
         mode: room.mode,
+        winTarget: room.winTarget,
       },
     });
   } catch {

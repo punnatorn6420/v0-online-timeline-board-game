@@ -7,7 +7,13 @@ import { Button } from "@/components/ui/button";
 import { AvatarIcon } from "@/components/avatar-icon";
 import { usePlayer } from "@/lib/player-context";
 import { firestore } from "@/lib/firebase-client";
-import type { Player, AvatarId, GameMode } from "@/lib/game-types";
+import {
+  DEFAULT_MOVIE_GUESS_TARGET,
+  type Player,
+  type AvatarId,
+  type GameMode,
+  type MovieGuessWinTarget,
+} from "@/lib/game-types";
 import { 
   Copy, 
   Check, 
@@ -27,6 +33,7 @@ interface RoomData {
   players: Record<string, Player>;
   hostId: string;
   mode?: GameMode;
+  winTarget?: MovieGuessWinTarget;
 }
 
 export default function RoomPage({ 
@@ -61,7 +68,7 @@ export default function RoomPage({
         }
 
         const doc = snapshot.docs[0];
-        setRoom({ id: doc.id, ...(doc.data() as RoomData) });
+        setRoom({ ...(doc.data() as RoomData), id: doc.id });
         setError("");
         setIsLoading(false);
       },
@@ -193,6 +200,7 @@ export default function RoomPage({
 
   const players = Object.values(room.players);
   const isHost = player.id === room.hostId;
+  const winTarget = room.winTarget ?? DEFAULT_MOVIE_GUESS_TARGET;
 
   return (
     <main className="min-h-screen flex flex-col p-4">
@@ -236,6 +244,11 @@ export default function RoomPage({
           <p className="text-xs text-muted-foreground mt-1">
             Mode: {modeLabel}
           </p>
+          {room.mode === "MOVIE_GUESS" && (
+            <p className="text-xs text-accent mt-1">
+              Goal: {winTarget} correct answers
+            </p>
+          )}
         </div>
 
         {/* Players List */}

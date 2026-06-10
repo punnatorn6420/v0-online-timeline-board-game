@@ -12,7 +12,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "hist-001",
     title: "Construction of the Great Pyramid of Giza",
-    description: "The largest of the Egyptian pyramids was built as a tomb for Pharaoh Khufu",
+    description:
+      "The largest of the Egyptian pyramids was built as a tomb for Pharaoh Khufu",
     category: "HISTORY",
     correctRange: 0,
   },
@@ -26,35 +27,40 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "hist-003",
     title: "The Crusades Begin",
-    description: "Pope Urban II called for the First Crusade at the Council of Clermont",
+    description:
+      "Pope Urban II called for the First Crusade at the Council of Clermont",
     category: "HISTORY",
     correctRange: 3,
   },
   {
     id: "hist-004",
     title: "Columbus Reaches the Americas",
-    description: "Christopher Columbus made his first voyage across the Atlantic Ocean",
+    description:
+      "Christopher Columbus made his first voyage across the Atlantic Ocean",
     category: "HISTORY",
     correctRange: 4,
   },
   {
     id: "hist-005",
     title: "French Revolution",
-    description: "The storming of the Bastille marked the beginning of the French Revolution",
+    description:
+      "The storming of the Bastille marked the beginning of the French Revolution",
     category: "HISTORY",
     correctRange: 5,
   },
   {
     id: "hist-006",
     title: "American Civil War",
-    description: "The conflict between the Union and the Confederacy tore America apart",
+    description:
+      "The conflict between the Union and the Confederacy tore America apart",
     category: "HISTORY",
     correctRange: 6,
   },
   {
     id: "hist-007",
     title: "World War I",
-    description: "The Great War began, eventually involving most of the world's great powers",
+    description:
+      "The Great War began, eventually involving most of the world's great powers",
     category: "HISTORY",
     correctRange: 7,
   },
@@ -68,7 +74,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "hist-009",
     title: "9/11 Attacks",
-    description: "Terrorist attacks on the World Trade Center changed the world",
+    description:
+      "Terrorist attacks on the World Trade Center changed the world",
     category: "HISTORY",
     correctRange: 9,
   },
@@ -82,7 +89,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "hist-011",
     title: "Code of Hammurabi",
-    description: "One of the earliest written legal codes was compiled in Babylon",
+    description:
+      "One of the earliest written legal codes was compiled in Babylon",
     category: "HISTORY",
     correctRange: 0,
   },
@@ -117,14 +125,16 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "hist-016",
     title: "Constantine Embraces Christianity",
-    description: "The Roman emperor converted after the Battle of Milvian Bridge",
+    description:
+      "The Roman emperor converted after the Battle of Milvian Bridge",
     category: "HISTORY",
     correctRange: 1,
   },
   {
     id: "hist-017",
     title: "Magna Carta Signed",
-    description: "English nobles forced King John to accept limits on royal power",
+    description:
+      "English nobles forced King John to accept limits on royal power",
     category: "HISTORY",
     correctRange: 3,
   },
@@ -166,7 +176,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "hist-023",
     title: "Glorious Revolution",
-    description: "A bloodless coup established constitutional monarchy in England",
+    description:
+      "A bloodless coup established constitutional monarchy in England",
     category: "HISTORY",
     correctRange: 4,
   },
@@ -259,7 +270,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "tech-001",
     title: "Invention of the Wheel",
-    description: "One of humanity's most important inventions revolutionized transportation",
+    description:
+      "One of humanity's most important inventions revolutionized transportation",
     category: "SCI_TECH",
     correctRange: 0,
   },
@@ -273,14 +285,16 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "tech-003",
     title: "Newton's Principia Published",
-    description: "Isaac Newton published his laws of motion and universal gravitation",
+    description:
+      "Isaac Newton published his laws of motion and universal gravitation",
     category: "SCI_TECH",
     correctRange: 5,
   },
   {
     id: "tech-004",
     title: "First Steam Engine",
-    description: "James Watt improved the steam engine, powering the Industrial Revolution",
+    description:
+      "James Watt improved the steam engine, powering the Industrial Revolution",
     category: "SCI_TECH",
     correctRange: 5,
   },
@@ -294,7 +308,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "tech-006",
     title: "First Airplane Flight",
-    description: "The Wright Brothers achieved the first powered flight at Kitty Hawk",
+    description:
+      "The Wright Brothers achieved the first powered flight at Kitty Hawk",
     category: "SCI_TECH",
     correctRange: 7,
   },
@@ -534,21 +549,24 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "cult-005",
     title: "Jazz Age Begins",
-    description: "Jazz music exploded in popularity during the Roaring Twenties",
+    description:
+      "Jazz music exploded in popularity during the Roaring Twenties",
     category: "CULTURE",
     correctRange: 7,
   },
   {
     id: "cult-006",
     title: "Beatles' British Invasion",
-    description: "The Beatles appeared on The Ed Sullivan Show, taking America by storm",
+    description:
+      "The Beatles appeared on The Ed Sullivan Show, taking America by storm",
     category: "CULTURE",
     correctRange: 8,
   },
   {
     id: "cult-007",
     title: "First Video Game Console",
-    description: "The Magnavox Odyssey became the first home video game console",
+    description:
+      "The Magnavox Odyssey became the first home video game console",
     category: "CULTURE",
     correctRange: 8,
   },
@@ -774,14 +792,16 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "trav-004",
     title: "First Hot Air Balloon",
-    description: "The Montgolfier Brothers demonstrated the first hot air balloon",
+    description:
+      "The Montgolfier Brothers demonstrated the first hot air balloon",
     category: "TRAVEL",
     correctRange: 5,
   },
   {
     id: "trav-005",
     title: "Transcontinental Railroad",
-    description: "The first railroad connecting the US East and West coasts was completed",
+    description:
+      "The first railroad connecting the US East and West coasts was completed",
     category: "TRAVEL",
     correctRange: 6,
   },
@@ -3088,7 +3108,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-001",
     title: "Ancient Olympic Games inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 0,
   },
@@ -3102,7 +3123,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-003",
     title: "Modern Olympic Games inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3116,7 +3138,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-005",
     title: "FIFA inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3130,7 +3153,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-007",
     title: "FIFA World Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3144,7 +3168,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-009",
     title: "Super Bowl inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3158,7 +3183,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-011",
     title: "NBA inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3172,7 +3198,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-013",
     title: "MLB World Series inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3186,7 +3213,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-015",
     title: "Stanley Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3200,7 +3228,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-017",
     title: "Rugby World Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3214,7 +3243,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-019",
     title: "Cricket World Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3228,7 +3258,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-021",
     title: "Tour de France inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3242,7 +3273,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-023",
     title: "Wimbledon inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3256,7 +3288,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-025",
     title: "US Open Tennis inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3270,7 +3303,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-027",
     title: "Australian Open inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3284,7 +3318,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-029",
     title: "French Open inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3298,7 +3333,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-031",
     title: "Formula One World Championship inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3312,7 +3348,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-033",
     title: "UEFA Champions League inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3326,7 +3363,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-035",
     title: "Copa America inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3340,7 +3378,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-037",
     title: "AFC Asian Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3354,7 +3393,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-039",
     title: "Africa Cup of Nations inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3368,7 +3408,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-041",
     title: "Olympic Marathon inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3382,7 +3423,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-043",
     title: "Olympic basketball inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3396,7 +3438,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-045",
     title: "Winter Olympics inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3410,7 +3453,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-047",
     title: "Paralympic Games inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3424,7 +3468,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-049",
     title: "FIFA Women's World Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3438,7 +3483,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-051",
     title: "Six Nations Championship inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3452,7 +3498,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-053",
     title: "Masters Tournament inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3466,7 +3513,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-055",
     title: "World Series of Poker inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3480,7 +3528,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-057",
     title: "Dakar Rally inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3494,7 +3543,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-059",
     title: "Indianapolis 500 inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3508,7 +3558,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-061",
     title: "Commonwealth Games inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3522,7 +3573,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-063",
     title: "World Athletics Championships inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3536,7 +3588,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-065",
     title: "X Games inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3550,7 +3603,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-067",
     title: "UFC inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3564,7 +3618,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-069",
     title: "NBA-ABA merger inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3578,7 +3633,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-071",
     title: "Miracle on Ice inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3592,7 +3648,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-073",
     title: "Usain Bolt 100m world record inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 9,
   },
@@ -3606,7 +3663,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-075",
     title: "Michael Phelps eight golds inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 9,
   },
@@ -3620,7 +3678,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-077",
     title: "Sub-four-minute mile inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3634,7 +3693,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-079",
     title: "Ironman triathlon inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3648,7 +3708,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-081",
     title: "Boston Marathon inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3662,7 +3723,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-083",
     title: "New York City Marathon inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3676,7 +3738,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-085",
     title: "Premier League inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3690,7 +3753,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-087",
     title: "Indian Premier League inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 9,
   },
@@ -3704,7 +3768,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-089",
     title: "MLB integration inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 7,
   },
@@ -3718,7 +3783,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-091",
     title: "Title IX inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -3732,7 +3798,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-093",
     title: "Asian Games inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3746,7 +3813,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-095",
     title: "Ryder Cup inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 6,
   },
@@ -3760,7 +3828,8 @@ export const GAME_EVENTS: GameEvent[] = [
   {
     id: "sport-097",
     title: "World Surf League inaugurated",
-    description: "The competition or organization is held or formed for the first time.",
+    description:
+      "The competition or organization is held or formed for the first time.",
     category: "SPORTS",
     correctRange: 8,
   },
@@ -4506,7 +4575,8 @@ export const SCIENCE_EVENTS: GameEvent[] = [
   {
     id: "sci-001",
     title: "Controlled use of fire",
-    description: "Early humans master fire for warmth, cooking, and protection.",
+    description:
+      "Early humans master fire for warmth, cooking, and protection.",
     category: "SCI_TECH",
     correctRange: 0,
   },
@@ -4527,7 +4597,8 @@ export const SCIENCE_EVENTS: GameEvent[] = [
   {
     id: "sci-004",
     title: "Dogs domesticated",
-    description: "Humans form partnerships with the earliest domesticated animals.",
+    description:
+      "Humans form partnerships with the earliest domesticated animals.",
     category: "SCI_TECH",
     correctRange: 0,
   },
@@ -4541,7 +4612,8 @@ export const SCIENCE_EVENTS: GameEvent[] = [
   {
     id: "sci-006",
     title: "Invention of the plow",
-    description: "Animal-drawn plows boost food production and settlement growth.",
+    description:
+      "Animal-drawn plows boost food production and settlement growth.",
     category: "SCI_TECH",
     correctRange: 0,
   },
@@ -4625,7 +4697,8 @@ export const SCIENCE_EVENTS: GameEvent[] = [
   {
     id: "sci-018",
     title: "Ancient engineering of pyramids",
-    description: "Large-scale construction showcases early engineering methods.",
+    description:
+      "Large-scale construction showcases early engineering methods.",
     category: "SCI_TECH",
     correctRange: 0,
   },
@@ -5905,7 +5978,12 @@ export const SCIENCE_EVENTS: GameEvent[] = [
   },
 ];
 
-const MOVIE_DATA: Array<{ id: string; title: string; description: string; year: number }> = [
+const MOVIE_DATA: Array<{
+  id: string;
+  title: string;
+  description: string;
+  year: number;
+}> = [
   {
     id: "mv-001",
     title: "The Wizard of Oz",
@@ -7716,152 +7794,372 @@ export const MOVIE_EVENTS: GameEvent[] = MOVIE_DATA.map((movie) => ({
   correctRange: getMovieRangeIndex(movie.year),
 }));
 
-const shuffleChoices = <T,>(choices: T[], correctIndex: number) => {
+const shuffleChoices = <T>(choices: T[], correctIndex: number) => {
   const tagged = choices.map((choice, index) => ({ choice, index }));
   for (let i = tagged.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     [tagged[i], tagged[j]] = [tagged[j], tagged[i]];
   }
   const shuffledChoices = tagged.map((item) => item.choice);
-  const shuffledCorrectIndex = tagged.findIndex((item) => item.index === correctIndex);
+  const shuffledCorrectIndex = tagged.findIndex(
+    (item) => item.index === correctIndex,
+  );
   return { choices: shuffledChoices, correctIndex: shuffledCorrectIndex };
 };
 
 const MOVIE_GUESS_DATA = [
   {
+    title: "Pee Mak",
+    description:
+      "ชายหนุ่มกลับจากสนามรบพร้อมกลุ่มเพื่อนที่เสียงดังและกลัวง่าย แต่บ้านที่เขาคิดว่ารออยู่อย่างอบอุ่นกลับมีบางอย่างผิดปกติ คนทั้งหมู่บ้านเหมือนรู้อะไรบางอย่างมากกว่าเขา ความรัก ความหลอน และความตลกจึงปะปนกันจนแยกไม่ออกว่าควรหัวเราะหรือกลัวก่อน",
+    choices: ["Pee Mak", "Nang Nak", "Ghost of Mae Nak", "The Medium"],
+    correctIndex: 0,
     id: "mg-001",
-    title: "Inception",
-    description:
-      "ผู้เชี่ยวชาญงานจารกรรมแบบไม่ใช้ปืนรับภารกิจที่ผิดธรรมชาติ—แทนที่จะขโมย เขาต้อง “ปลูก” ความคิดในจิตใต้สำนึกของเป้าหมาย ระหว่างชั้นความฝันที่ซ้อนกันหลายระดับ เขาต้องจัดทีมและออกแบบสถาปัตยกรรมของการหลับให้รอดจากกลไกป้องกันของจิตใจ",
-    choices: ["Inception", "Interstellar", "Tenet", "The Matrix"],
-    correctIndex: 0,
   },
   {
+    title: "Bad Genius",
+    description:
+      "นักเรียนหัวดีเริ่มจากการช่วยเพื่อนในห้องสอบ ก่อนถูกดึงเข้าสู่เกมที่ใหญ่ขึ้นเรื่อย ๆ จากคำตอบบนกระดาษธรรมดากลายเป็นแผนระดับนานาชาติที่ต้องใช้จังหวะ ความจำ และความนิ่ง ภายนอกดูเหมือนเรื่องคะแนนสอบ แต่จริง ๆ คือการเดิมพันอนาคตของหลายคน",
+    choices: ["Bad Genius", "The Billionaire", "Homestay", "May Who?"],
+    correctIndex: 0,
     id: "mg-002",
-    title: "Interstellar",
-    description:
-      "โลกกำลังร้างไร้พืชผลและฝุ่นคลุ้งไม่หยุด นักบินที่กลายเป็นชาวนาถูกดึงกลับเข้าสู่ภารกิจลับ ผ่านช่องทางลึกลับที่ไม่ใช่แค่หลุมหนอนธรรมดา เวลาเดินไม่เท่ากัน ความรักและข้อมูลเดินทางสวนทางกันเพื่อหาบ้านใหม่ให้มนุษยชาติ",
-    choices: ["Interstellar", "The Martian", "Gravity", "Arrival"],
-    correctIndex: 0,
   },
   {
+    title: "Shutter",
+    description:
+      "หลังอุบัติเหตุในคืนหนึ่ง ช่างภาพหนุ่มกับแฟนสาวเริ่มพบเงาประหลาดติดอยู่ในรูปถ่าย สิ่งที่ดูเหมือนภาพเสียจากกล้องค่อย ๆ กลายเป็นร่องรอยของอดีตที่ไม่มีใครอยากพูดถึง และยิ่งสืบก็ยิ่งเหมือนมีใครบางคนเกาะติดชีวิตพวกเขาอยู่ตลอดเวลา",
+    choices: ["Shutter", "4bia", "Alone", "The Medium"],
+    correctIndex: 0,
     id: "mg-003",
-    title: "The Matrix",
-    description:
-      "ชายหนุ่มผู้ถูกไล่ล่าจากโลกดิจิทัลค้นพบว่าสิ่งที่เขาเรียกว่าความจริงเป็นเพียงระบบจำลองขนาดยักษ์ มีการตื่นจากฝันที่เจ็บปวดและการฝึกฝนเพื่อทำลายกฎของโลกที่มองไม่เห็น",
-    choices: ["The Matrix", "Ready Player One", "Ghost in the Shell", "Tron"],
-    correctIndex: 0,
   },
   {
+    title: "The Medium",
+    description:
+      "ทีมถ่ายสารคดีติดตามครอบครัวหนึ่งที่เชื่อมโยงกับการสืบทอดร่างทรง แต่พิธีกรรมและอาการผิดปกติของหญิงสาวคนหนึ่งค่อย ๆ ทำให้ความเชื่อเดิมอธิบายทุกอย่างไม่พอ บรรยากาศบ้าน งานบุญ และความลับในตระกูลเริ่มกดทับจนไม่มีใครควบคุมได้",
+    choices: ["The Medium", "Shutter", "Nang Nak", "Long Weekend"],
+    correctIndex: 0,
     id: "mg-004",
-    title: "The Dark Knight",
-    description:
-      "เมืองที่กำลังฟื้นจากอาชญากรรมถูกท้าทายด้วยศัตรูที่ไม่ต้องการเงินหรืออำนาจ แต่ต้องการพิสูจน์ความเปราะบางของศีลธรรม ชายสวมหน้ากากต้องเลือกเส้นทางระหว่างความยุติธรรมและการเสียสละต่อคนที่เขาปกป้อง",
-    choices: ["The Dark Knight", "Batman Begins", "Joker", "The Dark Knight Rises"],
-    correctIndex: 0,
   },
   {
+    title: "A Little Thing Called Love",
+    description:
+      "เด็กสาวธรรมดาแอบชอบรุ่นพี่ที่ดูไกลเกินเอื้อม เธอค่อย ๆ เปลี่ยนตัวเองผ่านมิตรภาพ ความเขิน และกิจกรรมวัยเรียนเล็ก ๆ เรื่องราวไม่ได้มีแค่การสวยขึ้นหรือได้รับความรัก แต่เป็นช่วงเวลาที่คนหนึ่งเริ่มรู้จักคุณค่าของตัวเองอย่างช้า ๆ",
+    choices: [
+      "A Little Thing Called Love",
+      "Friend Zone",
+      "Bangkok Traffic Love Story",
+      "May Who?",
+    ],
+    correctIndex: 0,
     id: "mg-005",
-    title: "Avengers: Endgame",
-    description:
-      "หลังจากความสูญเสียครั้งใหญ่ เหล่าผู้กล้ารวมตัวครั้งสุดท้ายเพื่อจัดการกับอดีตด้วยวิธีที่เสี่ยงที่สุด พวกเขาต้องเดินทางผ่านช่วงเวลาต่าง ๆ เพื่อรวบรวมโอกาสแก้ไขสิ่งที่พังทลาย แม้ต้องแลกด้วยการลาจาก",
-    choices: [
-      "Avengers: Endgame",
-      "Avengers: Infinity War",
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-    ],
-    correctIndex: 0,
   },
   {
+    title: "Friend Zone",
+    description:
+      "ชายหญิงคู่หนึ่งสนิทกันเกินเพื่อนแต่ไม่เคยข้ามเส้นที่อีกฝ่ายวางไว้ ทุกครั้งที่ชีวิตรักของเธอมีปัญหา เขามักอยู่ตรงนั้นเสมอ การเดินทางหลายประเทศและเหตุการณ์วุ่น ๆ ทำให้คำว่าเพื่อนสนิทเริ่มกลายเป็นพื้นที่ที่ทั้งปลอดภัยและเจ็บปวด",
+    choices: [
+      "Friend Zone",
+      "One Day",
+      "Hello Stranger",
+      "I Fine..Thank You..Love You",
+    ],
+    correctIndex: 0,
     id: "mg-006",
-    title: "Titanic",
-    description:
-      "เรือสำราญลำมหึมาที่ถูกขนานนามว่าไม่อาจจมได้ กลับกลายเป็นเวทีของความรักที่มาจากชนชั้นต่างกัน เสียงเพลง งานเลี้ยง และภาพวาดบนกระดาษมีค่ากว่าชีวิตเมื่อหายนะค่อย ๆ คืบคลาน",
-    choices: ["Titanic", "The Notebook", "Atonement", "Pearl Harbor"],
-    correctIndex: 0,
   },
   {
+    title: "Hello Stranger",
+    description:
+      "คนไทยสองคนเจอกันในต่างประเทศโดยไม่ตั้งใจ ต่างฝ่ายต่างมีเหตุผลที่อยากหนีจากชีวิตเดิมชั่วคราว การเที่ยวแบบไม่บอกชื่อจริงทำให้ความสัมพันธ์เบาสบายขึ้น แต่ยิ่งใช้เวลาด้วยกันมากเท่าไร การกลับสู่โลกจริงก็ยิ่งยากขึ้นเท่านั้น",
+    choices: [
+      "Hello Stranger",
+      "Bangkok Traffic Love Story",
+      "One Day",
+      "Friend Zone",
+    ],
+    correctIndex: 0,
     id: "mg-007",
-    title: "Parasite",
-    description:
-      "ครอบครัวหนึ่งเริ่มจากการได้งานเล็ก ๆ ในบ้านคนรวย แล้วค่อย ๆ สวมบทบาทใหม่ทีละตำแหน่งอย่างแนบเนียน ความแตกต่างทางชนชั้นถูกขับเน้นด้วยบ้านสมัยใหม่ บันได และสายฝนที่ไม่ยุติธรรม",
-    choices: ["Parasite", "The Handmaiden", "Snowpiercer", "Oldboy"],
-    correctIndex: 0,
   },
   {
+    title: "The Billionaire",
+    description:
+      "เด็กหนุ่มที่ดูเหมือนไม่เอาจริงกับการเรียนพยายามสร้างธุรกิจจากของกินธรรมดา ผ่านการลองผิดลองถูก หนี้สิน และแรงกดดันจากครอบครัว ความสำเร็จไม่ได้มาแบบสวยงาม แต่เกิดจากการยอมล้มซ้ำ ๆ จนสินค้าชิ้นเล็กกลายเป็นแบรนด์ที่คนจำได้",
+    choices: ["The Billionaire", "Bad Genius", "Top Secret", "May Who?"],
+    correctIndex: 0,
     id: "mg-008",
-    title: "Harry Potter and the Sorcerer's Stone",
-    description:
-      "เด็กชายที่เติบโตท่ามกลางความอึดอัดได้รับจดหมายจำนวนมากจนบ้านแทบแตก เขาถูกพาไปสู่โลกเวทมนตร์ที่ซ่อนอยู่ มีโรงเรียนลับ พิธีคัดสรร กลุ่มเพื่อนใหม่ และปริศนาของวัตถุที่ทำให้คนอมตะ",
-    choices: [
-      "Harry Potter and the Sorcerer's Stone",
-      "Harry Potter and the Chamber of Secrets",
-      "The Golden Compass",
-      "Percy Jackson: The Lightning Thief",
-    ],
-    correctIndex: 0,
   },
   {
+    title: "Homestay",
+    description:
+      "วิญญาณหนึ่งได้รับโอกาสกลับมาอยู่ในร่างของเด็กหนุ่มที่เพิ่งตาย แต่ต้องหาคำตอบให้ได้ว่าชีวิตนี้พังเพราะอะไร ระหว่างใช้เวลาที่จำกัด เขาค่อย ๆ พบว่าคนรอบตัวต่างมีเรื่องที่ซ่อนไว้ และการได้มีชีวิตอีกครั้งอาจไม่ใช่รางวัลที่ง่ายอย่างที่คิด",
+    choices: ["Homestay", "One Day", "The Promise", "Countdown"],
+    correctIndex: 0,
     id: "mg-009",
-    title: "The Lord of the Rings: The Fellowship of the Ring",
-    description:
-      "วัตถุเล็ก ๆ ที่มีอำนาจมหาศาลตกอยู่ในมือของสิ่งมีชีวิตที่ไม่คู่ควร การเดินทางเริ่มต้นจากบ้านชนบทไปยังดินแดนแปลกตา ผ่านเหมืองใต้ภูเขาและเมืองเอลฟ์ พร้อมการรวมตัวของกลุ่มผู้พิทักษ์ที่มีความหวังเปราะบาง",
-    choices: [
-      "The Lord of the Rings: The Fellowship of the Ring",
-      "The Lord of the Rings: The Two Towers",
-      "The Hobbit: An Unexpected Journey",
-      "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-    ],
-    correctIndex: 0,
   },
   {
+    title: "4bia",
+    description:
+      "เรื่องสั้นสยองหลายตอนเล่าความกลัวคนละรูปแบบ ตั้งแต่ความโดดเดี่ยวในห้องพัก ข้อความแปลก ๆ การเดินทางกับเพื่อน ไปจนถึงเหตุการณ์บนเครื่องบิน แต่ละเรื่องดูไม่เกี่ยวกันมากนัก ทว่าทั้งหมดเล่นกับความรู้สึกว่าความน่ากลัวมักเริ่มจากสิ่งธรรมดาที่เราไม่ทันระวัง",
+    choices: ["4bia", "Shutter", "Alone", "Phobia 2"],
+    correctIndex: 0,
     id: "mg-010",
-    title: "Star Wars: A New Hope",
+  },
+  {
+    title: "Crash Landing on You",
     description:
-      "ข้อความลับจากนักสู้ฝ่ายกบฏถูกซ่อนในหุ่นยนต์ และเด็กหนุ่มจากดาวทะเลทรายถูกดึงเข้าสู่สงครามอวกาศ เขาได้พบอัศวินโบราณ นักลักลอบขนของ และภารกิจโจมตีสถานีอาวุธขนาดมหึมา",
+      "หญิงสาวฐานะดีจากฝั่งหนึ่งของคาบสมุทรพลัดหลงไปยังดินแดนที่ไม่ควรไปถึง และได้พบชายทหารที่ต้องช่วยปิดบังตัวตนของเธอ ความสัมพันธ์เริ่มจากการเอาตัวรอดท่ามกลางกฎเข้มงวด ก่อนค่อย ๆ กลายเป็นความผูกพันที่ติดอยู่ระหว่างพรมแดน ครอบครัว และหน้าที่",
     choices: [
-      "Star Wars: A New Hope",
-      "Star Wars: The Empire Strikes Back",
-      "Rogue One: A Star Wars Story",
-      "Guardians of the Galaxy",
+      "Crash Landing on You",
+      "Descendants of the Sun",
+      "Goblin",
+      "The King: Eternal Monarch",
     ],
     correctIndex: 0,
-  },
-  {
     id: "mg-011",
-    title: "Frozen",
-    description:
-      "พลังที่ควบคุมไม่ได้ทำให้เมืองตกอยู่ในฤดูหนาวนิรันดร์ เจ้าหญิงคนหนึ่งหนีออกจากพระราชวัง อีกคนออกตามหา ระหว่างทางมีผู้ร่วมเดินทางที่ไม่คาดคิด เพลงดัง และการเสียสละที่ท้าทายความรักรูปแบบเดิม",
-    choices: ["Frozen", "Tangled", "Moana", "Brave"],
-    correctIndex: 0,
   },
   {
+    title: "Goblin",
+    description:
+      "ชายผู้มีชีวิตยืนยาวเกินมนุษย์เฝ้ารอคนที่จะปลดปล่อยคำสาปของเขา ขณะเดียวกันหญิงสาวคนหนึ่งที่มองเห็นสิ่งเหนือธรรมชาติกลับเดินเข้ามาในชีวิตอย่างไม่คาดคิด เรื่องราวผสมความรัก โชคชะตา และมิตรภาพประหลาดระหว่างคนที่เกี่ยวข้องกับความตาย",
+    choices: [
+      "Goblin",
+      "Hotel Del Luna",
+      "The King: Eternal Monarch",
+      "My Love from the Star",
+    ],
+    correctIndex: 0,
     id: "mg-012",
-    title: "Toy Story",
-    description:
-      "ของเล่นมีโลกของตัวเองและกฎเกณฑ์เพื่อไม่ให้มนุษย์รู้ เมื่อของเล่นตัวโปรดต้องรับมือกับคู่แข่งหน้าใหม่ ความอิจฉาและมิตรภาพถูกทดสอบ จนทั้งคู่ต้องเอาชีวิตรอดในโลกภายนอกที่พวกเขาไม่คุ้นเคย",
-    choices: ["Toy Story", "Monsters, Inc.", "Finding Nemo", "Cars"],
-    correctIndex: 0,
   },
   {
+    title: "The Glory",
+    description:
+      "หญิงสาวที่เคยถูกทำร้ายอย่างหนักในวัยเรียนใช้เวลาหลายปีวางแผนกลับเข้าสู่ชีวิตของคนที่ทำลายเธอ ทุกอย่างไม่ได้ระเบิดในครั้งเดียว แต่ค่อย ๆ ขยับเหมือนหมากบนกระดาน ความแค้นจึงเย็น เงียบ และเจ็บปวดกว่าการแก้คืนแบบตรงไปตรงมา",
+    choices: ["The Glory", "Sky Castle", "Mine", "Mask Girl"],
+    correctIndex: 0,
     id: "mg-013",
+  },
+  {
+    title: "Squid Game",
+    description:
+      "คนจำนวนหนึ่งที่มีปัญหาหนี้สินถูกพาไปเล่นเกมที่หน้าตาเหมือนกิจกรรมวัยเด็ก กติกาดูง่ายจนไม่น่ากลัว แต่ผลลัพธ์ของการแพ้กลับรุนแรงเกินคาด ภายใต้สีสันสดใสและผู้คุมสวมหน้ากาก ทุกคนต้องตัดสินใจว่าจะรักษาความเป็นมนุษย์ไว้ได้แค่ไหน",
+    choices: [
+      "Squid Game",
+      "Alice in Borderland",
+      "All of Us Are Dead",
+      "Sweet Home",
+    ],
+    correctIndex: 0,
+    id: "mg-014",
+  },
+  {
+    title: "Itaewon Class",
+    description:
+      "ชายหนุ่มที่ชีวิตพังเพราะอำนาจของตระกูลใหญ่เลือกเริ่มใหม่ด้วยร้านเล็ก ๆ ในย่านที่เต็มไปด้วยคนหลากหลาย เขาไม่ได้สู้ด้วยกำลังเพียงอย่างเดียว แต่ใช้ความอดทน ทีมงานที่แตกต่าง และความเชื่อมั่นแบบดื้อ ๆ เพื่อท้าทายระบบที่เคยกดเขาไว้",
+    choices: ["Itaewon Class", "Start-Up", "Record of Youth", "Vincenzo"],
+    correctIndex: 0,
+    id: "mg-015",
+  },
+  {
+    title: "Vincenzo",
+    description:
+      "ทนายที่เติบโตในโลกอาชญากรรมต่างประเทศกลับมายังเกาหลีเพราะเรื่องผลประโยชน์บางอย่าง แต่กลับเข้าไปพัวพันกับอาคารเก่า ผู้เช่าหลากนิสัย และบริษัทใหญ่ที่ใช้กฎหมายเป็นเครื่องมือ ความยุติธรรมในเรื่องนี้จึงออกมาในรูปแบบที่ทั้งเฉียบ แสบ และไม่ค่อยสะอาดนัก",
+    choices: ["Vincenzo", "Lawless Lawyer", "Taxi Driver", "Again My Life"],
+    correctIndex: 0,
+    id: "mg-016",
+  },
+  {
+    title: "Kingdom",
+    description:
+      "ในราชสำนักยุคโบราณ ข่าวลือเรื่องกษัตริย์ประชวรซ่อนความผิดปกติที่น่ากลัวกว่าโรคทั่วไป องค์รัชทายาทต้องสืบความจริงท่ามกลางการเมืองและความหิวโหยของประชาชน เมื่อภัยแพร่กระจายตอนกลางคืน การเอาตัวรอดจึงเกี่ยวพันทั้งอำนาจและความลับในวัง",
+    choices: [
+      "Kingdom",
+      "All of Us Are Dead",
+      "Sweet Home",
+      "Arthdal Chronicles",
+    ],
+    correctIndex: 0,
+    id: "mg-017",
+  },
+  {
+    title: "All of Us Are Dead",
+    description:
+      "โรงเรียนมัธยมธรรมดากลายเป็นพื้นที่ปิดตายเมื่อนักเรียนเริ่มเปลี่ยนไปอย่างรวดเร็ว กลุ่มวัยรุ่นต้องหาทางรอดด้วยของใกล้ตัวและความสัมพันธ์ที่ยังไม่ลงตัว ความกลัวไม่ได้มาจากสิ่งที่ไล่กัดเท่านั้น แต่ยังมาจากการตัดสินใจของเพื่อนที่เคยอยู่ห้องเดียวกัน",
+    choices: [
+      "All of Us Are Dead",
+      "Sweet Home",
+      "Kingdom",
+      "Duty After School",
+    ],
+    correctIndex: 0,
+    id: "mg-018",
+  },
+  {
+    title: "Business Proposal",
+    description:
+      "พนักงานสาวไปนัดบอดแทนเพื่อนโดยหวังทำให้ฝ่ายชายถอยหนี แต่เรื่องกลับยุ่งเมื่ออีกฝ่ายเป็นคนที่เธอไม่ควรเจอในชีวิตทำงาน การโกหกเล็ก ๆ จึงบานปลายเป็นความสัมพันธ์ที่ต้องแสดงหลายบทบาท ทั้งตลก เขิน และเสี่ยงโป๊ะแทบทุกฉาก",
+    choices: [
+      "Business Proposal",
+      "What's Wrong with Secretary Kim",
+      "Her Private Life",
+      "Touch Your Heart",
+    ],
+    correctIndex: 0,
+    id: "mg-019",
+  },
+  {
+    title: "Twenty-Five Twenty-One",
+    description:
+      "วัยรุ่นสองคนพบกันในช่วงที่ความฝันของหลายคนถูกวิกฤตพรากไป คนหนึ่งไล่ตามเส้นทางนักกีฬา อีกคนพยายามยืนให้ได้หลังครอบครัวเปลี่ยนไป ความสัมพันธ์ค่อย ๆ เติบโตผ่านช่วงอายุที่สดใสแต่เปราะบาง จนความทรงจำบางอย่างสวยงามเพราะมันย้อนกลับไปไม่ได้",
+    choices: [
+      "Twenty-Five Twenty-One",
+      "Reply 1988",
+      "Our Beloved Summer",
+      "Start-Up",
+    ],
+    correctIndex: 0,
+    id: "mg-020",
+  },
+  {
+    title: "The Untamed",
+    description:
+      "ชายหนุ่มสองคนที่นิสัยต่างกันมากถูกดึงเข้าสู่คดีลึกลับในยุทธภพซึ่งโยงกับอดีตอันเจ็บปวด เรื่องราวสลับระหว่างความทรงจำ การเมืองของตระกูลใหญ่ และพลังต้องห้ามที่ทำให้ผู้คนตัดสินกันง่ายเกินไป ความจริงจึงไม่ได้อยู่แค่ฝ่ายธรรมะหรืออธรรม",
+    choices: [
+      "The Untamed",
+      "Word of Honor",
+      "Nirvana in Fire",
+      "Love Between Fairy and Devil",
+    ],
+    correctIndex: 0,
+    id: "mg-021",
+  },
+  {
+    title: "Hidden Love",
+    description:
+      "เด็กสาวแอบชอบเพื่อนของพี่ชายมานานหลายปี ความรู้สึกที่เริ่มจากความเขินแบบวัยเรียนค่อย ๆ โตขึ้นเมื่อทั้งคู่กลับมาเจอกันในช่วงชีวิตที่ต่างกัน เรื่องนี้ไม่ได้เร่งให้รักเกิดเร็ว แต่ค่อย ๆ เล่าเส้นบาง ๆ ระหว่างความฝัน ความกลัว และการยอมรับว่าตัวเองโตพอจะรักใครสักคน",
+    choices: [
+      "Hidden Love",
+      "When I Fly Towards You",
+      "You Are My Glory",
+      "Go Go Squid!",
+    ],
+    correctIndex: 0,
+    id: "mg-022",
+  },
+  {
+    title: "Love Between Fairy and Devil",
+    description:
+      "หญิงสาวจากแดนสวรรค์ที่ดูไร้พิษภัยเผลอเข้าไปเกี่ยวพันกับจอมมารผู้ถูกขังมานาน ความสัมพันธ์ที่ควรเป็นศัตรูกลับซับซ้อนขึ้นเพราะโชคชะตาและพันธะบางอย่าง โลกเซียน ปีศาจ และความทรงจำเก่าจึงค่อย ๆ เปิดให้เห็นว่าความรักอาจเปลี่ยนคนที่ไม่น่าเปลี่ยนได้",
+    choices: [
+      "Love Between Fairy and Devil",
+      "Eternal Love",
+      "Ashes of Love",
+      "Till the End of the Moon",
+    ],
+    correctIndex: 0,
+    id: "mg-023",
+  },
+  {
+    title: "Nirvana in Fire",
+    description:
+      "ชายผู้ดูอ่อนแอเดินทางเข้าสู่เมืองหลวงพร้อมแผนการที่ซ่อนมานานหลายปี เขาไม่ได้ใช้กำลังเป็นหลัก แต่ใช้ปัญญา ข่าวลือ และความเข้าใจคนเพื่อขยับสมดุลอำนาจในราชสำนัก ทุกก้าวเหมือนสุภาพ แต่จริง ๆ แล้วเฉือนคมกว่าดาบ",
+    choices: [
+      "Nirvana in Fire",
+      "Joy of Life",
+      "The Long Ballad",
+      "Story of Yanxi Palace",
+    ],
+    correctIndex: 0,
+    id: "mg-024",
+  },
+  {
+    title: "Story of Yanxi Palace",
+    description:
+      "หญิงสาวคนหนึ่งเข้าวังเพื่อค้นหาความจริงเกี่ยวกับคนในครอบครัว แต่ชีวิตในวังเต็มไปด้วยรอยยิ้มที่ไว้ใจไม่ได้ เธอต้องใช้ไหวพริบและความกล้าตอบโต้คนที่มีอำนาจเหนือกว่า เรื่องราวจึงเป็นทั้งเกมเอาตัวรอดและการไต่ระดับในพื้นที่ที่ผิดพลาดเพียงครั้งเดียวอาจจบทุกอย่าง",
+    choices: [
+      "Story of Yanxi Palace",
+      "Ruyi's Royal Love in the Palace",
+      "Empresses in the Palace",
+      "The Story of Minglan",
+    ],
+    correctIndex: 0,
+    id: "mg-025",
+  },
+  {
+    title: "Eternal Love",
+    description:
+      "หญิงสาวจากโลกเซียนผ่านความรักหลายภพชาติที่ทั้งหวานและเจ็บปวด ตัวตน ความทรงจำ และหน้าที่ต่อเผ่าพันธุ์ทำให้ความสัมพันธ์ไม่อาจเดินตรง ๆ ได้ แม้บรรยากาศเหมือนเทพนิยาย แต่แก่นของเรื่องคือการรอคอยและการจดจำคนคนเดิมในเวลาที่เปลี่ยนไป",
+    choices: [
+      "Eternal Love",
+      "Ashes of Love",
+      "Love Between Fairy and Devil",
+      "Ancient Love Poetry",
+    ],
+    correctIndex: 0,
+    id: "mg-026",
+  },
+  {
+    title: "Go Go Squid!",
+    description:
+      "หญิงสาวสายวิชาการที่สดใสไปตกหลุมรักชายหนุ่มเย็นชาผู้ดูแลทีมแข่งขันอีสปอร์ต ความสัมพันธ์เริ่มจากความเข้าใจผิดและความเกร็ง ก่อนค่อย ๆ เปิดโลกของความฝัน ทีมเวิร์ก และการแข่งขันที่ต้องใช้ทั้งสมองและหัวใจ",
+    choices: [
+      "Go Go Squid!",
+      "You Are My Glory",
+      "Love O2O",
+      "Falling Into Your Smile",
+    ],
+    correctIndex: 0,
+    id: "mg-027",
+  },
+  {
+    title: "You Are My Glory",
+    description:
+      "นักแสดงสาวที่มีภาพลักษณ์สมบูรณ์แบบกลับมาพบเพื่อนเก่าสมัยเรียนซึ่งเลือกเส้นทางวิศวกรอวกาศแทนชื่อเสียง ความรักค่อย ๆ เกิดขึ้นระหว่างโลกที่ดูต่างกันมาก หนึ่งคนอยู่ใต้สปอตไลต์ อีกคนอยู่กับภารกิจเงียบ ๆ ที่ยิ่งใหญ่กว่าตัวเอง",
+    choices: ["You Are My Glory", "Go Go Squid!", "Love O2O", "Hidden Love"],
+    correctIndex: 0,
+    id: "mg-028",
+  },
+  {
+    title: "The Long Ballad",
+    description:
+      "เจ้าหญิงที่สูญเสียทุกอย่างต้องหนีออกจากวังและปกปิดตัวตนเพื่อเอาชีวิตรอด เส้นทางของเธอพาไปสู่สงคราม พันธมิตรใหม่ และศัตรูที่ไม่อาจตัดสินง่าย ๆ เรื่องราวไม่ได้มีเพียงการแก้แค้น แต่เป็นการเรียนรู้ว่าผู้นำต้องเลือกอะไรเพื่อคนจำนวนมาก",
+    choices: [
+      "The Long Ballad",
+      "Who Rules the World",
+      "Nirvana in Fire",
+      "Princess Agents",
+    ],
+    correctIndex: 0,
+    id: "mg-029",
+  },
+  {
+    title: "Meteor Garden",
+    description:
+      "หญิงสาวจากครอบครัวธรรมดาเข้าไปเรียนในสังคมที่เต็มไปด้วยคนรวยและกฎของกลุ่มชายหนุ่มทรงอิทธิพล เธอไม่ยอมก้มหัวง่าย ๆ จึงกลายเป็นจุดเริ่มของความขัดแย้ง ความรัก และการเติบโตของคนที่เคยคิดว่าเงินควบคุมทุกอย่างได้",
+    choices: [
+      "Meteor Garden",
+      "A Love So Beautiful",
+      "Put Your Head on My Shoulder",
+      "Accidentally in Love",
+    ],
+    correctIndex: 0,
+    id: "mg-030",
+  },
+  {
     title: "Spirited Away",
     description:
-      "เด็กหญิงหลงเข้าสู่โลกที่กฎของมนุษย์ใช้ไม่ได้ ผู้ใหญ่ถูกสาปให้กลายเป็นสัตว์ เธอต้องทำงานในสถานที่ที่เต็มไปด้วยวิญญาณและเทพ เพื่อรักษาชื่อของตัวเองและหาทางกลับบ้าน",
+      "เด็กหญิงคนหนึ่งหลงเข้าไปในสถานที่ที่ไม่ต้อนรับมนุษย์อย่างแท้จริง พ่อแม่ของเธอเปลี่ยนไปเพราะความโลภ ส่วนตัวเธอต้องเรียนรู้กฎแปลก ๆ ของโรงอาบน้ำและผู้คนที่ชื่อสำคัญกว่าที่คิด การหาทางกลับบ้านจึงเป็นทั้งการทำงาน การเติบโต และการรักษาตัวตนไว้",
     choices: [
       "Spirited Away",
-      "Princess Mononoke",
       "Howl's Moving Castle",
+      "Princess Mononoke",
       "My Neighbor Totoro",
     ],
     correctIndex: 0,
+    id: "mg-031",
   },
   {
-    id: "mg-014",
     title: "Your Name",
     description:
-      "วัยรุ่นสองคนที่ไม่เคยพบกันกลับตื่นขึ้นมาในร่างของอีกฝ่ายเป็นระยะ การทิ้งข้อความบนมือถือและกระดาษกลายเป็นสายสัมพันธ์ เมื่อพวกเขาพยายามพบกัน ความจริงเรื่องเวลาและโศกนาฏกรรมค่อย ๆ เปิดเผย",
+      "วัยรุ่นสองคนที่อยู่คนละที่เริ่มตื่นมาใช้ชีวิตของอีกฝ่ายเป็นบางวัน สิ่งที่เหมือนเรื่องวุ่นของวัยเรียนค่อย ๆ กลายเป็นปริศนาที่ใหญ่กว่าแค่การสลับร่าง ข้อความที่ทิ้งไว้ ความทรงจำที่เลือน และเวลาอันคลาดเคลื่อนทำให้การพบกันธรรมดากลายเป็นเรื่องยากมาก",
     choices: [
       "Your Name",
       "Weathering with You",
@@ -7869,12 +8167,12 @@ const MOVIE_GUESS_DATA = [
       "The Girl Who Leapt Through Time",
     ],
     correctIndex: 0,
+    id: "mg-032",
   },
   {
-    id: "mg-015",
     title: "Attack on Titan",
     description:
-      "มนุษย์ใช้กำแพงสูงกั้นชีวิตจากยักษ์ลึกลับ หลังเหตุการณ์ทำลายล้างครั้งหนึ่ง เด็กหนุ่มสาบานจะทำลายศัตรูทุกตัว ความจริงเกี่ยวกับกำแพงและตัวตนของยักษ์ค่อย ๆ แตกออกเหมือนผิวหนัง",
+      "มนุษย์ใช้กำแพงขนาดมหึมาเป็นคำตอบสุดท้ายต่อภัยจากภายนอก เด็กหนุ่มคนหนึ่งสูญเสียทุกอย่างและเลือกเส้นทางทหารเพื่อตอบโต้ แต่ยิ่งเข้าใกล้ความจริงมากเท่าไร ภาพของศัตรูก็ยิ่งไม่เหมือนเดิม เรื่องราวค่อย ๆ เปลี่ยนจากการเอาชีวิตรอดเป็นคำถามเรื่องอิสระและความเกลียดชัง",
     choices: [
       "Attack on Titan",
       "Fullmetal Alchemist: Brotherhood",
@@ -7882,214 +8180,1821 @@ const MOVIE_GUESS_DATA = [
       "Tokyo Ghoul",
     ],
     correctIndex: 0,
+    id: "mg-033",
   },
   {
-    id: "mg-016",
     title: "Demon Slayer",
     description:
-      "ครอบครัวหนึ่งถูกสังหาร เหลือเพียงน้องสาวที่ถูกเปลี่ยนเป็นปีศาจ พี่ชายออกเดินทางฝึกฝนอย่างทรหดเพื่อเข้าร่วมองค์กรนักล่าปีศาจ หวังรักษาน้องสาวและล้างแค้นให้ครอบครัว",
-    choices: ["Demon Slayer", "Jujutsu Kaisen", "Bleach", "One Piece"],
+      "เด็กหนุ่มที่เคยใช้ชีวิตเรียบง่ายต้องเสียครอบครัวในคืนเดียว เหลือเพียงน้องสาวที่ไม่เหมือนเดิมอีกต่อไป เขาออกเดินทางพร้อมดาบ กลิ่นที่ไวผิดปกติ และความหวังที่จะรักษาคนสำคัญ การต่อสู้แต่ละครั้งจึงไม่ได้มีแค่ล้างแค้น แต่ยังมีความสงสารต่ออดีตของศัตรู",
+    choices: ["Demon Slayer", "Jujutsu Kaisen", "Bleach", "Inuyasha"],
     correctIndex: 0,
+    id: "mg-034",
   },
   {
-    id: "mg-017",
     title: "Naruto",
     description:
-      "เด็กกำพร้าถูกชาวบ้านรังเกียจเพราะมีสิ่งที่น่ากลัวถูกผนึกไว้ในตัว เขาไม่ยอมแพ้และตั้งเป้าเป็นผู้นำหมู่บ้าน ผ่านการฝึกหนัก การสอบนินจา และความผูกพันกับเพื่อนร่วมทีมที่ซับซ้อน",
-    choices: ["Naruto", "Dragon Ball", "One Piece", "My Hero Academia"],
+      "เด็กชายที่ถูกมองเป็นตัวปัญหาของหมู่บ้านพยายามพิสูจน์ว่าตัวเองมีค่า เขาเลือกเป้าหมายที่ดูไกลเกินจริงและวิ่งชนทุกอย่างด้วยพลังใจ ระหว่างการฝึก การสอบ และมิตรภาพกับคู่แข่ง ความลับในตัวเขาค่อย ๆ ทำให้ทุกคนต้องทบทวนว่าความโดดเดี่ยวสร้างคนแบบไหน",
+    choices: ["Naruto", "One Piece", "Dragon Ball Z", "My Hero Academia"],
     correctIndex: 0,
+    id: "mg-035",
   },
   {
-    id: "mg-018",
+    title: "One Piece",
+    description:
+      "เด็กหนุ่มผู้มีร่างกายยืดหยุ่นออกทะเลตามหาสมบัติในตำนาน แต่สิ่งที่ทำให้การเดินทางใหญ่ขึ้นไม่ใช่แค่เป้าหมายปลายทาง เขาค่อย ๆ รวมพวกพ้องที่มีบาดแผลและความฝันต่างกัน ทะเลจึงกลายเป็นเวทีของเสรีภาพ มิตรภาพ และการท้าทายอำนาจที่กดทับคนอ่อนแอ",
+    choices: ["One Piece", "Fairy Tail", "Naruto", "Hunter x Hunter"],
+    correctIndex: 0,
+    id: "mg-036",
+  },
+  {
+    title: "Jujutsu Kaisen",
+    description:
+      "เด็กหนุ่มธรรมดากินวัตถุต้องห้ามเพื่อช่วยคนอื่น แล้วชีวิตก็เปลี่ยนไปสู่โลกที่คำสาปเกิดจากความรู้สึกด้านลบของมนุษย์ เขาต้องเรียนในโรงเรียนที่สอนการต่อสู้กับสิ่งที่มองไม่เห็น พร้อมแบกรับตัวตนอันตรายที่อยู่ในร่างเดียวกัน",
+    choices: ["Jujutsu Kaisen", "Demon Slayer", "Tokyo Ghoul", "Bleach"],
+    correctIndex: 0,
+    id: "mg-037",
+  },
+  {
+    title: "Death Note",
+    description:
+      "นักเรียนหัวดีพบสมุดเล่มหนึ่งที่ทำให้ความคิดเรื่องความยุติธรรมของเขาอันตรายขึ้นทันที เมื่อการกำจัดคนเลวกลายเป็นอำนาจที่ไม่มีใครตรวจสอบได้ เกมไล่ล่าระหว่างเขากับนักสืบปริศนาจึงเต็มไปด้วยแผนซ้อนแผนและคำถามว่าใครกันแน่ที่เป็นพระเจ้า",
+    choices: ["Death Note", "Code Geass", "Monster", "Psycho-Pass"],
+    correctIndex: 0,
+    id: "mg-038",
+  },
+  {
+    title: "Fullmetal Alchemist: Brotherhood",
+    description:
+      "สองพี่น้องพยายามแก้ไขความผิดพลาดจากพิธีต้องห้ามที่พรากร่างกายของพวกเขาไปบางส่วน การตามหาวัตถุในตำนานพาเข้าสู่ความลับของรัฐ สงคราม และราคาที่แท้จริงของการแลกเปลี่ยน เรื่องนี้จึงไม่ใช่แค่การคืนร่าง แต่เป็นการเข้าใจว่าชีวิตตีค่าไม่ได้ง่าย ๆ",
+    choices: [
+      "Fullmetal Alchemist: Brotherhood",
+      "Attack on Titan",
+      "D.Gray-man",
+      "Soul Eater",
+    ],
+    correctIndex: 0,
+    id: "mg-039",
+  },
+  {
+    title: "Spy x Family",
+    description:
+      "สายลับคนหนึ่งต้องสร้างครอบครัวปลอมเพื่อภารกิจใหญ่ แต่สมาชิกแต่ละคนกลับมีความลับของตัวเองที่บอกกันไม่ได้ เด็กหญิงตัวเล็กกลายเป็นคนเดียวที่พอจะรู้ความจริงทั้งหมด ความอบอุ่นในบ้านจึงเกิดจากการแสดงที่ค่อย ๆ เหมือนจริงเกินกว่าทุกคนตั้งใจ",
+    choices: [
+      "Spy x Family",
+      "Kaguya-sama: Love is War",
+      "Buddy Daddies",
+      "The Way of the Househusband",
+    ],
+    correctIndex: 0,
+    id: "mg-040",
+  },
+  {
+    title: "Haikyuu!!",
+    description:
+      "เด็กหนุ่มตัวไม่สูงนักหลงรักกีฬาที่ต้องกระโดดสูงกว่าคนอื่น เขาเข้าทีมพร้อมคู่แข่งที่กลายเป็นคู่หู และค่อย ๆ เรียนรู้ว่าการชนะไม่ได้มาจากพรสวรรค์คนเดียว สนามวอลเลย์บอลเล็ก ๆ จึงเต็มไปด้วยการฝึกซ้ำ ๆ จังหวะหายใจ และความเชื่อใจของทั้งทีม",
+    choices: ["Haikyuu!!", "Slam Dunk", "Kuroko's Basketball", "Blue Lock"],
+    correctIndex: 0,
+    id: "mg-041",
+  },
+  {
+    title: "Slam Dunk",
+    description:
+      "นักเรียนหัวร้อนที่เริ่มเล่นบาสเพราะเหตุผลส่วนตัวค่อย ๆ พบว่ากีฬานี้จริงจังกว่าที่คิด จากคนที่อยากเด่นต่อหน้าคนที่ชอบ เขาต้องเรียนรู้พื้นฐาน ทีมเวิร์ก และความพ่ายแพ้ สนามบาสจึงกลายเป็นที่ที่คนดื้อคนหนึ่งเริ่มเติบโตโดยไม่รู้ตัว",
+    choices: ["Slam Dunk", "Haikyuu!!", "Kuroko's Basketball", "Blue Lock"],
+    correctIndex: 0,
+    id: "mg-042",
+  },
+  {
+    title: "Frieren: Beyond Journey's End",
+    description:
+      "หลังภารกิจใหญ่ที่ควรเป็นตอนจบของตำนาน นักเวทอายุยืนเริ่มออกเดินทางอีกครั้งเพื่อทำความเข้าใจความรู้สึกที่เคยมองข้าม เวลาในสายตาของเธอเดินช้ากว่ามนุษย์มาก การผจญภัยครั้งใหม่นี้จึงเงียบ อบอุ่น และเจ็บนิด ๆ เพราะบางคำตอบมาช้ากว่าคนที่อยากฟัง",
+    choices: [
+      "Frieren: Beyond Journey's End",
+      "Violet Evergarden",
+      "Mushoku Tensei",
+      "Made in Abyss",
+    ],
+    correctIndex: 0,
+    id: "mg-043",
+  },
+  {
+    title: "Solo Leveling",
+    description:
+      "ชายหนุ่มที่ถูกมองว่าอ่อนแอที่สุดในหมู่นักล่ามอนสเตอร์รอดจากเหตุการณ์ประหลาดและได้รับระบบที่คนอื่นไม่มี จากคนที่แทบเอาตัวไม่รอด เขาค่อย ๆ แข็งแกร่งขึ้นอย่างผิดธรรมชาติ แต่พลังที่เพิ่มขึ้นก็มาพร้อมคำถามว่าดันเจี้ยนและเงามืดเหล่านั้นซ่อนอะไรไว้",
+    choices: [
+      "Solo Leveling",
+      "Sword Art Online",
+      "The Rising of the Shield Hero",
+      "Overlord",
+    ],
+    correctIndex: 0,
+    id: "mg-044",
+  },
+  {
+    title: "Oshi no Ko",
+    description:
+      "เรื่องราวเริ่มเหมือนภาพสดใสของวงการไอดอล แต่พลิกไปสู่ด้านมืดของชื่อเสียง ความคาดหวัง และการแสดง เด็กสองคนที่เกี่ยวพันกับดาวเด่นคนหนึ่งเติบโตมาพร้อมเป้าหมายที่ต่างกัน การสืบหาความจริงจึงเกิดขึ้นใต้แสงไฟที่สวยงามแต่หลอกตา",
+    choices: ["Oshi no Ko", "Kaguya-sama: Love is War", "Nana", "Perfect Blue"],
+    correctIndex: 0,
+    id: "mg-045",
+  },
+  {
+    title: "Violet Evergarden",
+    description:
+      "หญิงสาวที่เคยถูกใช้เป็นเครื่องมือในสงครามเริ่มทำงานเขียนจดหมายแทนคนอื่น เธอพยายามเข้าใจคำที่เคยได้ยินจากคนสำคัญผ่านเรื่องราวของผู้คนมากมาย ทุกจดหมายจึงเป็นบทเรียนว่าความรู้สึกที่พูดไม่ออกอาจฝากไว้ในตัวอักษรได้",
+    choices: [
+      "Violet Evergarden",
+      "Your Lie in April",
+      "Frieren: Beyond Journey's End",
+      "Anohana",
+    ],
+    correctIndex: 0,
+    id: "mg-046",
+  },
+  {
+    title: "My Hero Academia",
+    description:
+      "ในโลกที่คนส่วนใหญ่มีพลังพิเศษ เด็กชายไร้พลังคนหนึ่งยังฝันอยากเป็นฮีโร่ เขาได้รับโอกาสที่เปลี่ยนชีวิต แต่ต้องพิสูจน์ว่าความกล้าหาญไม่ได้วัดจากพลังเพียงอย่างเดียว โรงเรียนฮีโร่จึงเป็นทั้งสนามฝึกและบททดสอบว่าการช่วยคนต้องแลกอะไรบ้าง",
+    choices: [
+      "My Hero Academia",
+      "One Punch Man",
+      "Black Clover",
+      "Tiger & Bunny",
+    ],
+    correctIndex: 0,
+    id: "mg-047",
+  },
+  {
+    title: "Chainsaw Man",
+    description:
+      "เด็กหนุ่มที่ใช้ชีวิตติดหนี้และแทบไม่มีทางเลือกได้รับพลังจากปีศาจคู่หูตัวเล็ก ๆ ชีวิตใหม่ของเขาดูเหมือนเปิดโอกาสให้ฝันง่าย ๆ เป็นจริง แต่โลกของนักล่าปีศาจเต็มไปด้วยการหลอกใช้ ความปรารถนา และความรุนแรงที่มักมาพร้อมรอยยิ้มแปลก ๆ",
+    choices: [
+      "Chainsaw Man",
+      "Jujutsu Kaisen",
+      "Tokyo Ghoul",
+      "Hell's Paradise",
+    ],
+    correctIndex: 0,
+    id: "mg-048",
+  },
+  {
+    title: "Dragon Ball Z",
+    description:
+      "นักสู้ผู้รักการประลองต้องปกป้องโลกจากศัตรูที่แข็งแกร่งขึ้นเรื่อย ๆ การฝึกหนัก การเปลี่ยนร่าง และพลังที่ทะลุขีดจำกัดกลายเป็นหัวใจของการต่อสู้ แต่เบื้องหลังหมัดและลำแสงคือครอบครัว มิตรภาพ และความเชื่อว่าคนเรายังเก่งขึ้นได้เสมอ",
+    choices: ["Dragon Ball Z", "Naruto", "One Piece", "Bleach"],
+    correctIndex: 0,
+    id: "mg-049",
+  },
+  {
+    title: "Toy Story",
+    description:
+      "ของเล่นในห้องเด็กชายมีชีวิตและมีกฎว่าห้ามให้มนุษย์รู้ แต่ความมั่นคงของของเล่นตัวโปรดสั่นคลอนเมื่อของใหม่สุดล้ำเข้ามาแทนที่ ความอิจฉาเล็ก ๆ พาทั้งคู่หลุดออกสู่โลกที่อันตรายกว่าห้องนอน และทำให้ต้องเรียนรู้ว่าการเป็นที่รักไม่ใช่การแข่งขันเสมอไป",
+    choices: ["Toy Story", "Monsters, Inc.", "Finding Nemo", "Cars"],
+    correctIndex: 0,
+    id: "mg-050",
+  },
+  {
+    title: "Frozen",
+    description:
+      "หญิงสาวที่มีพลังควบคุมไม่ได้เผลอทำให้เมืองทั้งเมืองติดอยู่ในฤดูหนาว เธอเลือกหนีเพื่อไม่ทำร้ายใคร ขณะที่น้องสาวออกตามหาพร้อมคนแปลกหน้าและเพื่อนหิมะ เรื่องราวดูเหมือนการตามหารักแท้ แต่คำตอบสำคัญอาจอยู่ในสายสัมพันธ์ที่ใกล้ตัวกว่านั้น",
+    choices: ["Frozen", "Tangled", "Moana", "Brave"],
+    correctIndex: 0,
+    id: "mg-051",
+  },
+  {
+    title: "Coco",
+    description:
+      "เด็กชายที่รักดนตรีแม้ครอบครัวจะห้ามอย่างหนัก บังเอิญข้ามไปยังโลกของผู้ล่วงลับในคืนสำคัญ เขาต้องตามหาความจริงเกี่ยวกับบรรพบุรุษก่อนเวลาจะหมด ความฝันของเขาจึงผูกกับความทรงจำ รูปถ่าย และการให้อภัยมากกว่าการได้ขึ้นเวทีเพียงอย่างเดียว",
+    choices: ["Coco", "Soul", "Encanto", "The Book of Life"],
+    correctIndex: 0,
+    id: "mg-052",
+  },
+  {
+    title: "Inside Out",
+    description:
+      "เมื่อเด็กหญิงต้องย้ายเมือง อารมณ์ในหัวของเธอก็เริ่มควบคุมทุกอย่างไม่ง่ายเหมือนเดิม ความสุขพยายามรักษาทุกอย่างให้สดใส แต่ความเศร้ากลับมีบทบาทที่ไม่มีใครเข้าใจ การเดินทางในจิตใจจึงทำให้เห็นว่าการโตขึ้นอาจต้องยอมรับอารมณ์มากกว่าหนึ่งสี",
+    choices: ["Inside Out", "Soul", "Turning Red", "Up"],
+    correctIndex: 0,
+    id: "mg-053",
+  },
+  {
+    title: "Up",
+    description:
+      "ชายชราผู้เก็บความฝันไว้กับบ้านหลังเดิมตัดสินใจออกเดินทางด้วยวิธีที่เป็นไปไม่ได้ บ้านทั้งหลังลอยไปพร้อมลูกโป่งจำนวนมากและเด็กชายที่ไม่ได้ตั้งใจติดมาด้วย การผจญภัยจึงไม่ใช่แค่ไปถึงสถานที่ในภาพเก่า แต่เป็นการเรียนรู้ว่าจะใช้ชีวิตต่อหลังการสูญเสียอย่างไร",
+    choices: ["Up", "Coco", "Klaus", "How to Train Your Dragon"],
+    correctIndex: 0,
+    id: "mg-054",
+  },
+  {
+    title: "WALL·E",
+    description:
+      "หุ่นตัวเล็กทำงานเก็บขยะบนโลกที่ถูกทิ้งร้างจนเป็นกิจวัตร เขามีความอยากรู้อยากเห็นและเก็บของเล็ก ๆ เหมือนสมบัติ จนวันหนึ่งหุ่นจากอวกาศมาถึงพร้อมภารกิจที่ใหญ่กว่าเขามาก เรื่องราวเงียบ ๆ นี้พูดถึงความรัก โลกที่ถูกลืม และมนุษย์ที่สบายเกินไป",
+    choices: ["WALL·E", "Big Hero 6", "Robots", "Treasure Planet"],
+    correctIndex: 0,
+    id: "mg-055",
+  },
+  {
+    title: "Zootopia",
+    description:
+      "กระต่ายตัวเล็กที่อยากเป็นตำรวจในเมืองใหญ่ต้องพิสูจน์ตัวเองท่ามกลางสายตาดูถูก คดีคนหายทำให้เธอต้องร่วมมือกับจิ้งจอกเจ้าเล่ห์ที่ไม่อยากยุ่งกับระบบ เมืองสัตว์ที่ดูทันสมัยจึงค่อย ๆ เผยอคติและความกลัวที่ซ่อนอยู่ใต้คำว่าสังคมที่อยู่ร่วมกัน",
+    choices: ["Zootopia", "Sing", "The Bad Guys", "Bolt"],
+    correctIndex: 0,
+    id: "mg-056",
+  },
+  {
+    title: "How to Train Your Dragon",
+    description:
+      "เด็กหนุ่มไวกิ้งที่ควรถูกสอนให้ล่ามังกรกลับพบมังกรบาดเจ็บและเลือกทำสิ่งตรงข้ามกับที่หมู่บ้านเชื่อ ความสัมพันธ์ลับ ๆ ระหว่างคนกับสิ่งที่ถูกมองว่าเป็นศัตรูค่อย ๆ เปลี่ยนความเข้าใจของเขา และอาจเปลี่ยนอนาคตของทั้งเผ่า",
+    choices: [
+      "How to Train Your Dragon",
+      "Raya and the Last Dragon",
+      "Dragonheart",
+      "Brave",
+    ],
+    correctIndex: 0,
+    id: "mg-057",
+  },
+  {
+    title: "Kung Fu Panda",
+    description:
+      "แพนด้าที่ดูเหมาะกับร้านบะหมี่มากกว่าสำนักกังฟูถูกเลือกให้เป็นผู้กอบกู้โดยไม่มีใครเชื่อ เขาต้องฝึกกับอาจารย์ที่หมดหวังและนักรบที่เก่งกว่าเขามาก เรื่องราวตลก ๆ นี้ซ่อนคำถามว่าความพิเศษมาจากพรสวรรค์จริงหรือมาจากการยอมรับตัวเอง",
+    choices: ["Kung Fu Panda", "Mulan", "Shrek", "The Lego Movie"],
+    correctIndex: 0,
+    id: "mg-058",
+  },
+  {
+    title: "Spider-Man: Into the Spider-Verse",
+    description:
+      "วัยรุ่นคนหนึ่งได้พลังที่เขาไม่พร้อมรับ และไม่นานก็พบว่าตนเองไม่ใช่คนเดียวที่สวมหน้ากากแบบนี้ หลายตัวตนจากหลายโลกต้องร่วมมือกันก่อนทุกอย่างพังทลาย งานภาพเหมือนหนังสือการ์ตูนมีชีวิตช่วยเล่าเรื่องการเติบโตของคนที่ยังไม่มั่นใจว่าเขาคู่ควรหรือไม่",
+    choices: [
+      "Spider-Man: Into the Spider-Verse",
+      "Spider-Man: No Way Home",
+      "The Incredibles",
+      "Big Hero 6",
+    ],
+    correctIndex: 0,
+    id: "mg-059",
+  },
+  {
+    title: "Arcane",
+    description:
+      "สองพี่น้องจากเมืองใต้ดินถูกแยกออกจากกันท่ามกลางความขัดแย้งของนครที่มั่งคั่งกว่า เทคโนโลยีใหม่ ความเหลื่อมล้ำ และบาดแผลในครอบครัวทำให้ทุกฝ่ายค่อย ๆ เดินไปสู่จุดที่กลับตัวลำบาก งานภาพที่เหมือนภาพวาดทำให้เรื่องการเมืองและความรักเจ็บขึ้นกว่าที่คาด",
+    choices: [
+      "Arcane",
+      "Cyberpunk: Edgerunners",
+      "Castlevania",
+      "Blue Eye Samurai",
+    ],
+    correctIndex: 0,
+    id: "mg-060",
+  },
+  {
+    title: "Inception",
+    description:
+      "ชายผู้เชี่ยวชาญการขโมยความลับจากจิตใต้สำนึกได้รับงานที่กลับด้านจากสิ่งที่ถนัด เขาต้องพาคนกลุ่มหนึ่งเข้าไปในความฝันหลายชั้นเพื่อทำให้เป้าหมายเชื่อว่าความคิดหนึ่งเป็นของตัวเอง แต่ปัญหาไม่ได้มีแค่แผนซับซ้อน เพราะอดีตของเขาเองแทรกเข้ามาในทุกระดับของความฝัน",
+    choices: ["Inception", "Interstellar", "Tenet", "The Matrix"],
+    correctIndex: 0,
+    id: "mg-061",
+  },
+  {
+    title: "Interstellar",
+    description:
+      "โลกที่เต็มไปด้วยฝุ่นและพืชผลล้มเหลวผลักให้นักบินคนหนึ่งต้องทิ้งครอบครัวเพื่อภารกิจนอกโลก การเดินทางผ่านอวกาศไม่ได้วัดระยะทางอย่างเดียว แต่ยังวัดเวลาที่ไหลไม่เท่ากัน ความรัก ข้อมูล และแรงโน้มถ่วงกลายเป็นภาษาที่มนุษย์ใช้ส่งเสียงกลับบ้าน",
+    choices: ["Interstellar", "The Martian", "Gravity", "Arrival"],
+    correctIndex: 0,
+    id: "mg-062",
+  },
+  {
+    title: "The Matrix",
+    description:
+      "ชายหนุ่มที่ใช้ชีวิตสองด้านเริ่มสงสัยว่าโลกปกติของเขามีบางอย่างไม่จริง การเลือกครั้งหนึ่งพาเขาไปเห็นระบบที่ซ่อนอยู่หลังความเป็นจริง และทำให้ต้องเรียนรู้กฎใหม่ของการต่อสู้ ศัตรูในเรื่องนี้ไม่ได้มีแค่คนไล่ล่า แต่คือกรอบความคิดที่คนส่วนใหญ่ไม่รู้ว่าตนติดอยู่",
+    choices: ["The Matrix", "Ready Player One", "Ghost in the Shell", "Tron"],
+    correctIndex: 0,
+    id: "mg-063",
+  },
+  {
+    title: "The Dark Knight",
+    description:
+      "เมืองที่หวังพึ่งสัญลักษณ์แห่งความยุติธรรมถูกท้าทายโดยคนร้ายที่ไม่ได้ต้องการเงินเป็นหลัก เขาออกแบบความวุ่นวายเพื่อพิสูจน์ว่าคนดีอาจแตกสลายได้เมื่อถูกบีบพอ ฮีโร่ของเมืองจึงต้องเลือกระหว่างความจริง ภาพลักษณ์ และราคาของการปกป้องผู้คน",
+    choices: ["The Dark Knight", "Batman Begins", "Joker", "The Batman"],
+    correctIndex: 0,
+    id: "mg-064",
+  },
+  {
+    title: "Avengers: Endgame",
+    description:
+      "หลังความพ่ายแพ้ที่ทำให้โลกเงียบลง เหล่าผู้รอดชีวิตต้องรวมตัวกันอีกครั้งเพื่อแก้ไขสิ่งที่ดูเป็นไปไม่ได้ แผนของพวกเขาเกี่ยวข้องกับอดีต ความทรงจำ และสิ่งของที่เคยกระจัดกระจายอยู่ในหลายเหตุการณ์ การต่อสู้ครั้งนี้จึงหนักเพราะทุกชัยชนะมีราคาที่ต้องจ่าย",
+    choices: [
+      "Avengers: Endgame",
+      "Avengers: Infinity War",
+      "The Avengers",
+      "Captain America: Civil War",
+    ],
+    correctIndex: 0,
+    id: "mg-065",
+  },
+  {
+    title: "Titanic",
+    description:
+      "เรือขนาดมหึมาที่ถูกเชื่อว่าไม่มีวันจมกลายเป็นฉากของความรักระหว่างคนสองชนชั้น หญิงสาวคนหนึ่งเหมือนมีทุกอย่างแต่กลับไร้อิสระ ส่วนชายหนุ่มอีกคนมีเพียงโอกาสชั่วคราวและหัวใจที่กล้า เมื่อหายนะค่อย ๆ ใกล้เข้ามา ความทรงจำเล็ก ๆ บนเรือกลับสำคัญกว่าความหรูหราทั้งหมด",
+    choices: ["Titanic", "The Notebook", "Atonement", "Pearl Harbor"],
+    correctIndex: 0,
+    id: "mg-066",
+  },
+  {
+    title: "Harry Potter and the Sorcerer's Stone",
+    description:
+      "เด็กชายที่โตมาอย่างถูกมองข้ามได้รับจดหมายจำนวนมากจนชีวิตธรรมดาพังลงในคืนหนึ่ง เขาถูกพาเข้าสู่โรงเรียนที่ซ่อนอยู่จากโลกทั่วไป และพบว่าชื่อของตัวเองมีอดีตมากกว่าที่รู้ การเรียนคาถา เพื่อนใหม่ และวัตถุลึกลับจึงเป็นจุดเริ่มของโลกที่ทั้งอบอุ่นและอันตราย",
+    choices: [
+      "Harry Potter and the Sorcerer's Stone",
+      "Harry Potter and the Chamber of Secrets",
+      "The Golden Compass",
+      "Percy Jackson: The Lightning Thief",
+    ],
+    correctIndex: 0,
+    id: "mg-067",
+  },
+  {
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    description:
+      "สิ่งของเล็กมากชิ้นหนึ่งมีน้ำหนักต่อโลกทั้งใบมากกว่าที่เจ้าของใหม่จะเข้าใจ การเดินทางจากบ้านที่สงบพาเขาไปพบผู้พิทักษ์จากหลายเผ่าพันธุ์ เมืองงดงาม และเงามืดที่ตามล่าไม่หยุด ภารกิจเหมือนง่ายแค่เอาของไปทำลาย แต่ทุกก้าวทำให้มิตรภาพถูกทดสอบ",
+    choices: [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Hobbit: An Unexpected Journey",
+      "The Chronicles of Narnia",
+      "The Lord of the Rings: The Two Towers",
+    ],
+    correctIndex: 0,
+    id: "mg-068",
+  },
+  {
+    title: "Star Wars: A New Hope",
+    description:
+      "เด็กหนุ่มจากดาวทะเลทรายพบข้อความลับที่ซ่อนอยู่ในหุ่นยนต์ตัวเล็ก และถูกดึงเข้าสู่สงครามที่ใหญ่กว่าชีวิตไร่นาของเขามาก การพบชายชรา นักบินรับจ้าง และสถานีอาวุธขนาดยักษ์ทำให้เขาค่อย ๆ เข้าใจว่าตำนานโบราณอาจยังไม่หายไปจากจักรวาล",
+    choices: [
+      "Star Wars: A New Hope",
+      "Star Wars: The Empire Strikes Back",
+      "Rogue One: A Star Wars Story",
+      "Guardians of the Galaxy",
+    ],
+    correctIndex: 0,
+    id: "mg-069",
+  },
+  {
+    title: "Jurassic Park",
+    description:
+      "มหาเศรษฐีคนหนึ่งสร้างสวนสนุกจากวิทยาศาสตร์ที่ควรอยู่แค่ในอดีต และเชิญผู้เชี่ยวชาญมาดูความสำเร็จก่อนเปิดจริง ทุกอย่างดูน่าตื่นตาอยู่ไม่นาน เมื่อระบบล้มเหลวและสิ่งมีชีวิตในกรงเริ่มเดินตามสัญชาตญาณ เรื่องนี้จึงถามว่ามนุษย์ควรทำทุกอย่างที่ทำได้จริงหรือไม่",
+    choices: ["Jurassic Park", "Jurassic World", "King Kong", "Godzilla"],
+    correctIndex: 0,
+    id: "mg-070",
+  },
+  {
+    title: "The Avengers",
+    description:
+      "ฮีโร่หลายคนที่มีนิสัยและปมส่วนตัวต่างกันถูกบังคับให้ร่วมทีมเมื่อภัยจากนอกโลกมาถึง การรวมตัวไม่ได้ราบรื่น เพราะแต่ละคนมีวิธีมองโลกและความภูมิใจของตัวเอง แต่เมื่อเมืองกลายเป็นสนามรบ พวกเขาต้องเรียนรู้ว่าทีมไม่ได้เกิดจากพลังรวมกันเท่านั้น",
+    choices: [
+      "The Avengers",
+      "Justice League",
+      "X-Men",
+      "Avengers: Age of Ultron",
+    ],
+    correctIndex: 0,
+    id: "mg-071",
+  },
+  {
+    title: "Black Panther",
+    description:
+      "กษัตริย์คนใหม่ของอาณาจักรลับต้องรับช่วงต่อทั้งบัลลังก์ เทคโนโลยี และคำถามว่าประเทศของเขาควรปิดตัวจากโลกต่อไปหรือไม่ ผู้ท้าชิงที่กลับมาพร้อมบาดแผลจากอดีตทำให้ความขัดแย้งไม่ใช่แค่ดีหรือร้าย แต่เป็นการถกเถียงว่าอำนาจควรถูกใช้เพื่อใคร",
+    choices: [
+      "Black Panther",
+      "Aquaman",
+      "Shang-Chi and the Legend of the Ten Rings",
+      "Thor: Ragnarok",
+    ],
+    correctIndex: 0,
+    id: "mg-072",
+  },
+  {
+    title: "Joker",
+    description:
+      "ชายคนหนึ่งพยายามใช้ชีวิตในเมืองที่ทั้งเย็นชาและกดทับคนชายขอบ เขามีเสียงหัวเราะที่ควบคุมไม่ได้และความฝันเล็ก ๆ เกี่ยวกับการยืนบนเวที แต่เมื่อการถูกมองข้ามสะสมจนเกินรับไหว ตัวตนใหม่ที่ฉูดฉาดก็ค่อย ๆ กลายเป็นสัญลักษณ์ของความปั่นป่วนทั้งเมือง",
+    choices: ["Joker", "The Dark Knight", "Taxi Driver", "Nightcrawler"],
+    correctIndex: 0,
+    id: "mg-073",
+  },
+  {
+    title: "The Social Network",
+    description:
+      "โปรเจกต์ออนไลน์ที่เริ่มจากหอพักมหาวิทยาลัยเติบโตเร็วจนความสัมพันธ์รอบตัวผู้สร้างตามไม่ทัน เรื่องราวถูกเล่าผ่านการฟ้องร้องและความทรงจำหลายฝ่าย ทำให้เห็นว่าความสำเร็จทางเทคโนโลยีอาจมาพร้อมการหักหลัง เพื่อนที่หายไป และคำถามว่าใครเป็นเจ้าของไอเดียจริง ๆ",
+    choices: ["The Social Network", "Steve Jobs", "BlackBerry", "Moneyball"],
+    correctIndex: 0,
+    id: "mg-074",
+  },
+  {
+    title: "The Wolf of Wall Street",
+    description:
+      "ชายหนุ่มในโลกการเงินค้นพบว่าการขายความฝันให้คนอื่นทำเงินได้อย่างมหาศาล ชีวิตของเขาเต็มไปด้วยพลัง งานเลี้ยง และการข้ามเส้นกฎหมายที่ดูสนุกเกินกว่าจะหยุด แต่ความโลภที่ขยายตัวเร็วเหมือนธุรกิจของเขาเองก็ทำให้ทุกอย่างเริ่มควบคุมไม่ได้",
+    choices: [
+      "The Wolf of Wall Street",
+      "The Big Short",
+      "Boiler Room",
+      "American Hustle",
+    ],
+    correctIndex: 0,
+    id: "mg-075",
+  },
+  {
+    title: "The Prestige",
+    description:
+      "นักมายากลสองคนเปลี่ยนจากคู่แข่งบนเวทีเป็นศัตรูที่พร้อมทำลายชีวิตกันเพื่อกลที่เหนือกว่า ความลับของโชว์แต่ละครั้งถูกปกปิดด้วยการเสียสละที่คนดูไม่เห็น และยิ่งทั้งคู่พยายามเอาชนะกัน ภาพลวงตาก็ยิ่งกลืนชีวิตจริงจนแทบแยกไม่ออก",
+    choices: ["The Prestige", "Now You See Me", "The Illusionist", "Memento"],
+    correctIndex: 0,
+    id: "mg-076",
+  },
+  {
+    title: "Fight Club",
+    description:
+      "ชายที่เบื่อชีวิตซ้ำ ๆ ในเมืองใหญ่พบคนแปลกหน้าที่พาเขาไปรู้จักการปลดปล่อยผ่านความรุนแรง สิ่งที่เริ่มเหมือนชมรมลับสำหรับคนหมดไฟค่อย ๆ กลายเป็นเครือข่ายที่มีเป้าหมายใหญ่ขึ้นเรื่อย ๆ และทำให้เขาต้องสงสัยว่าตัวเองควบคุมอะไรอยู่จริงหรือไม่",
+    choices: ["Fight Club", "American Psycho", "Se7en", "Joker"],
+    correctIndex: 0,
+    id: "mg-077",
+  },
+  {
+    title: "Pulp Fiction",
+    description:
+      "เรื่องราวของนักฆ่า นักมวย คู่รักโจร และคนในโลกอาชญากรรมถูกเล่าแบบไม่เรียงเวลา เหตุการณ์เล็ก ๆ เช่นบทสนทนาในร้านอาหารหรือกระเป๋าใบหนึ่งกลับพาไปสู่ความรุนแรงและความบังเอิญแปลกประหลาด เสน่ห์ของเรื่องอยู่ที่จังหวะคำพูดและความวุ่นวายที่เหมือนจะไม่มีศูนย์กลาง",
+    choices: [
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Snatch",
+      "No Country for Old Men",
+    ],
+    correctIndex: 0,
+    id: "mg-078",
+  },
+  {
+    title: "The Silence of the Lambs",
+    description:
+      "เจ้าหน้าที่ฝึกหัดต้องเข้าไปคุยกับนักโทษอัจฉริยะที่น่ากลัว เพื่อเข้าใจฆาตกรอีกคนที่ยังลอยนวล การสนทนาดูสุภาพแต่เต็มไปด้วยการอ่านใจและการแลกเปลี่ยนที่อันตราย เธอต้องไขคดีไปพร้อมกับปกป้องจิตใจตัวเองจากคนที่รู้วิธีเจาะความกลัวของผู้อื่น",
+    choices: ["The Silence of the Lambs", "Se7en", "Mindhunter", "Zodiac"],
+    correctIndex: 0,
+    id: "mg-079",
+  },
+  {
+    title: "Se7en",
+    description:
+      "ตำรวจสองคนที่ต่างวัยและต่างมุมมองตามคดีฆาตกรรมซึ่งถูกจัดฉากตามแนวคิดบาปเก่าแก่ เมืองที่ฝนตกและหม่นหมองทำให้ทุกเบาะแสดูหนักขึ้นเรื่อย ๆ ผู้ร้ายไม่ได้ต้องการแค่หนีการจับกุม แต่เหมือนอยากบังคับให้คนอื่นเข้าไปอยู่ในบทสรุปที่เขาวางไว้",
+    choices: ["Se7en", "Zodiac", "Prisoners", "The Silence of the Lambs"],
+    correctIndex: 0,
+    id: "mg-080",
+  },
+  {
+    title: "The Shawshank Redemption",
+    description:
+      "ชายคนหนึ่งถูกส่งเข้าเรือนจำทั้งที่ยังยืนยันความบริสุทธิ์ เขาไม่ใช่คนเสียงดังหรือใช้กำลัง แต่ค่อย ๆ สร้างพื้นที่เล็ก ๆ ของความหวังในสถานที่ที่ตั้งใจทำลายมัน มิตรภาพ หนังสือ และความอดทนยาวนานกลายเป็นเครื่องมือที่ไม่มีใครระแวงมากพอ",
+    choices: [
+      "The Shawshank Redemption",
+      "The Green Mile",
+      "Prison Break",
+      "Escape Plan",
+    ],
+    correctIndex: 0,
+    id: "mg-081",
+  },
+  {
+    title: "Forrest Gump",
+    description:
+      "ชายผู้มองโลกอย่างซื่อตรงเดินผ่านเหตุการณ์สำคัญของอเมริกาโดยแทบไม่ได้ตั้งใจ ชีวิตของเขาเต็มไปด้วยการวิ่ง การพบคนดัง สงคราม ธุรกิจ และความรักที่เฝ้ารออย่างยาวนาน เรื่องนี้เล่าเหมือนความบังเอิญมากมาย แต่แก่นของมันคือการยึดสิ่งเรียบง่ายไว้ในโลกที่เปลี่ยนเร็ว",
+    choices: [
+      "Forrest Gump",
+      "The Pursuit of Happyness",
+      "Big Fish",
+      "A Beautiful Mind",
+    ],
+    correctIndex: 0,
+    id: "mg-082",
+  },
+  {
+    title: "The Truman Show",
+    description:
+      "ชายคนหนึ่งใช้ชีวิตในเมืองที่ดูสมบูรณ์แบบจนเกินจริง ทุกคนรอบตัวเหมือนมีบทบาทบางอย่าง และเหตุผิดพลาดเล็ก ๆ เริ่มทำให้เขาสงสัยว่าชีวิตประจำวันถูกจัดฉากหรือไม่ การออกไปไกลกว่าขอบฟ้าของเมืองจึงเป็นทั้งการหนีและการเกิดใหม่",
+    choices: [
+      "The Truman Show",
+      "Pleasantville",
+      "Eternal Sunshine of the Spotless Mind",
+      "The Matrix",
+    ],
+    correctIndex: 0,
+    id: "mg-083",
+  },
+  {
+    title: "Dune",
+    description:
+      "ทายาทตระกูลใหญ่ถูกส่งไปยังดาวทะเลทรายที่มีทรัพยากรสำคัญที่สุดในจักรวาล การเมืองของจักรวรรดิ ศาสนา และคำทำนายค่อย ๆ ผูกเขาไว้กับผู้คนบนดาวนั้นมากกว่าที่ครอบครัวคาดคิด ทราย พายุ และสิ่งมีชีวิตใต้ผืนดินจึงไม่ใช่อุปสรรคเดียวที่เขาต้องเผชิญ",
+    choices: ["Dune", "Foundation", "Star Wars", "John Carter"],
+    correctIndex: 0,
+    id: "mg-084",
+  },
+  {
+    title: "Mad Max: Fury Road",
+    description:
+      "โลกหลังล่มสลายกลายเป็นทะเลทรายที่น้ำและเชื้อเพลิงมีค่ากว่าศีลธรรม นักรบหญิงคนหนึ่งพากลุ่มคนหลบหนีจากผู้ปกครองเผด็จการ และชายพเนจรถูกลากเข้ามาร่วมทาง การไล่ล่าบนถนนแทบไม่หยุดพัก แต่หัวใจของเรื่องคือการหนีไปหาชีวิตที่ยังเลือกเองได้",
+    choices: [
+      "Mad Max: Fury Road",
+      "The Book of Eli",
+      "Children of Men",
+      "Snowpiercer",
+    ],
+    correctIndex: 0,
+    id: "mg-085",
+  },
+  {
+    title: "Gone Girl",
+    description:
+      "การหายตัวไปของภรรยาทำให้สามีที่ดูธรรมดากลายเป็นเป้าสายตาของสังคม บันทึก ความทรงจำ และภาพที่สื่อสร้างขึ้นค่อย ๆ ทำให้ความจริงพร่ามัว เรื่องชีวิตคู่ที่เหมือนสมบูรณ์แบบจึงกลายเป็นเกมจิตวิทยาที่ผู้ชมต้องถามตลอดว่าใครกำลังเล่าเรื่องให้เราเชื่อ",
+    choices: [
+      "Gone Girl",
+      "The Girl on the Train",
+      "Sharp Objects",
+      "Prisoners",
+    ],
+    correctIndex: 0,
+    id: "mg-086",
+  },
+  {
+    title: "Shutter Island",
+    description:
+      "เจ้าหน้าที่สืบสวนเดินทางไปเกาะที่เป็นสถานพยาบาลจิตเวชเพื่อสอบคดีคนหาย แต่บรรยากาศของที่นั่นทำให้ทุกคำตอบดูเหมือนซ่อนคำถามใหม่ หมอก พายุ และความทรงจำส่วนตัวค่อย ๆ ล้อมเขาไว้ จนการสืบคดีอาจไม่ใช่สิ่งเดียวที่ต้องคลี่คลาย",
+    choices: ["Shutter Island", "Memento", "The Others", "Identity"],
+    correctIndex: 0,
+    id: "mg-087",
+  },
+  {
+    title: "A Quiet Place",
+    description:
+      "ครอบครัวหนึ่งต้องใช้ชีวิตโดยแทบไม่ส่งเสียงในโลกที่สิ่งมีชีวิตบางอย่างล่าจากการได้ยิน ทุกก้าว ทุกของตก และทุกความเจ็บปวดกลายเป็นความเสี่ยง พวกเขาสร้างภาษาของตัวเองเพื่ออยู่รอด แต่ความเงียบที่จำเป็นก็ทำให้ความกลัวดังขึ้นในใจมากกว่าเดิม",
+    choices: [
+      "A Quiet Place",
+      "Bird Box",
+      "The Silence",
+      "10 Cloverfield Lane",
+    ],
+    correctIndex: 0,
+    id: "mg-088",
+  },
+  {
+    title: "Get Out",
+    description:
+      "ชายหนุ่มไปเยี่ยมครอบครัวของแฟนสาวในบ้านที่ดูอบอุ่นและสุภาพมาก แต่รายละเอียดเล็ก ๆ รอบตัวเริ่มทำให้เขาไม่สบายใจ รอยยิ้ม การพูดคุย และคนรับใช้ที่มีท่าทีแปลก ๆ ค่อย ๆ เปิดเผยว่าความน่ากลัวอาจซ่อนอยู่ในมารยาทที่ดูดีเกินไป",
+    choices: ["Get Out", "Us", "The Invitation", "Midsommar"],
+    correctIndex: 0,
+    id: "mg-089",
+  },
+  {
+    title: "John Wick",
+    description:
+      "ชายที่เคยออกจากโลกนักฆ่าได้แล้วถูกเหตุการณ์เล็กแต่โหดร้ายลากกลับไปยังวงการเดิม เมืองใต้ดินที่เขารู้จักมีกฎ โรงแรม เหรียญ และชื่อเสียงที่ทุกคนเกรงใจ การแก้แค้นของเขาจึงไม่ได้เป็นแค่ความโกรธส่วนตัว แต่ปลุกระบบเก่าทั้งระบบให้เคลื่อนไหวอีกครั้ง",
+    choices: ["John Wick", "Nobody", "The Equalizer", "Atomic Blonde"],
+    correctIndex: 0,
+    id: "mg-090",
+  },
+  {
+    title: "Knives Out",
+    description:
+      "นักสืบผู้มีชื่อเสียงถูกเชิญมาสืบการตายในบ้านของนักเขียนมั่งคั่ง ครอบครัวผู้ตายแต่ละคนดูมีเหตุผลให้ปิดบังบางอย่าง และคำให้การที่เหมือนจะชัดกลับบิดไปมาเหมือนนิยายสืบสวน เรื่องนี้เล่นกับมรดก ความโลภ และการโกหกที่บางครั้งเผยความจริงมากกว่าคำสารภาพ",
+    choices: [
+      "Knives Out",
+      "Glass Onion",
+      "Murder on the Orient Express",
+      "Death on the Nile",
+    ],
+    correctIndex: 0,
+    id: "mg-091",
+  },
+  {
+    title: "The Martian",
+    description:
+      "นักบินอวกาศคนหนึ่งถูกทิ้งไว้บนดาวอังคารเพราะทีมคิดว่าเขาเสียชีวิต เขาต้องใช้ความรู้ทางวิทยาศาสตร์แก้ปัญหาพื้นฐานที่สุดตั้งแต่อาหาร น้ำ ไปจนถึงการสื่อสาร ความโดดเดี่ยวบนดาวแดงจึงกลายเป็นเรื่องของการคิดเป็นขั้นตอนและการไม่ยอมหมดอารมณ์ขัน",
+    choices: ["The Martian", "Interstellar", "Gravity", "Ad Astra"],
+    correctIndex: 0,
+    id: "mg-092",
+  },
+  {
+    title: "Arrival",
+    description:
+      "ยานลึกลับปรากฏขึ้นในหลายจุดทั่วโลก และนักภาษาศาสตร์คนหนึ่งถูกดึงเข้ามาช่วยสื่อสารกับผู้มาเยือน การถอดรหัสภาษาไม่ได้เป็นแค่การแปลคำ แต่เปลี่ยนวิธีที่มนุษย์เข้าใจเวลา ความทรงจำ และการตัดสินใจ บทสนทนากับสิ่งแปลกหน้าอาจเกี่ยวกับชีวิตส่วนตัวมากกว่าสงคราม",
+    choices: ["Arrival", "Contact", "Interstellar", "Annihilation"],
+    correctIndex: 0,
+    id: "mg-093",
+  },
+  {
+    title: "Eternal Sunshine of the Spotless Mind",
+    description:
+      "คู่รักที่เจ็บปวดจากความสัมพันธ์เลือกใช้เทคโนโลยีลบความทรงจำเกี่ยวกับกันและกัน แต่ระหว่างกระบวนการ ความทรงจำที่ควรถูกทิ้งกลับเผยให้เห็นว่าบางช่วงเวลามีค่ามากกว่าความเจ็บในตอนจบ เรื่องนี้จึงถามว่าหากลืมความรักได้จริง เราจะยังเป็นคนเดิมอยู่ไหม",
+    choices: [
+      "Eternal Sunshine of the Spotless Mind",
+      "Her",
+      "500 Days of Summer",
+      "Vanilla Sky",
+    ],
+    correctIndex: 0,
+    id: "mg-094",
+  },
+  {
+    title: "Edge of Tomorrow",
+    description:
+      "ทหารที่ไม่พร้อมรบถูกโยนเข้าสู่สงครามกับสิ่งมีชีวิตต่างดาวและพบว่าตัวเองติดอยู่ในวันเดิม ทุกครั้งที่ตาย เขาได้เริ่มใหม่พร้อมความรู้เพิ่มขึ้นเล็กน้อย การเอาชนะจึงไม่ได้มาจากความกล้าครั้งเดียว แต่จากการล้มซ้ำ ๆ จนอ่านสนามรบเหมือนบทเรียน",
+    choices: ["Edge of Tomorrow", "Source Code", "Oblivion", "Pacific Rim"],
+    correctIndex: 0,
+    id: "mg-095",
+  },
+  {
     title: "Stranger Things",
     description:
-      "เด็กชายหายตัวไปอย่างลึกลับในเมืองเล็ก ๆ กลุ่มเพื่อนออกตามหาและพบเด็กสาวพลังพิเศษ ขณะเดียวกัน โลกกลับด้านที่มืดมิดก็เริ่มแทรกซึมเข้ามาพร้อมสิ่งมีชีวิตที่ไม่มีใครเข้าใจ",
+      "เมืองเล็ก ๆ ที่ดูเงียบสงบเปลี่ยนไปเมื่อเด็กชายคนหนึ่งหายตัวไป กลุ่มเพื่อนของเขาได้พบเด็กหญิงลึกลับที่มีพลังประหลาด ขณะเดียวกันผู้ใหญ่ก็เริ่มตามรอยความผิดปกติจากห้องทดลองใกล้เมือง ความกลัวแบบสัตว์ประหลาดจึงปนกับมิตรภาพวัยเด็กและความลับของรัฐ",
     choices: ["Stranger Things", "Dark", "The X-Files", "The OA"],
     correctIndex: 0,
+    id: "mg-096",
   },
   {
-    id: "mg-019",
     title: "Breaking Bad",
     description:
-      "ครูเคมีที่ถูกบีบด้วยโรคร้ายตัดสินใจเข้าสู่วงการผิดกฎหมายเพื่อหาเงินให้ครอบครัว จากการทดลองในรถบ้าน สู่การเป็นอาณาจักรสีฟ้าที่ควบคุมด้วยกฎของตัวเองและศีลธรรมที่ถดถอย",
+      "ครูเคมีที่ถูกชีวิตบีบจากหลายทางตัดสินใจใช้ความรู้ของตัวเองในโลกผิดกฎหมายเพื่อหาเงินให้ครอบครัว สิ่งที่เริ่มจากเหตุผลดูเข้าใจได้ค่อย ๆ เปลี่ยนเป็นอำนาจ ความภูมิใจ และตัวตนใหม่ที่อันตรายกว่าเดิม การเปลี่ยนแปลงของเขาจึงน่ากลัวเพราะมันค่อยเป็นค่อยไป",
     choices: ["Breaking Bad", "Better Call Saul", "Narcos", "Ozark"],
     correctIndex: 0,
+    id: "mg-097",
   },
   {
-    id: "mg-020",
+    title: "Game of Thrones",
+    description:
+      "ตระกูลใหญ่หลายฝ่ายแย่งชิงบัลลังก์ในดินแดนที่เต็มไปด้วยพันธมิตรชั่วคราวและการทรยศ ขณะที่ผู้คนหมกมุ่นกับอำนาจ ภัยจากแดนเหนือซึ่งเก่าแก่กว่าการเมืองมนุษย์ก็ค่อย ๆ เคลื่อนเข้ามา เรื่องนี้จึงทำให้มงกุฎดูหนักพอ ๆ กับดาบและหิมะ",
+    choices: [
+      "Game of Thrones",
+      "House of the Dragon",
+      "The Witcher",
+      "Vikings",
+    ],
+    correctIndex: 0,
+    id: "mg-098",
+  },
+  {
+    title: "The Last of Us",
+    description:
+      "หลังโรคระบาดเปลี่ยนมนุษย์จำนวนมากให้กลายเป็นภัย ชายผู้สูญเสียในอดีตได้รับมอบหมายให้พาเด็กหญิงคนหนึ่งข้ามประเทศ เธออาจเป็นความหวังของโลก แต่การเดินทางทำให้ทั้งคู่กลายเป็นมากกว่าภารกิจ คำถามสำคัญคือเมื่อรักใครสักคน เราจะยอมแลกโลกได้แค่ไหน",
+    choices: [
+      "The Last of Us",
+      "The Walking Dead",
+      "28 Days Later",
+      "I Am Legend",
+    ],
+    correctIndex: 0,
+    id: "mg-099",
+  },
+  {
+    title: "The Boys",
+    description:
+      "ในโลกที่ซูเปอร์ฮีโร่ถูกขายเหมือนสินค้าและได้รับการปกป้องโดยบริษัทใหญ่ กลุ่มคนธรรมดาที่มีความแค้นส่วนตัวพยายามเปิดโปงด้านมืดของเหล่าผู้ทรงพลัง ภาพลักษณ์สวยงามบนจอทีวีจึงขัดกับความจริงที่เต็มไปด้วยการเมือง ธุรกิจ และความรุนแรง",
+    choices: ["The Boys", "Watchmen", "Invincible", "Peacemaker"],
+    correctIndex: 0,
+    id: "mg-100",
+  },
+  {
+    title: "พี่มาก..พระโขนง",
+    description:
+      "ชายหนุ่มกลับจากสงครามพร้อมเพื่อนกลุ่มป่วนและยังเชื่อว่าคนรักรออยู่ที่บ้านริมคลอง ทั้งที่คนทั้งหมู่บ้านดูหวาดกลัวบางอย่างที่เขาไม่ยอมรับ",
+    choices: ["พี่มาก..พระโขนง", "นางนาก", "ลัดดาแลนด์", "ร่างทรง"],
+    correctIndex: 0,
+    id: "mg-101",
+  },
+  {
+    title: "ฉลาดเกมส์โกง",
+    description:
+      "เด็กนักเรียนหัวดีเริ่มจากช่วยเพื่อนโกงข้อสอบเล็ก ๆ ก่อนแผนจะขยายเป็นภารกิจระดับนานาชาติที่ต้องใช้จังหวะ ความนิ่ง และความจำสูงมาก",
+    choices: ["ฉลาดเกมส์โกง", "โฮมสเตย์", "เด็กหอ", "คิดถึงวิทยา"],
+    correctIndex: 0,
+    id: "mg-102",
+  },
+  {
+    title: "ชัตเตอร์ กดติดวิญญาณ",
+    description:
+      "หลังอุบัติเหตุในคืนหนึ่ง ภาพถ่ายเริ่มมีเงาแปลก ๆ ติดมาด้วย และอดีตของคนถือกล้องค่อย ๆ กลายเป็นสิ่งที่หนีไม่พ้น",
+    choices: [
+      "ชัตเตอร์ กดติดวิญญาณ",
+      "โปรแกรมหน้า วิญญาณอาฆาต",
+      "ฝากไว้..ในกายเธอ",
+      "เพื่อน..ที่ระลึก",
+    ],
+    correctIndex: 0,
+    id: "mg-103",
+  },
+  {
+    title: "องค์บาก",
+    description:
+      "ชายหนุ่มจากหมู่บ้านเล็กออกตามหาสิ่งศักดิ์สิทธิ์ที่ถูกขโมยไป และต้องใช้ฝีมือการต่อสู้แบบดิบ ๆ ฝ่าคนเมืองใหญ่",
+    choices: ["องค์บาก", "ต้มยำกุ้ง", "ขุนพันธ์", "7 ประจัญบาน"],
+    correctIndex: 0,
+    id: "mg-104",
+  },
+  {
+    title: "ต้มยำกุ้ง",
+    description:
+      "ชายผู้ผูกพันกับช้างต้องบุกต่างแดนเพื่อตามหาสิ่งสำคัญของครอบครัว ทำให้เกิดฉากต่อสู้ต่อเนื่องกับเครือข่ายอาชญากรรม",
+    choices: ["ต้มยำกุ้ง", "องค์บาก", "ขุนพันธ์", "2499 อันธพาลครองเมือง"],
+    correctIndex: 0,
+    id: "mg-105",
+  },
+  {
+    title: "ลัดดาแลนด์",
+    description:
+      "ครอบครัวหนึ่งย้ายเข้าหมู่บ้านจัดสรรที่ควรเป็นชีวิตใหม่ แต่ข่าวลือ เพื่อนบ้าน และบ้านหลังหนึ่งทำให้ความฝันเริ่มกลายเป็นฝันร้าย",
+    choices: ["ลัดดาแลนด์", "ร่างทรง", "เด็กหอ", "โลงต่อตาย"],
+    correctIndex: 0,
+    id: "mg-106",
+  },
+  {
+    title: "นางนาก",
+    description:
+      "หญิงคนหนึ่งรอสามีกลับจากสงครามด้วยความรักที่แรงเกินความตาย ขณะที่คนรอบหมู่บ้านพยายามบอกความจริงที่เขาไม่อยากฟัง",
+    choices: ["นางนาก", "พี่มาก..พระโขนง", "แสงกระสือ", "เพื่อน..ที่ระลึก"],
+    correctIndex: 0,
+    id: "mg-107",
+  },
+  {
+    title: "แฟนฉัน",
+    description:
+      "ความทรงจำวัยเด็กในซอยเล็ก ๆ พาไปหาเพื่อนข้างบ้าน เกมเก่า ๆ และความรู้สึกแรกที่ไม่ทันได้พูดก่อนทุกอย่างเปลี่ยนไป",
+    choices: [
+      "แฟนฉัน",
+      "สิ่งเล็กเล็กที่เรียกว่า...รัก",
+      "Seasons Change",
+      "Timeline จดหมาย-ความทรงจำ",
+    ],
+    correctIndex: 0,
+    id: "mg-108",
+  },
+  {
+    title: "รถไฟฟ้า มาหานะเธอ",
+    description:
+      "หญิงสาววัยทำงานที่รู้สึกว่าความรักมาช้าเกินไปได้พบชายหนุ่มผ่านจังหวะชีวิตเมืองใหญ่และระบบขนส่งที่ทำให้ได้เจอกันซ้ำ ๆ",
+    choices: [
+      "รถไฟฟ้า มาหานะเธอ",
+      "กวน มึน โฮ",
+      "Friend Zone ระวัง..สิ้นสุดทางเพื่อน",
+      "แฟนเดย์..แฟนกันแค่วันเดียว",
+    ],
+    correctIndex: 0,
+    id: "mg-109",
+  },
+  {
+    title: "กวน มึน โฮ",
+    description:
+      "คนไทยสองคนที่ไม่รู้จักกันต้องเที่ยวต่างประเทศด้วยกันแบบไม่ค่อยเต็มใจ และข้อตกลงไม่บอกชื่อทำให้ความสัมพันธ์ทั้งขำทั้งเหงา",
+    choices: [
+      "กวน มึน โฮ",
+      "รถไฟฟ้า มาหานะเธอ",
+      "ATM เออรัก เออเร่อ",
+      "ไอฟาย..แต๊งกิ้ว..เลิฟยู้",
+    ],
+    correctIndex: 0,
+    id: "mg-110",
+  },
+  {
+    title: "ATM เออรัก เออเร่อ",
+    description:
+      "คู่รักในบริษัทที่ห้ามพนักงานคบกันต้องแข่งกันแก้ปัญหาเครื่องกดเงินผิดพลาด จนเรื่องงานกับเรื่องหัวใจปนกันยุ่ง",
+    choices: [
+      "ATM เออรัก เออเร่อ",
+      "อ้าย..คนหล่อลวง",
+      "ไอฟาย..แต๊งกิ้ว..เลิฟยู้",
+      "เมย์ไหน..ไฟแรงเฟร่อ",
+    ],
+    correctIndex: 0,
+    id: "mg-111",
+  },
+  {
+    title: "ไอฟาย..แต๊งกิ้ว..เลิฟยู้",
+    description:
+      "ครูสอนภาษาอังกฤษช่วยชายหนุ่มฝึกพูดเพื่อไปง้อคนรักเก่า แต่บทเรียนกลับทำให้เขาเริ่มเห็นคนตรงหน้ามากขึ้นเรื่อย ๆ",
+    choices: [
+      "ไอฟาย..แต๊งกิ้ว..เลิฟยู้",
+      "ATM เออรัก เออเร่อ",
+      "กวน มึน โฮ",
+      "Friend Zone ระวัง..สิ้นสุดทางเพื่อน",
+    ],
+    correctIndex: 0,
+    id: "mg-112",
+  },
+  {
+    title: "เมย์ไหน..ไฟแรงเฟร่อ",
+    description:
+      "เด็กสาวที่ดูธรรมดามีพลังประหลาดเมื่อหัวใจเต้นแรง และเด็กชายคนหนึ่งต้องเข้าไปเกี่ยวกับความลับสุดวุ่นในโรงเรียน",
+    choices: [
+      "เมย์ไหน..ไฟแรงเฟร่อ",
+      "SuckSeed ห่วยขั้นเทพ",
+      "สิ่งเล็กเล็กที่เรียกว่า...รัก",
+      "Seasons Change",
+    ],
+    correctIndex: 0,
+    id: "mg-113",
+  },
+  {
+    title: "SuckSeed ห่วยขั้นเทพ",
+    description:
+      "กลุ่มเด็กมัธยมตั้งวงดนตรีด้วยฝีมือที่ยังไม่พร้อม แต่ความรัก การแข่งขัน และมิตรภาพทำให้พวกเขาอยากดังให้ได้สักครั้ง",
+    choices: [
+      "SuckSeed ห่วยขั้นเทพ",
+      "Seasons Change",
+      "เมย์ไหน..ไฟแรงเฟร่อ",
+      "แฟนฉัน",
+    ],
+    correctIndex: 0,
+    id: "mg-114",
+  },
+  {
+    title: "คิดถึงวิทยา",
+    description:
+      "ครูสองคนต่างช่วงเวลากันใช้ชีวิตอยู่ในโรงเรียนลอยน้ำเดียวกัน และเชื่อมถึงกันผ่านสมุดบันทึกที่ทิ้งไว้ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "คิดถึงวิทยา",
+      "แฟนเดย์..แฟนกันแค่วันเดียว",
+      "Timeline จดหมาย-ความทรงจำ",
+      "โฮมสเตย์",
+    ],
+    correctIndex: 0,
+    id: "mg-115",
+  },
+  {
+    title: "Timeline จดหมาย-ความทรงจำ",
+    description:
+      "เรื่องรักและการเติบโตถูกเล่าผ่านจดหมาย ความทรงจำ และช่วงเวลาที่ทำให้คนสองคนเลือกทางเดินต่างกัน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Timeline จดหมาย-ความทรงจำ",
+      "แฟนฉัน",
+      "Seasons Change",
+      "คิดถึงวิทยา",
+    ],
+    correctIndex: 0,
+    id: "mg-116",
+  },
+  {
+    title: "4 แพร่ง",
+    description:
+      "เรื่องสั้นสยองหลายแบบพาคนดูเจอสถานการณ์ที่เริ่มธรรมดา ก่อนหักไปสู่ความกลัวคนละรสชาติในแต่ละตอน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["4 แพร่ง", "5 แพร่ง", "บอดี้ ศพ#19", "โปรแกรมหน้า วิญญาณอาฆาต"],
+    correctIndex: 0,
+    id: "mg-117",
+  },
+  {
+    title: "5 แพร่ง",
+    description:
+      "หลายเรื่องหลอนถูกเล่าแยกกัน ทั้งความผิด ความเชื่อ และความตายที่ตามกลับมาในรูปแบบไม่เหมือนกัน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["5 แพร่ง", "4 แพร่ง", "ลัดดาแลนด์", "โลงต่อตาย"],
+    correctIndex: 0,
+    id: "mg-118",
+  },
+  {
+    title: "บอดี้ ศพ#19",
+    description:
+      "นักศึกษาแพทย์เห็นภาพหลอนเกี่ยวกับศพและคดีฆาตกรรม จนต้องตามหาความจริงที่อาจเกี่ยวกับตัวเองมากกว่าที่คิด จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "บอดี้ ศพ#19",
+      "ชัตเตอร์ กดติดวิญญาณ",
+      "ฝากไว้..ในกายเธอ",
+      "เด็กหอ",
+    ],
+    correctIndex: 0,
+    id: "mg-119",
+  },
+  {
+    title: "โฮมสเตย์",
+    description:
+      "วิญญาณหนึ่งได้รับโอกาสอยู่ในร่างเด็กหนุ่มชั่วคราว เพื่อไขปริศนาว่าร่างนี้เคยตายเพราะอะไรและใครเกี่ยวข้อง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["โฮมสเตย์", "บอดี้ ศพ#19", "เพื่อน..ที่ระลึก", "The Promise"],
+    correctIndex: 0,
+    id: "mg-120",
+  },
+  {
+    title: "น้อง.พี่.ที่รัก",
+    description:
+      "พี่ชายสุดป่วนกับน้องสาวที่ดูเป็นผู้ใหญ่กว่าต้องรับมือความรักครั้งใหม่ ซึ่งทำให้ความสัมพันธ์พี่น้องปะทะกันมากขึ้น",
+    choices: [
+      "น้อง.พี่.ที่รัก",
+      "Friend Zone ระวัง..สิ้นสุดทางเพื่อน",
+      "ตุ๊ดซี่ส์ & เดอะเฟค",
+      "อ้าย..คนหล่อลวง",
+    ],
+    correctIndex: 0,
+    id: "mg-121",
+  },
+  {
+    title: "ฮาวทูทิ้ง..ทิ้งอย่างไรไม่ให้เหลือเธอ",
+    description:
+      "หญิงสาวอยากจัดบ้านให้โล่ง แต่ของเก่าทุกชิ้นกลับพาเธอกลับไปเจอความสัมพันธ์และความผิดค้างใจที่ยังทิ้งไม่หมด",
+    choices: [
+      "ฮาวทูทิ้ง..ทิ้งอย่างไรไม่ให้เหลือเธอ",
+      "แฟนเดย์..แฟนกันแค่วันเดียว",
+      "One Day",
+      "หลานม่า",
+    ],
+    correctIndex: 0,
+    id: "mg-122",
+  },
+  {
+    title: "หลานม่า",
+    description:
+      "หลานชายเริ่มจากหวังผลบางอย่างในการดูแลอาม่าที่ป่วย แต่เวลาที่ใช้ร่วมกันค่อย ๆ เปลี่ยนความหมายของครอบครัว จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "หลานม่า",
+      "ฮาวทูทิ้ง..ทิ้งอย่างไรไม่ให้เหลือเธอ",
+      "เธอกับฉันกับฉัน",
+      "คิดถึงวิทยา",
+    ],
+    correctIndex: 0,
+    id: "mg-123",
+  },
+  {
+    title: "เธอกับฉันกับฉัน",
+    description:
+      "ฝาแฝดสาวในยุคก่อนมือถือและอินเทอร์เน็ตต้องเผชิญความรู้สึกที่ไม่เหมือนกันต่อเด็กชายคนเดียว จนความใกล้ชิดเริ่มสั่นคลอน",
+    choices: [
+      "เธอกับฉันกับฉัน",
+      "แฟนฉัน",
+      "สิ่งเล็กเล็กที่เรียกว่า...รัก",
+      "Timeline จดหมาย-ความทรงจำ",
+    ],
+    correctIndex: 0,
+    id: "mg-124",
+  },
+  {
+    title: "อ้าย..คนหล่อลวง",
+    description:
+      "หญิงสาวที่เคยถูกหลอกเรื่องเงินร่วมมือกับนักต้มตุ๋นหน้าตาดีเพื่อเอาคืนคนรักเก่าในแผนหลอกซ้อนหลอก เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "อ้าย..คนหล่อลวง",
+      "ATM เออรัก เออเร่อ",
+      "ตุ๊ดซี่ส์ & เดอะเฟค",
+      "น้อง.พี่.ที่รัก",
+    ],
+    correctIndex: 0,
+    id: "mg-125",
+  },
+  {
+    title: "โหมโรง",
+    description:
+      "นักดนตรีไทยต้องรักษาศักดิ์ศรีของศิลปะดั้งเดิมท่ามกลางยุคสมัยที่เปลี่ยนและแรงกดดันจากผู้มีอำนาจ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "โหมโรง",
+      "มหา'ลัย เหมืองแร่",
+      "มนต์รักทรานซิสเตอร์",
+      "Seasons Change",
+    ],
+    correctIndex: 0,
+    id: "mg-126",
+  },
+  {
+    title: "มหา'ลัย เหมืองแร่",
+    description:
+      "ชายหนุ่มถูกส่งไปทำงานในเหมืองแร่ห่างไกล และค่อย ๆ เรียนรู้ชีวิตจริงจากผู้คน ความลำบาก และธรรมชาติ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "มหา'ลัย เหมืองแร่",
+      "โหมโรง",
+      "มนต์รักทรานซิสเตอร์",
+      "คิดถึงวิทยา",
+    ],
+    correctIndex: 0,
+    id: "mg-127",
+  },
+  {
+    title: "มนต์รักทรานซิสเตอร์",
+    description:
+      "ชายหนุ่มบ้านนอกฝันอยากเป็นนักร้อง แต่เส้นทางชีวิตพาเขาไกลจากความรักและบ้านเกิดมากขึ้นเรื่อย ๆ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["มนต์รักทรานซิสเตอร์", "โหมโรง", "ไทบ้าน เดอะซีรีส์", "สัปเหร่อ"],
+    correctIndex: 0,
+    id: "mg-128",
+  },
+  {
+    title: "แสงกระสือ",
+    description:
+      "หญิงสาวในหมู่บ้านมีความลับยามค่ำคืนที่เกี่ยวกับสิ่งลี้ลับ และความรักทำให้เธอต้องต่อสู้กับชะตาที่คนอื่นหวาดกลัว",
+    choices: ["แสงกระสือ", "ร่างทรง", "นางนาก", "ลัดดาแลนด์"],
+    correctIndex: 0,
+    id: "mg-129",
+  },
+  {
+    title: "ขุนพันธ์",
+    description:
+      "นายตำรวจมือปราบต้องเผชิญโจรที่เชื่อมโยงกับไสยเวท ในยุคที่ความกล้าและความเชื่อถูกทดสอบพร้อมกัน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["ขุนพันธ์", "องค์บาก", "ต้มยำกุ้ง", "2499 อันธพาลครองเมือง"],
+    correctIndex: 0,
+    id: "mg-130",
+  },
+  {
+    title: "Die Tomorrow",
+    description:
+      "เรื่องราวหลายช่วงชีวิตก่อนความตายถูกเล่าอย่างนิ่ง ๆ ให้เห็นว่าช่วงเวลาธรรมดาอาจเป็นครั้งสุดท้ายโดยไม่รู้ตัว",
+    choices: [
+      "Die Tomorrow",
+      "ฮาวทูทิ้ง..ทิ้งอย่างไรไม่ให้เหลือเธอ",
+      "หลานม่า",
+      "คิดถึงวิทยา",
+    ],
+    correctIndex: 0,
+    id: "mg-131",
+  },
+  {
+    title: "ตุ๊ดซี่ส์ & เดอะเฟค",
+    description:
+      "กลุ่มเพื่อนสุดวุ่นต้องหาคนหน้าเหมือนคนดังมาแก้สถานการณ์สำคัญ ก่อนแผนจะพังเพราะความลับและความป่วนของทุกคน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "ตุ๊ดซี่ส์ & เดอะเฟค",
+      "อ้าย..คนหล่อลวง",
+      "แก๊งชะนีกับอีแอบ",
+      "ATM เออรัก เออเร่อ",
+    ],
+    correctIndex: 0,
+    id: "mg-132",
+  },
+  {
+    title: "ไทบ้าน เดอะซีรีส์",
+    description:
+      "ชีวิตวัยรุ่นอีสานถูกเล่าผ่านเพื่อน ความรัก งาน และความฝันเล็ก ๆ ที่ดูธรรมดาแต่มีเสน่ห์แบบบ้าน ๆ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "ไทบ้าน เดอะซีรีส์",
+      "สัปเหร่อ",
+      "มนต์รักทรานซิสเตอร์",
+      "หลานม่า",
+    ],
+    correctIndex: 0,
+    id: "mg-133",
+  },
+  {
+    title: "สัปเหร่อ",
+    description:
+      "ชายหนุ่มในชุมชนอีสานต้องเผชิญความตาย ความรักที่ยังค้างคา และความเชื่อเรื่องโลกหลังความตาย คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["สัปเหร่อ", "ไทบ้าน เดอะซีรีส์", "หลานม่า", "แสงกระสือ"],
+    correctIndex: 0,
+    id: "mg-134",
+  },
+  {
+    title: "บุพเพสันนิวาส 2",
+    description:
+      "คู่รักที่เหมือนผูกพันข้ามภพกลับมาพบกันในอีกยุคหนึ่ง ท่ามกลางประวัติศาสตร์ การเมือง และความทรงจำที่ไม่ชัดเจน",
+    choices: ["บุพเพสันนิวาส 2", "โหมโรง", "นางนาก", "พรหมลิขิต"],
+    correctIndex: 0,
+    id: "mg-135",
+  },
+  {
+    title: "2499 อันธพาลครองเมือง",
+    description:
+      "วัยรุ่นนักเลงในกรุงเทพยุคเก่าต้องอยู่กับศักดิ์ศรี ความรุนแรง และชื่อเสียงที่แลกมาด้วยราคาสูง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "2499 อันธพาลครองเมือง",
+      "มือปืนโลกพระจัน",
+      "7 ประจัญบาน",
+      "ขุนพันธ์",
+    ],
+    correctIndex: 0,
+    id: "mg-136",
+  },
+  {
+    title: "เด็กหอ",
+    description:
+      "เด็กชายย้ายเข้าโรงเรียนประจำและได้พบเพื่อนลึกลับ ความเหงาในหอพักค่อย ๆ กลายเป็นความจริงที่ทั้งเศร้าและหลอน",
+    choices: [
+      "เด็กหอ",
+      "ลัดดาแลนด์",
+      "โปรแกรมหน้า วิญญาณอาฆาต",
+      "เพื่อน..ที่ระลึก",
+    ],
+    correctIndex: 0,
+    id: "mg-137",
+  },
+  {
+    title: "Descendants of the Sun",
+    description:
+      "นายทหารหน่วยพิเศษกับแพทย์หญิงพบกันในพื้นที่เสี่ยงภัย ทำให้ความรักต้องเดินคู่กับภารกิจและการตัดสินใจยาก ๆ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Descendants of the Sun",
+      "Crash Landing on You",
+      "Dr. Romantic",
+      "Hospital Playlist",
+    ],
+    correctIndex: 0,
+    id: "mg-138",
+  },
+  {
+    title: "Queen of Tears",
+    description:
+      "คู่สามีภรรยาระดับมหาเศรษฐีที่กำลังห่างเหินต้องกลับมาทบทวนหัวใจ เมื่อวิกฤตใหญ่ทำให้ความรักที่เหมือนหมดไปเริ่มมีความหมายใหม่",
+    choices: [
+      "Queen of Tears",
+      "Crash Landing on You",
+      "Business Proposal",
+      "King the Land",
+    ],
+    correctIndex: 0,
+    id: "mg-139",
+  },
+  {
+    title: "Extraordinary Attorney Woo",
+    description:
+      "ทนายสาวอัจฉริยะที่มองโลกต่างจากคนทั่วไปต้องพิสูจน์ตัวเองในคดีหลากหลายและสังคมที่ยังไม่เข้าใจเธอเสมอไป ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Extraordinary Attorney Woo",
+      "Law School",
+      "Juvenile Justice",
+      "Vincenzo",
+    ],
+    correctIndex: 0,
+    id: "mg-140",
+  },
+  {
+    title: "Hospital Playlist",
+    description:
+      "กลุ่มหมอเพื่อนสนิทใช้ชีวิตระหว่างคนไข้ ห้องผ่าตัด และวงดนตรีเล็ก ๆ ที่เป็นที่พักใจจากงานหนัก เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Hospital Playlist",
+      "Dr. Romantic",
+      "Reply 1988",
+      "Prison Playbook",
+    ],
+    correctIndex: 0,
+    id: "mg-141",
+  },
+  {
+    title: "Reply 1988",
+    description:
+      "ครอบครัวหลายบ้านในซอยเดียวกันช่วงปลายยุค 80 เติบโตไปพร้อมมิตรภาพวัยเด็ก ความรักแรก และความอบอุ่นของเพื่อนบ้าน",
+    choices: [
+      "Reply 1988",
+      "Twenty-Five Twenty-One",
+      "Hospital Playlist",
+      "Hometown Cha-Cha-Cha",
+    ],
+    correctIndex: 0,
+    id: "mg-142",
+  },
+  {
+    title: "My Love from the Star",
+    description:
+      "มนุษย์ต่างดาวที่อยู่บนโลกมานานหลายร้อยปีได้พบดาราสาวข้างห้อง ก่อนถึงเวลาที่เขาควรต้องจากไป จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "My Love from the Star",
+      "Goblin",
+      "Legend of the Blue Sea",
+      "The King: Eternal Monarch",
+    ],
+    correctIndex: 0,
+    id: "mg-143",
+  },
+  {
+    title: "Hotel Del Luna",
+    description:
+      "ชายหนุ่มถูกบังคับให้ทำงานในโรงแรมสำหรับวิญญาณ ที่เจ้าของหญิงสวยลึกลับติดอยู่กับอดีตมานานมาก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Hotel Del Luna", "Goblin", "Mystic Pop-up Bar", "Master's Sun"],
+    correctIndex: 0,
+    id: "mg-144",
+  },
+  {
+    title: "Mr. Sunshine",
+    description:
+      "ชายที่เติบโตต่างแดนกลับสู่แผ่นดินเกิดในช่วงประวัติศาสตร์ปั่นป่วน และพบหญิงสูงศักดิ์ที่เลือกจับอาวุธเพื่อประเทศ",
+    choices: [
+      "Mr. Sunshine",
+      "Pachinko",
+      "The King: Eternal Monarch",
+      "Chicago Typewriter",
+    ],
+    correctIndex: 0,
+    id: "mg-145",
+  },
+  {
+    title: "Start-Up",
+    description:
+      "คนรุ่นใหม่ในวงการเทคโนโลยีพยายามสร้างบริษัทของตัวเอง พร้อมความรักที่ผูกกับจดหมายเก่าและตัวตนที่สับสน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Start-Up",
+      "Itaewon Class",
+      "Record of Youth",
+      "Twenty-Five Twenty-One",
+    ],
+    correctIndex: 0,
+    id: "mg-146",
+  },
+  {
+    title: "It's Okay to Not Be Okay",
+    description:
+      "คนดูแลผู้ป่วยจิตเวชกับนักเขียนนิทานเด็กบุคลิกแรงค่อย ๆ เยียวยาบาดแผลที่ต่างคนต่างซ่อนไว้ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "It's Okay to Not Be Okay",
+      "Hotel Del Luna",
+      "My Mister",
+      "Move to Heaven",
+    ],
+    correctIndex: 0,
+    id: "mg-147",
+  },
+  {
+    title: "Alchemy of Souls",
+    description:
+      "โลกที่วิญญาณย้ายร่างได้ทำให้ชายหนุ่มผู้ถูกปิดพลังต้องเรียนรู้จากหญิงสาวลึกลับที่ไม่ใช่คนเดิมในร่างนั้น ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Alchemy of Souls",
+      "Arthdal Chronicles",
+      "The King: Eternal Monarch",
+      "Goblin",
+    ],
+    correctIndex: 0,
+    id: "mg-148",
+  },
+  {
+    title: "Moving",
+    description:
+      "ครอบครัวที่มีพลังพิเศษพยายามใช้ชีวิตธรรมดา แต่เด็ก ๆ รุ่นใหม่เริ่มถูกดึงเข้าเกมขององค์กรลับที่ตามล่าพวกเขา",
+    choices: ["Moving", "The Uncanny Counter", "Sweet Home", "D.P."],
+    correctIndex: 0,
+    id: "mg-149",
+  },
+  {
+    title: "Sweet Home",
+    description:
+      "ชายหนุ่มเก็บตัวในอพาร์ตเมนต์ต้องเอาชีวิตรอดเมื่อผู้คนกลายเป็นสัตว์ประหลาดตามความปรารถนาข้างใน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Sweet Home", "All of Us Are Dead", "Hellbound", "Kingdom"],
+    correctIndex: 0,
+    id: "mg-150",
+  },
+  {
+    title: "Hellbound",
+    description:
+      "ผู้คนได้รับคำทำนายเวลาตายและถูกสิ่งเหนือธรรมชาติลงทัณฑ์ต่อหน้าสาธารณะ จนศรัทธากลายเป็นอำนาจน่ากลัว จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Hellbound", "Sweet Home", "Kingdom", "The Silent Sea"],
+    correctIndex: 0,
+    id: "mg-151",
+  },
+  {
+    title: "Signal",
+    description:
+      "ตำรวจปัจจุบันสื่อสารกับนักสืบในอดีตผ่านวิทยุเก่า เพื่อร่วมกันแก้คดีที่ยังหลอกหลอนคนทั้งสองยุค ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Signal", "Tunnel", "Voice", "Stranger"],
+    correctIndex: 0,
+    id: "mg-152",
+  },
+  {
+    title: "Taxi Driver",
+    description:
+      "ทีมลับใช้บริการแท็กซี่บังหน้าเพื่อช่วยเหยื่อที่กฎหมายช่วยไม่ทัน ด้วยวิธีแก้แค้นที่วางแผนอย่างรอบคอบ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Taxi Driver", "Vincenzo", "The Glory", "Lawless Lawyer"],
+    correctIndex: 0,
+    id: "mg-153",
+  },
+  {
+    title: "Flower of Evil",
+    description:
+      "ชายที่ดูเป็นสามีและพ่อสมบูรณ์แบบมีอดีตลึกลับ ขณะที่ภรรยาตำรวจเริ่มสืบคดีที่โยงมาถึงเขา คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Flower of Evil", "Mouse", "Signal", "Beyond Evil"],
+    correctIndex: 0,
+    id: "mg-154",
+  },
+  {
+    title: "Sky Castle",
+    description:
+      "ครอบครัวชนชั้นสูงผลักดันลูกเข้าสู่มหาวิทยาลัยดัง จนการศึกษา ความคาดหวัง และศักดิ์ศรีกลายเป็นสนามรบ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Sky Castle",
+      "The Penthouse",
+      "The World of the Married",
+      "Little Women",
+    ],
+    correctIndex: 0,
+    id: "mg-155",
+  },
+  {
+    title: "My Mister",
+    description:
+      "ชายวัยกลางคนที่แบกชีวิตหนักหน่วงกับหญิงสาวที่โดดเดี่ยวค่อย ๆ เข้าใจความเจ็บของกันและกันอย่างเงียบ ๆ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "My Mister",
+      "Move to Heaven",
+      "Because This Is My First Life",
+      "Misaeng",
+    ],
+    correctIndex: 0,
+    id: "mg-156",
+  },
+  {
+    title: "Strong Woman Do Bong Soon",
+    description:
+      "หญิงสาวตัวเล็กที่มีพละกำลังมหาศาลได้งานเป็นบอดี้การ์ดให้ซีอีโอเกม และเข้าไปพัวพันคดีอันตราย เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Strong Woman Do Bong Soon",
+      "Weightlifting Fairy Kim Bok-joo",
+      "True Beauty",
+      "My Demon",
+    ],
+    correctIndex: 0,
+    id: "mg-157",
+  },
+  {
+    title: "True Beauty",
+    description:
+      "เด็กสาวใช้การแต่งหน้าเปลี่ยนภาพลักษณ์ในโรงเรียนใหม่ แต่ความกลัวว่าจะถูกเห็นตัวตนจริงยังตามติด คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "True Beauty",
+      "My ID is Gangnam Beauty",
+      "Love Alarm",
+      "Nevertheless",
+    ],
+    correctIndex: 0,
+    id: "mg-158",
+  },
+  {
+    title: "The Heirs",
+    description:
+      "ทายาทตระกูลร่ำรวยและหญิงสาวธรรมดาเจอกันในโลกที่ฐานะกำหนดทุกอย่าง ทั้งความรัก มิตรภาพ และศัตรู จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "The Heirs",
+      "Boys Over Flowers",
+      "Meteor Garden",
+      "The King: Eternal Monarch",
+    ],
+    correctIndex: 0,
+    id: "mg-159",
+  },
+  {
+    title: "While You Were Sleeping",
+    description:
+      "หญิงสาวที่ฝันเห็นเหตุการณ์ล่วงหน้าร่วมมือกับอัยการและตำรวจ เพื่อป้องกันโศกนาฏกรรมที่ยังไม่เกิด ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["While You Were Sleeping", "W", "Healer", "Pinocchio"],
+    correctIndex: 0,
+    id: "mg-160",
+  },
+  {
+    title: "W",
+    description:
+      "หญิงสาวถูกดึงเข้าไปในโลกของเว็บตูนที่ตัวละครหลักเริ่มรู้ว่าชีวิตตัวเองอาจถูกเขียนโดยใครบางคน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "W",
+      "While You Were Sleeping",
+      "Memories of the Alhambra",
+      "The King: Eternal Monarch",
+    ],
+    correctIndex: 0,
+    id: "mg-161",
+  },
+  {
+    title: "Healer",
+    description:
+      "ผู้รับงานลับยามค่ำคืนเข้าไปเกี่ยวข้องกับนักข่าวสาวและอดีตของคนรุ่นก่อนที่ยังไม่ถูกเปิดโปง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Healer", "City Hunter", "Vagabond", "K2"],
+    correctIndex: 0,
+    id: "mg-162",
+  },
+  {
+    title: "Little Women",
+    description:
+      "สามพี่น้องที่ขัดสนเข้าไปเกี่ยวข้องกับเงินก้อนใหญ่และครอบครัวทรงอิทธิพลที่ซ่อนความลับน่ากลัว จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Little Women", "Sky Castle", "The Penthouse", "Celebrity"],
+    correctIndex: 0,
+    id: "mg-163",
+  },
+  {
+    title: "Celebrity",
+    description:
+      "หญิงสาวธรรมดาก้าวเข้าสู่โลกอินฟลูเอนเซอร์หรูหรา ที่ยอดติดตาม ความอิจฉา และข่าวลือทำให้ชีวิตพลิกผัน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Celebrity", "Mask Girl", "The Glory", "Little Women"],
+    correctIndex: 0,
+    id: "mg-164",
+  },
+  {
+    title: "D.P.",
+    description:
+      "ทหารหนุ่มถูกมอบหมายให้ตามจับพลทหารหนีทัพ และค่อย ๆ เห็นความรุนแรงในระบบที่คนภายนอกไม่ค่อยรู้ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["D.P.", "Taxi Driver", "Signal", "Prison Playbook"],
+    correctIndex: 0,
+    id: "mg-165",
+  },
+  {
+    title: "Reborn Rich",
+    description:
+      "ชายที่ถูกฆ่าหลังรับใช้ตระกูลมหาเศรษฐีตื่นขึ้นมาเป็นหลานชายของบ้านนั้น พร้อมโอกาสแก้เกมธุรกิจและชีวิตใหม่ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Reborn Rich", "Vincenzo", "Itaewon Class", "Again My Life"],
+    correctIndex: 0,
+    id: "mg-166",
+  },
+  {
+    title: "Joy of Life",
+    description:
+      "ชายหนุ่มที่มีความทรงจำแปลกจากอีกโลกต้องเอาตัวรอดในราชสำนักที่เต็มไปด้วยแผนการและตัวตนปริศนา จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Joy of Life",
+      "Nirvana in Fire",
+      "The Long Ballad",
+      "Story of Yanxi Palace",
+    ],
+    correctIndex: 0,
+    id: "mg-167",
+  },
+  {
+    title: "Ashes of Love",
+    description:
+      "หญิงสาวที่ถูกพรากความสามารถในการรักเข้าไปพัวพันกับเทพสองพี่น้อง จนชะตารักกลายเป็นโศกนาฏกรรมใหญ่ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Ashes of Love",
+      "Eternal Love",
+      "Love Between Fairy and Devil",
+      "Till the End of the Moon",
+    ],
+    correctIndex: 0,
+    id: "mg-168",
+  },
+  {
+    title: "Word of Honor",
+    description:
+      "ชายสองคนจากโลกยุทธภพอันมืดหม่นเดินทางร่วมกันเพื่อไขความลับของหุบเขาและอดีตที่ต่างคนต่างซ่อน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Word of Honor", "The Untamed", "Guardian", "My Journey to You"],
+    correctIndex: 0,
+    id: "mg-169",
+  },
+  {
+    title: "Put Your Head on My Shoulder",
+    description:
+      "นักศึกษาสาวกำลังสับสนเรื่องงานและความรัก ต้องมาอยู่ร่วมบ้านกับหนุ่มสายวิทยาศาสตร์ที่นิ่งจนเดายาก คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Put Your Head on My Shoulder",
+      "A Love So Beautiful",
+      "Hidden Love",
+      "Our Secret",
+    ],
+    correctIndex: 0,
+    id: "mg-170",
+  },
+  {
+    title: "A Love So Beautiful",
+    description:
+      "เด็กสาวสดใสแอบรักเพื่อนบ้านหนุ่มเรียนเก่งมาตั้งแต่เด็ก ความสัมพันธ์ค่อย ๆ โตไปพร้อมวัยเรียน จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "A Love So Beautiful",
+      "Hidden Love",
+      "When I Fly Towards You",
+      "Our Secret",
+    ],
+    correctIndex: 0,
+    id: "mg-171",
+  },
+  {
+    title: "Love O2O",
+    description:
+      "คู่รักจากเกมออนไลน์ได้พบกันในชีวิตจริง เมื่อหนุ่มเทพมหาวิทยาลัยและสาวสายเกมต้องรักษาความสัมพันธ์สองโลก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Love O2O",
+      "You Are My Glory",
+      "Go Go Squid!",
+      "Falling Into Your Smile",
+    ],
+    correctIndex: 0,
+    id: "mg-172",
+  },
+  {
+    title: "Arsenal Military Academy",
+    description:
+      "หญิงสาวปลอมตัวเป็นชายเข้าโรงเรียนทหารแทนพี่ชาย และต้องใช้ชีวิตท่ามกลางเพื่อนร่วมรุ่นกับความลับที่เสี่ยงมาก",
+    choices: [
+      "Arsenal Military Academy",
+      "The Long Ballad",
+      "The Romance of Tiger and Rose",
+      "Love Like the Galaxy",
+    ],
+    correctIndex: 0,
+    id: "mg-173",
+  },
+  {
+    title: "The Romance of Tiger and Rose",
+    description:
+      "นักเขียนบทหลุดเข้าไปในโลกนิยายของตัวเองและกลายเป็นตัวละครที่ควรตายเร็ว จึงต้องแก้เรื่องให้ตัวเองรอด คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Romance of Tiger and Rose",
+      "The Day of Becoming You",
+      "Reset",
+      "Joy of Life",
+    ],
+    correctIndex: 0,
+    id: "mg-174",
+  },
+  {
+    title: "The Legend of Shen Li",
+    description:
+      "เทพสงครามหญิงที่หนีการแต่งงานได้พบชายลึกลับในโลกมนุษย์ ก่อนโชคชะตาของสองภพจะดึงพวกเขากลับไป จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "The Legend of Shen Li",
+      "Love Between Fairy and Devil",
+      "Eternal Love",
+      "Who Rules the World",
+    ],
+    correctIndex: 0,
+    id: "mg-175",
+  },
+  {
+    title: "Till the End of the Moon",
+    description:
+      "หญิงสาวถูกส่งย้อนเวลาไปหยุดชายที่จะกลายเป็นจอมมาร แต่ยิ่งเข้าใกล้ก็ยิ่งเห็นความเจ็บปวดของเขา ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Till the End of the Moon",
+      "Love Between Fairy and Devil",
+      "Ashes of Love",
+      "Eternal Love",
+    ],
+    correctIndex: 0,
+    id: "mg-176",
+  },
+  {
+    title: "Who Rules the World",
+    description:
+      "ยอดฝีมือชายหญิงที่มีชื่อเสียงในยุทธภพต้องเลือกทางระหว่างอิสระ ความรัก และศึกชิงอำนาจของแผ่นดิน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Who Rules the World",
+      "The Long Ballad",
+      "The Untamed",
+      "Word of Honor",
+    ],
+    correctIndex: 0,
+    id: "mg-177",
+  },
+  {
+    title: "Story of Minglan",
+    description:
+      "หญิงสาวที่ดูสงบและยอมคนต้องใช้สติปัญญาปกป้องตัวเองในครอบครัวใหญ่และการแต่งงานที่เต็มไปด้วยการเมืองในบ้าน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Story of Minglan",
+      "Story of Yanxi Palace",
+      "The Double",
+      "The Princess Weiyoung",
+    ],
+    correctIndex: 0,
+    id: "mg-178",
+  },
+  {
+    title: "My Journey to You",
+    description:
+      "หญิงสาวสายลับถูกส่งเข้าไปในตระกูลลึกลับ แต่ภารกิจและความรู้สึกทำให้เธอต้องเลือกระหว่างคำสั่งกับหัวใจ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "My Journey to You",
+      "The Untamed",
+      "Word of Honor",
+      "The Double",
+    ],
+    correctIndex: 0,
+    id: "mg-179",
+  },
+  {
+    title: "The Double",
+    description:
+      "หญิงผู้ถูกทรยศกลับมาด้วยตัวตนใหม่เพื่อทวงคืนความยุติธรรมในโลกขุนนางที่ทุกคนใส่หน้ากาก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "The Double",
+      "Story of Yanxi Palace",
+      "The Princess Weiyoung",
+      "My Journey to You",
+    ],
+    correctIndex: 0,
+    id: "mg-180",
+  },
+  {
+    title: "When I Fly Towards You",
+    description:
+      "เด็กสาวสดใสย้ายมาเจอเพื่อนร่วมห้องที่เงียบและเก็บตัว ความสัมพันธ์วัยเรียนจึงค่อย ๆ โตอย่างอบอุ่น เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "When I Fly Towards You",
+      "Hidden Love",
+      "A Love So Beautiful",
+      "Our Secret",
+    ],
+    correctIndex: 0,
+    id: "mg-181",
+  },
+  {
+    title: "Meet Yourself",
+    description:
+      "หญิงสาวลาออกไปพักใจในหมู่บ้านชนบทหลังสูญเสียคนสำคัญ และได้พบผู้คนที่ช่วยให้เธอกลับมามองชีวิตช้าลง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Meet Yourself",
+      "Find Yourself",
+      "Nothing But You",
+      "The Rational Life",
+    ],
+    correctIndex: 0,
+    id: "mg-182",
+  },
+  {
+    title: "Falling Into Your Smile",
+    description:
+      "หญิงสาวเข้าสู่ทีมอีสปอร์ตอาชีพที่เต็มไปด้วยผู้ชาย และต้องพิสูจน์ทั้งฝีมือกับความสัมพันธ์ในทีม จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Falling Into Your Smile",
+      "Go Go Squid!",
+      "The King's Avatar",
+      "Love O2O",
+    ],
+    correctIndex: 0,
+    id: "mg-183",
+  },
+  {
+    title: "The King's Avatar",
+    description:
+      "อดีตผู้เล่นเกมระดับตำนานถูกบีบให้ออกจากทีม แต่กลับเริ่มต้นใหม่จากร้านอินเทอร์เน็ตและสร้างทีมของตัวเอง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "The King's Avatar",
+      "Falling Into Your Smile",
+      "Go Go Squid!",
+      "Hikaru no Go",
+    ],
+    correctIndex: 0,
+    id: "mg-184",
+  },
+  {
+    title: "Go Ahead",
+    description:
+      "เด็กจากสามครอบครัวที่มีบาดแผลต่างกันเติบโตเป็นพี่น้องกัน ก่อนอดีตของผู้ใหญ่จะกลับมาทดสอบสายสัมพันธ์ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Go Ahead", "Meet Yourself", "Hidden Love", "Our Secret"],
+    correctIndex: 0,
+    id: "mg-185",
+  },
+  {
+    title: "The Bad Kids",
+    description:
+      "เด็กสามคนบังเอิญถ่ายหลักฐานอาชญากรรมได้ และการตัดสินใจเล็ก ๆ ทำให้ทุกคนเข้าไปอยู่ในเกมอันตราย คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["The Bad Kids", "The Long Night", "Reset", "Under the Skin"],
+    correctIndex: 0,
+    id: "mg-186",
+  },
+  {
+    title: "Reset",
+    description:
+      "ชายหญิงติดอยู่ในลูปเวลาบนรถบัสที่กำลังจะเกิดเหตุระเบิด และต้องหาทางหยุดโศกนาฏกรรมให้ทันในรอบถัดไป จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Reset",
+      "The Bad Kids",
+      "The Long Night",
+      "The Day of Becoming You",
+    ],
+    correctIndex: 0,
+    id: "mg-187",
+  },
+  {
+    title: "Love Like the Galaxy",
+    description:
+      "หญิงสาวที่เติบโตอย่างขาดความรักในครอบครัวได้พบแม่ทัพหนุ่มผู้มีแผนลับและบาดแผลจากอดีต ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Love Like the Galaxy",
+      "The Long Ballad",
+      "Who Rules the World",
+      "Story of Minglan",
+    ],
+    correctIndex: 0,
+    id: "mg-188",
+  },
+  {
+    title: "Under the Skin",
+    description:
+      "นักวาดภาพจำลองร่วมมือกับตำรวจสืบคดีจากใบหน้า ความทรงจำ และรายละเอียดเล็ก ๆ ที่คนอื่นมองข้าม เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Under the Skin", "The Bad Kids", "The Long Night", "Reset"],
+    correctIndex: 0,
+    id: "mg-189",
+  },
+  {
+    title: "The Rational Life",
+    description:
+      "หญิงทำงานมืออาชีพต้องรับมือแรงกดดันเรื่องอายุ งาน และความรัก เมื่อชายหนุ่มรุ่นน้องเข้ามาใกล้เกินคาด คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Rational Life",
+      "Find Yourself",
+      "Nothing But You",
+      "Meet Yourself",
+    ],
+    correctIndex: 0,
+    id: "mg-190",
+  },
+  {
+    title: "One and Only",
+    description:
+      "ศิษย์หญิงกับอาจารย์แม่ทัพมีความรู้สึกลึกซึ้งที่พูดออกมาไม่ได้ เพราะหน้าที่และกฎเกณฑ์ของราชสำนักขวางไว้ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "One and Only",
+      "Forever and Ever",
+      "Love Like the Galaxy",
+      "The Long Ballad",
+    ],
+    correctIndex: 0,
+    id: "mg-191",
+  },
+  {
+    title: "The Day of Becoming You",
+    description:
+      "ดาราหนุ่มกับนักข่าวสาวสลับร่างกันโดยไม่ตั้งใจ ทำให้ชีวิต งาน และความลับของทั้งคู่ปั่นป่วน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "The Day of Becoming You",
+      "Reset",
+      "The Romance of Tiger and Rose",
+      "Find Yourself",
+    ],
+    correctIndex: 0,
+    id: "mg-192",
+  },
+  {
+    title: "Find Yourself",
+    description:
+      "หญิงทำงานวัยสามสิบกว่าเริ่มความสัมพันธ์กับหนุ่มรุ่นน้อง แต่แรงกดดันจากสังคมและครอบครัวทำให้รักไม่ง่าย เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Find Yourself",
+      "The Rational Life",
+      "Nothing But You",
+      "Meet Yourself",
+    ],
+    correctIndex: 0,
+    id: "mg-193",
+  },
+  {
+    title: "Guardian",
+    description:
+      "ตำรวจหน่วยพิเศษกับศาสตราจารย์ลึกลับร่วมสืบคดีเหนือธรรมชาติที่เชื่อมโยงกับอดีตอันยาวนาน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Guardian", "The Untamed", "Word of Honor", "Under the Skin"],
+    correctIndex: 0,
+    id: "mg-194",
+  },
+  {
+    title: "Parasite",
+    description:
+      "ครอบครัวหนึ่งเริ่มจากการได้งานเล็ก ๆ ในบ้านคนรวย แล้วค่อย ๆ สวมบทบาทใหม่ทีละตำแหน่งอย่างแนบเนียน ความแตกต่างทางชนชั้นถูกขับเน้นด้วยบ้านสมัยใหม่ บันได และสายฝนที่ไม่ยุติธรรม",
+    choices: ["Parasite", "The Handmaiden", "Snowpiercer", "Oldboy"],
+    correctIndex: 0,
+    id: "mg-195",
+  },
+  {
     title: "Money Heist",
     description:
       "หัวหน้าอาชญากรวางแผนปล้นที่ซับซ้อนเกินกว่าจะเป็นเพียงการชิงเงิน เป้าหมายคือการพิมพ์เงินเองในสถานที่ที่ถูกยึดเป็นตัวประกัน หน้ากากและชุดสีเด่นกลายเป็นสัญลักษณ์ของการต่อต้าน",
     choices: ["Money Heist", "Prison Break", "Lupin", "Inside Man"],
     correctIndex: 0,
+    id: "mg-196",
   },
   {
-    id: "mg-021",
     title: "The Godfather",
     description:
       "ครอบครัวอิตาเลียนผู้มีอำนาจในโลกเงามีประเพณีและกติกาของตนเอง ลูกชายผู้ไม่ต้องการยุ่งเกี่ยวค่อย ๆ ถูกดึงเข้าสู่บทบาทสำคัญ ผ่านพิธี งานเลี้ยง และคำสั่งที่เปลี่ยนชีวิตคนได้",
     choices: ["The Godfather", "Goodfellas", "Casino", "The Irishman"],
     correctIndex: 0,
+    id: "mg-197",
   },
   {
-    id: "mg-022",
-    title: "The Shawshank Redemption",
-    description:
-      "ชายผู้ถูกตัดสินว่ามีความผิดอย่างไม่ยุติธรรมเข้าไปในคุกที่โหดร้าย เขาใช้ความเฉียบแหลมสร้างเส้นทางรอดอย่างช้า ๆ ผ่านมิตรภาพ ความหวัง และงานอดิเรกที่ดูไร้พิษภัย",
-    choices: ["The Shawshank Redemption", "The Green Mile", "Prisoners", "Escape Plan"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-023",
-    title: "Forrest Gump",
-    description:
-      "ชายผู้มีปัญญาแบบตรงไปตรงมาเดินทางผ่านเหตุการณ์สำคัญของสหรัฐฯ โดยไม่ตั้งใจ เขาวิ่งไปทั่วประเทศ พบเจอผู้คนมากมาย และยึดมั่นคำสอนของแม่เกี่ยวกับชีวิตและความรัก",
-    choices: ["Forrest Gump", "The Pursuit of Happyness", "Big Fish", "A Beautiful Mind"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-024",
     title: "The Lion King",
     description:
       "เจ้าชายหนุ่มต้องหนีจากบ้านเกิดหลังเหตุการณ์น่าสลด เขาเติบโตในป่าด้วยปรัชญาใช้ชีวิตแบบไม่คิดมาก ก่อนจะกลับมาทวงคืนสมดุลแห่งผืนดินจากผู้แย่งชิง",
     choices: ["The Lion King", "Tarzan", "The Jungle Book", "Bambi"],
     correctIndex: 0,
+    id: "mg-198",
   },
   {
-    id: "mg-025",
-    title: "Jurassic Park",
-    description:
-      "สวนสนุกที่สร้างจากวิทยาศาสตร์เกินขอบเขตมนุษย์กำลังจะเปิด แต่เมื่อระบบรักษาความปลอดภัยล้มเหลว ผู้มาเยือนต้องเอาชีวิตรอดจากสิ่งมีชีวิตที่ถูกชุบชีวิตด้วยพันธุกรรม",
-    choices: ["Jurassic Park", "Jurassic World", "King Kong", "Godzilla"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-026",
-    title: "The Avengers",
-    description:
-      "กลุ่มฮีโร่ที่ไม่น่าจะเข้ากันต้องรวมทีมเพื่อรับมือภัยจากนอกโลก มีทั้งอาวุธพลังงานมหาศาล เรื่องราวของศักดิ์ศรี และการรวมพลังครั้งแรกที่เปลี่ยนโลก",
-    choices: ["The Avengers", "Avengers: Age of Ultron", "Justice League", "X-Men"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-027",
-    title: "Spider-Man: Into the Spider-Verse",
-    description:
-      "วัยรุ่นธรรมดาถูกแมงมุมกัดและได้พลังเหนือมนุษย์ แต่สิ่งที่ตามมาคือการเปิดประตูสู่จักรวาลอื่นที่มี “สไปเดอร์” หลายแบบ พร้อมภารกิจที่ต้องเรียนรู้การเป็นฮีโร่ในแบบของตัวเอง",
-    choices: [
-      "Spider-Man: Into the Spider-Verse",
-      "Spider-Man: No Way Home",
-      "Spider-Man: Homecoming",
-      "Doctor Strange in the Multiverse of Madness",
-    ],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-028",
-    title: "Black Panther",
-    description:
-      "อาณาจักรลับที่ซ่อนเทคโนโลยีล้ำสมัยต้องรับมือผู้ท้าชิงบัลลังก์ ผู้ปกครองคนใหม่ต้องรักษาประเพณีและปกป้องโลกจากการเปิดเผยทรัพยากรที่ทรงพลัง",
-    choices: ["Black Panther", "Aquaman", "Shang-Chi and the Legend of the Ten Rings", "Thor: Ragnarok"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-029",
-    title: "Joker",
-    description:
-      "ชายผู้ต่อสู้กับชีวิตในเมืองใหญ่ค่อย ๆ ถูกผลักจนหลุดออกจากกรอบสังคม การหัวเราะที่ไม่เหมาะเวลาและหน้ากากสีฉูดฉาดกลายเป็นสัญลักษณ์ของการปะทุของชนชั้น",
-    choices: ["Joker", "The Dark Knight", "Taxi Driver", "Nightcrawler"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-030",
-    title: "The Social Network",
-    description:
-      "โปรเจกต์ในหอพักมหาวิทยาลัยกลายเป็นบริษัทระดับโลก เรื่องราวถูกเล่าในห้องศาลผ่านการฟ้องร้องของเพื่อนและคู่แข่ง การเขียนโค้ดและความสัมพันธ์ที่แตกร้าวเดินคู่กัน",
-    choices: ["The Social Network", "Steve Jobs", "The Big Short", "Moneyball"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-031",
-    title: "The Wolf of Wall Street",
-    description:
-      "ชายหนุ่มจากฐานะธรรมดาก้าวเข้าสู่โลกการเงินที่เต็มไปด้วยความโลภ งานเลี้ยงสุดเหวี่ยง และการหลอกลวงลูกค้า ระบบที่ไร้ขอบเขตนำไปสู่การล่มสลายครั้งใหญ่",
-    choices: ["The Wolf of Wall Street", "The Big Short", "Margin Call", "Boiler Room"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-032",
     title: "The Big Short",
     description:
       "กลุ่มคนวงในเห็นสัญญาณฟองสบู่ในตลาดอสังหาฯ ก่อนใคร พวกเขาเดิมพันสวนกระแส พร้อมอธิบายกลไกการเงินที่ซับซ้อนจนต้องหยุดเล่าให้ผู้ชมเข้าใจเป็นช่วง ๆ",
-    choices: ["The Big Short", "The Wolf of Wall Street", "Margin Call", "Inside Job"],
+    choices: [
+      "The Big Short",
+      "The Wolf of Wall Street",
+      "Margin Call",
+      "Inside Job",
+    ],
     correctIndex: 0,
+    id: "mg-199",
   },
   {
-    id: "mg-033",
-    title: "The Prestige",
-    description:
-      "นักมายากลสองคนแข่งกันด้วยกลอุบายที่อันตรายยิ่งขึ้นเรื่อย ๆ ขณะเดียวกันก็ทำลายชีวิตส่วนตัวของกันและกัน ความลับของ “กล” สุดท้ายเกี่ยวข้องกับวิทยาศาสตร์และการเสียสละที่คาดไม่ถึง",
-    choices: ["The Prestige", "Now You See Me", "The Illusionist", "Memento"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-034",
-    title: "Fight Club",
-    description:
-      "ชายผู้เบื่อหน่ายชีวิตในระบบองค์กรพบคนแปลกหน้าที่ชวนเขาเข้าร่วมการชกต่อยใต้ดิน สิ่งที่เริ่มจากการปลดปล่อยความอัดอั้นกลับกลายเป็นขบวนการที่คุกคามสังคมทั้งเมือง",
-    choices: ["Fight Club", "Se7en", "American Psycho", "Gone Girl"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-035",
-    title: "Pulp Fiction",
-    description:
-      "เรื่องราวหลายเส้นที่ไม่ได้เรียงตามเวลาเกี่ยวกับมือปืน นักมวย เจ้าพ่อ และผู้คนธรรมดาที่ถูกลากเข้าสู่เหตุการณ์รุนแรง เพลงประกอบติดหูและบทสนทนาประหลาดกลายเป็นเอกลักษณ์",
-    choices: ["Pulp Fiction", "Reservoir Dogs", "Snatch", "Once Upon a Time in Hollywood"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-036",
-    title: "The Silence of the Lambs",
-    description:
-      "เจ้าหน้าที่ฝึกหัดต้องขอคำปรึกษาจากฆาตกรต่อเนื่องที่ถูกขัง เพื่อจับอีกคนที่โหดร้ายกว่า การสนทนาผ่านกระจกและปริศนาทางจิตวิทยาเป็นกุญแจสำคัญในการไขคดี",
-    choices: ["The Silence of the Lambs", "Se7en", "Zodiac", "Mindhunter"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-037",
-    title: "Se7en",
-    description:
-      "ตำรวจสองคนตามล่าฆาตกรที่ลงมือโดยอ้างบาปเจ็ดประการ การสืบสวนเต็มไปด้วยความมืดมนและจบลงด้วยกล่องที่เปลี่ยนชีวิตของทุกคน",
-    choices: ["Se7en", "Zodiac", "The Silence of the Lambs", "Prisoners"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-038",
     title: "The Green Mile",
     description:
       "ผู้คุมในเรือนจำประหารพบผู้ต้องขังร่างใหญ่ที่มีพรสวรรค์เหนือธรรมชาติ เขาต้องเผชิญคำถามด้านศีลธรรมเมื่อปาฏิหาริย์และความยุติธรรมไม่ได้ไปด้วยกันเสมอ",
-    choices: ["The Green Mile", "The Shawshank Redemption", "The Mist", "Dead Man Walking"],
+    choices: [
+      "The Green Mile",
+      "The Shawshank Redemption",
+      "The Mist",
+      "Dead Man Walking",
+    ],
     correctIndex: 0,
+    id: "mg-200",
   },
   {
-    id: "mg-039",
     title: "Gladiator",
     description:
       "แม่ทัพผู้ถูกหักหลังถูกขายเป็นทาสและถูกบังคับเข้าสู่อารีนา เขากลับมาเพื่อแก้แค้นจักรพรรดิผู้ชิงบัลลังก์ ระหว่างนั้นต้องชนะใจผู้ชมและอดีตของตัวเอง",
     choices: ["Gladiator", "Troy", "300", "Braveheart"],
     correctIndex: 0,
+    id: "mg-201",
   },
   {
-    id: "mg-040",
     title: "Braveheart",
     description:
       "ชายชาวสก็อตลุกขึ้นต่อต้านการกดขี่จากจักรวรรดิ เขานำกองทัพด้วยคำพูดปลุกใจและการเสียสละ แม้รู้ว่าชัยชนะอาจมาพร้อมกับจุดจบของตนเอง",
     choices: ["Braveheart", "Gladiator", "Kingdom of Heaven", "The Patriot"],
     correctIndex: 0,
+    id: "mg-202",
   },
   {
-    id: "mg-041",
     title: "Howl's Moving Castle",
     description:
       "หญิงสาวถูกสาปให้แก่ชราและต้องออกเดินทางเพื่อหาทางแก้ เธอได้พบปราสาทเคลื่อนที่ที่ขับเคลื่อนด้วยเวทมนตร์ เจ้าของปราสาทเป็นพ่อมดลึกลับที่หนีสงครามและต้องรับมือคำสาปของตัวเอง",
@@ -8100,1559 +10005,1322 @@ const MOVIE_GUESS_DATA = [
       "Kiki's Delivery Service",
     ],
     correctIndex: 0,
+    id: "mg-203",
   },
   {
-    id: "mg-042",
-    title: "One Piece",
-    description:
-      "เด็กหนุ่มผู้มีพลังจากผลไม้ปริศนาออกเดินทางตามหาสมบัติในตำนาน เขารวมทีมที่มีเป้าหมายของตัวเอง เรือโจรสลัดเล็ก ๆ ต้องเผชิญกองทัพ อาณาจักร และระบบโลกที่กดขี่",
-    choices: ["One Piece", "Naruto", "Fairy Tail", "Bleach"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-043",
-    title: "Fullmetal Alchemist: Brotherhood",
-    description:
-      "พี่น้องนักเล่นแร่แปรธาตุทำพิธีต้องห้ามเพื่อชุบชีวิตคนรัก แล้วต้องชดใช้ด้วยอวัยวะและร่างกาย พวกเขาออกตามหาศิลาในตำนานท่ามกลางสงครามและความลับของรัฐ",
-    choices: [
-      "Fullmetal Alchemist: Brotherhood",
-      "Attack on Titan",
-      "Demon Slayer",
-      "Jujutsu Kaisen",
-    ],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-044",
-    title: "Jujutsu Kaisen",
-    description:
-      "เด็กหนุ่มกินวัตถุต้องสาปเข้าไปเพื่อช่วยเพื่อน ทำให้กลายเป็นภาชนะของคำสาปอันตราย เขาถูกดึงเข้าสู่โรงเรียนผู้ใช้คุณไสยและต้องต่อสู้กับวิญญาณร้ายที่เกิดจากความกลัวของมนุษย์",
-    choices: ["Jujutsu Kaisen", "Bleach", "Demon Slayer", "Tokyo Ghoul"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-045",
-    title: "Death Note",
-    description:
-      "นักเรียนมัธยมพบสมุดที่สามารถฆ่าคนได้ด้วยการเขียนชื่อ เขาเริ่มสร้างโลกที่ปราศจากอาชญากรรม แต่ต้องเผชิญนักสืบอัจฉริยะที่คอยไล่ตามผ่านตรรกะและกับดักทางจิตใจ",
-    choices: ["Death Note", "Code Geass", "Psycho-Pass", "Monster"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-046",
     title: "Code Geass",
     description:
       "เจ้าชายผู้ถูกเนรเทศได้รับพลังคำสั่งที่บังคับจิตใจคนได้ เขาจึงสร้างตัวตนลับเพื่อโค่นล้มจักรวรรดิ การเมือง สงครามหุ่นยนต์ และแผนการที่ซับซ้อนทับซ้อนกันเรื่อย ๆ",
     choices: ["Code Geass", "Death Note", "Aldnoah.Zero", "Gundam 00"],
     correctIndex: 0,
+    id: "mg-204",
   },
   {
-    id: "mg-047",
     title: "The Mandalorian",
     description:
       "นักล่าค่าหัวในจักรวาลไกลโพ้นได้พบสิ่งมีชีวิตลึกลับที่เปลี่ยนชีวิตเขา การเดินทางผ่านดาวเคราะห์ต่าง ๆ ทำให้เขาต้องเลือกระหว่างกฎของนักล่าหรือการปกป้องเด็กตัวเล็กผู้เป็นที่ต้องการของหลายฝ่าย",
-    choices: ["The Mandalorian", "The Book of Boba Fett", "Obi-Wan Kenobi", "Andor"],
+    choices: [
+      "The Mandalorian",
+      "The Book of Boba Fett",
+      "Obi-Wan Kenobi",
+      "Andor",
+    ],
     correctIndex: 0,
+    id: "mg-205",
   },
   {
-    id: "mg-048",
-    title: "Squid Game",
-    description:
-      "ผู้คนที่เป็นหนี้จำนวนมากถูกเชิญให้เข้าร่วมเกมเด็กที่ดูง่าย แต่เดิมพันด้วยชีวิต พวกเขาต้องตัดสินใจระหว่างศีลธรรมกับเงินมหาศาล ขณะเดียวกันก็มีผู้สังเกตการณ์สวมหน้ากากคอยควบคุมทุกอย่าง",
-    choices: ["Squid Game", "Alice in Borderland", "The Hunger Games", "The Platform"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-049",
-    title: "The Last of Us",
-    description:
-      "เชื้อราที่ทำให้มนุษย์กลายเป็นสิ่งมีชีวิตอันตรายแพร่ระบาด ชายผู้สูญเสียทุกอย่างได้รับมอบหมายให้พาเด็กหญิงคนหนึ่งข้ามประเทศ เพราะเธออาจเป็นกุญแจในการรักษาโลก",
-    choices: ["The Last of Us", "The Walking Dead", "28 Days Later", "I Am Legend"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-050",
-    title: "Game of Thrones",
-    description:
-      "หลายตระกูลใหญ่แข่งขันเพื่อชิงบัลลังก์เหล็กในทวีปที่เต็มไปด้วยการทรยศและสงคราม ขณะเดียวกัน ภัยหนาวจากแดนเหนือกำลังคุกคามทุกคนและมีมังกรกลับมาเป็นตำนานอีกครั้ง",
-    choices: ["Game of Thrones", "The Witcher", "Vikings", "House of the Dragon"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-051",
-    title: "The Shawshank Redemption",
-    description:
-      "ชายผู้ถูกตัดสินจำคุกตลอดชีวิตในเรือนจำสุดโหด ใช้ความเงียบ ความอดทน และมิตรภาพวางหมากยาวหลายสิบปีโดยไม่มีใครทันสังเกต",
-    choices: ["The Shawshank Redemption", "The Green Mile", "Prison Break", "Catch Me If You Can"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-052",
-    title: "Fight Club",
-    description:
-      "พนักงานออฟฟิศที่ชีวิตว่างเปล่าพบชายลึกลับผู้ชวนตั้งชมรมใต้ดินที่เริ่มจากการชกต่อย แต่ค่อย ๆ ลุกลามเป็นขบวนการต่อต้านสังคมบริโภค",
-    choices: ["Fight Club", "American Psycho", "Se7en", "Joker"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-053",
-    title: "Se7en",
-    description:
-      "นักสืบคู่ต่างวัยไล่ล่าฆาตกรที่ออกแบบคดีตามบาป 7 ประการ เมืองฝนตกหม่นหมองทำให้ทุกเบาะแสดูเหมือนนำไปสู่ทางตัน",
-    choices: ["Se7en", "Zodiac", "Prisoners", "The Silence of the Lambs"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-054",
-    title: "The Silence of the Lambs",
-    description:
-      "เจ้าหน้าที่ฝึกหัดเอฟบีไอต้องขอความช่วยเหลือจากฆาตกรอัจฉริยะในคุก เพื่อเข้าใจจิตใจนักล่ารายใหม่ที่ยังลอยนวล",
-    choices: ["The Silence of the Lambs", "Se7en", "Mindhunter", "Gone Girl"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-055",
-    title: "The Godfather",
-    description:
-      "ทายาทที่ไม่อยากยุ่งธุรกิจครอบครัวค่อย ๆ ถูกดึงเข้าสู่โลกอาชญากรรม จนต้องเลือกระหว่างศีลธรรมกับการปกป้องคนของตน",
-    choices: ["The Godfather", "Goodfellas", "Scarface", "The Irishman"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-056",
     title: "Goodfellas",
     description:
       "เรื่องเล่าการไต่ระดับของเด็กหนุ่มที่อยากเป็นมาเฟีย ถ่ายทอดชีวิตหรูหรา ความรุนแรง และราคาที่ต้องจ่ายเมื่อความภักดีเริ่มสั่นคลอน",
     choices: ["Goodfellas", "The Godfather", "Casino", "Donnie Brasco"],
     correctIndex: 0,
+    id: "mg-206",
   },
   {
-    id: "mg-057",
-    title: "Pulp Fiction",
-    description:
-      "ชะตาของนักฆ่า นักมวย และคู่รักโจรปล้นร้านอาหารถูกตัดสลับแบบไม่เรียงเวลา บทสนทนาธรรมดากลายเป็นแรงกดดันก่อนความวุ่นวายปะทุ",
-    choices: ["Pulp Fiction", "Reservoir Dogs", "Snatch", "No Country for Old Men"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-058",
-    title: "Forrest Gump",
-    description:
-      "ชายที่ดูธรรมดาเดินผ่านเหตุการณ์สำคัญของอเมริกาโดยไม่ตั้งใจ ชีวิตของเขาเชื่อมรัก มิตรภาพ และความฝันไว้ด้วยความซื่อสัตย์เรียบง่าย",
-    choices: ["Forrest Gump", "Big Fish", "The Curious Case of Benjamin Button", "Cast Away"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-059",
-    title: "The Truman Show",
-    description:
-      "ชายคนหนึ่งเริ่มสงสัยว่าเมืองทั้งเมืองรอบตัวดูผิดธรรมชาติ เมื่อรอยต่อเล็ก ๆ ในชีวิตประจำวันค่อย ๆ เผยความจริงที่ใหญ่เกินคาด",
-    choices: ["The Truman Show", "Pleasantville", "Eternal Sunshine of the Spotless Mind", "The Matrix"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-060",
-    title: "The Prestige",
-    description:
-      "นักมายากลสองคนกลายเป็นคู่แข่งที่ยอมทำทุกอย่างเพื่อสร้างโชว์ที่เหนือกว่า เกมของภาพลวงตาค่อย ๆ กลืนชีวิตจริงของทั้งคู่",
-    choices: ["The Prestige", "Now You See Me", "The Illusionist", "Sherlock Holmes"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-061",
     title: "Whiplash",
     description:
       "มือกลองหนุ่มในสถาบันดนตรีชั้นนำเผชิญครูผู้กดดันสุดขีด เส้นแบ่งระหว่างการฝึกฝนกับการทำลายตัวเองค่อย ๆ เลือนหาย",
     choices: ["Whiplash", "Black Swan", "La La Land", "Birdman"],
     correctIndex: 0,
+    id: "mg-207",
   },
   {
-    id: "mg-062",
     title: "La La Land",
     description:
       "นักแสดงสาวกับนักเปียโนแจ๊สพยายามไล่ตามความฝันในลอสแอนเจลิส เพลงและสีสันหวานละมุนซ่อนคำถามเรื่องเวลาและทางเลือกชีวิต",
-    choices: ["La La Land", "The Greatest Showman", "Begin Again", "A Star Is Born"],
+    choices: [
+      "La La Land",
+      "The Greatest Showman",
+      "Begin Again",
+      "A Star Is Born",
+    ],
     correctIndex: 0,
+    id: "mg-208",
   },
   {
-    id: "mg-063",
     title: "Blade Runner 2049",
     description:
       "เจ้าหน้าที่ผู้ล่ามนุษย์สังเคราะห์ค้นพบเบาะแสที่อาจเปลี่ยนโครงสร้างสังคม เขาต้องตามหาความจริงที่โยงอดีตซึ่งคนจำนวนมากอยากฝังไว้",
     choices: ["Blade Runner 2049", "Minority Report", "Ex Machina", "Dune"],
     correctIndex: 0,
+    id: "mg-209",
   },
   {
-    id: "mg-064",
-    title: "Dune",
-    description:
-      "ทายาทตระกูลใหญ่ถูกส่งไปดาวทะเลทรายที่มีทรัพยากรสำคัญที่สุดในจักรวาล การเมือง ศรัทธา และชะตากรรมเริ่มผูกพันเขาอย่างหลีกเลี่ยงไม่ได้",
-    choices: ["Dune", "Foundation", "Star Wars", "John Carter"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-065",
-    title: "Mad Max: Fury Road",
-    description:
-      "กลางดินแดนหลังล่มสลาย นักขับผู้โดดเดี่ยวร่วมมือกับนักรบหญิงพาผู้คนหนีจากผู้กดขี่ การไล่ล่าบนถนนร้างแทบไม่หยุดหายใจ",
-    choices: ["Mad Max: Fury Road", "The Book of Eli", "Children of Men", "Snowpiercer"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-066",
     title: "The Revenant",
     description:
       "นักล่าในดินแดนหนาวจัดถูกทิ้งให้ตายหลังการโจมตีจากธรรมชาติ เขาต้องเอาชีวิตรอดผ่านความเจ็บปวดและภูมิประเทศโหดร้ายเพื่อกลับไปเผชิญอดีต",
     choices: ["The Revenant", "The Hateful Eight", "Hostiles", "The Northman"],
     correctIndex: 0,
+    id: "mg-210",
   },
   {
-    id: "mg-067",
     title: "No Country for Old Men",
     description:
       "เงินก้อนหนึ่งจากฉากสังหารกลางทะเลทรายจุดชนวนเกมไล่ล่าระหว่างชายธรรมดา นักฆ่าไร้ปรานี และนายอำเภอที่เริ่มไม่เข้าใจยุคสมัย",
-    choices: ["No Country for Old Men", "Sicario", "Hell or High Water", "Fargo"],
+    choices: [
+      "No Country for Old Men",
+      "Sicario",
+      "Hell or High Water",
+      "Fargo",
+    ],
     correctIndex: 0,
+    id: "mg-211",
   },
   {
-    id: "mg-068",
     title: "Prisoners",
     description:
       "เด็กสองคนหายตัวในคืนฝนตก พ่อที่สิ้นหวังเริ่มเดินทางเส้นทางมืดของตนเอง ขณะที่นักสืบพยายามต่อจิ๊กซอว์จากเบาะแสที่ชวนสับสน",
     choices: ["Prisoners", "Gone Girl", "Mystic River", "Zodiac"],
     correctIndex: 0,
+    id: "mg-212",
   },
   {
-    id: "mg-069",
-    title: "Gone Girl",
-    description:
-      "สามีภรรยาคู่หนึ่งที่ดูเพียบพร้อมกลายเป็นข่าวใหญ่เมื่อฝ่ายหนึ่งหายตัว บันทึกชีวิตคู่เผยภาพรักที่ค่อย ๆ บิดเบี้ยวจนแยกไม่ออกว่าใครกำลังเล่นเกม",
-    choices: ["Gone Girl", "The Girl on the Train", "Prisoners", "Sharp Objects"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-070",
-    title: "The Social Network",
-    description:
-      "นักศึกษามหาวิทยาลัยสร้างแพลตฟอร์มออนไลน์ที่โตเกินควบคุม เรื่องราวสลับระหว่างห้องพิจารณาคดีกับคืนแห่งการเขียนโค้ดที่เปลี่ยนโลก",
-    choices: ["The Social Network", "Steve Jobs", "BlackBerry", "Moneyball"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-071",
     title: "Moneyball",
     description:
       "ผู้จัดการทีมเบสบอลงบน้อยท้าทายระบบเดิมด้วยการใช้สถิติเลือกนักกีฬา แนวคิดที่ดูแปลกกลายเป็นการปฏิวัติวงการกีฬาอย่างเงียบ ๆ",
     choices: ["Moneyball", "Draft Day", "The Big Short", "Coach Carter"],
     correctIndex: 0,
+    id: "mg-213",
   },
   {
-    id: "mg-072",
-    title: "The Big Short",
-    description:
-      "กลุ่มคนนอกสายตาอ่านสัญญาณก่อนวิกฤตเศรษฐกิจและตัดสินใจเดิมพันสวนตลาด หนังอธิบายระบบการเงินซับซ้อนด้วยอารมณ์เสียดสีเฉียบคม",
-    choices: ["The Big Short", "Margin Call", "Wall Street", "Inside Job"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-073",
-    title: "Shutter Island",
-    description:
-      "เจ้าหน้าที่สืบสวนเดินทางไปเกาะที่ใช้เป็นสถานพยาบาลจิตเวชเพื่อคดีคนหาย แต่ยิ่งค้นหาก็ยิ่งถูกหมอก ความทรงจำ และคำถามเรื่องความจริงล้อมไว้",
-    choices: ["Shutter Island", "The Others", "Memento", "Identity"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-074",
     title: "Memento",
     description:
       "ชายที่ไม่สามารถสร้างความทรงจำระยะสั้นใหม่ได้ตามหาความจริงด้วยรอยสัก ภาพถ่าย และโน้ตกระจัดกระจาย การเล่าเรื่องถอยหลังทำให้คนดูต้องประกอบภาพเอง",
     choices: ["Memento", "The Machinist", "Shutter Island", "Source Code"],
     correctIndex: 0,
+    id: "mg-214",
   },
   {
-    id: "mg-075",
     title: "The Sixth Sense",
     description:
       "นักจิตวิทยาเด็กพยายามช่วยเด็กชายที่บอกว่าเห็นสิ่งที่คนอื่นไม่เห็น บรรยากาศเงียบเย็นค่อย ๆ พาไปสู่ความจริงที่ย้อนมองทั้งเรื่องใหม่",
     choices: ["The Sixth Sense", "The Others", "Insidious", "Hereditary"],
     correctIndex: 0,
+    id: "mg-215",
   },
   {
-    id: "mg-076",
-    title: "A Quiet Place",
-    description:
-      "ครอบครัวหนึ่งต้องใช้ชีวิตเงียบที่สุดในโลกที่สัตว์นักล่าตอบสนองต่อเสียง ทุกการเคลื่อนไหวเล็กน้อยกลายเป็นเดิมพันชีวิต",
-    choices: ["A Quiet Place", "Bird Box", "The Silence", "10 Cloverfield Lane"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-077",
-    title: "Get Out",
-    description:
-      "ชายหนุ่มไปเยี่ยมครอบครัวแฟนในชนบทสุดอบอุ่น แต่ท่าทีที่ดูเป็นมิตรเกินไปและรายละเอียดแปลก ๆ ทำให้เขารู้ว่าที่นี่ซ่อนบางอย่างอันตราย",
-    choices: ["Get Out", "Us", "The Invitation", "Midsommar"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-078",
     title: "Hereditary",
     description:
       "หลังการสูญเสียผู้อาวุโสของบ้าน ครอบครัวหนึ่งเริ่มเผชิญเหตุการณ์เหนือธรรมชาติที่ค่อย ๆ เผยบาดแผลและความลับข้ามรุ่น",
     choices: ["Hereditary", "The Babadook", "The Conjuring", "Insidious"],
     correctIndex: 0,
+    id: "mg-216",
   },
   {
-    id: "mg-079",
     title: "The Conjuring",
     description:
       "คู่สามีภรรยานักสืบสวนปรากฏการณ์ลี้ลับถูกเรียกไปช่วยครอบครัวที่บ้านชนบทซึ่งมีสิ่งผิดปกติรุนแรงขึ้นเรื่อย ๆ",
     choices: ["The Conjuring", "Insidious", "Sinister", "Annabelle"],
     correctIndex: 0,
+    id: "mg-217",
   },
   {
-    id: "mg-080",
     title: "Black Swan",
     description:
       "นักบัลเลต์ที่มุ่งสู่บทนำต้องผลักตัวเองสู่ความสมบูรณ์แบบจนเส้นแบ่งระหว่างการแข่งขัน จินตนาการ และตัวตนเริ่มพร่าเลือน",
     choices: ["Black Swan", "Whiplash", "Perfect Blue", "Suspiria"],
     correctIndex: 0,
+    id: "mg-218",
   },
   {
-    id: "mg-081",
     title: "Birdman",
     description:
       "อดีตนักแสดงซูเปอร์ฮีโร่พยายามพิสูจน์ตัวเองบนเวทีบรอดเวย์ ขณะเสียงในหัวและภาพลักษณ์สาธารณะกดดันเขาจนความจริงเหมือนฉากยาวไม่ตัด",
     choices: ["Birdman", "The Wrestler", "La La Land", "Nightcrawler"],
     correctIndex: 0,
+    id: "mg-219",
   },
   {
-    id: "mg-082",
     title: "Nightcrawler",
     description:
       "ชายตกงานพบโลกข่าวอาชญากรรมกลางคืนและใช้กล้องไล่ล่าภาพที่ขายได้ ความทะเยอทะยานของเขาค่อย ๆ ไร้ขอบเขตทางจริยธรรม",
     choices: ["Nightcrawler", "Zodiac", "Prisoners", "Drive"],
     correctIndex: 0,
+    id: "mg-220",
   },
   {
-    id: "mg-083",
     title: "Drive",
     description:
       "สตันต์แมนกลางวันเป็นคนขับรถหนีกลางคืน ชีวิตเงียบ ๆ ถูกดึงเข้าสู่วงจรอาชญากรรมเมื่อเขาพยายามช่วยคนข้างห้อง",
     choices: ["Drive", "Baby Driver", "John Wick", "Collateral"],
     correctIndex: 0,
+    id: "mg-221",
   },
   {
-    id: "mg-084",
-    title: "John Wick",
-    description:
-      "อดีตนักฆ่าที่วางมือแล้วถูกบังคับให้กลับสู่วงการใต้ดินอีกครั้ง กฎเกณฑ์ของโลกนักฆ่าถูกขยายผ่านโรงแรม เหรียญ และพันธะเลือด",
-    choices: ["John Wick", "Nobody", "The Equalizer", "Atomic Blonde"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-085",
-    title: "The Wolf of Wall Street",
-    description:
-      "โบรกเกอร์หนุ่มไต่ระดับบนวอลล์สตรีทด้วยการขายสุดดุดัน ปาร์ตี้สุดโต่ง และการละเมิดกฎจนกลายเป็นจักรวาลแห่งความโลภ",
-    choices: ["The Wolf of Wall Street", "Boiler Room", "American Hustle", "The Big Short"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-086",
     title: "Catch Me If You Can",
     description:
       "วัยรุ่นอัจฉริยะปลอมตัวเป็นหลายอาชีพและเดินเกมหลอกลวงทั่วโลก ขณะที่เจ้าหน้าที่เอฟบีไอคนหนึ่งไล่ล่าเขาอย่างไม่ลดละ",
-    choices: ["Catch Me If You Can", "The Talented Mr. Ripley", "Now You See Me", "The Terminal"],
+    choices: [
+      "Catch Me If You Can",
+      "The Talented Mr. Ripley",
+      "Now You See Me",
+      "The Terminal",
+    ],
     correctIndex: 0,
+    id: "mg-222",
   },
   {
-    id: "mg-087",
     title: "The Grand Budapest Hotel",
     description:
       "คอนเซียร์จโรงแรมผู้พิถีพิถันกับเด็กฝึกงานติดคดีพัวพันมรดกและการเมืองในยุโรปยุคเปลี่ยนผ่าน เรื่องเล่าถูกห่อด้วยภาพสมมาตรและอารมณ์ขันแห้ง",
-    choices: ["The Grand Budapest Hotel", "Knives Out", "Murder on the Orient Express", "The French Dispatch"],
+    choices: [
+      "The Grand Budapest Hotel",
+      "Knives Out",
+      "Murder on the Orient Express",
+      "The French Dispatch",
+    ],
     correctIndex: 0,
+    id: "mg-223",
   },
   {
-    id: "mg-088",
-    title: "Knives Out",
-    description:
-      "นักสืบชื่อดังถูกจ้างให้คลี่คลายการตายปริศนาในคฤหาสน์ของนักเขียนนิยายสืบสวน ครอบครัวผู้ต้องสงสัยทุกคนมีเหตุผลให้โกหก",
-    choices: ["Knives Out", "Glass Onion", "Murder Mystery", "Death on the Nile"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-089",
-    title: "The Martian",
-    description:
-      "นักบินอวกาศถูกทิ้งไว้บนดาวอังคารโดยทีมที่คิดว่าเขาเสียชีวิต เขาต้องใช้วิทยาศาสตร์และอารมณ์ขันเพื่อรอการช่วยเหลือ",
-    choices: ["The Martian", "Interstellar", "Gravity", "Ad Astra"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-090",
     title: "Gravity",
     description:
       "อุบัติเหตุในวงโคจรทำให้นักบินอวกาศสองคนลอยเคว้งกลางอวกาศโดยทรัพยากรจำกัด การเอาชีวิตรอดขึ้นกับการตัดสินใจทุกวินาที",
     choices: ["Gravity", "The Martian", "Life", "Apollo 13"],
     correctIndex: 0,
+    id: "mg-224",
   },
   {
-    id: "mg-091",
-    title: "Arrival",
-    description:
-      "นักภาษาศาสตร์ถูกดึงเข้าทีมสื่อสารกับผู้มาเยือนจากต่างดาว เพื่อถอดรหัสภาษาที่อาจเปลี่ยนวิธีมองเวลาและการตัดสินใจของมนุษย์",
-    choices: ["Arrival", "Contact", "Interstellar", "Annihilation"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-092",
     title: "Ex Machina",
     description:
       "โปรแกรมเมอร์หนุ่มไปบ้านห่างไกลของซีอีโอเพื่อทดสอบเอไอรูปร่างมนุษย์ เกมบทสนทนาธรรมดาค่อย ๆ กลายเป็นการวัดใจเรื่องจิตสำนึกและอำนาจ",
     choices: ["Ex Machina", "Her", "Blade Runner 2049", "Upgrade"],
     correctIndex: 0,
+    id: "mg-225",
   },
   {
-    id: "mg-093",
     title: "Her",
     description:
       "ชายผู้โดดเดี่ยวเริ่มมีความสัมพันธ์ลึกซึ้งกับระบบปฏิบัติการที่มีเสียงอ่อนโยน ความรักที่ไร้ร่างกายพาไปสู่คำถามเรื่องความใกล้ชิดยุคดิจิทัล",
-    choices: ["Her", "Ex Machina", "Eternal Sunshine of the Spotless Mind", "Lost in Translation"],
+    choices: [
+      "Her",
+      "Ex Machina",
+      "Eternal Sunshine of the Spotless Mind",
+      "Lost in Translation",
+    ],
     correctIndex: 0,
+    id: "mg-226",
   },
   {
-    id: "mg-094",
-    title: "Eternal Sunshine of the Spotless Mind",
-    description:
-      "คู่รักที่เจ็บปวดเลือกใช้เทคโนโลยีลบความทรงจำเกี่ยวกับกันและกัน แต่ระหว่างกระบวนการกลับพบคุณค่าของช่วงเวลาที่อยากลืม",
-    choices: ["Eternal Sunshine of the Spotless Mind", "Her", "500 Days of Summer", "Vanilla Sky"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-095",
     title: "500 Days of Summer",
     description:
       "ชายหนุ่มทบทวนความสัมพันธ์ที่ไม่เป็นไปตามสูตรโรแมนติก ผ่านโครงเรื่องไม่เรียงเวลาและมุมมองที่ไม่น่าเชื่อถือของตัวเขาเอง",
     choices: ["500 Days of Summer", "La La Land", "About Time", "Begin Again"],
     correctIndex: 0,
+    id: "mg-227",
   },
   {
-    id: "mg-096",
     title: "About Time",
     description:
       "ชายหนุ่มค้นพบว่าตระกูลของเขาย้อนเวลาได้ เขาใช้พรสวรรค์นี้กับความรักและครอบครัว ก่อนเรียนรู้ว่าความสุขอยู่ที่การใช้วันธรรมดาให้เต็มที่",
-    choices: ["About Time", "The Time Traveler's Wife", "Midnight in Paris", "Groundhog Day"],
+    choices: [
+      "About Time",
+      "The Time Traveler's Wife",
+      "Midnight in Paris",
+      "Groundhog Day",
+    ],
     correctIndex: 0,
+    id: "mg-228",
   },
   {
-    id: "mg-097",
-    title: "Edge of Tomorrow",
-    description:
-      "ทหารที่ไม่เคยออกรบติดลูปวันเดิมในสงครามกับเอเลี่ยน ทุกการตายกลายเป็นบทเรียนเพื่อหาทางชนะในวันเดียว",
-    choices: ["Edge of Tomorrow", "Source Code", "Oblivion", "Pacific Rim"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-098",
     title: "Looper",
     description:
       "นักฆ่าที่กำจัดเป้าหมายจากอนาคตต้องเผชิญเหยื่อที่ไม่ควรมีอยู่—ตัวเขาเองในอีกวัย การตัดสินใจหนึ่งครั้งอาจเปลี่ยนเส้นเวลาทั้งหมด",
     choices: ["Looper", "Tenet", "Minority Report", "Predestination"],
     correctIndex: 0,
+    id: "mg-229",
   },
   {
-    id: "mg-099",
     title: "Source Code",
     description:
-      "ทหารตื่นมาในร่างคนอื่นบนรถไฟและได้รับภารกิจย้อนช่วงเวลาไม่กี่นาทีซ้ำ ๆ เพื่อหยุดเหตุวินาศกรรม",
+      "ทหารตื่นมาในร่างคนอื่นบนรถไฟและได้รับภารกิจย้อนช่วงเวลาไม่กี่นาทีซ้ำ ๆ เพื่อหยุดเหตุวินาศกรรม คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Source Code", "Edge of Tomorrow", "Déjà Vu", "Memento"],
     correctIndex: 0,
+    id: "mg-230",
   },
   {
-    id: "mg-100",
     title: "Minority Report",
     description:
       "ตำรวจหน่วยพิเศษจับกุมคนก่อนก่ออาชญากรรมด้วยระบบทำนายอนาคต แต่เมื่อระบบชี้มาที่เขาเอง เขาต้องหนีและหาความจริง",
     choices: ["Minority Report", "I, Robot", "Equilibrium", "Blade Runner"],
     correctIndex: 0,
+    id: "mg-231",
   },
   {
-    id: "mg-101",
     title: "Children of Men",
     description:
       "โลกที่ไร้เด็กเกิดใหม่มานานตกอยู่ในความสิ้นหวัง ข้าราชการชายธรรมดาถูกลากเข้าสู่ภารกิจคุ้มกันความหวังที่เปราะบางที่สุดของมนุษยชาติ",
     choices: ["Children of Men", "The Road", "Snowpiercer", "V for Vendetta"],
     correctIndex: 0,
+    id: "mg-232",
   },
   {
-    id: "mg-102",
     title: "V for Vendetta",
     description:
       "ในรัฐเผด็จการที่เฝ้าระวังทุกอย่าง ชายสวมหน้ากากใช้สัญลักษณ์และการแสดงเพื่อปลุกประชาชนให้ตั้งคำถามกับอำนาจ",
     choices: ["V for Vendetta", "Watchmen", "1984", "Equilibrium"],
     correctIndex: 0,
+    id: "mg-233",
   },
   {
-    id: "mg-103",
     title: "Watchmen",
     description:
       "ในโลกที่มีอดีตฮีโร่จริง การฆาตกรรมหนึ่งคดีค่อย ๆ เปิดบาดแผลทางการเมือง สงครามเย็น และมุมมองศีลธรรมที่ไม่ขาวดำ",
     choices: ["Watchmen", "The Boys", "Kick-Ass", "Joker"],
     correctIndex: 0,
+    id: "mg-234",
   },
   {
-    id: "mg-104",
     title: "Logan",
     description:
       "ฮีโร่ผู้ชราภาพใช้ชีวิตหลบซ่อนในโลกที่พลังพิเศษแทบสูญพันธุ์ เขาถูกดึงกลับสู่การคุ้มกันเด็กที่มีความสามารถคล้ายอดีตของเขา",
     choices: ["Logan", "The Last of Us", "Old Man", "Deadpool"],
     correctIndex: 0,
+    id: "mg-235",
   },
   {
-    id: "mg-105",
-    title: "Spider-Man: Into the Spider-Verse",
-    description:
-      "วัยรุ่นจากบรู๊กลินได้พลังเหนือมนุษย์และพบว่ามีคนใส่หน้ากากแบบเดียวกันจากหลายจักรวาล งานภาพสีฉูดฉาดเล่าเรื่องเติบโตอย่างสดใหม่",
-    choices: ["Spider-Man: Into the Spider-Verse", "The Flash", "Teen Titans Go!", "Doctor Strange"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-106",
-    title: "Coco",
-    description:
-      "เด็กชายผู้รักดนตรีบังเอิญข้ามไปดินแดนวิญญาณในคืนเทศกาล เขาต้องไขประวัติครอบครัวเพื่อกลับบ้านก่อนเวลาหมด",
-    choices: ["Coco", "Soul", "Encanto", "The Book of Life"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-107",
-    title: "Inside Out",
-    description:
-      "อารมณ์ต่าง ๆ ในหัวเด็กหญิงต้องปรับตัวเมื่อเธอย้ายเมือง ความวุ่นวายในศูนย์ควบคุมจิตใจสะท้อนการเติบโตที่ไม่ง่าย",
-    choices: ["Inside Out", "Soul", "Turning Red", "Up"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-108",
     title: "Soul",
     description:
       "ครูดนตรีผู้ฝันอยากเป็นแจ๊สแมนตกสู่เหตุการณ์ไม่คาดคิดก่อนวันสำคัญ เขาได้ทบทวนความหมายของการมีชีวิตผ่านพื้นที่นามธรรม",
     choices: ["Soul", "Inside Out", "Coco", "Luca"],
     correctIndex: 0,
+    id: "mg-236",
   },
   {
-    id: "mg-109",
-    title: "Toy Story",
-    description:
-      "ของเล่นในห้องเด็กชายมีชีวิตและมีลำดับชั้นของตัวเอง จนกระทั่งของเล่นใหม่สุดฮิตเข้ามาเปลี่ยนสมดุลเดิม",
-    choices: ["Toy Story", "Cars", "Small Soldiers", "The Lego Movie"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-110",
-    title: "Up",
-    description:
-      "ชายชราผู้โดดเดี่ยวผูกบ้านกับลูกโป่งจำนวนมหาศาลออกเดินทางสู่สถานที่ในฝัน พร้อมลูกเสือรุ่นเยาว์ที่ไม่ได้รับเชิญ",
-    choices: ["Up", "Coco", "Klaus", "How to Train Your Dragon"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-111",
-    title: "WALL·E",
-    description:
-      "หุ่นเก็บขยะตัวเล็กใช้ชีวิตลำพังบนโลกที่มนุษย์ทิ้งร้าง จนการมาของแขกจากอวกาศทำให้ภารกิจเล็ก ๆ มีผลต่ออนาคตทั้งเผ่าพันธุ์",
-    choices: ["WALL·E", "Big Hero 6", "Robots", "Treasure Planet"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-112",
-    title: "How to Train Your Dragon",
-    description:
-      "เด็กหนุ่มไวกิ้งที่ควรถูกสอนให้ล่ามังกรกลับผูกมิตรกับมังกรบาดเจ็บ ความเข้าใจใหม่ท้าทายความเชื่อทั้งหมู่บ้าน",
-    choices: ["How to Train Your Dragon", "Raya and the Last Dragon", "Dragonheart", "Brave"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-113",
-    title: "Frozen",
-    description:
-      "เจ้าหญิงผู้มีพลังน้ำแข็งหลบหนีหลังเหตุการณ์ในพิธีสำคัญ น้องสาวจึงออกเดินทางกับเพื่อนต่างขั้วเพื่อพาเธอกลับมา",
-    choices: ["Frozen", "Tangled", "Moana", "Brave"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-114",
     title: "Moana",
     description:
       "ลูกสาวหัวหน้าเผ่าออกเรือสู่มหาสมุทรเพื่อตามหาวิธีช่วยเกาะบ้านเกิด เธอต้องร่วมทางกับกึ่งเทพจอมมั่นที่มีอดีตซับซ้อน",
-    choices: ["Moana", "Raya and the Last Dragon", "Luca", "The Little Mermaid"],
+    choices: [
+      "Moana",
+      "Raya and the Last Dragon",
+      "Luca",
+      "The Little Mermaid",
+    ],
     correctIndex: 0,
+    id: "mg-237",
   },
   {
-    id: "mg-115",
-    title: "Zootopia",
-    description:
-      "กระต่ายตำรวจน้องใหม่ต้องร่วมมือกับจิ้งจอกนักต้มตุ๋นไขคดีคนหายกลางมหานครสัตว์ที่ดูสมบูรณ์แบบแต่เต็มไปด้วยอคติ",
-    choices: ["Zootopia", "Sing", "The Bad Guys", "Bolt"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-116",
-    title: "The Lion King",
-    description:
-      "ลูกสิงโตผู้สืบทอดราชอาณาจักรเผชิญโศกนาฏกรรมและการเนรเทศ ก่อนต้องเลือกว่าจะกลับมาเผชิญอดีตหรือไม่",
-    choices: ["The Lion King", "Bambi", "Brother Bear", "Tarzan"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-117",
     title: "Shrek",
     description:
       "ยักษ์เขียวผู้รักความสงบถูกบังคับให้ออกเดินทางช่วยเจ้าหญิงเพื่อแลกกับบ้านคืน นิทานคลาสสิกถูกเล่าใหม่ด้วยอารมณ์ขันกวน ๆ",
     choices: ["Shrek", "The Princess Bride", "Megamind", "Enchanted"],
     correctIndex: 0,
+    id: "mg-238",
   },
   {
-    id: "mg-118",
-    title: "Kung Fu Panda",
-    description:
-      "แพนด้าผู้หลงใหลกังฟูอย่างสุดใจกลับถูกเลือกในตำแหน่งที่ไม่มีใครคาดคิด เขาต้องฝึกฝนท่ามกลางสายตาดูถูกและภัยคุกคามใหญ่",
-    choices: ["Kung Fu Panda", "Mulan", "TMNT", "Rango"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-119",
     title: "The Incredibles",
     description:
-      "ครอบครัวซูเปอร์ฮีโร่ที่ถูกบังคับให้ใช้ชีวิตปกติ ต้องกลับมาร่วมมือกันเมื่อภัยใหม่โจมตีเมือง",
+      "ครอบครัวซูเปอร์ฮีโร่ที่ถูกบังคับให้ใช้ชีวิตปกติ ต้องกลับมาร่วมมือกันเมื่อภัยใหม่โจมตีเมือง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["The Incredibles", "Fantastic Four", "Sky High", "Big Hero 6"],
     correctIndex: 0,
+    id: "mg-239",
   },
   {
-    id: "mg-120",
     title: "Big Hero 6",
     description:
-      "เด็กอัจฉริยะด้านหุ่นยนต์จับมือกับหุ่นดูแลสุขภาพและเพื่อน ๆ ตั้งทีมฮีโร่เทคโนโลยีเพื่อรับมืออาชญากรลึกลับ",
+      "เด็กอัจฉริยะด้านหุ่นยนต์จับมือกับหุ่นดูแลสุขภาพและเพื่อน ๆ ตั้งทีมฮีโร่เทคโนโลยีเพื่อรับมืออาชญากรลึกลับ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Big Hero 6", "The Incredibles", "Robots", "Meet the Robinsons"],
     correctIndex: 0,
+    id: "mg-240",
   },
   {
-    id: "mg-121",
-    title: "Arcane",
-    description:
-      "ความขัดแย้งระหว่างนครมั่งคั่งกับเมืองใต้ดินปะทุผ่านเรื่องราวของสองพี่น้อง งานภาพสไตล์เพนต์เตอร์และการเมืองของเทคโนโลยีโดดเด่นมาก",
-    choices: ["Arcane", "Cyberpunk: Edgerunners", "Castlevania", "Blue Eye Samurai"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-122",
     title: "Cyberpunk: Edgerunners",
     description:
-      "เด็กหนุ่มในมหานครอนาคตที่ชนชั้นเหลื่อมล้ำเลือกเส้นทางทหารรับจ้างไซเบอร์ หลังสูญเสียสิ่งสำคัญในชีวิต",
-    choices: ["Cyberpunk: Edgerunners", "Akudama Drive", "Ghost in the Shell: SAC_2045", "Arcane"],
+      "เด็กหนุ่มในมหานครอนาคตที่ชนชั้นเหลื่อมล้ำเลือกเส้นทางทหารรับจ้างไซเบอร์ หลังสูญเสียสิ่งสำคัญในชีวิต เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Cyberpunk: Edgerunners",
+      "Akudama Drive",
+      "Ghost in the Shell: SAC_2045",
+      "Arcane",
+    ],
     correctIndex: 0,
+    id: "mg-241",
   },
   {
-    id: "mg-123",
     title: "Castlevania",
     description:
       "นักล่าแวมไพร์ลูกหลานตระกูลนักรบจับมือกับผู้ใช้เวทและทายาทเลือดปีศาจ เพื่อต่อกรผู้ปกครองรัตติกาลที่ประกาศล้างมนุษย์",
-    choices: ["Castlevania", "Hellsing Ultimate", "Devilman Crybaby", "Blood of Zeus"],
+    choices: [
+      "Castlevania",
+      "Hellsing Ultimate",
+      "Devilman Crybaby",
+      "Blood of Zeus",
+    ],
     correctIndex: 0,
+    id: "mg-242",
   },
   {
-    id: "mg-124",
     title: "Blue Eye Samurai",
     description:
-      "นักดาบหญิงลูกครึ่งในญี่ปุ่นยุคปิดประเทศออกเดินทางแก้แค้นด้วยทักษะดาบระดับสูงและการปลอมตัว",
-    choices: ["Blue Eye Samurai", "Samurai Champloo", "Rurouni Kenshin", "Demon Slayer"],
+      "นักดาบหญิงลูกครึ่งในญี่ปุ่นยุคปิดประเทศออกเดินทางแก้แค้นด้วยทักษะดาบระดับสูงและการปลอมตัว จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Blue Eye Samurai",
+      "Samurai Champloo",
+      "Rurouni Kenshin",
+      "Demon Slayer",
+    ],
     correctIndex: 0,
+    id: "mg-243",
   },
   {
-    id: "mg-125",
-    title: "Breaking Bad",
-    description:
-      "ครูเคมีผู้ชีวิตถึงทางตันตัดสินใจก้าวสู่โลกผลิตยาเสพติดเพื่อหาเงินให้ครอบครัว การเปลี่ยนแปลงตัวตนของเขาค่อย ๆ น่ากลัวขึ้น",
-    choices: ["Breaking Bad", "Ozark", "Narcos", "Better Call Saul"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-126",
     title: "Better Call Saul",
     description:
-      "ทนายปากเก่งผู้ดิ้นรนในเงาอดีตค่อย ๆ กลายเป็นคนที่พร้อมเล่นนอกกติกา ซีรีส์พรีเควลที่เน้นการเปลี่ยนทีละนิด",
+      "ทนายปากเก่งผู้ดิ้นรนในเงาอดีตค่อย ๆ กลายเป็นคนที่พร้อมเล่นนอกกติกา ซีรีส์พรีเควลที่เน้นการเปลี่ยนทีละนิด ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Better Call Saul", "Suits", "Billions", "Breaking Bad"],
     correctIndex: 0,
+    id: "mg-244",
   },
   {
-    id: "mg-127",
     title: "Narcos",
     description:
       "เรื่องราวเจ้าพ่อยาเสพติดและหน่วยงานรัฐในสงครามที่ไม่มีสูตรสำเร็จ การขึ้นลงของอำนาจเกิดเร็วพอ ๆ กับจำนวนศัตรู",
     choices: ["Narcos", "El Chapo", "Breaking Bad", "Sicario"],
     correctIndex: 0,
+    id: "mg-245",
   },
   {
-    id: "mg-128",
     title: "Ozark",
     description:
       "ที่ปรึกษาการเงินย้ายครอบครัวไปเมืองริมทะเลสาบเพื่อล้างเงินให้แก๊งใหญ่ แผนเอาตัวรอดบีบให้ทุกคนในบ้านเปลี่ยนไป",
     choices: ["Ozark", "Bloodline", "Breaking Bad", "Fargo"],
     correctIndex: 0,
+    id: "mg-246",
   },
   {
-    id: "mg-129",
     title: "Peaky Blinders",
     description:
-      "หัวหน้าแก๊งครอบครัวย่านอุตสาหกรรมอังกฤษหลังสงครามโลกใช้ทั้งธุรกิจ การเมือง และความรุนแรงขยายอำนาจ",
+      "หัวหน้าแก๊งครอบครัวย่านอุตสาหกรรมอังกฤษหลังสงครามโลกใช้ทั้งธุรกิจ การเมือง และความรุนแรงขยายอำนาจ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Peaky Blinders", "Boardwalk Empire", "Gangs of London", "Taboo"],
     correctIndex: 0,
+    id: "mg-247",
   },
   {
-    id: "mg-130",
     title: "Sherlock",
     description:
-      "นักสืบที่คิดไวผิดมนุษย์กับอดีตทหารแพทย์ร่วมแก้คดีในลอนดอนยุคใหม่ โดยใช้การสังเกตรายละเอียดเหนือคนทั่วไป",
+      "นักสืบที่คิดไวผิดมนุษย์กับอดีตทหารแพทย์ร่วมแก้คดีในลอนดอนยุคใหม่ โดยใช้การสังเกตรายละเอียดเหนือคนทั่วไป ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Sherlock", "Elementary", "Luther", "Mindhunter"],
     correctIndex: 0,
+    id: "mg-248",
   },
   {
-    id: "mg-131",
     title: "Mindhunter",
     description:
-      "เจ้าหน้าที่เอฟบีไอเริ่มสัมภาษณ์ฆาตกรต่อเนื่องในเรือนจำเพื่อสร้างศาสตร์ใหม่ด้านพฤติกรรมอาชญากร",
+      "เจ้าหน้าที่เอฟบีไอเริ่มสัมภาษณ์ฆาตกรต่อเนื่องในเรือนจำเพื่อสร้างศาสตร์ใหม่ด้านพฤติกรรมอาชญากร เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Mindhunter", "True Detective", "Criminal Minds", "Zodiac"],
     correctIndex: 0,
+    id: "mg-249",
   },
   {
-    id: "mg-132",
     title: "True Detective",
     description:
-      "นักสืบคู่หูสืบคดีเดียวกันข้ามหลายช่วงเวลา คดีโหดหนึ่งคดีเปิดแผลชีวิตส่วนตัวและความเชื่อที่ต่างกันสุดขั้ว",
+      "นักสืบคู่หูสืบคดีเดียวกันข้ามหลายช่วงเวลา คดีโหดหนึ่งคดีเปิดแผลชีวิตส่วนตัวและความเชื่อที่ต่างกันสุดขั้ว คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["True Detective", "Mindhunter", "Mare of Easttown", "Fargo"],
     correctIndex: 0,
+    id: "mg-250",
   },
   {
-    id: "mg-133",
     title: "Fargo",
     description:
-      "เหตุอาชญากรรมที่ดูเล็กในเมืองหิมะกลับขยายเป็นลูกโซ่ของความโลภ โชคร้าย และตัวละครประหลาดที่คาดเดายาก",
+      "เหตุอาชญากรรมที่ดูเล็กในเมืองหิมะกลับขยายเป็นลูกโซ่ของความโลภ โชคร้าย และตัวละครประหลาดที่คาดเดายาก จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Fargo", "No Country for Old Men", "Ozark", "Bloodline"],
     correctIndex: 0,
+    id: "mg-251",
   },
   {
-    id: "mg-134",
     title: "Dark",
     description:
       "การหายตัวของเด็กในเมืองเล็กเยอรมันพาไปสู่เครือข่ายความลับหลายครอบครัวและปรากฏการณ์ที่ทำให้เวลาไม่เดินเป็นเส้นตรง",
     choices: ["Dark", "1899", "Stranger Things", "Bodies"],
     correctIndex: 0,
+    id: "mg-252",
   },
   {
-    id: "mg-135",
     title: "1899",
     description:
       "ผู้โดยสารเรืออพยพมุ่งหน้าสู่อเมริกาพบเรือลำปริศนากลางทะเล เหตุการณ์เหนือจริงค่อย ๆ ท้าทายสิ่งที่พวกเขาเชื่อว่าเป็นความจริง",
     choices: ["1899", "Dark", "The Terror", "Lost"],
     correctIndex: 0,
+    id: "mg-253",
   },
   {
-    id: "mg-136",
     title: "Black Mirror",
     description:
-      "แอนโทโลยีที่แต่ละตอนตั้งคำถามว่าเทคโนโลยีซึ่งดูสะดวกอาจพามนุษย์ไปไกลแค่ไหนเมื่อไร้ขอบเขตจริยธรรม",
-    choices: ["Black Mirror", "Love, Death & Robots", "Electric Dreams", "Severance"],
+      "แอนโทโลยีที่แต่ละตอนตั้งคำถามว่าเทคโนโลยีซึ่งดูสะดวกอาจพามนุษย์ไปไกลแค่ไหนเมื่อไร้ขอบเขตจริยธรรม คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Black Mirror",
+      "Love, Death & Robots",
+      "Electric Dreams",
+      "Severance",
+    ],
     correctIndex: 0,
+    id: "mg-254",
   },
   {
-    id: "mg-137",
     title: "Severance",
     description:
       "บริษัทหนึ่งแยกความทรงจำพนักงานระหว่างเวลางานกับเวลาส่วนตัว ทำให้ตัวตนเดียวกันเหมือนอยู่คนละโลกอย่างสิ้นเชิง",
     choices: ["Severance", "Black Mirror", "Mr. Robot", "Homecoming"],
     correctIndex: 0,
+    id: "mg-255",
   },
   {
-    id: "mg-138",
     title: "Mr. Robot",
     description:
-      "วิศวกรความปลอดภัยไซเบอร์ที่มีปัญหาสุขภาพจิตถูกดึงเข้ากลุ่มแฮกเกอร์ที่หวังล้มระบบการเงินโลก",
+      "วิศวกรความปลอดภัยไซเบอร์ที่มีปัญหาสุขภาพจิตถูกดึงเข้ากลุ่มแฮกเกอร์ที่หวังล้มระบบการเงินโลก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Mr. Robot", "Silicon Valley", "Person of Interest", "Severance"],
     correctIndex: 0,
+    id: "mg-256",
   },
   {
-    id: "mg-139",
     title: "Westworld",
     description:
       "สวนสนุกธีมตะวันตกที่หุ่นยนต์สมจริงให้แขกทำอะไรก็ได้ เริ่มเกิดคำถามเรื่องจิตสำนึก เสรีภาพ และผู้ควบคุมเรื่องเล่า",
     choices: ["Westworld", "Black Mirror", "Altered Carbon", "Foundation"],
     correctIndex: 0,
+    id: "mg-257",
   },
   {
-    id: "mg-140",
-    title: "The Boys",
-    description:
-      "โลกที่ซูเปอร์ฮีโร่เป็นแบรนด์ธุรกิจขนาดยักษ์ กลุ่มคนนอกกฎหมายจึงตั้งใจเปิดโปงด้านมืดของผู้ถูกยกย่อง",
-    choices: ["The Boys", "Watchmen", "Invincible", "Peacemaker"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-141",
     title: "Invincible",
     description:
-      "วัยรุ่นที่เพิ่งได้พลังจากพ่อซูเปอร์ฮีโร่ระดับโลกเริ่มค้นพบว่าการเป็นฮีโร่จริงซับซ้อนและโหดร้ายกว่าที่คิด",
+      "วัยรุ่นที่เพิ่งได้พลังจากพ่อซูเปอร์ฮีโร่ระดับโลกเริ่มค้นพบว่าการเป็นฮีโร่จริงซับซ้อนและโหดร้ายกว่าที่คิด คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Invincible", "The Boys", "My Hero Academia", "Megamind"],
     correctIndex: 0,
+    id: "mg-258",
   },
   {
-    id: "mg-142",
     title: "Loki",
     description:
       "เทพเจ้าเจ้าเล่ห์ถูกจับโดยองค์กรที่ดูแลเส้นเวลา เขาต้องร่วมมือกับเจ้าหน้าที่เพื่อรับมือภัยที่เกี่ยวข้องกับตัวเองหลายแบบ",
-    choices: ["Loki", "Doctor Strange in the Multiverse of Madness", "The Flash", "Moon Knight"],
+    choices: [
+      "Loki",
+      "Doctor Strange in the Multiverse of Madness",
+      "The Flash",
+      "Moon Knight",
+    ],
     correctIndex: 0,
+    id: "mg-259",
   },
   {
-    id: "mg-143",
     title: "WandaVision",
     description:
       "คู่รักพลังพิเศษใช้ชีวิตเหมือนซิตคอมแต่ละยุคในเมืองเล็กที่ดูสมบูรณ์แบบ จนความผิดปกติค่อย ๆ รั่วออกจากฉากหัวเราะ",
     choices: ["WandaVision", "Legion", "Loki", "Pleasantville"],
     correctIndex: 0,
+    id: "mg-260",
   },
   {
-    id: "mg-144",
     title: "Moon Knight",
     description:
       "พนักงานร้านของที่ระลึกผู้มีปัญหาความจำเริ่มข้องเกี่ยวกับเทพอียิปต์และการแยกร่างตัวตน การต่อสู้เกิดทั้งภายนอกและในจิตใจ",
     choices: ["Moon Knight", "Legion", "Daredevil", "The Mummy"],
     correctIndex: 0,
+    id: "mg-261",
   },
   {
-    id: "mg-145",
     title: "Daredevil",
     description:
-      "ทนายตาบอดที่มีประสาทสัมผัสเหนือมนุษย์ใช้ชีวิตสองด้าน กลางวันสู้ในศาล กลางคืนสู้ในตรอกมืดของเมือง",
+      "ทนายตาบอดที่มีประสาทสัมผัสเหนือมนุษย์ใช้ชีวิตสองด้าน กลางวันสู้ในศาล กลางคืนสู้ในตรอกมืดของเมือง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Daredevil", "The Punisher", "Arrow", "Jessica Jones"],
     correctIndex: 0,
+    id: "mg-262",
   },
   {
-    id: "mg-146",
     title: "The Punisher",
     description:
-      "อดีตทหารผ่านศึกที่สูญเสียครอบครัวประกาศสงครามส่วนตัวกับเครือข่ายอาชญากรรมและผู้มีอำนาจเบื้องหลัง",
+      "อดีตทหารผ่านศึกที่สูญเสียครอบครัวประกาศสงครามส่วนตัวกับเครือข่ายอาชญากรรมและผู้มีอำนาจเบื้องหลัง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["The Punisher", "John Wick", "Jack Reacher", "Daredevil"],
     correctIndex: 0,
+    id: "mg-263",
   },
   {
-    id: "mg-147",
     title: "Suits",
     description:
-      "ทนายดาวรุ่งรับเด็กอัจฉริยะที่ไม่มีใบอนุญาตเข้าทำงานในบริษัทกฎหมายชั้นนำ เกมคดีและการปิดความลับเดินคู่กัน",
-    choices: ["Suits", "The Good Wife", "Billions", "How to Get Away with Murder"],
+      "ทนายดาวรุ่งรับเด็กอัจฉริยะที่ไม่มีใบอนุญาตเข้าทำงานในบริษัทกฎหมายชั้นนำ เกมคดีและการปิดความลับเดินคู่กัน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Suits",
+      "The Good Wife",
+      "Billions",
+      "How to Get Away with Murder",
+    ],
     correctIndex: 0,
+    id: "mg-264",
   },
   {
-    id: "mg-148",
     title: "House of Cards",
     description:
-      "นักการเมืองที่ทะเยอทะยานใช้กลยุทธ์เย็นชาไต่บันไดอำนาจในวอชิงตันทุกระดับ",
+      "นักการเมืองที่ทะเยอทะยานใช้กลยุทธ์เย็นชาไต่บันไดอำนาจในวอชิงตันทุกระดับ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["House of Cards", "Scandal", "Designated Survivor", "Succession"],
     correctIndex: 0,
+    id: "mg-265",
   },
   {
-    id: "mg-149",
     title: "Succession",
     description:
       "พี่น้องตระกูลเจ้าของอาณาจักรสื่อแข่งขันกันเพื่อช่วงชิงตำแหน่งทายาท ท่ามกลางเกมอำนาจที่ทั้งตลกร้ายและเจ็บคม",
     choices: ["Succession", "Billions", "House of Cards", "Industry"],
     correctIndex: 0,
+    id: "mg-266",
   },
   {
-    id: "mg-150",
     title: "The Crown",
     description:
-      "ดราม่ายาวว่าด้วยชีวิตราชวงศ์อังกฤษผ่านหลายทศวรรษ เน้นแรงกดดันระหว่างหน้าที่สาธารณะกับชีวิตส่วนตัว",
+      "ดราม่ายาวว่าด้วยชีวิตราชวงศ์อังกฤษผ่านหลายทศวรรษ เน้นแรงกดดันระหว่างหน้าที่สาธารณะกับชีวิตส่วนตัว จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["The Crown", "Victoria", "Downton Abbey", "Spencer"],
     correctIndex: 0,
+    id: "mg-267",
   },
   {
-    id: "mg-151",
     title: "Downton Abbey",
     description:
-      "ครอบครัวชนชั้นสูงกับเหล่าคนรับใช้ในคฤหาสน์อังกฤษเผชิญการเปลี่ยนแปลงของสังคมต้นศตวรรษที่ 20",
+      "ครอบครัวชนชั้นสูงกับเหล่าคนรับใช้ในคฤหาสน์อังกฤษเผชิญการเปลี่ยนแปลงของสังคมต้นศตวรรษที่ 20 ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Downton Abbey", "Bridgerton", "The Crown", "Gosford Park"],
     correctIndex: 0,
+    id: "mg-268",
   },
   {
-    id: "mg-152",
     title: "Bridgerton",
     description:
-      "สังคมชนชั้นสูงลอนดอนยุครีเจนซีเต็มไปด้วยงานเต้นรำ ข่าวลือ และการจับคู่แต่งงานที่มีทั้งรักและผลประโยชน์",
-    choices: ["Bridgerton", "Downton Abbey", "Pride and Prejudice", "The Great"],
+      "สังคมชนชั้นสูงลอนดอนยุครีเจนซีเต็มไปด้วยงานเต้นรำ ข่าวลือ และการจับคู่แต่งงานที่มีทั้งรักและผลประโยชน์ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Bridgerton",
+      "Downton Abbey",
+      "Pride and Prejudice",
+      "The Great",
+    ],
     correctIndex: 0,
+    id: "mg-269",
   },
   {
-    id: "mg-153",
     title: "The Queen's Gambit",
     description:
-      "เด็กกำพร้าผู้ค้นพบพรสวรรค์หมากรุกไต่สู่เวทีโลก พร้อมต่อสู้กับความโดดเดี่ยวและแรงกดดันชื่อเสียง",
-    choices: ["The Queen's Gambit", "Searching for Bobby Fischer", "Whiplash", "A Beautiful Mind"],
+      "เด็กกำพร้าผู้ค้นพบพรสวรรค์หมากรุกไต่สู่เวทีโลก พร้อมต่อสู้กับความโดดเดี่ยวและแรงกดดันชื่อเสียง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Queen's Gambit",
+      "Searching for Bobby Fischer",
+      "Whiplash",
+      "A Beautiful Mind",
+    ],
     correctIndex: 0,
+    id: "mg-270",
   },
   {
-    id: "mg-154",
     title: "Chernobyl",
     description:
-      "มินิซีรีส์เล่าเหตุระเบิดโรงไฟฟ้านิวเคลียร์และผลกระทบมหาศาลต่อผู้คน พร้อมสะท้อนราคาของการปกปิดความจริง",
+      "มินิซีรีส์เล่าเหตุระเบิดโรงไฟฟ้านิวเคลียร์และผลกระทบมหาศาลต่อผู้คน พร้อมสะท้อนราคาของการปกปิดความจริง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Chernobyl", "The Days", "Oppenheimer", "The Crown"],
     correctIndex: 0,
+    id: "mg-271",
   },
   {
-    id: "mg-155",
     title: "Band of Brothers",
     description:
-      "หน่วยพลร่มอเมริกันผ่านสมรภูมิยุโรปในสงครามโลกครั้งที่สอง ถ่ายทอดมิตรภาพและความโหดร้ายอย่างสมจริง",
+      "หน่วยพลร่มอเมริกันผ่านสมรภูมิยุโรปในสงครามโลกครั้งที่สอง ถ่ายทอดมิตรภาพและความโหดร้ายอย่างสมจริง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Band of Brothers", "The Pacific", "1917", "Dunkirk"],
     correctIndex: 0,
+    id: "mg-272",
   },
   {
-    id: "mg-156",
     title: "The Pacific",
     description:
-      "มินิซีรีส์สงครามโลกครั้งที่สองฝั่งสมรภูมิแปซิฟิก เน้นประสบการณ์ทหารราบในสนามรบที่สาหัสและยืดเยื้อ",
+      "มินิซีรีส์สงครามโลกครั้งที่สองฝั่งสมรภูมิแปซิฟิก เน้นประสบการณ์ทหารราบในสนามรบที่สาหัสและยืดเยื้อ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["The Pacific", "Band of Brothers", "Hacksaw Ridge", "Midway"],
     correctIndex: 0,
+    id: "mg-273",
   },
   {
-    id: "mg-157",
     title: "Vikings",
     description:
       "ชาวนานอร์สผู้ทะเยอทะยานออกเรือไกลเกินขอบฟ้าด้วยเทคโนโลยีเดินเรือใหม่ ก่อนกลายเป็นผู้นำที่ต้องแบกทั้งตำนานและความสูญเสีย",
     choices: ["Vikings", "The Last Kingdom", "Barbarians", "Game of Thrones"],
     correctIndex: 0,
+    id: "mg-274",
   },
   {
-    id: "mg-158",
     title: "The Last Kingdom",
     description:
       "เด็กแซกซอนที่ถูกไวกิ้งเลี้ยงดูต้องเลือกระหว่างสายเลือดกับครอบครัวที่หล่อหลอมเขา ท่ามกลางสงครามรวมอาณาจักรอังกฤษ",
     choices: ["The Last Kingdom", "Vikings", "Knightfall", "Barbarians"],
     correctIndex: 0,
+    id: "mg-275",
   },
   {
-    id: "mg-159",
     title: "House of the Dragon",
     description:
-      "ตระกูลมังกรทรงอำนาจแตกเป็นสองฝ่ายจากปัญหาสืบทอดบัลลังก์ ความขัดแย้งในบ้านเดียวกันลุกลามเป็นสงครามใหญ่",
-    choices: ["House of the Dragon", "Game of Thrones", "The Witcher", "Rings of Power"],
+      "ตระกูลมังกรทรงอำนาจแตกเป็นสองฝ่ายจากปัญหาสืบทอดบัลลังก์ ความขัดแย้งในบ้านเดียวกันลุกลามเป็นสงครามใหญ่ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "House of the Dragon",
+      "Game of Thrones",
+      "The Witcher",
+      "Rings of Power",
+    ],
     correctIndex: 0,
+    id: "mg-276",
   },
   {
-    id: "mg-160",
     title: "The Witcher",
     description:
       "นักล่าปีศาจรับจ้างผู้กลายพันธุ์เดินทางในโลกแฟนตาซีที่การเมืองซับซ้อน ชะตาของเขาผูกกับหญิงสาวผู้มีพลังพิเศษ",
-    choices: ["The Witcher", "Shadow and Bone", "Game of Thrones", "Carnival Row"],
+    choices: [
+      "The Witcher",
+      "Shadow and Bone",
+      "Game of Thrones",
+      "Carnival Row",
+    ],
     correctIndex: 0,
+    id: "mg-277",
   },
   {
-    id: "mg-161",
-    title: "The Lord of the Rings: The Fellowship of the Ring",
-    description:
-      "กลุ่มผู้ร่วมทางต่างเผ่าพันธุ์ออกเดินทางเพื่อนำวัตถุอำนาจสูงสุดไปยังสถานที่ที่อันตรายที่สุดก่อนมันครอบงำโลก",
-    choices: ["The Lord of the Rings: The Fellowship of the Ring", "The Hobbit: An Unexpected Journey", "The Chronicles of Narnia", "Willow"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-162",
     title: "The Hobbit: An Unexpected Journey",
     description:
-      "ฮอบบิทผู้รักความสงบถูกชวนออกผจญภัยกับพ่อมดและคนแคระเพื่อทวงบ้านเก่าจากมังกร",
-    choices: ["The Hobbit: An Unexpected Journey", "The Fellowship of the Ring", "Eragon", "Dragonheart"],
+      "ฮอบบิทผู้รักความสงบถูกชวนออกผจญภัยกับพ่อมดและคนแคระเพื่อทวงบ้านเก่าจากมังกร คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Hobbit: An Unexpected Journey",
+      "The Fellowship of the Ring",
+      "Eragon",
+      "Dragonheart",
+    ],
     correctIndex: 0,
+    id: "mg-278",
   },
   {
-    id: "mg-163",
     title: "Pirates of the Caribbean: The Curse of the Black Pearl",
     description:
-      "ช่างตีเหล็กหนุ่มและโจรสลัดจอมเพี้ยนร่วมมือกันช่วยหญิงสาวจากคำสาปที่เกี่ยวข้องกับทองคำโบราณ",
-    choices: ["Pirates of the Caribbean: The Curse of the Black Pearl", "Treasure Island", "Peter Pan", "The Three Musketeers"],
+      "ช่างตีเหล็กหนุ่มและโจรสลัดจอมเพี้ยนร่วมมือกันช่วยหญิงสาวจากคำสาปที่เกี่ยวข้องกับทองคำโบราณ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "Treasure Island",
+      "Peter Pan",
+      "The Three Musketeers",
+    ],
     correctIndex: 0,
+    id: "mg-279",
   },
   {
-    id: "mg-164",
     title: "Indiana Jones and the Raiders of the Lost Ark",
     description:
-      "นักโบราณคดีนักผจญภัยแข่งกับฝ่ายตรงข้ามเพื่อค้นหาวัตถุศักดิ์สิทธิ์ก่อนถูกใช้เป็นอาวุธสงคราม",
-    choices: ["Indiana Jones and the Raiders of the Lost Ark", "The Mummy", "National Treasure", "Uncharted"],
+      "นักโบราณคดีนักผจญภัยแข่งกับฝ่ายตรงข้ามเพื่อค้นหาวัตถุศักดิ์สิทธิ์ก่อนถูกใช้เป็นอาวุธสงคราม ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Indiana Jones and the Raiders of the Lost Ark",
+      "The Mummy",
+      "National Treasure",
+      "Uncharted",
+    ],
     correctIndex: 0,
+    id: "mg-280",
   },
   {
-    id: "mg-165",
     title: "National Treasure",
     description:
-      "นักล่าสมบัติถอดรหัสปริศนาประวัติศาสตร์อเมริกันจากเบาะแสที่ซ่อนในเอกสารสำคัญ",
-    choices: ["National Treasure", "The Da Vinci Code", "Indiana Jones", "Sherlock Holmes"],
+      "นักล่าสมบัติถอดรหัสปริศนาประวัติศาสตร์อเมริกันจากเบาะแสที่ซ่อนในเอกสารสำคัญ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "National Treasure",
+      "The Da Vinci Code",
+      "Indiana Jones",
+      "Sherlock Holmes",
+    ],
     correctIndex: 0,
+    id: "mg-281",
   },
   {
-    id: "mg-166",
     title: "The Da Vinci Code",
     description:
-      "นักสัญลักษณ์ศาสตร์ถูกดึงเข้าคดีฆาตกรรมในพิพิธภัณฑ์และต้องไขรหัสที่ซ่อนในงานศิลป์ชื่อดัง",
-    choices: ["The Da Vinci Code", "Angels & Demons", "National Treasure", "Inferno"],
+      "นักสัญลักษณ์ศาสตร์ถูกดึงเข้าคดีฆาตกรรมในพิพิธภัณฑ์และต้องไขรหัสที่ซ่อนในงานศิลป์ชื่อดัง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Da Vinci Code",
+      "Angels & Demons",
+      "National Treasure",
+      "Inferno",
+    ],
     correctIndex: 0,
+    id: "mg-282",
   },
   {
-    id: "mg-167",
     title: "Sherlock Holmes (2009)",
     description:
-      "นักสืบอัจฉริยะสายบู๊กับคู่หูแพทย์ทหารต้องหยุดแผนของศัตรูที่ผสมวิทยาศาสตร์กับภาพลวงตาลัทธิ",
-    choices: ["Sherlock Holmes (2009)", "The Prestige", "The Great Mouse Detective", "Enola Holmes"],
+      "นักสืบอัจฉริยะสายบู๊กับคู่หูแพทย์ทหารต้องหยุดแผนของศัตรูที่ผสมวิทยาศาสตร์กับภาพลวงตาลัทธิ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Sherlock Holmes (2009)",
+      "The Prestige",
+      "The Great Mouse Detective",
+      "Enola Holmes",
+    ],
     correctIndex: 0,
+    id: "mg-283",
   },
   {
-    id: "mg-168",
     title: "Mission: Impossible - Fallout",
     description:
-      "สายลับทีมพิเศษต้องแข่งเวลาแย่งอาวุธร้ายแรงท่ามกลางการทรยศซ้อนทรยศ พร้อมฉากแอ็กชันเสี่ยงตายต่อเนื่อง",
-    choices: ["Mission: Impossible - Fallout", "Jason Bourne", "Jack Ryan", "Tenet"],
+      "สายลับทีมพิเศษต้องแข่งเวลาแย่งอาวุธร้ายแรงท่ามกลางการทรยศซ้อนทรยศ พร้อมฉากแอ็กชันเสี่ยงตายต่อเนื่อง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Mission: Impossible - Fallout",
+      "Jason Bourne",
+      "Jack Ryan",
+      "Tenet",
+    ],
     correctIndex: 0,
+    id: "mg-284",
   },
   {
-    id: "mg-169",
     title: "Top Gun: Maverick",
     description:
-      "นักบินทดสอบรุ่นเก๋ากลับมาฝึกนักบินรุ่นใหม่ในภารกิจแทบเป็นไปไม่ได้ ขณะต้องเผชิญอดีตที่ยังค้างคา",
+      "นักบินทดสอบรุ่นเก๋ากลับมาฝึกนักบินรุ่นใหม่ในภารกิจแทบเป็นไปไม่ได้ ขณะต้องเผชิญอดีตที่ยังค้างคา เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Top Gun: Maverick", "Top Gun", "Pearl Harbor", "Stealth"],
     correctIndex: 0,
+    id: "mg-285",
   },
   {
-    id: "mg-170",
     title: "Ford v Ferrari",
     description:
       "นักออกแบบรถกับนักขับหัวขบถร่วมมือสร้างรถแข่งท้าชนเจ้าตลาดยุโรปในสนามเลอม็อง ความต่างนิสัยกลายเป็นพลังของทีม",
     choices: ["Ford v Ferrari", "Rush", "Gran Turismo", "Moneyball"],
     correctIndex: 0,
+    id: "mg-286",
   },
   {
-    id: "mg-171",
     title: "Rush",
     description:
-      "การดวลของนักขับฟอร์มูลาวันสองสไตล์—คนหนึ่งเสี่ยงสุดทาง อีกคนวินัยเข้ม—ผลักกันและกันสู่ขีดจำกัด",
+      "การดวลของนักขับฟอร์มูลาวันสองสไตล์—คนหนึ่งเสี่ยงสุดทาง อีกคนวินัยเข้ม—ผลักกันและกันสู่ขีดจำกัด จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Rush", "Ford v Ferrari", "Senna", "Le Mans '66"],
     correctIndex: 0,
+    id: "mg-287",
   },
   {
-    id: "mg-172",
     title: "1917",
     description:
       "ทหารสองนายได้รับคำสั่งส่งสารด่วนข้ามแนวรบในสงครามโลกครั้งที่หนึ่ง เวลาที่จำกัดทำให้ทุกอุปสรรคดูใหญ่กว่าชีวิต",
-    choices: ["1917", "Dunkirk", "All Quiet on the Western Front", "Saving Private Ryan"],
+    choices: [
+      "1917",
+      "Dunkirk",
+      "All Quiet on the Western Front",
+      "Saving Private Ryan",
+    ],
     correctIndex: 0,
+    id: "mg-288",
   },
   {
-    id: "mg-173",
     title: "Dunkirk",
     description:
       "การอพยพครั้งใหญ่จากชายหาดท่ามกลางการโจมตีถูกเล่าผ่านสามมุมมองเวลาที่เดินไม่เท่ากัน—ทางบก ทางทะเล และทางอากาศ",
     choices: ["Dunkirk", "1917", "Midway", "Darkest Hour"],
     correctIndex: 0,
+    id: "mg-289",
   },
   {
-    id: "mg-174",
     title: "Saving Private Ryan",
     description:
-      "หน่วยทหารอเมริกันได้รับภารกิจค้นหาทหารนายหนึ่งกลางสมรภูมิยุโรปหลังวันยกพลขึ้นบก",
-    choices: ["Saving Private Ryan", "Band of Brothers", "Fury", "Hacksaw Ridge"],
+      "หน่วยทหารอเมริกันได้รับภารกิจค้นหาทหารนายหนึ่งกลางสมรภูมิยุโรปหลังวันยกพลขึ้นบก คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Saving Private Ryan",
+      "Band of Brothers",
+      "Fury",
+      "Hacksaw Ridge",
+    ],
     correctIndex: 0,
+    id: "mg-290",
   },
   {
-    id: "mg-175",
     title: "Hacksaw Ridge",
     description:
-      "ทหารแพทย์ผู้ยึดหลักไม่จับอาวุธต้องพิสูจน์ตัวเองในสนามรบที่โหดที่สุดแห่งหนึ่งของสงคราม",
+      "ทหารแพทย์ผู้ยึดหลักไม่จับอาวุธต้องพิสูจน์ตัวเองในสนามรบที่โหดที่สุดแห่งหนึ่งของสงคราม จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Hacksaw Ridge", "Saving Private Ryan", "Dunkirk", "The Pacific"],
     correctIndex: 0,
+    id: "mg-291",
   },
   {
-    id: "mg-176",
     title: "All Quiet on the Western Front",
     description:
-      "วัยรุ่นเยอรมันสมัครเป็นทหารด้วยความฮึกเหิมก่อนเผชิญความจริงอันสั่นสะเทือนของสงครามสนามเพลาะ",
-    choices: ["All Quiet on the Western Front", "1917", "Paths of Glory", "Dunkirk"],
+      "วัยรุ่นเยอรมันสมัครเป็นทหารด้วยความฮึกเหิมก่อนเผชิญความจริงอันสั่นสะเทือนของสงครามสนามเพลาะ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "All Quiet on the Western Front",
+      "1917",
+      "Paths of Glory",
+      "Dunkirk",
+    ],
     correctIndex: 0,
+    id: "mg-292",
   },
   {
-    id: "mg-177",
     title: "The Imitation Game",
     description:
       "นักคณิตศาสตร์ผู้สังคมไม่ค่อยยอมรับนำทีมถอดรหัสการสื่อสารศัตรูในสงครามโลก ผลงานยิ่งใหญ่แลกมาด้วยแรงกดดันมหาศาล",
-    choices: ["The Imitation Game", "A Beautiful Mind", "Oppenheimer", "Darkest Hour"],
+    choices: [
+      "The Imitation Game",
+      "A Beautiful Mind",
+      "Oppenheimer",
+      "Darkest Hour",
+    ],
     correctIndex: 0,
+    id: "mg-293",
   },
   {
-    id: "mg-178",
     title: "A Beautiful Mind",
     description:
-      "อัจฉริยะคณิตศาสตร์ผู้ปฏิวัติแนวคิดเศรษฐศาสตร์ต้องต่อสู้กับความเจ็บป่วยทางจิตที่คุกคามทั้งงานและครอบครัว",
-    choices: ["A Beautiful Mind", "The Theory of Everything", "The Imitation Game", "Good Will Hunting"],
+      "อัจฉริยะคณิตศาสตร์ผู้ปฏิวัติแนวคิดเศรษฐศาสตร์ต้องต่อสู้กับความเจ็บป่วยทางจิตที่คุกคามทั้งงานและครอบครัว คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "A Beautiful Mind",
+      "The Theory of Everything",
+      "The Imitation Game",
+      "Good Will Hunting",
+    ],
     correctIndex: 0,
+    id: "mg-294",
   },
   {
-    id: "mg-179",
     title: "The Theory of Everything",
     description:
-      "เรื่องราวชีวิตนักฟิสิกส์ผู้ค้นคว้าจักรวาลท่ามกลางความท้าทายทางสุขภาพและความสัมพันธ์ส่วนตัว",
-    choices: ["The Theory of Everything", "A Beautiful Mind", "Oppenheimer", "Interstellar"],
+      "เรื่องราวชีวิตนักฟิสิกส์ผู้ค้นคว้าจักรวาลท่ามกลางความท้าทายทางสุขภาพและความสัมพันธ์ส่วนตัว จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "The Theory of Everything",
+      "A Beautiful Mind",
+      "Oppenheimer",
+      "Interstellar",
+    ],
     correctIndex: 0,
+    id: "mg-295",
   },
   {
-    id: "mg-180",
     title: "Oppenheimer",
     description:
       "ชีวประวัตินักวิทยาศาสตร์ผู้มีบทบาทสร้างอาวุธที่เปลี่ยนสมดุลโลก หนังสลับเวลาเพื่อสำรวจทั้งความสำเร็จและภาระทางศีลธรรม",
     choices: ["Oppenheimer", "The Imitation Game", "Chernobyl", "First Man"],
     correctIndex: 0,
+    id: "mg-296",
   },
   {
-    id: "mg-181",
     title: "Bohemian Rhapsody",
     description:
-      "วงร็อกอังกฤษและนักร้องนำผู้มีพลังเวทีโดดเด่นเดินทางจากผับเล็กสู่คอนเสิร์ตระดับตำนาน",
+      "วงร็อกอังกฤษและนักร้องนำผู้มีพลังเวทีโดดเด่นเดินทางจากผับเล็กสู่คอนเสิร์ตระดับตำนาน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Bohemian Rhapsody", "Rocketman", "Elvis", "A Star Is Born"],
     correctIndex: 0,
+    id: "mg-297",
   },
   {
-    id: "mg-182",
     title: "Rocketman",
     description:
-      "แฟนตาซีมิวสิคัลชีวประวัติศิลปินป๊อประดับโลก ถ่ายทอดการต่อสู้ภายในผ่านเพลงฮิตที่คนทั้งโลกร้องตามได้",
+      "แฟนตาซีมิวสิคัลชีวประวัติศิลปินป๊อประดับโลก ถ่ายทอดการต่อสู้ภายในผ่านเพลงฮิตที่คนทั้งโลกร้องตามได้ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Rocketman", "Bohemian Rhapsody", "Elvis", "Whiplash"],
     correctIndex: 0,
+    id: "mg-298",
   },
   {
-    id: "mg-183",
     title: "Elvis",
     description:
-      "ชีวประวัติราชาร็อกแอนด์โรลล์ที่เล่าความสัมพันธ์ซับซ้อนกับผู้จัดการผู้ควบคุมเส้นทางอาชีพมายาวนาน",
+      "ชีวประวัติราชาร็อกแอนด์โรลล์ที่เล่าความสัมพันธ์ซับซ้อนกับผู้จัดการผู้ควบคุมเส้นทางอาชีพมายาวนาน จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Elvis", "Bohemian Rhapsody", "Rocketman", "Walk the Line"],
     correctIndex: 0,
+    id: "mg-299",
   },
   {
-    id: "mg-184",
     title: "A Star Is Born",
     description:
-      "ศิลปินชื่อดังช่วยดันนักร้องสาวพรสวรรค์สู่แสงสปอตไลต์ ขณะชีวิตส่วนตัวของเขาค่อย ๆ แตกสลาย",
+      "ศิลปินชื่อดังช่วยดันนักร้องสาวพรสวรรค์สู่แสงสปอตไลต์ ขณะชีวิตส่วนตัวของเขาค่อย ๆ แตกสลาย ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["A Star Is Born", "La La Land", "Begin Again", "Whiplash"],
     correctIndex: 0,
+    id: "mg-300",
   },
   {
-    id: "mg-185",
     title: "The Greatest Showman",
     description:
-      "ชายผู้ทะเยอทะยานสร้างการแสดงที่รวบรวมผู้คนนอกบรรทัดฐานให้กลายเป็นปรากฏการณ์บันเทิง",
+      "ชายผู้ทะเยอทะยานสร้างการแสดงที่รวบรวมผู้คนนอกบรรทัดฐานให้กลายเป็นปรากฏการณ์บันเทิง เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["The Greatest Showman", "La La Land", "Moulin Rouge!", "Chicago"],
     correctIndex: 0,
+    id: "mg-301",
   },
   {
-    id: "mg-186",
-    title: "Black Panther",
-    description:
-      "กษัตริย์หนุ่มกลับบ้านเพื่อขึ้นครองบัลลังก์ประเทศที่ก้าวหน้าลับจากโลกภายนอก แต่ต้องเผชิญผู้ท้าชิงที่มีอุดมการณ์แรงกล้า",
-    choices: ["Black Panther", "Aquaman", "Shang-Chi", "Thor"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-187",
     title: "Spider-Man: No Way Home",
     description:
       "วัยรุ่นผู้ใส่หน้ากากเผชิญผลกระทบเมื่อความลับตัวตนถูกเปิดเผย เขาขอความช่วยเหลือจากเวทมนตร์ที่กลับซับซ้อนกว่าที่คิด",
-    choices: ["Spider-Man: No Way Home", "Doctor Strange", "The Flash", "Into the Spider-Verse"],
+    choices: [
+      "Spider-Man: No Way Home",
+      "Doctor Strange",
+      "The Flash",
+      "Into the Spider-Verse",
+    ],
     correctIndex: 0,
+    id: "mg-302",
   },
   {
-    id: "mg-188",
     title: "Doctor Strange",
     description:
       "ศัลยแพทย์ชื่อดังชีวิตพังหลังอุบัติเหตุและออกค้นหาวิธีรักษา จนได้เรียนรู้ศาสตร์ลึกลับที่เปิดประตูสู่มิติอื่น",
     choices: ["Doctor Strange", "Inception", "The Ancient One", "Shang-Chi"],
     correctIndex: 0,
+    id: "mg-303",
   },
   {
-    id: "mg-189",
     title: "Guardians of the Galaxy",
     description:
-      "กลุ่มคนนอกกฎหมายจากต่างดาวต้องจับมือกันอย่างไม่เต็มใจเพื่อหยุดวัตถุพลังทำลายล้างระดับจักรวาล",
-    choices: ["Guardians of the Galaxy", "Thor: Ragnarok", "The Suicide Squad", "Star Trek"],
+      "กลุ่มคนนอกกฎหมายจากต่างดาวต้องจับมือกันอย่างไม่เต็มใจเพื่อหยุดวัตถุพลังทำลายล้างระดับจักรวาล ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Guardians of the Galaxy",
+      "Thor: Ragnarok",
+      "The Suicide Squad",
+      "Star Trek",
+    ],
     correctIndex: 0,
+    id: "mg-304",
   },
   {
-    id: "mg-190",
     title: "Thor: Ragnarok",
     description:
-      "เทพสายฟ้าต้องเอาตัวรอดจากดาวนักสู้และหาทางกลับไปปกป้องบ้านเกิดจากภัยที่เกี่ยวพันอดีตครอบครัว",
+      "เทพสายฟ้าต้องเอาตัวรอดจากดาวนักสู้และหาทางกลับไปปกป้องบ้านเกิดจากภัยที่เกี่ยวพันอดีตครอบครัว เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Thor: Ragnarok", "Guardians of the Galaxy", "Aquaman", "Loki"],
     correctIndex: 0,
+    id: "mg-305",
   },
   {
-    id: "mg-191",
     title: "Shang-Chi and the Legend of the Ten Rings",
     description:
-      "ชายหนุ่มที่ซ่อนอดีตการฝึกโหดไว้หลังชีวิตธรรมดา ถูกดึงกลับสู่โลกองค์กรลับของพ่อผู้ทรงอำนาจ",
-    choices: ["Shang-Chi and the Legend of the Ten Rings", "Doctor Strange", "Black Panther", "Mulan"],
+      "ชายหนุ่มที่ซ่อนอดีตการฝึกโหดไว้หลังชีวิตธรรมดา ถูกดึงกลับสู่โลกองค์กรลับของพ่อผู้ทรงอำนาจ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Shang-Chi and the Legend of the Ten Rings",
+      "Doctor Strange",
+      "Black Panther",
+      "Mulan",
+    ],
     correctIndex: 0,
+    id: "mg-306",
   },
   {
-    id: "mg-192",
     title: "The Batman",
     description:
       "มหาเศรษฐีผู้ล้างแค้นในเงามืดต้องไขปริศนาฆาตกรที่ทิ้งข้อความเชิงสัญลักษณ์ซึ่งพุ่งเป้าไปยังโครงสร้างอำนาจของเมือง",
     choices: ["The Batman", "Se7en", "Joker", "Zodiac"],
     correctIndex: 0,
+    id: "mg-307",
   },
   {
-    id: "mg-193",
-    title: "Joker",
-    description:
-      "ชายทำงานรับจ้างในเมืองที่เพิกเฉยต่อคนตัวเล็กค่อย ๆ ถูกกดจนระเบิดเป็นบุคคลที่กลายเป็นสัญลักษณ์ความวุ่นวาย",
-    choices: ["Joker", "Taxi Driver", "The King of Comedy", "The Dark Knight"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-194",
     title: "The Suicide Squad",
     description:
-      "ทีมนักโทษอันตรายถูกส่งไปภารกิจฆ่าตัวตายในเกาะที่เต็มไปด้วยความลับทางการทหาร",
-    choices: ["The Suicide Squad", "Guardians of the Galaxy", "Deadpool 2", "Peacemaker"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-195",
-    title: "Deadpool",
-    description:
-      "อดีตทหารรับจ้างที่ได้พลังฟื้นฟูเหนือมนุษย์พูดกับผู้ชมตรง ๆ พร้อมภารกิจส่วนตัวที่ทั้งโหดและกวน",
-    choices: ["Deadpool", "Venom", "The Suicide Squad", "Kick-Ass"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-196",
-    title: "Venom",
-    description:
-      "นักข่าวสืบสวนกลายเป็นโฮสต์ของสิ่งมีชีวิตต่างดาวที่ทั้งช่วยและคุกคามเขาในเวลาเดียวกัน",
-    choices: ["Venom", "Upgrade", "Spider-Man", "Morbius"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-197",
-    title: "Pacific Rim",
-    description:
-      "เมื่อสัตว์ประหลาดยักษ์ขึ้นมาจากมหาสมุทร มนุษย์สร้างหุ่นยนต์ยักษ์ที่ต้องขับแบบคู่เพื่อรับมือ",
-    choices: ["Pacific Rim", "Godzilla: King of the Monsters", "Transformers", "Edge of Tomorrow"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-198",
-    title: "Godzilla vs. Kong",
-    description:
-      "สัตว์ประหลาดระดับตำนานสองฝ่ายถูกผลักให้ปะทะกัน ขณะที่มนุษย์พยายามค้นหาสาเหตุเบื้องหลัง",
-    choices: ["Godzilla vs. Kong", "Pacific Rim", "King Kong (2005)", "Rampage"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-199",
-    title: "Train to Busan",
-    description:
-      "พ่อและลูกขึ้นรถไฟความเร็วสูงในวันที่โรคระบาดปะทุ การเดินทางที่ควรสั้นกลายเป็นบททดสอบมนุษยธรรม",
-    choices: ["Train to Busan", "World War Z", "Peninsula", "Alive"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-200",
-    title: "World War Z",
-    description:
-      "เจ้าหน้าที่องค์การระหว่างประเทศเดินทางข้ามประเทศเพื่อหาต้นตอและรูปแบบการระบาดของฝูงติดเชื้อวิ่งเร็ว",
-    choices: ["World War Z", "I Am Legend", "Train to Busan", "28 Weeks Later"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-201",
-    title: "Naruto",
-    description: "เด็กนินจาจอมซนใฝ่ฝันเป็นโฮคาเงะและตามหาการยอมรับของหมู่บ้าน",
-    choices: ["Naruto", "Bleach", "One Piece", "Fairy Tail"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-202",
-    title: "One Piece",
-    description: "โจรสลัดหมวกฟางออกเดินทางตามหาสมบัติในตำนานและมิตรภาพ",
-    choices: ["One Piece", "Naruto", "Bleach", "Dragon Ball"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-203",
-    title: "Bleach",
-    description: "เด็กหนุ่มได้พลังยมทูตและต้องปกป้องโลกจากฮอลโลว์",
-    choices: ["Bleach", "Naruto", "Soul Eater", "Blue Exorcist"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-204",
-    title: "Dragon Ball Z",
-    description: "นักสู้ไซย่าปกป้องโลกด้วยการต่อสู้เหนือมนุษย์",
-    choices: ["Dragon Ball Z", "One Punch Man", "My Hero Academia", "Fairy Tail"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-205",
-    title: "Demon Slayer",
-    description: "เด็กหนุ่มล่าปีศาจเพื่อช่วยน้องสาวที่ถูกสาป",
-    choices: ["Demon Slayer", "Jujutsu Kaisen", "Tokyo Ghoul", "Blue Exorcist"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-206",
-    title: "Jujutsu Kaisen",
-    description: "นักเรียนต้องต่อสู้คำสาปด้วยพลังไสยเวท",
-    choices: ["Jujutsu Kaisen", "Demon Slayer", "Bleach", "Akame ga Kill!"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-207",
-    title: "Chainsaw Man",
-    description: "ชายหนุ่มผสานกับปีศาจเลื่อยยนต์เพื่อเป็นนักล่าปีศาจ",
-    choices: ["Chainsaw Man", "Tokyo Ghoul", "Devilman Crybaby", "Parasyte"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-208",
-    title: "Spy x Family",
-    description: "สายลับต้องสร้างครอบครัวปลอมกับมือสังหารและเด็กอ่านใจ",
-    choices: ["Spy x Family", "Kaguya-sama: Love is War", "Toradora!", "Fruits Basket"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-209",
-    title: "Death Note",
-    description: "สมุดมรณะทำให้ผู้เขียนสามารถฆ่าได้ด้วยชื่อ",
-    choices: ["Death Note", "Code Geass", "Psycho-Pass", "Monster"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-210",
-    title: "Code Geass",
-    description: "เจ้าชายผู้ได้พลังสั่งการคนอื่นก่อการปฏิวัติ",
-    choices: ["Code Geass", "Death Note", "Gundam 00", "Aldnoah.Zero"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-211",
-    title: "Steins;Gate",
-    description: "กลุ่มเพื่อนบังเอิญสร้างเครื่องย้อนเวลาและเผชิญผลลัพธ์",
-    choices: ["Steins;Gate", "Erased", "The Girl Who Leapt Through Time", "Tokyo Revengers"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-212",
-    title: "Attack on Titan",
-    description: "มนุษย์หลบอยู่หลังกำแพงจากไททันยักษ์",
-    choices: ["Attack on Titan", "Fullmetal Alchemist: Brotherhood", "Demon Slayer", "Tokyo Ghoul"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-213",
-    title: "Fullmetal Alchemist: Brotherhood",
-    description: "พี่น้องนักเล่นแร่แปรธาตุออกตามหาศิลาเพื่อคืนร่าง",
+      "ทีมนักโทษอันตรายถูกส่งไปภารกิจฆ่าตัวตายในเกาะที่เต็มไปด้วยความลับทางการทหาร ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: [
-      "Fullmetal Alchemist: Brotherhood",
-      "Attack on Titan",
-      "Soul Eater",
-      "Black Clover",
+      "The Suicide Squad",
+      "Guardians of the Galaxy",
+      "Deadpool 2",
+      "Peacemaker",
     ],
     correctIndex: 0,
+    id: "mg-308",
   },
   {
-    id: "mg-214",
-    title: "My Hero Academia",
-    description: "เด็กไร้อัตลักษณ์ได้พลังฮีโร่และเข้าเรียนโรงเรียนฮีโร่",
-    choices: ["My Hero Academia", "One Punch Man", "Black Clover", "Fairy Tail"],
+    title: "Deadpool",
+    description:
+      "อดีตทหารรับจ้างที่ได้พลังฟื้นฟูเหนือมนุษย์พูดกับผู้ชมตรง ๆ พร้อมภารกิจส่วนตัวที่ทั้งโหดและกวน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Deadpool", "Venom", "The Suicide Squad", "Kick-Ass"],
     correctIndex: 0,
+    id: "mg-309",
   },
   {
-    id: "mg-215",
-    title: "Haikyuu!!",
-    description: "ทีมวอลเลย์บอลมัธยมเล็ก ๆ ไล่ล่าความฝันระดับชาติ",
-    choices: ["Haikyuu!!", "Kuroko's Basketball", "Slam Dunk", "Blue Lock"],
+    title: "Venom",
+    description:
+      "นักข่าวสืบสวนกลายเป็นโฮสต์ของสิ่งมีชีวิตต่างดาวที่ทั้งช่วยและคุกคามเขาในเวลาเดียวกัน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Venom", "Upgrade", "Spider-Man", "Morbius"],
     correctIndex: 0,
+    id: "mg-310",
   },
   {
-    id: "mg-216",
+    title: "Pacific Rim",
+    description:
+      "เมื่อสัตว์ประหลาดยักษ์ขึ้นมาจากมหาสมุทร มนุษย์สร้างหุ่นยนต์ยักษ์ที่ต้องขับแบบคู่เพื่อรับมือ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Pacific Rim",
+      "Godzilla: King of the Monsters",
+      "Transformers",
+      "Edge of Tomorrow",
+    ],
+    correctIndex: 0,
+    id: "mg-311",
+  },
+  {
+    title: "Godzilla vs. Kong",
+    description:
+      "สัตว์ประหลาดระดับตำนานสองฝ่ายถูกผลักให้ปะทะกัน ขณะที่มนุษย์พยายามค้นหาสาเหตุเบื้องหลัง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Godzilla vs. Kong",
+      "Pacific Rim",
+      "King Kong (2005)",
+      "Rampage",
+    ],
+    correctIndex: 0,
+    id: "mg-312",
+  },
+  {
+    title: "Train to Busan",
+    description:
+      "พ่อและลูกขึ้นรถไฟความเร็วสูงในวันที่โรคระบาดปะทุ การเดินทางที่ควรสั้นกลายเป็นบททดสอบมนุษยธรรม เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Train to Busan", "World War Z", "Peninsula", "Alive"],
+    correctIndex: 0,
+    id: "mg-313",
+  },
+  {
+    title: "World War Z",
+    description:
+      "เจ้าหน้าที่องค์การระหว่างประเทศเดินทางข้ามประเทศเพื่อหาต้นตอและรูปแบบการระบาดของฝูงติดเชื้อวิ่งเร็ว คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["World War Z", "I Am Legend", "Train to Busan", "28 Weeks Later"],
+    correctIndex: 0,
+    id: "mg-314",
+  },
+  {
+    title: "Bleach",
+    description:
+      "เด็กหนุ่มได้พลังยมทูตและต้องปกป้องโลกจากฮอลโลว์ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Bleach", "Naruto", "Soul Eater", "Blue Exorcist"],
+    correctIndex: 0,
+    id: "mg-315",
+  },
+  {
+    title: "Steins;Gate",
+    description:
+      "กลุ่มเพื่อนบังเอิญสร้างเครื่องย้อนเวลาและเผชิญผลลัพธ์ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Steins;Gate",
+      "Erased",
+      "The Girl Who Leapt Through Time",
+      "Tokyo Revengers",
+    ],
+    correctIndex: 0,
+    id: "mg-316",
+  },
+  {
     title: "Hunter x Hunter",
-    description: "เด็กชายเข้าร่วมการสอบฮันเตอร์เพื่อตามหาพ่อ",
+    description:
+      "เด็กชายเข้าร่วมการสอบฮันเตอร์เพื่อตามหาพ่อ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Hunter x Hunter", "One Piece", "Naruto", "Bleach"],
     correctIndex: 0,
+    id: "mg-317",
   },
   {
-    id: "mg-217",
     title: "One Punch Man",
-    description: "ฮีโร่ผู้ชนะศัตรูได้ด้วยหมัดเดียวรู้สึกเบื่อหน่าย",
-    choices: ["One Punch Man", "My Hero Academia", "Mob Psycho 100", "Tiger & Bunny"],
+    description:
+      "ฮีโร่ผู้ชนะศัตรูได้ด้วยหมัดเดียวรู้สึกเบื่อหน่าย คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "One Punch Man",
+      "My Hero Academia",
+      "Mob Psycho 100",
+      "Tiger & Bunny",
+    ],
     correctIndex: 0,
+    id: "mg-318",
   },
   {
-    id: "mg-218",
     title: "Mob Psycho 100",
-    description: "เด็กหนุ่มพลังจิตสูงเรียนรู้การเติบโตจากชีวิตประจำวัน",
+    description:
+      "เด็กหนุ่มพลังจิตสูงเรียนรู้การเติบโตจากชีวิตประจำวัน จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Mob Psycho 100", "One Punch Man", "Saiki K.", "Jujutsu Kaisen"],
     correctIndex: 0,
+    id: "mg-319",
   },
   {
-    id: "mg-219",
     title: "Tokyo Ghoul",
-    description: "นักศึกษากลายเป็นกูลครึ่งคนครึ่งปีศาจกินมนุษย์",
+    description:
+      "นักศึกษากลายเป็นกูลครึ่งคนครึ่งปีศาจกินมนุษย์ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Tokyo Ghoul", "Parasyte", "Ajin", "Demon Slayer"],
     correctIndex: 0,
+    id: "mg-320",
   },
   {
-    id: "mg-220",
     title: "Tokyo Revengers",
-    description: "ชายหนุ่มย้อนเวลาเพื่อช่วยเพื่อนและเปลี่ยนแปลงแก๊ง",
+    description:
+      "ชายหนุ่มย้อนเวลาเพื่อช่วยเพื่อนและเปลี่ยนแปลงแก๊ง เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Tokyo Revengers", "Erased", "Steins;Gate", "Re:Zero"],
     correctIndex: 0,
+    id: "mg-321",
   },
   {
-    id: "mg-221",
     title: "Black Clover",
-    description: "เด็กหนุ่มไร้เวทมนตร์อยากเป็นราชาเวท",
+    description:
+      "เด็กหนุ่มไร้เวทมนตร์อยากเป็นราชาเวท คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Black Clover", "Fairy Tail", "My Hero Academia", "Magi"],
     correctIndex: 0,
+    id: "mg-322",
   },
   {
-    id: "mg-222",
     title: "Fairy Tail",
-    description: "กิลด์จอมเวทผจญภัยและสายสัมพันธ์",
+    description:
+      "กิลด์จอมเวทผจญภัยและสายสัมพันธ์ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Fairy Tail", "Black Clover", "Magi", "One Piece"],
     correctIndex: 0,
+    id: "mg-323",
   },
   {
-    id: "mg-223",
     title: "Gintama",
-    description: "ซามูไรยุคเอโดะที่ถูกรุกรานโดยเอเลี่ยนและมุกตลก",
+    description:
+      "ซามูไรยุคเอโดะที่ถูกรุกรานโดยเอเลี่ยนและมุกตลก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Gintama", "Samurai Champloo", "Rurouni Kenshin", "Trigun"],
     correctIndex: 0,
+    id: "mg-324",
   },
   {
-    id: "mg-224",
     title: "Sword Art Online",
-    description: "ผู้เล่นติดในเกม VR ต้องพิชิตชั้นเพื่อออกมา",
+    description:
+      "ผู้เล่นติดในเกม VR ต้องพิชิตชั้นเพื่อออกมา เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Sword Art Online", "Log Horizon", "Overlord", "No Game No Life"],
     correctIndex: 0,
+    id: "mg-325",
   },
   {
-    id: "mg-225",
     title: "Re:Zero",
-    description: "ชายหนุ่มติดพลังย้อนตายเพื่อช่วยหญิงสาว",
-    choices: ["Re:Zero", "Mushoku Tensei", "That Time I Got Reincarnated as a Slime", "Overlord"],
+    description:
+      "ชายหนุ่มติดพลังย้อนตายเพื่อช่วยหญิงสาว คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Re:Zero",
+      "Mushoku Tensei",
+      "That Time I Got Reincarnated as a Slime",
+      "Overlord",
+    ],
     correctIndex: 0,
+    id: "mg-326",
   },
   {
-    id: "mg-226",
     title: "Kaguya-sama: Love is War",
-    description: "สองประธานสภานักเรียนแข่งกันให้รักก่อน",
-    choices: ["Kaguya-sama: Love is War", "Toradora!", "Fruits Basket", "Horimiya"],
+    description:
+      "สองประธานสภานักเรียนแข่งกันให้รักก่อน จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Kaguya-sama: Love is War",
+      "Toradora!",
+      "Fruits Basket",
+      "Horimiya",
+    ],
     correctIndex: 0,
+    id: "mg-327",
   },
   {
-    id: "mg-227",
     title: "Your Lie in April",
-    description: "นักเปียโนหนุ่มพบไวโอลินสาวที่เปลี่ยนชีวิต",
+    description:
+      "นักเปียโนหนุ่มพบไวโอลินสาวที่เปลี่ยนชีวิต ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Your Lie in April", "Clannad", "Anohana", "Fruits Basket"],
     correctIndex: 0,
+    id: "mg-328",
   },
   {
-    id: "mg-228",
-    title: "Violet Evergarden",
-    description: "สาวทหารเรียนรู้ความหมายของความรักผ่านการเขียนจดหมาย",
-    choices: ["Violet Evergarden", "Your Lie in April", "Anohana", "Clannad"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-229",
     title: "Erased",
-    description: "ชายหนุ่มย้อนเวลากลับวัยเด็กเพื่อหยุดคดีฆาตกรรม",
+    description:
+      "ชายหนุ่มย้อนเวลากลับวัยเด็กเพื่อหยุดคดีฆาตกรรม เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Erased", "Steins;Gate", "Tokyo Revengers", "Re:Zero"],
     correctIndex: 0,
+    id: "mg-329",
   },
   {
-    id: "mg-230",
     title: "The Promised Neverland",
-    description: "เด็กกำพร้าค้นพบความจริงของสถานเลี้ยงเด็ก",
-    choices: ["The Promised Neverland", "Made in Abyss", "From the New World", "Attack on Titan"],
+    description:
+      "เด็กกำพร้าค้นพบความจริงของสถานเลี้ยงเด็ก คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Promised Neverland",
+      "Made in Abyss",
+      "From the New World",
+      "Attack on Titan",
+    ],
     correctIndex: 0,
+    id: "mg-330",
   },
   {
-    id: "mg-231",
     title: "Made in Abyss",
-    description: "เด็กสาวลงไปในหลุมลึกพิศวงเพื่อค้นหาแม่",
-    choices: ["Made in Abyss", "The Promised Neverland", "Abyss of Another", "Tower of God"],
+    description:
+      "เด็กสาวลงไปในหลุมลึกพิศวงเพื่อค้นหาแม่ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Made in Abyss",
+      "The Promised Neverland",
+      "Abyss of Another",
+      "Tower of God",
+    ],
     correctIndex: 0,
+    id: "mg-331",
   },
   {
-    id: "mg-232",
     title: "Dr. Stone",
-    description: "โลกถูกทำให้เป็นหินและเด็กอัจฉริยะฟื้นฟูอารยธรรม",
+    description:
+      "โลกถูกทำให้เป็นหินและเด็กอัจฉริยะฟื้นฟูอารยธรรม ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Dr. Stone", "Fire Force", "Steins;Gate", "Cells at Work!"],
     correctIndex: 0,
+    id: "mg-332",
   },
   {
-    id: "mg-233",
     title: "JoJo's Bizarre Adventure",
-    description: "ตระกูลโจสตาร์ต่อสู้ศัตรูด้วยพลังสแตนด์",
-    choices: ["JoJo's Bizarre Adventure", "Hunter x Hunter", "Bleach", "Fist of the North Star"],
+    description:
+      "ตระกูลโจสตาร์ต่อสู้ศัตรูด้วยพลังสแตนด์ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "JoJo's Bizarre Adventure",
+      "Hunter x Hunter",
+      "Bleach",
+      "Fist of the North Star",
+    ],
     correctIndex: 0,
+    id: "mg-333",
   },
   {
-    id: "mg-234",
     title: "Neon Genesis Evangelion",
-    description: "เด็กหนุ่มขับหุ่นยักษ์ต่อสู้สิ่งมีชีวิตปริศนา",
-    choices: ["Neon Genesis Evangelion", "Gundam 00", "Darling in the Franxx", "Code Geass"],
+    description:
+      "เด็กหนุ่มขับหุ่นยักษ์ต่อสู้สิ่งมีชีวิตปริศนา คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Neon Genesis Evangelion",
+      "Gundam 00",
+      "Darling in the Franxx",
+      "Code Geass",
+    ],
     correctIndex: 0,
+    id: "mg-334",
   },
   {
-    id: "mg-235",
     title: "Cowboy Bebop",
-    description: "นักล่าค่าหัวอวกาศกับดนตรีแจ๊สและอดีตที่ไล่ล่า",
+    description:
+      "นักล่าค่าหัวอวกาศกับดนตรีแจ๊สและอดีตที่ไล่ล่า จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Cowboy Bebop", "Trigun", "Samurai Champloo", "Space Dandy"],
     correctIndex: 0,
+    id: "mg-335",
   },
   {
-    id: "mg-236",
     title: "Samurai Champloo",
-    description: "ซามูไรสองคนเดินทางคุ้มกันสาวตามหา 'ซามูไรกลิ่นดอกทานตะวัน'",
+    description:
+      "ซามูไรสองคนเดินทางคุ้มกันสาวตามหา 'ซามูไรกลิ่นดอกทานตะวัน' ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Samurai Champloo", "Rurouni Kenshin", "Gintama", "Cowboy Bebop"],
     correctIndex: 0,
+    id: "mg-336",
   },
   {
-    id: "mg-237",
     title: "Trigun",
-    description: "มือปืนสันติภาพถูกตามล่าในโลกทะเลทราย",
+    description:
+      "มือปืนสันติภาพถูกตามล่าในโลกทะเลทราย เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Trigun", "Cowboy Bebop", "Outlaw Star", "Samurai Champloo"],
     correctIndex: 0,
+    id: "mg-337",
   },
   {
-    id: "mg-238",
     title: "Fate/Zero",
-    description: "สงครามจอกศักดิ์สิทธิ์รุ่นก่อนที่เต็มด้วยโศกนาฏกรรม",
-    choices: ["Fate/Zero", "Fate/stay night: Unlimited Blade Works", "Sword Art Online", "Re:Zero"],
+    description:
+      "สงครามจอกศักดิ์สิทธิ์รุ่นก่อนที่เต็มด้วยโศกนาฏกรรม คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Fate/Zero",
+      "Fate/stay night: Unlimited Blade Works",
+      "Sword Art Online",
+      "Re:Zero",
+    ],
     correctIndex: 0,
+    id: "mg-338",
   },
   {
-    id: "mg-239",
     title: "Fate/stay night: Unlimited Blade Works",
-    description: "เด็กหนุ่มเข้าร่วมสงครามจอกศักดิ์สิทธิ์",
+    description:
+      "เด็กหนุ่มเข้าร่วมสงครามจอกศักดิ์สิทธิ์ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: [
       "Fate/stay night: Unlimited Blade Works",
       "Fate/Zero",
@@ -9660,172 +11328,233 @@ const MOVIE_GUESS_DATA = [
       "Overlord",
     ],
     correctIndex: 0,
+    id: "mg-339",
   },
   {
-    id: "mg-240",
     title: "Hellsing Ultimate",
-    description: "องค์กรล่าผีดูดเลือดต่อสู้กับสงครามเหนือธรรมชาติ",
-    choices: ["Hellsing Ultimate", "Vampire Hunter D", "Tokyo Ghoul", "Devilman Crybaby"],
+    description:
+      "องค์กรล่าผีดูดเลือดต่อสู้กับสงครามเหนือธรรมชาติ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Hellsing Ultimate",
+      "Vampire Hunter D",
+      "Tokyo Ghoul",
+      "Devilman Crybaby",
+    ],
     correctIndex: 0,
+    id: "mg-340",
   },
   {
-    id: "mg-241",
     title: "D.Gray-man",
-    description: "เด็กหนุ่มใช้พลังอินโนเซนซ์ต่อสู้กับอาคุมะ",
+    description:
+      "เด็กหนุ่มใช้พลังอินโนเซนซ์ต่อสู้กับอาคุมะ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["D.Gray-man", "Blue Exorcist", "Black Clover", "Bleach"],
     correctIndex: 0,
+    id: "mg-341",
   },
   {
-    id: "mg-242",
     title: "Blue Exorcist",
-    description: "ลูกซาตานเข้าโรงเรียนหมอผีเพื่อกำจัดปีศาจ",
+    description:
+      "ลูกซาตานเข้าโรงเรียนหมอผีเพื่อกำจัดปีศาจ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Blue Exorcist", "Demon Slayer", "Bleach", "Black Clover"],
     correctIndex: 0,
+    id: "mg-342",
   },
   {
-    id: "mg-243",
     title: "Noragami",
-    description: "เทพไร้ศาลเจ้ารับงานจิปาถะเพื่อสร้างชื่อ",
+    description:
+      "เทพไร้ศาลเจ้ารับงานจิปาถะเพื่อสร้างชื่อ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Noragami", "Bungo Stray Dogs", "Durarara!!", "Blood Lad"],
     correctIndex: 0,
+    id: "mg-343",
   },
   {
-    id: "mg-244",
     title: "Psycho-Pass",
-    description: "สังคมที่วัดค่าจิตใจด้วยระบบซีบิล",
-    choices: ["Psycho-Pass", "Ghost in the Shell", "Ergo Proxy", "Serial Experiments Lain"],
+    description:
+      "สังคมที่วัดค่าจิตใจด้วยระบบซีบิล ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Psycho-Pass",
+      "Ghost in the Shell",
+      "Ergo Proxy",
+      "Serial Experiments Lain",
+    ],
     correctIndex: 0,
+    id: "mg-344",
   },
   {
-    id: "mg-245",
     title: "Parasyte",
-    description: "ปรสิตยึดร่างมนุษย์และเด็กหนุ่มต้องอยู่ร่วมกับมัน",
+    description:
+      "ปรสิตยึดร่างมนุษย์และเด็กหนุ่มต้องอยู่ร่วมกับมัน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Parasyte", "Tokyo Ghoul", "Ajin", "Inuyashiki"],
     correctIndex: 0,
+    id: "mg-345",
   },
   {
-    id: "mg-246",
     title: "Akame ga Kill!",
-    description: "กลุ่มนักฆ่าล้มล้างจักรวรรดิที่โหดร้าย",
-    choices: ["Akame ga Kill!", "Attack on Titan", "Black Lagoon", "Demon Slayer"],
+    description:
+      "กลุ่มนักฆ่าล้มล้างจักรวรรดิที่โหดร้าย คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Akame ga Kill!",
+      "Attack on Titan",
+      "Black Lagoon",
+      "Demon Slayer",
+    ],
     correctIndex: 0,
+    id: "mg-346",
   },
   {
-    id: "mg-247",
     title: "Soul Eater",
-    description: "นักเรียนอาวุธมนุษย์และชินิงามิฝึกฝนล่าแม่มด",
+    description:
+      "นักเรียนอาวุธมนุษย์และชินิงามิฝึกฝนล่าแม่มด จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Soul Eater", "Bleach", "Fire Force", "D.Gray-man"],
     correctIndex: 0,
+    id: "mg-347",
   },
   {
-    id: "mg-248",
     title: "Fire Force",
-    description: "หน่วยดับเพลิงพิเศษต่อสู้กับมนุษย์ไฟลุก",
+    description:
+      "หน่วยดับเพลิงพิเศษต่อสู้กับมนุษย์ไฟลุก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Fire Force", "Soul Eater", "Dr. Stone", "Blue Exorcist"],
     correctIndex: 0,
+    id: "mg-348",
   },
   {
-    id: "mg-249",
     title: "The Seven Deadly Sins",
-    description: "อัศวินบาปทั้งเจ็ดกลับมาปกป้องอาณาจักร",
+    description:
+      "อัศวินบาปทั้งเจ็ดกลับมาปกป้องอาณาจักร เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["The Seven Deadly Sins", "Fairy Tail", "Black Clover", "Magi"],
     correctIndex: 0,
+    id: "mg-349",
   },
   {
-    id: "mg-250",
     title: "Magi",
-    description: "เด็กหนุ่มผู้มีพลังดันเจียนและการผจญภัย",
+    description:
+      "เด็กหนุ่มผู้มีพลังดันเจียนและการผจญภัย คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["Magi", "Black Clover", "Fairy Tail", "Sinbad no Bouken"],
     correctIndex: 0,
+    id: "mg-350",
   },
   {
-    id: "mg-251",
     title: "Bakuman",
-    description: "สองเพื่อนร่วมมือสร้างมังงะสู่เวทีใหญ่",
-    choices: ["Bakuman", "Blue Period", "Shirobako", "Keep Your Hands Off Eizouken!"],
+    description:
+      "สองเพื่อนร่วมมือสร้างมังงะสู่เวทีใหญ่ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Bakuman",
+      "Blue Period",
+      "Shirobako",
+      "Keep Your Hands Off Eizouken!",
+    ],
     correctIndex: 0,
+    id: "mg-351",
   },
   {
-    id: "mg-252",
-    title: "Slam Dunk",
-    description: "นักเรียนสายบู๊เข้าสู่ทีมบาสเกตบอลและค้นพบความรักกีฬา",
-    choices: ["Slam Dunk", "Kuroko's Basketball", "Haikyuu!!", "Blue Lock"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-253",
     title: "Kuroko's Basketball",
-    description: "ทีมบาสมัธยมกับอดีตปาฏิหาริย์ที่กลับมารวมตัว",
-    choices: ["Kuroko's Basketball", "Slam Dunk", "Haikyuu!!", "Ace of Diamond"],
+    description:
+      "ทีมบาสมัธยมกับอดีตปาฏิหาริย์ที่กลับมารวมตัว ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Kuroko's Basketball",
+      "Slam Dunk",
+      "Haikyuu!!",
+      "Ace of Diamond",
+    ],
     correctIndex: 0,
+    id: "mg-352",
   },
   {
-    id: "mg-254",
     title: "Bungo Stray Dogs",
-    description: "นักสืบพลังพิเศษต่อสู้กับมาเฟีย",
+    description:
+      "นักสืบพลังพิเศษต่อสู้กับมาเฟีย เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Bungo Stray Dogs", "Durarara!!", "Noragami", "Psycho-Pass"],
     correctIndex: 0,
+    id: "mg-353",
   },
   {
-    id: "mg-255",
     title: "Black Lagoon",
-    description: "ลูกเรือรับจ้างกลางทะเลดำกับงานนอกกฎหมาย",
-    choices: ["Black Lagoon", "Akame ga Kill!", "Jormungand", "Gunslinger Girl"],
+    description:
+      "ลูกเรือรับจ้างกลางทะเลดำกับงานนอกกฎหมาย คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Black Lagoon",
+      "Akame ga Kill!",
+      "Jormungand",
+      "Gunslinger Girl",
+    ],
     correctIndex: 0,
+    id: "mg-354",
   },
   {
-    id: "mg-256",
     title: "Monster",
-    description: "หมอศัลยกรรมตามล่าฆาตกรต่อเนื่องที่เขาเคยช่วย",
+    description:
+      "หมอศัลยกรรมตามล่าฆาตกรต่อเนื่องที่เขาเคยช่วย จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Monster", "Death Note", "Psycho-Pass", "Erased"],
     correctIndex: 0,
+    id: "mg-355",
   },
   {
-    id: "mg-257",
     title: "Clannad",
-    description: "ชีวิตวัยเรียนและครอบครัวที่อบอุ่นและเศร้า",
+    description:
+      "ชีวิตวัยเรียนและครอบครัวที่อบอุ่นและเศร้า ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Clannad", "Your Lie in April", "Anohana", "Fruits Basket"],
     correctIndex: 0,
+    id: "mg-356",
   },
   {
-    id: "mg-258",
     title: "Anohana",
-    description: "กลุ่มเพื่อนต้องเผชิญความทรงจำของเพื่อนที่เสียไป",
+    description:
+      "กลุ่มเพื่อนต้องเผชิญความทรงจำของเพื่อนที่เสียไป เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Anohana", "Clannad", "Your Lie in April", "Violet Evergarden"],
     correctIndex: 0,
+    id: "mg-357",
   },
   {
-    id: "mg-259",
     title: "Toradora!",
-    description: "หนุ่มสาวต่างบุคลิกช่วยกันจีบคนที่ชอบ",
-    choices: ["Toradora!", "Kaguya-sama: Love is War", "Fruits Basket", "Horimiya"],
+    description:
+      "หนุ่มสาวต่างบุคลิกช่วยกันจีบคนที่ชอบ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Toradora!",
+      "Kaguya-sama: Love is War",
+      "Fruits Basket",
+      "Horimiya",
+    ],
     correctIndex: 0,
+    id: "mg-358",
   },
   {
-    id: "mg-260",
     title: "Fruits Basket",
-    description: "สาวกำพร้าเข้าไปอยู่กับครอบครัวที่มีคำสาปจักรราศี",
-    choices: ["Fruits Basket", "Toradora!", "Clannad", "Kaguya-sama: Love is War"],
+    description:
+      "สาวกำพร้าเข้าไปอยู่กับครอบครัวที่มีคำสาปจักรราศี จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Fruits Basket",
+      "Toradora!",
+      "Clannad",
+      "Kaguya-sama: Love is War",
+    ],
     correctIndex: 0,
+    id: "mg-359",
   },
   {
-    id: "mg-261",
     title: "Nana",
-    description: "หญิงสาวชื่อเดียวกันสองคนใช้ชีวิตและความฝันในโตเกียว",
+    description:
+      "หญิงสาวชื่อเดียวกันสองคนใช้ชีวิตและความฝันในโตเกียว ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Nana", "Paradise Kiss", "Fruits Basket", "Honey and Clover"],
     correctIndex: 0,
+    id: "mg-360",
   },
   {
-    id: "mg-262",
     title: "Spice and Wolf",
-    description: "พ่อค้าหนุ่มเดินทางกับเทพหมาป่าผู้ชาญฉลาด",
-    choices: ["Spice and Wolf", "Mushoku Tensei", "The Rising of the Shield Hero", "Maoyu"],
+    description:
+      "พ่อค้าหนุ่มเดินทางกับเทพหมาป่าผู้ชาญฉลาด เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Spice and Wolf",
+      "Mushoku Tensei",
+      "The Rising of the Shield Hero",
+      "Maoyu",
+    ],
     correctIndex: 0,
+    id: "mg-361",
   },
   {
-    id: "mg-263",
     title: "The Rising of the Shield Hero",
-    description: "ชายหนุ่มถูกเรียกไปต่างโลกและกลายเป็นผู้กล้าโล่",
+    description:
+      "ชายหนุ่มถูกเรียกไปต่างโลกและกลายเป็นผู้กล้าโล่ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: [
       "The Rising of the Shield Hero",
       "Overlord",
@@ -9833,179 +11562,159 @@ const MOVIE_GUESS_DATA = [
       "That Time I Got Reincarnated as a Slime",
     ],
     correctIndex: 0,
+    id: "mg-362",
   },
   {
-    id: "mg-264",
     title: "Overlord",
-    description: "ผู้เล่นติดในเกมและกลายเป็นจอมมารในโลกแฟนตาซี",
+    description:
+      "ผู้เล่นติดในเกมและกลายเป็นจอมมารในโลกแฟนตาซี จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Overlord", "Sword Art Online", "Re:Zero", "No Game No Life"],
     correctIndex: 0,
+    id: "mg-363",
   },
   {
-    id: "mg-265",
     title: "That Time I Got Reincarnated as a Slime",
-    description: "ชายหนุ่มเกิดใหม่เป็นสไลม์และสร้างอาณาจักร",
-    choices: ["That Time I Got Reincarnated as a Slime", "Overlord", "Mushoku Tensei", "Re:Zero"],
+    description:
+      "ชายหนุ่มเกิดใหม่เป็นสไลม์และสร้างอาณาจักร ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "That Time I Got Reincarnated as a Slime",
+      "Overlord",
+      "Mushoku Tensei",
+      "Re:Zero",
+    ],
     correctIndex: 0,
+    id: "mg-364",
   },
   {
-    id: "mg-266",
     title: "Mushoku Tensei",
-    description: "ชายล้มเหลวได้เริ่มชีวิตใหม่ในต่างโลก",
-    choices: ["Mushoku Tensei", "Re:Zero", "Overlord", "The Rising of the Shield Hero"],
+    description:
+      "ชายล้มเหลวได้เริ่มชีวิตใหม่ในต่างโลก เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Mushoku Tensei",
+      "Re:Zero",
+      "Overlord",
+      "The Rising of the Shield Hero",
+    ],
     correctIndex: 0,
+    id: "mg-365",
   },
   {
-    id: "mg-267",
     title: "The Quintessential Quintuplets",
-    description: "ติวเตอร์ต้องสอนแฝดห้าสาวให้สอบผ่าน",
-    choices: ["The Quintessential Quintuplets", "Nisekoi", "Kaguya-sama: Love is War", "Toradora!"],
+    description:
+      "ติวเตอร์ต้องสอนแฝดห้าสาวให้สอบผ่าน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Quintessential Quintuplets",
+      "Nisekoi",
+      "Kaguya-sama: Love is War",
+      "Toradora!",
+    ],
     correctIndex: 0,
+    id: "mg-366",
   },
   {
-    id: "mg-268",
-    title: "Oshi no Ko",
-    description: "เรื่องวงการไอดอลที่หักมุมด้วยการเกิดใหม่",
-    choices: ["Oshi no Ko", "Kaguya-sama: Love is War", "Bakuman", "Nana"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-269",
     title: "Bocchi the Rock!",
-    description: "สาวขี้อายเข้าวงดนตรีและค่อย ๆ เปิดใจ",
+    description:
+      "สาวขี้อายเข้าวงดนตรีและค่อย ๆ เปิดใจ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Bocchi the Rock!", "K-On!", "Nana", "Beck"],
     correctIndex: 0,
+    id: "mg-367",
   },
   {
-    id: "mg-270",
     title: "Mashle",
-    description: "เด็กหนุ่มไร้เวทมนตร์ในโลกเวทมนตร์ต่อสู้ด้วยพลังกล้าม",
+    description:
+      "เด็กหนุ่มไร้เวทมนตร์ในโลกเวทมนตร์ต่อสู้ด้วยพลังกล้าม ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Mashle", "Black Clover", "My Hero Academia", "One Punch Man"],
     correctIndex: 0,
+    id: "mg-368",
   },
   {
-    id: "mg-271",
-    title: "Frieren: Beyond Journey's End",
-    description: "เอลฟ์นักเวทออกเดินทางหลังจบการผจญภัยเพื่อเรียนรู้เวลา",
-    choices: ["Frieren: Beyond Journey's End", "Mushoku Tensei", "Spice and Wolf", "Violet Evergarden"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-272",
-    title: "Solo Leveling",
-    description: "นักล่าระดับล่างได้พลังลับและเติบโตอย่างก้าวกระโดด",
-    choices: ["Solo Leveling", "Tower of God", "God of High School", "The Gamer"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-273",
     title: "Blue Lock",
-    description: "โครงการฝึกกองหน้าสุดโหดเพื่อสร้างยอดนักเตะ",
+    description:
+      "โครงการฝึกกองหน้าสุดโหดเพื่อสร้างยอดนักเตะ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: ["Blue Lock", "Haikyuu!!", "Kuroko's Basketball", "Slam Dunk"],
     correctIndex: 0,
+    id: "mg-369",
   },
   {
-    id: "mg-274",
     title: "K-On!",
-    description: "กลุ่มสาวมัธยมตั้งชมรมดนตรีและชีวิตประจำวันที่อบอุ่น",
+    description:
+      "กลุ่มสาวมัธยมตั้งชมรมดนตรีและชีวิตประจำวันที่อบอุ่น คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
     choices: ["K-On!", "Bocchi the Rock!", "Nana", "Beck"],
     correctIndex: 0,
+    id: "mg-370",
   },
   {
-    id: "mg-275",
     title: "Beck",
-    description: "วัยรุ่นหลงใหลดนตรีร็อกและการเติบโตของวง",
+    description:
+      "วัยรุ่นหลงใหลดนตรีร็อกและการเติบโตของวง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
     choices: ["Beck", "Nana", "K-On!", "Bocchi the Rock!"],
     correctIndex: 0,
+    id: "mg-371",
   },
   {
-    id: "mg-276",
     title: "Blue Period",
-    description: "เด็กหนุ่มค้นพบความรักศิลปะและพยายามเข้ามหาวิทยาลัยศิลป์",
+    description:
+      "เด็กหนุ่มค้นพบความรักศิลปะและพยายามเข้ามหาวิทยาลัยศิลป์ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
     choices: ["Blue Period", "Bakuman", "Shirobako", "Honey and Clover"],
     correctIndex: 0,
+    id: "mg-372",
   },
   {
-    id: "mg-277",
     title: "Shirobako",
-    description: "กลุ่มเพื่อนทำงานในวงการอนิเมะและความฝัน",
-    choices: ["Shirobako", "Bakuman", "Keep Your Hands Off Eizouken!", "Blue Period"],
+    description:
+      "กลุ่มเพื่อนทำงานในวงการอนิเมะและความฝัน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Shirobako",
+      "Bakuman",
+      "Keep Your Hands Off Eizouken!",
+      "Blue Period",
+    ],
     correctIndex: 0,
+    id: "mg-373",
   },
   {
-    id: "mg-278",
     title: "Keep Your Hands Off Eizouken!",
-    description: "สามสาวสร้างอนิเมชันด้วยจินตนาการสุดล้ำ",
-    choices: ["Keep Your Hands Off Eizouken!", "Shirobako", "Bakuman", "Blue Period"],
+    description:
+      "สามสาวสร้างอนิเมชันด้วยจินตนาการสุดล้ำ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Keep Your Hands Off Eizouken!",
+      "Shirobako",
+      "Bakuman",
+      "Blue Period",
+    ],
     correctIndex: 0,
+    id: "mg-374",
   },
   {
-    id: "mg-279",
     title: "Jujutsu Kaisen 0",
-    description: "ภาพยนตร์ที่เล่าเรื่องยูตะกับคำสาปพลังสูง",
-    choices: ["Jujutsu Kaisen 0", "Demon Slayer: Mugen Train", "Your Name", "Akira"],
+    description:
+      "ภาพยนตร์ที่เล่าเรื่องยูตะกับคำสาปพลังสูง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Jujutsu Kaisen 0",
+      "Demon Slayer: Mugen Train",
+      "Your Name",
+      "Akira",
+    ],
     correctIndex: 0,
+    id: "mg-375",
   },
   {
-    id: "mg-280",
     title: "Demon Slayer: Mugen Train",
-    description: "ขบวนรถมรณะกับการต่อสู้ของหน่วยพิฆาตอสูร",
-    choices: ["Demon Slayer: Mugen Train", "Jujutsu Kaisen 0", "Spirited Away", "A Silent Voice"],
+    description:
+      "ขบวนรถมรณะกับการต่อสู้ของหน่วยพิฆาตอสูร ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Demon Slayer: Mugen Train",
+      "Jujutsu Kaisen 0",
+      "Spirited Away",
+      "A Silent Voice",
+    ],
     correctIndex: 0,
+    id: "mg-376",
   },
   {
-    id: "mg-281",
-    title: "Crash Landing on You",
-    description: "ทายาทสาวเกาหลีใต้ตกลงในเกาหลีเหนือและพบเจ้าหน้าที่ทหาร",
-    choices: ["Crash Landing on You", "Goblin", "Descendants of the Sun", "Vincenzo"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-282",
-    title: "Goblin",
-    description: "เทพอมตะต้องการเจ้าสาวเพื่อยุติคำสาป",
-    choices: ["Goblin", "Hotel Del Luna", "My Love from the Star", "The King: Eternal Monarch"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-283",
-    title: "Descendants of the Sun",
-    description: "ทหารและแพทย์พบรักท่ามกลางภารกิจในต่างแดน",
-    choices: ["Descendants of the Sun", "Vagabond", "Healer", "Crash Landing on You"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-284",
-    title: "Itaewon Class",
-    description: "หนุ่มเปิดร้านอาหารเพื่อล้างแค้นและสร้างธุรกิจ",
-    choices: ["Itaewon Class", "Start-Up", "Vincenzo", "Hot Stove League"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-285",
-    title: "Vincenzo",
-    description: "ทนายมาเฟียกลับเกาหลีและต่อสู้กับบริษัทยักษ์",
-    choices: ["Vincenzo", "Lawless Lawyer", "Itaewon Class", "Taxi Driver"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-286",
-    title: "Hospital Playlist",
-    description: "กลุ่มหมอเพื่อนสนิทกับวงดนตรีและชีวิตโรงพยาบาล",
-    choices: ["Hospital Playlist", "Dr. Romantic", "Ghost Doctor", "Good Doctor"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-287",
-    title: "Reply 1988",
-    description: "เรื่องราวครอบครัวและเพื่อนบ้านในยุค 80",
-    choices: ["Reply 1988", "Reply 1994", "Reply 1997", "Twenty-Five Twenty-One"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-288",
     title: "Hometown Cha-Cha-Cha",
-    description: "ทันตแพทย์ย้ายมาอยู่หมู่บ้านริมทะเลและพบหัวหน้าชุมชน",
+    description:
+      "ทันตแพทย์ย้ายมาอยู่หมู่บ้านริมทะเลและพบหัวหน้าชุมชน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
     choices: [
       "Hometown Cha-Cha-Cha",
       "When the Camellia Blooms",
@@ -10013,90 +11722,1301 @@ const MOVIE_GUESS_DATA = [
       "Because This Is My First Life",
     ],
     correctIndex: 0,
+    id: "mg-377",
   },
   {
-    id: "mg-289",
-    title: "Start-Up",
-    description: "ความฝันสตาร์ทอัพและรักสามเส้าระหว่างผู้ก่อตั้ง",
-    choices: ["Start-Up", "Itaewon Class", "Search: WWW", "Strong Woman Do Bong-soon"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-290",
-    title: "My Love from the Star",
-    description: "มนุษย์ต่างดาวอยู่บนโลกและตกหลุมรักดาราสาว",
-    choices: ["My Love from the Star", "The Legend of the Blue Sea", "Goblin", "Hotel Del Luna"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-291",
-    title: "Hotel Del Luna",
-    description: "โรงแรมสำหรับวิญญาณกับเจ้าของสาวสุดลึกลับ",
-    choices: ["Hotel Del Luna", "Goblin", "Mystic Pop-Up Bar", "My Love from the Star"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-292",
-    title: "The Glory",
-    description: "หญิงสาวแก้แค้นการกลั่นแกล้งในวัยเรียน",
-    choices: ["The Glory", "Penthouse", "Sky Castle", "Weak Hero Class 1"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-293",
-    title: "Squid Game",
-    description: "เกมเอาชีวิตรอดเพื่อชิงเงินรางวัลมหาศาล",
-    choices: ["Squid Game", "Alice in Borderland", "All of Us Are Dead", "The 8 Show"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-294",
-    title: "All of Us Are Dead",
-    description: "ซอมบี้ระบาดในโรงเรียนมัธยม",
-    choices: ["All of Us Are Dead", "Sweet Home", "Happiness", "Train to Busan"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-295",
-    title: "Sweet Home",
-    description: "ผู้อยู่อาศัยในอพาร์ตเมนต์เผชิญสัตว์ประหลาด",
-    choices: ["Sweet Home", "All of Us Are Dead", "Happiness", "Kingdom"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-296",
-    title: "Kingdom",
-    description: "ยุคโชซอนกับโรคระบาดที่ทำให้คนกลายเป็นซอมบี้",
-    choices: ["Kingdom", "Sweet Home", "All of Us Are Dead", "Arthdal Chronicles"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-297",
-    title: "Business Proposal",
-    description: "พนักงานสาวไปนัดบอดแทนเพื่อนและเจอเจ้านาย",
-    choices: ["Business Proposal", "What's Wrong with Secretary Kim", "Strong Woman Do Bong-soon", "Her Private Life"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-298",
     title: "What's Wrong with Secretary Kim",
-    description: "รองประธานขี้หลงตัวเองกับเลขาสาวที่อยากลาออก",
-    choices: ["What's Wrong with Secretary Kim", "Business Proposal", "Her Private Life", "Touch Your Heart"],
+    description:
+      "รองประธานขี้หลงตัวเองกับเลขาสาวที่อยากลาออก คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "What's Wrong with Secretary Kim",
+      "Business Proposal",
+      "Her Private Life",
+      "Touch Your Heart",
+    ],
     correctIndex: 0,
+    id: "mg-378",
   },
   {
-    id: "mg-299",
-    title: "Twenty-Five Twenty-One",
-    description: "ความฝันนักฟันดาบและมิตรภาพในยุควิกฤต",
-    choices: ["Twenty-Five Twenty-One", "Reply 1988", "Our Beloved Summer", "Thirty-Nine"],
-    correctIndex: 0,
-  },
-  {
-    id: "mg-300",
     title: "The King: Eternal Monarch",
-    description: "กษัตริย์ข้ามโลกคู่ขนานและพบตำรวจหญิง",
-    choices: ["The King: Eternal Monarch", "Goblin", "Legend of the Blue Sea", "W"],
+    description:
+      "กษัตริย์ข้ามโลกคู่ขนานและพบตำรวจหญิง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "The King: Eternal Monarch",
+      "Goblin",
+      "Legend of the Blue Sea",
+      "W",
+    ],
     correctIndex: 0,
+    id: "mg-379",
+  },
+  {
+    title: "The Substance",
+    description:
+      "นักแสดงหญิงที่ถูกวงการทิ้งพบวิธีสร้างตัวตนที่ดีกว่าเดิม แต่ความสมบูรณ์แบบนั้นต้องแลกด้วยกฎประหลาดและร่างกายที่เริ่มควบคุมไม่ได้",
+    choices: [
+      "The Substance",
+      "Us",
+      "The Pursuit of Happyness",
+      "A Little Thing Called Love",
+    ],
+    correctIndex: 0,
+    id: "mg-380",
+  },
+  {
+    title: "Everything Everywhere All at Once",
+    description:
+      "หญิงเจ้าของร้านซักรีดที่ชีวิตพังหลายด้านถูกดึงเข้าสู่สงครามหลายจักรวาล และพบว่าความธรรมดาของเธออาจสำคัญที่สุด",
+    choices: [
+      "Everything Everywhere All at Once",
+      "Nope",
+      "The Terminal",
+      "Friend Zone",
+    ],
+    correctIndex: 0,
+    id: "mg-381",
+  },
+  {
+    title: "Barbie",
+    description:
+      "ตุ๊กตาที่ใช้ชีวิตสมบูรณ์แบบเริ่มตั้งคำถามกับตัวตนและเดินทางออกจากโลกสีชมพูไปเจอความจริงของมนุษย์ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Barbie", "Split", "Cast Away", "Hello Stranger"],
+    correctIndex: 0,
+    id: "mg-382",
+  },
+  {
+    title: "Poor Things",
+    description:
+      "หญิงสาวที่ได้ชีวิตใหม่ออกเดินทางเรียนรู้โลกด้วยสายตาไร้เดียงสาแต่ท้าทายกฎของสังคมผู้ใหญ่ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Poor Things",
+      "Glass",
+      "The Curious Case of Benjamin Button",
+      "The Billionaire",
+    ],
+    correctIndex: 0,
+    id: "mg-383",
+  },
+  {
+    title: "Anatomy of a Fall",
+    description:
+      "นักเขียนหญิงตกเป็นผู้ต้องสงสัยหลังสามีเสียชีวิตจากการตกจากบ้าน และการพิจารณาคดีค่อย ๆ เปิดชีวิตคู่ที่แตกร้าว",
+    choices: ["Anatomy of a Fall", "Unbreakable", "Big Fish", "Homestay"],
+    correctIndex: 0,
+    id: "mg-384",
+  },
+  {
+    title: "Past Lives",
+    description:
+      "คนสองคนที่เคยผูกพันกันตั้งแต่วัยเด็กกลับมาเจอกันในอีกประเทศ หลังเวลาผ่านไปจนชีวิตของทั้งคู่มีทางเลือกใหม่",
+    choices: [
+      "Past Lives",
+      "The Others",
+      "The Secret Life of Walter Mitty",
+      "4bia",
+    ],
+    correctIndex: 0,
+    id: "mg-385",
+  },
+  {
+    title: "The Holdovers",
+    description:
+      "ครูนิสัยแข็ง นักเรียนที่ไม่มีที่ไป และแม่ครัวผู้สูญเสียต้องอยู่ร่วมกันในโรงเรียนช่วงวันหยุดยาว คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Holdovers",
+      "Pan’s Labyrinth",
+      "Into the Wild",
+      "Crash Landing on You",
+    ],
+    correctIndex: 0,
+    id: "mg-386",
+  },
+  {
+    title: "Django Unchained",
+    description:
+      "ชายที่เคยเป็นทาสร่วมมือกับนักล่าค่าหัวเพื่อช่วยภรรยา และเดินเข้าสู่ไร่ที่โหดร้ายที่สุดแห่งหนึ่ง จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Django Unchained", "The Shape of Water", "Nomadland", "Goblin"],
+    correctIndex: 0,
+    id: "mg-387",
+  },
+  {
+    title: "Inglourious Basterds",
+    description:
+      "กลุ่มทหารลับและหญิงเจ้าของโรงหนังต่างมีแผนจัดการผู้นำนาซีในค่ำคืนเดียวกัน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Inglourious Basterds",
+      "Ready Player One",
+      "The Florida Project",
+      "The Glory",
+    ],
+    correctIndex: 0,
+    id: "mg-388",
+  },
+  {
+    title: "Once Upon a Time in Hollywood",
+    description:
+      "นักแสดงตกยุคกับสตันต์แมนคู่ใจใช้ชีวิตในฮอลลีวูดยุคเปลี่ยนผ่าน ก่อนประวัติศาสตร์บางอย่างจะถูกเล่าใหม่ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Once Upon a Time in Hollywood",
+      "Free Guy",
+      "Lady Bird",
+      "Squid Game",
+    ],
+    correctIndex: 0,
+    id: "mg-389",
+  },
+  {
+    title: "Kill Bill",
+    description:
+      "หญิงนักฆ่าที่ถูกทรยศตื่นจากโคม่าและออกตามล่าคนในอดีตทีละคนด้วยความแค้นที่คมเหมือนดาบ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Kill Bill",
+      "The Adam Project",
+      "Marriage Story",
+      "Itaewon Class",
+    ],
+    correctIndex: 0,
+    id: "mg-390",
+  },
+  {
+    title: "Reservoir Dogs",
+    description:
+      "โจรกลุ่มหนึ่งหลังปล้นพลาดต้องหาว่าใครคือสายตำรวจ ขณะที่ความไม่ไว้ใจทำให้ทุกคนอันตรายขึ้น จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Reservoir Dogs", "Tenet", "The Father", "Vincenzo"],
+    correctIndex: 0,
+    id: "mg-391",
+  },
+  {
+    title: "The Hateful Eight",
+    description:
+      "คนแปลกหน้าหลายคนติดอยู่ในที่พักกลางหิมะ และทุกคนดูเหมือนมีอดีตกับเป้าหมายที่ไม่ยอมบอกตรง ๆ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["The Hateful Eight", "The Pianist", "Aftersun", "Kingdom"],
+    correctIndex: 0,
+    id: "mg-392",
+  },
+  {
+    title: "Baby Driver",
+    description:
+      "คนขับรถหนีคดีที่ต้องฟังเพลงตลอดเวลาพยายามออกจากวงการปล้น แต่ภารกิจสุดท้ายไม่เคยง่ายจริง เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Baby Driver",
+      "Life Is Beautiful",
+      "Pee Mak",
+      "All of Us Are Dead",
+    ],
+    correctIndex: 0,
+    id: "mg-393",
+  },
+  {
+    title: "The Nice Guys",
+    description:
+      "นักสืบเอกชนและคนรับจ้างใช้กำลังต้องร่วมมือกันไขคดีหญิงหายที่พาไปเจอวงการผู้ใหญ่และการเมือง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Nice Guys",
+      "Hidden Figures",
+      "Bad Genius",
+      "Business Proposal",
+    ],
+    correctIndex: 0,
+    id: "mg-394",
+  },
+  {
+    title: "The Menu",
+    description:
+      "แขกผู้ร่ำรวยมื้อค่ำในร้านอาหารบนเกาะไกล ๆ ค่อย ๆ รู้ว่าเชฟไม่ได้เตรียมแค่คอร์สพิเศษธรรมดา จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["The Menu", "Creed", "Shutter", "Twenty-Five Twenty-One"],
+    correctIndex: 0,
+    id: "mg-395",
+  },
+  {
+    title: "Midsommar",
+    description:
+      "หญิงสาวที่กำลังแตกสลายเดินทางไปเทศกาลกลางวันยาวในหมู่บ้านห่างไกล และพิธีกรรมที่ดูงดงามเริ่มน่ากลัว ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Midsommar", "Rocky", "The Medium", "The Untamed"],
+    correctIndex: 0,
+    id: "mg-396",
+  },
+  {
+    title: "Us",
+    description:
+      "ครอบครัวหนึ่งถูกคนหน้าเหมือนตัวเองบุกคุกคามในคืนพักผ่อน ก่อนความจริงใต้ดินจะทำให้เรื่องใหญ่กว่าการบุกรุก เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Us",
+      "The Pursuit of Happyness",
+      "A Little Thing Called Love",
+      "Hidden Love",
+    ],
+    correctIndex: 0,
+    id: "mg-397",
+  },
+  {
+    title: "Nope",
+    description:
+      "พี่น้องเจ้าของฟาร์มม้าพยายามบันทึกสิ่งประหลาดบนท้องฟ้า แต่การไล่ล่าภาพอาจอันตรายกว่าที่คิด คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Nope",
+      "The Terminal",
+      "Friend Zone",
+      "Love Between Fairy and Devil",
+    ],
+    correctIndex: 0,
+    id: "mg-398",
+  },
+  {
+    title: "Split",
+    description:
+      "หญิงสาวหลายคนถูกชายที่มีหลายบุคลิกจับตัวไป และบุคลิกหนึ่งที่ทุกคนกลัวเหมือนกำลังจะตื่นขึ้น จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Split", "Cast Away", "Hello Stranger", "Nirvana in Fire"],
+    correctIndex: 0,
+    id: "mg-399",
+  },
+  {
+    title: "Glass",
+    description:
+      "คนสามคนที่เชื่อมโยงกับพลังและความเปราะบางถูกนำมาพบกันในสถานพยาบาลที่พยายามพิสูจน์ว่าพวกเขาเป็นแค่คนธรรมดา",
+    choices: [
+      "Glass",
+      "The Curious Case of Benjamin Button",
+      "The Billionaire",
+      "Story of Yanxi Palace",
+    ],
+    correctIndex: 0,
+    id: "mg-400",
+  },
+  {
+    title: "Unbreakable",
+    description:
+      "ชายคนหนึ่งรอดจากอุบัติเหตุใหญ่โดยไม่บาดเจ็บ และค่อย ๆ ถูกชักนำให้มองชีวิตตัวเองเหมือนเรื่องฮีโร่ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Unbreakable", "Big Fish", "Homestay", "Eternal Love"],
+    correctIndex: 0,
+    id: "mg-401",
+  },
+  {
+    title: "The Others",
+    description:
+      "หญิงสาวอยู่กับลูก ๆ ในคฤหาสน์มืดที่ต้องปิดม่านตลอดเวลา ก่อนเสียงและเงาจะทำให้เธอสงสัยว่าบ้านมีใครอีกคน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Others",
+      "The Secret Life of Walter Mitty",
+      "4bia",
+      "Go Go Squid!",
+    ],
+    correctIndex: 0,
+    id: "mg-402",
+  },
+  {
+    title: "Pan’s Labyrinth",
+    description:
+      "เด็กหญิงในยุคสงครามพบโลกแฟนตาซีมืดหม่นที่ให้ภารกิจสามอย่าง ขณะโลกจริงโหดร้ายไม่แพ้สัตว์ประหลาด จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "Pan’s Labyrinth",
+      "Into the Wild",
+      "Crash Landing on You",
+      "You Are My Glory",
+    ],
+    correctIndex: 0,
+    id: "mg-403",
+  },
+  {
+    title: "The Shape of Water",
+    description:
+      "หญิงทำความสะอาดใบ้ในสถานที่ทดลองลับผูกพันกับสิ่งมีชีวิตจากน้ำที่ถูกมนุษย์กักขัง ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["The Shape of Water", "Nomadland", "Goblin", "The Long Ballad"],
+    correctIndex: 0,
+    id: "mg-404",
+  },
+  {
+    title: "Ready Player One",
+    description:
+      "เด็กหนุ่มในโลกอนาคตเข้าร่วมเกมล่าสมบัติในโลกเสมือนจริง ที่ผู้ชนะจะได้ครอบครองอาณาจักรดิจิทัล เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "Ready Player One",
+      "The Florida Project",
+      "The Glory",
+      "Meteor Garden",
+    ],
+    correctIndex: 0,
+    id: "mg-405",
+  },
+  {
+    title: "Free Guy",
+    description:
+      "ตัวละครประกอบในเกมออนไลน์เริ่มรู้ตัวว่าชีวิตทั้งเมืองอาจถูกเขียนโปรแกรมไว้ และเขาอยากเลือกเองสักครั้ง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Free Guy", "Lady Bird", "Squid Game", "Spirited Away"],
+    correctIndex: 0,
+    id: "mg-406",
+  },
+  {
+    title: "The Adam Project",
+    description:
+      "นักบินจากอนาคตย้อนเวลากลับมาพบตัวเองตอนเด็ก และทั้งคู่ต้องร่วมมือกันแก้ปมครอบครัวกับเทคโนโลยีเวลา จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "The Adam Project",
+      "Marriage Story",
+      "Itaewon Class",
+      "Your Name",
+    ],
+    correctIndex: 0,
+    id: "mg-407",
+  },
+  {
+    title: "Tenet",
+    description:
+      "สายลับเข้าสู่ภารกิจที่กระสุนและเหตุการณ์บางอย่างเดินย้อนเวลา ทำให้การกอบกู้โลกต้องคิดกลับด้าน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Tenet", "The Father", "Vincenzo", "Attack on Titan"],
+    correctIndex: 0,
+    id: "mg-408",
+  },
+  {
+    title: "The Pianist",
+    description:
+      "นักดนตรีชาวยิวพยายามเอาชีวิตรอดในเมืองที่ถูกสงครามและการกวาดล้างทำให้ทุกอย่างหายไปทีละน้อย เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["The Pianist", "Aftersun", "Kingdom", "Demon Slayer"],
+    correctIndex: 0,
+    id: "mg-409",
+  },
+  {
+    title: "Life Is Beautiful",
+    description:
+      "พ่อคนหนึ่งใช้จินตนาการและอารมณ์ขันปกป้องลูกจากความโหดร้ายของค่ายกักกัน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Life Is Beautiful", "Pee Mak", "All of Us Are Dead", "Naruto"],
+    correctIndex: 0,
+    id: "mg-410",
+  },
+  {
+    title: "Hidden Figures",
+    description:
+      "หญิงผิวดำกลุ่มหนึ่งใช้ความสามารถด้านคณิตศาสตร์ผลักดันภารกิจอวกาศ ท่ามกลางอคติในที่ทำงาน จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Hidden Figures", "Bad Genius", "Business Proposal", "One Piece"],
+    correctIndex: 0,
+    id: "mg-411",
+  },
+  {
+    title: "Creed",
+    description:
+      "ลูกชายของนักชกระดับตำนานพยายามสร้างชื่อของตัวเอง โดยมีอดีตคู่แข่งของพ่อเป็นคนฝึก ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Creed", "Shutter", "Twenty-Five Twenty-One", "Jujutsu Kaisen"],
+    correctIndex: 0,
+    id: "mg-412",
+  },
+  {
+    title: "Rocky",
+    description:
+      "นักมวยโนเนมได้โอกาสขึ้นชกกับแชมป์โลก และใช้การฝึกหนักพิสูจน์ศักดิ์ศรีมากกว่าการชนะ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Rocky", "The Medium", "The Untamed", "Death Note"],
+    correctIndex: 0,
+    id: "mg-413",
+  },
+  {
+    title: "The Pursuit of Happyness",
+    description:
+      "พ่อที่ชีวิตตกต่ำต้องดูแลลูกชายไปพร้อมกับไล่ตามโอกาสงานที่อาจเปลี่ยนอนาคตของทั้งคู่ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Pursuit of Happyness",
+      "A Little Thing Called Love",
+      "Hidden Love",
+      "Fullmetal Alchemist: Brotherhood",
+    ],
+    correctIndex: 0,
+    id: "mg-414",
+  },
+  {
+    title: "The Terminal",
+    description:
+      "ชายคนหนึ่งติดอยู่ในสนามบินเพราะประเทศบ้านเกิดเกิดปัญหาการเมือง ทำให้เขาต้องสร้างชีวิตชั่วคราวในที่เปลี่ยนผ่าน",
+    choices: [
+      "The Terminal",
+      "Friend Zone",
+      "Love Between Fairy and Devil",
+      "Spy x Family",
+    ],
+    correctIndex: 0,
+    id: "mg-415",
+  },
+  {
+    title: "Cast Away",
+    description:
+      "ชายที่รอดจากเครื่องบินตกต้องอยู่ลำพังบนเกาะร้าง และเรียนรู้การมีชีวิตอยู่กับความหวังเล็ก ๆ ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Cast Away", "Hello Stranger", "Nirvana in Fire", "Haikyuu!!"],
+    correctIndex: 0,
+    id: "mg-416",
+  },
+  {
+    title: "The Curious Case of Benjamin Button",
+    description:
+      "ชายคนหนึ่งเกิดมาแก่และค่อย ๆ เด็กลง ทำให้ความรักและเวลาของเขาเดินสวนทางกับคนอื่น เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: [
+      "The Curious Case of Benjamin Button",
+      "The Billionaire",
+      "Story of Yanxi Palace",
+      "Slam Dunk",
+    ],
+    correctIndex: 0,
+    id: "mg-417",
+  },
+  {
+    title: "Big Fish",
+    description:
+      "ลูกชายพยายามเข้าใจพ่อที่เล่าเรื่องชีวิตตัวเองเหมือนนิทานแฟนตาซีเกินจริง คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "Big Fish",
+      "Homestay",
+      "Eternal Love",
+      "Frieren: Beyond Journey's End",
+    ],
+    correctIndex: 0,
+    id: "mg-418",
+  },
+  {
+    title: "The Secret Life of Walter Mitty",
+    description:
+      "ชายทำงานเงียบ ๆ ที่ชอบฝันกลางวันออกเดินทางจริงเพื่อตามหาภาพสำคัญและชีวิตที่กล้ากว่าเดิม จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: [
+      "The Secret Life of Walter Mitty",
+      "4bia",
+      "Go Go Squid!",
+      "Solo Leveling",
+    ],
+    correctIndex: 0,
+    id: "mg-419",
+  },
+  {
+    title: "Into the Wild",
+    description:
+      "ชายหนุ่มทิ้งชีวิตสะดวกสบายออกเดินทางสู่ธรรมชาติ เพื่อหาความหมายของอิสระและตัวตน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: [
+      "Into the Wild",
+      "Crash Landing on You",
+      "You Are My Glory",
+      "Oshi no Ko",
+    ],
+    correctIndex: 0,
+    id: "mg-420",
+  },
+  {
+    title: "Nomadland",
+    description:
+      "หญิงวัยกลางคนหลังสูญเสียงานและบ้านออกใช้ชีวิตบนรถ พบผู้คนเร่ร่อนและความหมายใหม่ของคำว่าบ้าน เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["Nomadland", "Goblin", "The Long Ballad", "Violet Evergarden"],
+    correctIndex: 0,
+    id: "mg-421",
+  },
+  {
+    title: "The Florida Project",
+    description:
+      "เด็กหญิงในโมเทลสีสดใสใช้ชีวิตสนุกสนานริมโลกของดิสนีย์ ขณะที่ผู้ใหญ่รอบตัวต่อสู้กับความจน คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: [
+      "The Florida Project",
+      "The Glory",
+      "Meteor Garden",
+      "My Hero Academia",
+    ],
+    correctIndex: 0,
+    id: "mg-422",
+  },
+  {
+    title: "Lady Bird",
+    description:
+      "เด็กสาวมัธยมในเมืองเล็กอยากหนีไปเรียนไกลบ้าน แต่ความสัมพันธ์กับแม่ทำให้การเติบโตทั้งตลกและเจ็บ จุดเด่นอยู่ที่สถานการณ์ที่ค่อย ๆ บานปลาย ความลับบางอย่าง และการตัดสินใจของตัวละครที่ทำให้เรื่องเป็นที่จดจำ",
+    choices: ["Lady Bird", "Squid Game", "Spirited Away", "Chainsaw Man"],
+    correctIndex: 0,
+    id: "mg-423",
+  },
+  {
+    title: "Marriage Story",
+    description:
+      "คู่รักที่เคยรักกันมากต้องผ่านการหย่าและต่อสู้เรื่องลูก จนความทรงจำดี ๆ กับความเจ็บปวดปะทะกัน ถ้านึกจากโลกของเรื่อง ความสัมพันธ์หลัก และปัญหาที่ตัวละครต้องเจอ จะเริ่มเห็นคำตอบชัดขึ้นโดยไม่ต้องบอกฉากดังแบบตรงตัว",
+    choices: ["Marriage Story", "Itaewon Class", "Your Name", "Dragon Ball Z"],
+    correctIndex: 0,
+    id: "mg-424",
+  },
+  {
+    title: "The Father",
+    description:
+      "ชายสูงวัยเริ่มสับสนกับบ้าน ลูกสาว และเวลา ทำให้คนดูสัมผัสโลกที่ความทรงจำค่อย ๆ หลุดมือ เรื่องนี้ไม่ได้เฉลยคำตอบตรง ๆ แต่ใช้บรรยากาศ ความสัมพันธ์ และเป้าหมายของตัวละครให้ค่อย ๆ เดาออกจากภาพรวมมากกว่าจากชื่อเฉพาะ",
+    choices: ["The Father", "Vincenzo", "Attack on Titan", "Toy Story"],
+    correctIndex: 0,
+    id: "mg-425",
+  },
+  {
+    title: "Aftersun",
+    description:
+      "หญิงสาวย้อนมองทริปพักร้อนกับพ่อในวัยเด็ก ผ่านภาพจำเล็ก ๆ ที่ค่อย ๆ เผยความเศร้าที่ตอนนั้นยังไม่เข้าใจ คำใบ้ตั้งใจให้พอเห็นโทนและพล็อตหลัก แต่ยังเว้นช่องว่างไว้เล็กน้อย เพื่อให้คนเล่นต้องเทียบกับตัวเลือกก่อนตอบ",
+    choices: ["Aftersun", "Kingdom", "Demon Slayer", "Frozen"],
+    correctIndex: 0,
+    id: "mg-426",
+  },
+  {
+    title: "The Brutalist",
+    description:
+      "สถาปนิกผู้อพยพพยายามสร้างชีวิตใหม่ในต่างแดน งาน ศักดิ์ศรี และความสัมพันธ์กับผู้สนับสนุนค่อย ๆ กลายเป็นพันธะหนักอึ้ง ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["The Brutalist", "Conclave", "Wicked", "Dune: Part Two"],
+    correctIndex: 0,
+    id: "mg-427",
+  },
+  {
+    title: "Conclave",
+    description:
+      "หลังผู้นำศาสนาเสียชีวิต กลุ่มผู้มีอำนาจต้องเลือกคนใหม่ในพื้นที่ปิดที่เต็มไปด้วยความลับ ศรัทธา และเกมการเมือง รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Conclave", "Wicked", "Dune: Part Two", "Civil War"],
+    correctIndex: 0,
+    id: "mg-428",
+  },
+  {
+    title: "Wicked",
+    description:
+      "หญิงสาวผิวเขียวที่ถูกตัดสินจากรูปลักษณ์ได้พบเพื่อนต่างขั้วในโรงเรียนเวทมนตร์ ก่อนตำนานของความดีและความร้ายจะถูกตั้งคำถาม เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Wicked", "Dune: Part Two", "Civil War", "Challengers"],
+    correctIndex: 0,
+    id: "mg-429",
+  },
+  {
+    title: "Dune: Part Two",
+    description:
+      "ทายาทที่สูญเสียตระกูลต้องเดินลึกเข้าไปในทะเลทราย ศรัทธาของผู้คนและการแก้แค้นเริ่มผลักเขาไปสู่ชะตาที่น่ากลัว คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Dune: Part Two", "Civil War", "Challengers", "The Fall Guy"],
+    correctIndex: 0,
+    id: "mg-430",
+  },
+  {
+    title: "Civil War",
+    description:
+      "ทีมช่างภาพข่าวเดินทางข้ามประเทศที่แตกออกเป็นฝ่าย ความจริงของสงครามอยู่ใกล้จนกล้องอาจเป็นทั้งเกราะและคำสาป ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Civil War",
+      "Challengers",
+      "The Fall Guy",
+      "Furiosa: A Mad Max Saga",
+    ],
+    correctIndex: 0,
+    id: "mg-431",
+  },
+  {
+    title: "Challengers",
+    description:
+      "นักเทนนิสสามคนมีความสัมพันธ์ซับซ้อนข้ามเวลา การแข่งขันในสนามกลายเป็นการปะทะของอดีต ความรัก และความทะเยอทะยาน รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "Challengers",
+      "The Fall Guy",
+      "Furiosa: A Mad Max Saga",
+      "Kingdom of the Planet of the Apes",
+    ],
+    correctIndex: 0,
+    id: "mg-432",
+  },
+  {
+    title: "The Fall Guy",
+    description:
+      "สตันต์แมนที่หายไปจากวงการต้องกลับมาช่วยงานหนังและตามหานักแสดงดังที่หายตัวไป พร้อมความรักเก่าที่ยังไม่จบ เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "The Fall Guy",
+      "Furiosa: A Mad Max Saga",
+      "Kingdom of the Planet of the Apes",
+      "A Quiet Place: Day One",
+    ],
+    correctIndex: 0,
+    id: "mg-433",
+  },
+  {
+    title: "Furiosa: A Mad Max Saga",
+    description:
+      "เด็กหญิงจากดินแดนสีเขียวถูกพรากไปสู่โลกทะเลทรายของผู้กดขี่ และค่อย ๆ กลายเป็นนักรบที่รู้จักการรอเวลา คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Furiosa: A Mad Max Saga",
+      "Kingdom of the Planet of the Apes",
+      "A Quiet Place: Day One",
+      "Twisters",
+    ],
+    correctIndex: 0,
+    id: "mg-434",
+  },
+  {
+    title: "Kingdom of the Planet of the Apes",
+    description:
+      "หลายชั่วอายุหลังมนุษย์ล่มสลาย วานรรุ่นใหม่ออกเดินทางและพบว่าประวัติศาสตร์เก่าถูกใช้เป็นเครื่องมือของอำนาจ ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Kingdom of the Planet of the Apes",
+      "A Quiet Place: Day One",
+      "Twisters",
+      "Alien: Romulus",
+    ],
+    correctIndex: 0,
+    id: "mg-435",
+  },
+  {
+    title: "A Quiet Place: Day One",
+    description:
+      "วันที่โลกเริ่มเงียบไม่ใช่เพราะสงบ แต่เพราะสิ่งมีชีวิตที่ตอบสนองต่อเสียงทำให้เมืองใหญ่กลายเป็นกับดัก รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "A Quiet Place: Day One",
+      "Twisters",
+      "Alien: Romulus",
+      "The Wild Robot",
+    ],
+    correctIndex: 0,
+    id: "mg-436",
+  },
+  {
+    title: "Twisters",
+    description:
+      "นักล่าพายุรุ่นใหม่และคนเก่าที่มีอดีตต้องเผชิญพายุรุนแรงหลายลูก พร้อมเทคโนโลยีและบาดแผลที่ยังตามมา เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Twisters", "Alien: Romulus", "The Wild Robot", "Inside Out 2"],
+    correctIndex: 0,
+    id: "mg-437",
+  },
+  {
+    title: "Alien: Romulus",
+    description:
+      "กลุ่มคนหนุ่มสาวสำรวจสถานีอวกาศร้างและพบสิ่งมีชีวิตที่วงจรการล่าเริ่มต้นจากความเงียบและความอยากรู้อยากเห็น คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Alien: Romulus", "The Wild Robot", "Inside Out 2", "Moana 2"],
+    correctIndex: 0,
+    id: "mg-438",
+  },
+  {
+    title: "The Wild Robot",
+    description:
+      "หุ่นยนต์ตัวหนึ่งติดอยู่บนเกาะธรรมชาติและค่อย ๆ เรียนรู้การอยู่ร่วมกับสัตว์ป่า รวมถึงความหมายของการดูแลสิ่งมีชีวิตอื่น ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["The Wild Robot", "Inside Out 2", "Moana 2", "Kung Fu Panda 4"],
+    correctIndex: 0,
+    id: "mg-439",
+  },
+  {
+    title: "Inside Out 2",
+    description:
+      "อารมณ์เดิมในหัวเด็กหญิงต้องรับมือแขกใหม่ช่วงวัยรุ่น เมื่อความกังวลและการอยากเป็นที่ยอมรับเข้ามาคุมศูนย์บัญชาการ รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Inside Out 2", "Moana 2", "Kung Fu Panda 4", "Wish"],
+    correctIndex: 0,
+    id: "mg-440",
+  },
+  {
+    title: "Moana 2",
+    description:
+      "หญิงสาวนักเดินเรือได้รับเสียงเรียกจากบรรพบุรุษให้เดินทางไกลกว่าที่เคย เพื่อเชื่อมผู้คนกับมหาสมุทรอีกครั้ง เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Moana 2", "Kung Fu Panda 4", "Wish", "Nimona"],
+    correctIndex: 0,
+    id: "mg-441",
+  },
+  {
+    title: "Kung Fu Panda 4",
+    description:
+      "นักรบมังกรต้องมองหาผู้สืบทอดตำแหน่ง ขณะศัตรูแปลงร่างได้ทำให้การต่อสู้ครั้งใหม่ไม่ใช่แค่เรื่องหมัดเท้า คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Kung Fu Panda 4", "Wish", "Nimona", "The Sea Beast"],
+    correctIndex: 0,
+    id: "mg-442",
+  },
+  {
+    title: "Wish",
+    description:
+      "หญิงสาวในอาณาจักรที่ความปรารถนาถูกเก็บไว้กับผู้ปกครอง ได้ขอพรจากดวงดาวจนพลังความหวังเริ่มท้าทายอำนาจ ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Wish",
+      "Nimona",
+      "The Sea Beast",
+      "Guillermo del Toro’s Pinocchio",
+    ],
+    correctIndex: 0,
+    id: "mg-443",
+  },
+  {
+    title: "Nimona",
+    description:
+      "อัศวินที่ถูกใส่ร้ายต้องร่วมมือกับเด็กสาวแปลงร่างจอมวุ่น เพื่อพิสูจน์ความจริงในอาณาจักรที่เชื่อเรื่องฮีโร่และปีศาจแบบตายตัว รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "Nimona",
+      "The Sea Beast",
+      "Guillermo del Toro’s Pinocchio",
+      "The Bad Guys",
+    ],
+    correctIndex: 0,
+    id: "mg-444",
+  },
+  {
+    title: "The Sea Beast",
+    description:
+      "เด็กหญิงแอบขึ้นเรือนักล่าสัตว์ทะเลและเริ่มสงสัยว่าตำนานสัตว์ประหลาดที่ผู้ใหญ่เล่ามาอาจไม่ใช่ความจริงทั้งหมด เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "The Sea Beast",
+      "Guillermo del Toro’s Pinocchio",
+      "The Bad Guys",
+      "Sing",
+    ],
+    correctIndex: 0,
+    id: "mg-445",
+  },
+  {
+    title: "Guillermo del Toro’s Pinocchio",
+    description:
+      "หุ่นไม้ที่มีชีวิตขึ้นมาในโลกช่วงสงครามต้องเรียนรู้ความรัก การสูญเสีย และความหมายของการเป็นลูกชาย คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Guillermo del Toro’s Pinocchio",
+      "The Bad Guys",
+      "Sing",
+      "Sing 2",
+    ],
+    correctIndex: 0,
+    id: "mg-446",
+  },
+  {
+    title: "The Bad Guys",
+    description:
+      "แก๊งสัตว์อาชญากรมืออาชีพพยายามแกล้งทำตัวดีเพื่อหนีโทษ แต่บางคนเริ่มสงสัยว่าการเป็นคนดีอาจรู้สึกดีจริง ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["The Bad Guys", "Sing", "Sing 2", "Raya and the Last Dragon"],
+    correctIndex: 0,
+    id: "mg-447",
+  },
+  {
+    title: "Sing",
+    description:
+      "โคอาล่าเจ้าของโรงละครจัดประกวดร้องเพลงเพื่อกอบกู้กิจการ และสัตว์หลายตัวก็ใช้เวทีนี้ตามหาความฝันของตัวเอง รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Sing", "Sing 2", "Raya and the Last Dragon", "Onward"],
+    correctIndex: 0,
+    id: "mg-448",
+  },
+  {
+    title: "Sing 2",
+    description:
+      "ทีมการแสดงสัตว์ต้องบุกเมืองบันเทิงใหญ่และชวนดาวเพลงเก่ากลับขึ้นเวที ทั้งที่อดีตของเขายังปิดล็อกอยู่ เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Sing 2", "Raya and the Last Dragon", "Onward", "Brave"],
+    correctIndex: 0,
+    id: "mg-449",
+  },
+  {
+    title: "Raya and the Last Dragon",
+    description:
+      "หญิงสาวจากดินแดนที่แตกแยกออกตามหามังกรตัวสุดท้าย เพื่อหยุดภัยที่ทำให้ผู้คนกลายเป็นหินและรวมใจผู้คนอีกครั้ง คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Raya and the Last Dragon", "Onward", "Brave", "Bolt"],
+    correctIndex: 0,
+    id: "mg-450",
+  },
+  {
+    title: "Onward",
+    description:
+      "พี่น้องเอลฟ์ในโลกแฟนตาซีสมัยใหม่ออกเดินทางด้วยเวทมนตร์ครึ่ง ๆ กลาง ๆ เพื่อเจอพ่ออีกครั้งภายในหนึ่งวัน ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["Onward", "Brave", "Bolt", "Meet the Robinsons"],
+    correctIndex: 0,
+    id: "mg-451",
+  },
+  {
+    title: "Brave",
+    description:
+      "เจ้าหญิงนักธนูไม่อยากเดินตามธรรมเนียมการแต่งงาน และคำขอที่ผิดพลาดทำให้เธอต้องแก้คำสาปในครอบครัว รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Brave", "Bolt", "Meet the Robinsons", "Treasure Planet"],
+    correctIndex: 0,
+    id: "mg-452",
+  },
+  {
+    title: "Bolt",
+    description:
+      "สุนัขดาราทีวีเชื่อว่าตัวเองมีพลังพิเศษจริง ๆ และต้องเดินทางกลับบ้านในโลกจริงที่ไม่มีสคริปต์ช่วย เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "Bolt",
+      "Meet the Robinsons",
+      "Treasure Planet",
+      "The Road to El Dorado",
+    ],
+    correctIndex: 0,
+    id: "mg-453",
+  },
+  {
+    title: "Meet the Robinsons",
+    description:
+      "เด็กนักประดิษฐ์กำพร้าถูกพาไปอนาคตและพบครอบครัวสุดประหลาดที่อาจเกี่ยวข้องกับความฝันของเขา คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Meet the Robinsons",
+      "Treasure Planet",
+      "The Road to El Dorado",
+      "Spirit: Stallion of the Cimarron",
+    ],
+    correctIndex: 0,
+    id: "mg-454",
+  },
+  {
+    title: "Treasure Planet",
+    description:
+      "เด็กหนุ่มนักผจญภัยเดินทางสู่ขุมทรัพย์กลางอวกาศและผูกพันกับโจรสลัดไซบอร์กที่เหมือนทั้งศัตรูและพ่อ ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Treasure Planet",
+      "The Road to El Dorado",
+      "Spirit: Stallion of the Cimarron",
+      "The Iron Giant",
+    ],
+    correctIndex: 0,
+    id: "mg-455",
+  },
+  {
+    title: "The Road to El Dorado",
+    description:
+      "นักต้มตุ๋นสองคนบังเอิญถูกเข้าใจว่าเป็นเทพในเมืองทองคำลับ และต้องเลือกระหว่างสมบัติกับผู้คนที่ไว้ใจพวกเขา รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "The Road to El Dorado",
+      "Spirit: Stallion of the Cimarron",
+      "The Iron Giant",
+      "Anastasia",
+    ],
+    correctIndex: 0,
+    id: "mg-456",
+  },
+  {
+    title: "Spirit: Stallion of the Cimarron",
+    description:
+      "ม้าป่าผู้รักอิสระถูกจับโดยมนุษย์และต้องต่อสู้เพื่อกลับสู่ฝูงกับผืนดินที่เป็นบ้าน เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "Spirit: Stallion of the Cimarron",
+      "The Iron Giant",
+      "Anastasia",
+      "Corpse Bride",
+    ],
+    correctIndex: 0,
+    id: "mg-457",
+  },
+  {
+    title: "The Iron Giant",
+    description:
+      "เด็กชายพบหุ่นยนต์ยักษ์จากอวกาศในเมืองเล็ก และต้องปกป้องเพื่อนเหล็กจากความกลัวของผู้ใหญ่ คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["The Iron Giant", "Anastasia", "Corpse Bride", "Frankenweenie"],
+    correctIndex: 0,
+    id: "mg-458",
+  },
+  {
+    title: "Anastasia",
+    description:
+      "หญิงสาวความจำเสื่อมถูกดึงเข้าสู่แผนหลอกลวงเกี่ยวกับราชวงศ์ แต่การเดินทางอาจเผยว่าอดีตของเธอสำคัญกว่าที่คิด ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["Anastasia", "Corpse Bride", "Frankenweenie", "Isle of Dogs"],
+    correctIndex: 0,
+    id: "mg-459",
+  },
+  {
+    title: "Corpse Bride",
+    description:
+      "ชายหนุ่มซ้อมคำสาบานแต่งงานในป่าและเผลอปลุกเจ้าสาวจากโลกหลังความตายขึ้นมา รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "Corpse Bride",
+      "Frankenweenie",
+      "Isle of Dogs",
+      "Fantastic Mr. Fox",
+    ],
+    correctIndex: 0,
+    id: "mg-460",
+  },
+  {
+    title: "Frankenweenie",
+    description:
+      "เด็กชายใช้วิทยาศาสตร์คืนชีวิตให้สุนัขที่รัก แต่ความลับในเมืองเล็กเริ่มหลุดควบคุม เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "Frankenweenie",
+      "Isle of Dogs",
+      "Fantastic Mr. Fox",
+      "The Adventures of Tintin",
+    ],
+    correctIndex: 0,
+    id: "mg-461",
+  },
+  {
+    title: "Isle of Dogs",
+    description:
+      "เด็กชายเดินทางไปเกาะขยะเพื่อตามหาสุนัขของตัวเอง ในโลกที่ผู้ใหญ่ผลักไสเพื่อนสี่ขาออกไป คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Isle of Dogs",
+      "Fantastic Mr. Fox",
+      "The Adventures of Tintin",
+      "Bee Movie",
+    ],
+    correctIndex: 0,
+    id: "mg-462",
+  },
+  {
+    title: "Fantastic Mr. Fox",
+    description:
+      "สุนัขจิ้งจอกที่เลิกขโมยของพยายามกลับไปทำงานเก่าอีกครั้ง จนทำให้ครอบครัวและชุมชนสัตว์ต้องหนีมนุษย์ ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Fantastic Mr. Fox",
+      "The Adventures of Tintin",
+      "Bee Movie",
+      "Cloudy with a Chance of Meatballs",
+    ],
+    correctIndex: 0,
+    id: "mg-463",
+  },
+  {
+    title: "The Adventures of Tintin",
+    description:
+      "นักข่าวหนุ่มกับสุนัขคู่ใจพบเรือจำลองที่ซ่อนปริศนาสมบัติ ทำให้ต้องแข่งกับคนที่ต้องการความลับเดียวกัน รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "The Adventures of Tintin",
+      "Bee Movie",
+      "Cloudy with a Chance of Meatballs",
+      "Hotel Transylvania",
+    ],
+    correctIndex: 0,
+    id: "mg-464",
+  },
+  {
+    title: "Bee Movie",
+    description:
+      "ผึ้งตัวหนึ่งออกจากรังและพบว่าโลกมนุษย์ใช้ประโยชน์จากน้ำผึ้ง จึงพยายามฟ้องร้องระบบที่ดูปกติสำหรับทุกคน เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "Bee Movie",
+      "Cloudy with a Chance of Meatballs",
+      "Hotel Transylvania",
+      "Megamind",
+    ],
+    correctIndex: 0,
+    id: "mg-465",
+  },
+  {
+    title: "Cloudy with a Chance of Meatballs",
+    description:
+      "นักประดิษฐ์หนุ่มสร้างเครื่องที่ทำให้อาหารตกจากฟ้า แต่ความสำเร็จที่ดูน่ากินเริ่มกลายเป็นภัยพิบัติ คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Cloudy with a Chance of Meatballs",
+      "Hotel Transylvania",
+      "Megamind",
+      "Rio",
+    ],
+    correctIndex: 0,
+    id: "mg-466",
+  },
+  {
+    title: "Hotel Transylvania",
+    description:
+      "เจ้าของโรงแรมสำหรับสัตว์ประหลาดพยายามปกป้องลูกสาวจากมนุษย์ แต่แขกที่ไม่ควรมาถึงกลับทำให้ทุกอย่างเปลี่ยน ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["Hotel Transylvania", "Megamind", "Rio", "Epic"],
+    correctIndex: 0,
+    id: "mg-467",
+  },
+  {
+    title: "Megamind",
+    description:
+      "วายร้ายหัวโตชนะฮีโร่คู่ปรับจริง ๆ แล้วกลับพบว่าชีวิตไร้เป้าหมาย จึงสร้างศัตรูใหม่ที่ควบคุมไม่ได้ รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Megamind", "Rio", "Epic", "The Croods"],
+    correctIndex: 0,
+    id: "mg-468",
+  },
+  {
+    title: "Rio",
+    description:
+      "นกแก้วเลี้ยงที่บินไม่เป็นถูกพาไปบราซิลเพื่อช่วยเผ่าพันธุ์ แต่ต้องหนีโจรและเรียนรู้ความกล้าจากโลกกว้าง เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Rio", "Epic", "The Croods", "Home"],
+    correctIndex: 0,
+    id: "mg-469",
+  },
+  {
+    title: "Epic",
+    description:
+      "เด็กสาวถูกย่อส่วนเข้าไปในสงครามของสิ่งมีชีวิตจิ๋วในป่า และต้องช่วยรักษาสมดุลธรรมชาติ คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Epic", "The Croods", "Home", "The Boss Baby"],
+    correctIndex: 0,
+    id: "mg-470",
+  },
+  {
+    title: "The Croods",
+    description:
+      "ครอบครัวยุคก่อนประวัติศาสตร์ที่กลัวทุกสิ่งต้องออกจากถ้ำและเรียนรู้โลกใหม่ที่ทั้งอันตรายและสวยงาม ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["The Croods", "Home", "The Boss Baby", "Trolls"],
+    correctIndex: 0,
+    id: "mg-471",
+  },
+  {
+    title: "Home",
+    description:
+      "เอเลี่ยนจอมผิดพลาดกับเด็กหญิงที่ตามหาแม่ต้องร่วมเดินทาง หลังการยึดโลกแบบวุ่น ๆ ทำให้ทั้งคู่ต้องพึ่งกัน รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Home", "The Boss Baby", "Trolls", "The Secret Life of Pets"],
+    correctIndex: 0,
+    id: "mg-472",
+  },
+  {
+    title: "The Boss Baby",
+    description:
+      "เด็กทารกใส่สูทเข้ามาในบ้านและทำให้พี่ชายสงสัยว่าเขาไม่ได้เป็นเด็กธรรมดา แต่มีภารกิจจากองค์กรลับ เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "The Boss Baby",
+      "Trolls",
+      "The Secret Life of Pets",
+      "Sausage Party",
+    ],
+    correctIndex: 0,
+    id: "mg-473",
+  },
+  {
+    title: "Trolls",
+    description:
+      "เจ้าหญิงสดใสกับโทรลล์มองโลกแง่ร้ายต้องออกเดินทางช่วยเพื่อนจากสิ่งมีชีวิตที่เชื่อว่าความสุขกินได้ คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Trolls",
+      "The Secret Life of Pets",
+      "Sausage Party",
+      "The Book of Life",
+    ],
+    correctIndex: 0,
+    id: "mg-474",
+  },
+  {
+    title: "The Secret Life of Pets",
+    description:
+      "สัตว์เลี้ยงในเมืองมีชีวิตลับหลังเจ้าของออกจากบ้าน และสุนัขตัวหนึ่งต้องรับมือเพื่อนใหม่ที่ทำให้ชีวิตวุ่น ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "The Secret Life of Pets",
+      "Sausage Party",
+      "The Book of Life",
+      "Arthur Christmas",
+    ],
+    correctIndex: 0,
+    id: "mg-475",
+  },
+  {
+    title: "Sausage Party",
+    description:
+      "อาหารในซูเปอร์มาร์เก็ตเชื่อว่าการถูกซื้อคือสวรรค์ ก่อนความจริงน่าตกใจจะทำให้พวกมันตั้งคำถามกับศรัทธา รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "Sausage Party",
+      "The Book of Life",
+      "Arthur Christmas",
+      "Legend of the Guardians",
+    ],
+    correctIndex: 0,
+    id: "mg-476",
+  },
+  {
+    title: "The Book of Life",
+    description:
+      "ชายหนุ่มในโลกสีสันของตำนานเม็กซิกันต้องพิสูจน์ความรักและความกล้าในเส้นทางที่เกี่ยวกับโลกหลังความตาย เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "The Book of Life",
+      "Arthur Christmas",
+      "Legend of the Guardians",
+      "The Lorax",
+    ],
+    correctIndex: 0,
+    id: "mg-477",
+  },
+  {
+    title: "Arthur Christmas",
+    description:
+      "ลูกชายซานต้าที่ดูไม่เหมาะกับงานต้องออกภารกิจส่งของขวัญชิ้นสุดท้ายก่อนเช้าวันคริสต์มาส คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Arthur Christmas",
+      "Legend of the Guardians",
+      "The Lorax",
+      "Open Season",
+    ],
+    correctIndex: 0,
+    id: "mg-478",
+  },
+  {
+    title: "Legend of the Guardians",
+    description:
+      "นกฮูกหนุ่มถูกดึงเข้าสงครามระหว่างผู้พิทักษ์ในตำนานกับกลุ่มที่ต้องการครอบงำเผ่าพันธุ์ ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Legend of the Guardians",
+      "The Lorax",
+      "Open Season",
+      "Hoodwinked!",
+    ],
+    correctIndex: 0,
+    id: "mg-479",
+  },
+  {
+    title: "The Lorax",
+    description:
+      "เด็กชายค้นหาเรื่องราวของต้นไม้จริงในเมืองพลาสติก และพบชายลึกลับที่เคยทำให้ธรรมชาติหายไป รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["The Lorax", "Open Season", "Hoodwinked!", "Flushed Away"],
+    correctIndex: 0,
+    id: "mg-480",
+  },
+  {
+    title: "Open Season",
+    description:
+      "หมีเลี้ยงที่ไม่เคยอยู่ป่าถูกปล่อยคืนธรรมชาติและต้องร่วมมือกับกวางจอมพูดเพื่อเอาตัวรอดจากฤดูล่า เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Open Season", "Hoodwinked!", "Flushed Away", "Chicken Run"],
+    correctIndex: 0,
+    id: "mg-481",
+  },
+  {
+    title: "Hoodwinked!",
+    description:
+      "นิทานหนูน้อยหมวกแดงถูกเล่าใหม่เป็นคดีสืบสวนที่ทุกตัวละครมีมุมมองและความลับของตัวเอง คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Hoodwinked!",
+      "Flushed Away",
+      "Chicken Run",
+      "Wallace & Gromit: The Curse of the Were-Rabbit",
+    ],
+    correctIndex: 0,
+    id: "mg-482",
+  },
+  {
+    title: "Flushed Away",
+    description:
+      "หนูบ้านหรูถูกกดลงท่อไปยังเมืองใต้ดิน และต้องร่วมมือกับหนูนักผจญภัยเพื่อกลับบ้าน ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "Flushed Away",
+      "Chicken Run",
+      "Wallace & Gromit: The Curse of the Were-Rabbit",
+      "Shaun the Sheep Movie",
+    ],
+    correctIndex: 0,
+    id: "mg-483",
+  },
+  {
+    title: "Chicken Run",
+    description:
+      "ไก่ในฟาร์มวางแผนหลบหนีเหมือนนักโทษ ก่อนเจ้าของจะเปลี่ยนพวกมันเป็นสินค้ารูปแบบใหม่ รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: [
+      "Chicken Run",
+      "Wallace & Gromit: The Curse of the Were-Rabbit",
+      "Shaun the Sheep Movie",
+      "A Shaun the Sheep Movie: Farmageddon",
+    ],
+    correctIndex: 0,
+    id: "mg-484",
+  },
+  {
+    title: "Wallace & Gromit: The Curse of the Were-Rabbit",
+    description:
+      "นักประดิษฐ์กับสุนัขคู่ใจรับงานกำจัดกระต่าย แต่สิ่งมีชีวิตลึกลับเริ่มคุกคามงานประกวดผัก เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "Wallace & Gromit: The Curse of the Were-Rabbit",
+      "Shaun the Sheep Movie",
+      "A Shaun the Sheep Movie: Farmageddon",
+      "Missing Link",
+    ],
+    correctIndex: 0,
+    id: "mg-485",
+  },
+  {
+    title: "Shaun the Sheep Movie",
+    description:
+      "แกะจอมซนกับฝูงต้องเข้าเมืองใหญ่เพื่อตามหาเจ้าของ หลังความป่วนในฟาร์มทำให้ทุกอย่างผิดแผน คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: [
+      "Shaun the Sheep Movie",
+      "A Shaun the Sheep Movie: Farmageddon",
+      "Missing Link",
+      "The Boxtrolls",
+    ],
+    correctIndex: 0,
+    id: "mg-486",
+  },
+  {
+    title: "A Shaun the Sheep Movie: Farmageddon",
+    description:
+      "แกะในฟาร์มพบเอเลี่ยนตัวน้อยและต้องช่วยมันกลับบ้านก่อนองค์กรลับจะจับตัวไป ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: [
+      "A Shaun the Sheep Movie: Farmageddon",
+      "Missing Link",
+      "The Boxtrolls",
+      "Open Your Eyes",
+    ],
+    correctIndex: 0,
+    id: "mg-487",
+  },
+  {
+    title: "Missing Link",
+    description:
+      "นักสำรวจจอมทะเยอทะยานพบสิ่งมีชีวิตในตำนานที่อยากตามหาญาติ และการเดินทางทำให้ชื่อเสียงไม่ใช่ทุกอย่าง รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Missing Link", "The Boxtrolls", "Open Your Eyes", "Vanilla Sky"],
+    correctIndex: 0,
+    id: "mg-488",
+  },
+  {
+    title: "The Boxtrolls",
+    description:
+      "เด็กชายที่ถูกเลี้ยงโดยสิ่งมีชีวิตใต้เมืองต้องช่วยครอบครัวประหลาดจากคนที่ใส่ร้ายพวกเขา เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: [
+      "The Boxtrolls",
+      "Open Your Eyes",
+      "Vanilla Sky",
+      "Predestination",
+    ],
+    correctIndex: 0,
+    id: "mg-489",
+  },
+  {
+    title: "Open Your Eyes",
+    description:
+      "ชายหนุ่มหน้าตาดีหลังอุบัติเหตุเริ่มแยกไม่ออกว่าความรัก ความฝัน และใบหน้าของตัวเองเป็นเรื่องจริงหรือไม่ คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Open Your Eyes", "Vanilla Sky", "Predestination", "Triangle"],
+    correctIndex: 0,
+    id: "mg-490",
+  },
+  {
+    title: "Vanilla Sky",
+    description:
+      "มหาเศรษฐีหนุ่มหลังอุบัติเหตุเข้าสู่ความสัมพันธ์และภาพหลอนที่ทำให้ความจริงกับความฝันปะปนกัน ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["Vanilla Sky", "Predestination", "Triangle", "Coherence"],
+    correctIndex: 0,
+    id: "mg-491",
+  },
+  {
+    title: "Predestination",
+    description:
+      "เจ้าหน้าที่เดินทางข้ามเวลาตามล่าผู้ก่อการร้าย และคดีสุดท้ายพาไปสู่ปมตัวตนที่วนกลับเข้าหาตัวเอง รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Predestination", "Triangle", "Coherence", "Primer"],
+    correctIndex: 0,
+    id: "mg-492",
+  },
+  {
+    title: "Triangle",
+    description:
+      "หญิงสาวขึ้นเรือกับเพื่อนก่อนเจอพายุและเรือร้าง ซึ่งเหตุการณ์บางอย่างเหมือนวนซ้ำอย่างน่าขนลุก เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Triangle", "Coherence", "Primer", "Moon"],
+    correctIndex: 0,
+    id: "mg-493",
+  },
+  {
+    title: "Coherence",
+    description:
+      "คืนหนึ่งระหว่างดาวหางผ่าน กลุ่มเพื่อนในงานเลี้ยงเริ่มพบความผิดปกติของบ้านใกล้เคียงและตัวตนของกันและกัน คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Coherence", "Primer", "Moon", "Sunshine"],
+    correctIndex: 0,
+    id: "mg-494",
+  },
+  {
+    title: "Primer",
+    description:
+      "วิศวกรสองคนสร้างเครื่องย้อนเวลาอย่างไม่ตั้งใจ และผลประโยชน์เล็ก ๆ ทำให้เส้นเวลาเริ่มพันกันจนควบคุมไม่ได้ ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["Primer", "Moon", "Sunshine", "Ad Astra"],
+    correctIndex: 0,
+    id: "mg-495",
+  },
+  {
+    title: "Moon",
+    description:
+      "ชายคนหนึ่งทำงานลำพังบนฐานดวงจันทร์ใกล้ครบสัญญา ก่อนพบว่าความโดดเดี่ยวของเขาอาจถูกออกแบบไว้ รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Moon", "Sunshine", "Ad Astra", "Life"],
+    correctIndex: 0,
+    id: "mg-496",
+  },
+  {
+    title: "Sunshine",
+    description:
+      "ทีมอวกาศเดินทางไปจุดระเบิดดวงอาทิตย์ที่กำลังดับ แต่ภารกิจกู้โลกเริ่มสั่นคลอนจากความกลัวและความคลั่ง เรื่องนี้เล่าแบบเป็นคำใบ้ให้เดาจากพล็อตหลักและบรรยากาศ ไม่ได้ถามรายละเอียดลึกในเรื่องจนคนไม่เคยดูตอบไม่ได้",
+    choices: ["Sunshine", "Ad Astra", "Life", "Annihilation"],
+    correctIndex: 0,
+    id: "mg-497",
+  },
+  {
+    title: "Ad Astra",
+    description:
+      "นักบินอวกาศเดินทางไกลเพื่อค้นหาพ่อที่หายไป และภารกิจระดับจักรวาลกลับกลายเป็นการเผชิญความโดดเดี่ยวส่วนตัว คำบรรยายตั้งใจให้เห็นภาพของโลก ตัวละคร และปัญหาหลักพอประมาณ แต่ยังไม่เฉลยตรงจนหมดสนุก",
+    choices: ["Ad Astra", "Life", "Annihilation", "The Brutalist"],
+    correctIndex: 0,
+    id: "mg-498",
+  },
+  {
+    title: "Life",
+    description:
+      "ทีมนักบินอวกาศศึกษาสิ่งมีชีวิตจากดาวอังคารบนสถานีอวกาศ ก่อนพบว่ามันเรียนรู้และเอาตัวรอดได้เร็วเกินไป ถ้าเทียบกับตัวเลือกแล้วจะพอจับทิศได้จากสถานการณ์สำคัญ ความสัมพันธ์ และโทนของเรื่อง",
+    choices: ["Life", "Annihilation", "The Brutalist", "Conclave"],
+    correctIndex: 0,
+    id: "mg-499",
+  },
+  {
+    title: "Annihilation",
+    description:
+      "ทีมนักวิทยาศาสตร์หญิงเข้าไปในเขตลึกลับที่ธรรมชาติกลายพันธุ์ และความทรงจำของพวกเธอเริ่มไม่น่าไว้ใจ รายละเอียดถูกวางให้กำกวมเล็กน้อยเพื่อให้เป็นเกมทายชื่อเรื่อง ไม่ใช่ข้อสอบจำฉากเฉพาะ",
+    choices: ["Annihilation", "The Brutalist", "Conclave", "Wicked"],
+    correctIndex: 0,
+    id: "mg-500",
   },
 ];
 
@@ -10145,7 +13065,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-005",
     title: "ฮอกส์มีด",
     description: "หมู่บ้านเดียวที่มีพ่อมดแม่มดล้วน ๆ ชื่ออะไร?",
-    choices: ["ฮอกส์มีด", "โกดริกส์โฮลโลว์", "ลิตเติลวินจิง", "น็อกเทิร์นแอลลีย์"],
+    choices: [
+      "ฮอกส์มีด",
+      "โกดริกส์โฮลโลว์",
+      "ลิตเติลวินจิง",
+      "น็อกเทิร์นแอลลีย์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10159,7 +13084,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-007",
     title: "เฮอร์ไมโอนี่ เกรนเจอร์",
     description: "เพื่อนสนิทของแฮร์รี่ที่เป็นแม่มดเลือดผสมชื่ออะไร?",
-    choices: ["เฮอร์ไมโอนี่ เกรนเจอร์", "จินนี่ วีสลีย์", "ลูน่า เลิฟกู๊ด", "โช แชง"],
+    choices: [
+      "เฮอร์ไมโอนี่ เกรนเจอร์",
+      "จินนี่ วีสลีย์",
+      "ลูน่า เลิฟกู๊ด",
+      "โช แชง",
+    ],
     correctIndex: 0,
   },
   {
@@ -10180,14 +13110,24 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-010",
     title: "อัลบัส ดัมเบิลดอร์",
     description: "อาจารย์ใหญ่ของฮอกวอตส์ในช่วงแฮร์รี่เรียนคือใคร?",
-    choices: ["อัลบัส ดัมเบิลดอร์", "ซเวอรัส สเนป", "มินerva แม็กกอนนากัล", "โวลเดอมอร์"],
+    choices: [
+      "อัลบัส ดัมเบิลดอร์",
+      "ซเวอรัส สเนป",
+      "มินerva แม็กกอนนากัล",
+      "โวลเดอมอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-011",
     title: "ซเวอรัส สเนป",
     description: "อาจารย์วิชาปรุงยาในปีแรกของแฮร์รี่คือใคร?",
-    choices: ["ซเวอรัส สเนป", "กิลเดอรอย ล็อกฮาร์ต", "รีมัส ลูปิน", "โดโลเรส อัมบริดจ์"],
+    choices: [
+      "ซเวอรัส สเนป",
+      "กิลเดอรอย ล็อกฮาร์ต",
+      "รีมัส ลูปิน",
+      "โดโลเรส อัมบริดจ์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10215,35 +13155,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-015",
     title: "หินชุบชีวิต",
     description: "หนึ่งในเดธลีแฮลโลว์ที่สามารถเรียกผู้ตายกลับมาได้คืออะไร?",
-    choices: ["หินชุบชีวิต", "ไม้กายสิทธิ์เอลเดอร์", "ผ้าคลุมล่องหน", "ดาบกริฟฟินดอร์"],
+    choices: [
+      "หินชุบชีวิต",
+      "ไม้กายสิทธิ์เอลเดอร์",
+      "ผ้าคลุมล่องหน",
+      "ดาบกริฟฟินดอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-016",
     title: "ไม้กายสิทธิ์เอลเดอร์",
     description: "ไม้กายสิทธิ์ที่ทรงพลังที่สุดในตำนานคืออะไร?",
-    choices: ["ไม้กายสิทธิ์เอลเดอร์", "ไม้กายสิทธิ์ฮอลลี่", "ไม้กายสิทธิ์ยิว", "ไม้กายสิทธิ์แอช"],
+    choices: [
+      "ไม้กายสิทธิ์เอลเดอร์",
+      "ไม้กายสิทธิ์ฮอลลี่",
+      "ไม้กายสิทธิ์ยิว",
+      "ไม้กายสิทธิ์แอช",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-017",
     title: "ผ้าคลุมล่องหน",
     description: "เดธลีแฮลโลว์ชิ้นใดทำให้ผู้สวมใส่หายตัวได้?",
-    choices: ["ผ้าคลุมล่องหน", "หินชุบชีวิต", "ไม้กายสิทธิ์เอลเดอร์", "กระจกแห่งแอริเซด"],
+    choices: [
+      "ผ้าคลุมล่องหน",
+      "หินชุบชีวิต",
+      "ไม้กายสิทธิ์เอลเดอร์",
+      "กระจกแห่งแอริเซด",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-018",
     title: "กระจกแห่งแอริเซด",
     description: "กระจกที่สะท้อนความปรารถนาลึกที่สุดของผู้มองชื่ออะไร?",
-    choices: ["กระจกแห่งแอริเซด", "กระจกแห่งอาวิน", "กระจกแห่งออร์แกน", "กระจกแห่งชูลา"],
+    choices: [
+      "กระจกแห่งแอริเซด",
+      "กระจกแห่งอาวิน",
+      "กระจกแห่งออร์แกน",
+      "กระจกแห่งชูลา",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-019",
     title: "ห้องแห่งความลับ",
     description: "ห้องลับที่ซ่อนบาซิลิสก์ในฮอกวอตส์ชื่ออะไร?",
-    choices: ["ห้องแห่งความลับ", "ห้องแห่งความจริง", "ห้องแห่งเงามืด", "ห้องแห่งโถงใหญ่"],
+    choices: [
+      "ห้องแห่งความลับ",
+      "ห้องแห่งความจริง",
+      "ห้องแห่งเงามืด",
+      "ห้องแห่งโถงใหญ่",
+    ],
     correctIndex: 0,
   },
   {
@@ -10257,21 +13222,36 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-021",
     title: "ทอม ริดเดิล",
     description: "ชื่อจริงของลอร์ดโวลเดอมอร์คืออะไร?",
-    choices: ["ทอม ริดเดิล", "ทอม มาร์โวโล ริดเดิล", "เพอร์ซิวาล เกรฟส์", "คอร์โวส เลสแตรงก์"],
+    choices: [
+      "ทอม ริดเดิล",
+      "ทอม มาร์โวโล ริดเดิล",
+      "เพอร์ซิวาล เกรฟส์",
+      "คอร์โวส เลสแตรงก์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-022",
     title: "ไดแอกอนแอลลีย์",
     description: "ตรอกที่เป็นแหล่งร้านค้าในโลกเวทมนตร์ชื่ออะไร?",
-    choices: ["ไดแอกอนแอลลีย์", "น็อกเทิร์นแอลลีย์", "พิกคาดิลลี", "ตรอกแคบลับ"],
+    choices: [
+      "ไดแอกอนแอลลีย์",
+      "น็อกเทิร์นแอลลีย์",
+      "พิกคาดิลลี",
+      "ตรอกแคบลับ",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-023",
     title: "ร้านไม้กายสิทธิ์โอลิแวนเดอร์",
     description: "ร้านขายไม้กายสิทธิ์ชื่อดังในไดแอกอนแอลลีย์คือร้านใด?",
-    choices: ["ร้านไม้กายสิทธิ์โอลิแวนเดอร์", "ร้านฟลอริชแอนด์บลอตส์", "ร้านวีสลีย์ส์วิซาร์ดวีซส์", "ร้านฮันนี่ดุกส์"],
+    choices: [
+      "ร้านไม้กายสิทธิ์โอลิแวนเดอร์",
+      "ร้านฟลอริชแอนด์บลอตส์",
+      "ร้านวีสลีย์ส์วิซาร์ดวีซส์",
+      "ร้านฮันนี่ดุกส์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10313,7 +13293,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-029",
     title: "คาถาปาตรอนัส",
     description: "คาถาที่ใช้ขับไล่ผู้คุมวิญญาณชื่ออะไร?",
-    choices: ["คาถาปาตรอนัส", "เอ็กซ์เปลลิอาร์มัส", "อวาดา เคดาฟรา", "วิงการ์เดียม เลวิโอซา"],
+    choices: [
+      "คาถาปาตรอนัส",
+      "เอ็กซ์เปลลิอาร์มัส",
+      "อวาดา เคดาฟรา",
+      "วิงการ์เดียม เลวิโอซา",
+    ],
     correctIndex: 0,
   },
   {
@@ -10425,21 +13410,36 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-045",
     title: "วีสลีย์ส์วิซาร์ดวีซส์",
     description: "ชื่อร้านขายของเล่นตลกของฝาแฝดวีสลีย์คืออะไร?",
-    choices: ["วีสลีย์ส์วิซาร์ดวีซส์", "โอลิแวนเดอร์", "ฮันนี่ดุกส์", "ไอศกรีมฟลอเรียน ฟอร์เตสคิว"],
+    choices: [
+      "วีสลีย์ส์วิซาร์ดวีซส์",
+      "โอลิแวนเดอร์",
+      "ฮันนี่ดุกส์",
+      "ไอศกรีมฟลอเรียน ฟอร์เตสคิว",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-046",
     title: "ดัมเบิลดอร์สอาร์มี่",
     description: "กลุ่มลับที่แฮร์รี่สอนป้องกันตัวในปีอัมบริดจ์ชื่ออะไร?",
-    choices: ["ดัมเบิลดอร์สอาร์มี่", "ออร์เดอร์ออฟเดอะฟีนิกซ์", "สลักฮอร์นคลับ", "แผนกปริศนา"],
+    choices: [
+      "ดัมเบิลดอร์สอาร์มี่",
+      "ออร์เดอร์ออฟเดอะฟีนิกซ์",
+      "สลักฮอร์นคลับ",
+      "แผนกปริศนา",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-047",
     title: "ออร์เดอร์ออฟเดอะฟีนิกซ์",
     description: "องค์กรลับที่ต่อสู้กับโวลเดอมอร์ชื่ออะไร?",
-    choices: ["ออร์เดอร์ออฟเดอะฟีนิกซ์", "เดธอีตเตอร์", "กระทรวงเวทมนตร์", "กองกำลังฮอกวอตส์"],
+    choices: [
+      "ออร์เดอร์ออฟเดอะฟีนิกซ์",
+      "เดธอีตเตอร์",
+      "กระทรวงเวทมนตร์",
+      "กองกำลังฮอกวอตส์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10481,7 +13481,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-053",
     title: "ผู้ดูแลสัตว์มหัศจรรย์",
     description: "วิชาที่แฮกริดสอนชื่ออะไร?",
-    choices: ["ผู้ดูแลสัตว์มหัศจรรย์", "การปรุงยา", "การป้องกันตัวจากศาสตร์มืด", "การแปลงกาย"],
+    choices: [
+      "ผู้ดูแลสัตว์มหัศจรรย์",
+      "การปรุงยา",
+      "การป้องกันตัวจากศาสตร์มืด",
+      "การแปลงกาย",
+    ],
     correctIndex: 0,
   },
   {
@@ -10495,7 +13500,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-055",
     title: "การป้องกันตัวจากศาสตร์มืด",
     description: "วิชาที่มีอาจารย์สลับบ่อยที่สุดชื่ออะไร?",
-    choices: ["การป้องกันตัวจากศาสตร์มืด", "การแปลงกาย", "คาถา", "ประวัติศาสตร์เวทมนตร์"],
+    choices: [
+      "การป้องกันตัวจากศาสตร์มืด",
+      "การแปลงกาย",
+      "คาถา",
+      "ประวัติศาสตร์เวทมนตร์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10523,14 +13533,24 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-059",
     title: "ประวัติศาสตร์เวทมนตร์",
     description: "วิชาที่สอนโดยผีศาสตราจารย์บินส์คืออะไร?",
-    choices: ["ประวัติศาสตร์เวทมนตร์", "การป้องกันตัวจากศาสตร์มืด", "คาถาโบราณ", "กฎเวทมนตร์"],
+    choices: [
+      "ประวัติศาสตร์เวทมนตร์",
+      "การป้องกันตัวจากศาสตร์มืด",
+      "คาถาโบราณ",
+      "กฎเวทมนตร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-060",
     title: "กระทรวงเวทมนตร์",
     description: "องค์กรปกครองโลกเวทมนตร์ในอังกฤษเรียกว่าอะไร?",
-    choices: ["กระทรวงเวทมนตร์", "สภาแม่มด", "สำนักงานมักเกิ้ล", "กองบัญชาการออโรร่า"],
+    choices: [
+      "กระทรวงเวทมนตร์",
+      "สภาแม่มด",
+      "สำนักงานมักเกิ้ล",
+      "กองบัญชาการออโรร่า",
+    ],
     correctIndex: 0,
   },
   {
@@ -10544,35 +13564,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-062",
     title: "คิงส์ลีย์ แชคเคิลโบลต์",
     description: "ออโรร่าที่ภายหลังเป็นรัฐมนตรีเวทมนตร์คือใคร?",
-    choices: ["คิงส์ลีย์ แชคเคิลโบลต์", "รูฟัส สคริมเจอร์", "คอร์เนลิอัส ฟัดจ์", "เพอร์ซี วีสลีย์"],
+    choices: [
+      "คิงส์ลีย์ แชคเคิลโบลต์",
+      "รูฟัส สคริมเจอร์",
+      "คอร์เนลิอัส ฟัดจ์",
+      "เพอร์ซี วีสลีย์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-063",
     title: "คอร์เนลิอัส ฟัดจ์",
     description: "รัฐมนตรีเวทมนตร์ที่ไม่เชื่อว่าโวลเดอมอร์กลับมาคือใคร?",
-    choices: ["คอร์เนลิอัส ฟัดจ์", "รูฟัส สคริมเจอร์", "โดโลเรส อัมบริดจ์", "แมด-อาย มูดี้"],
+    choices: [
+      "คอร์เนลิอัส ฟัดจ์",
+      "รูฟัส สคริมเจอร์",
+      "โดโลเรส อัมบริดจ์",
+      "แมด-อาย มูดี้",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-064",
     title: "รูฟัส สคริมเจอร์",
     description: "รัฐมนตรีเวทมนตร์หลังฟัดจ์คือใคร?",
-    choices: ["รูฟัส สคริมเจอร์", "คิงส์ลีย์ แชคเคิลโบลต์", "เพอร์ซี วีสลีย์", "มอลลี่ วีสลีย์"],
+    choices: [
+      "รูฟัส สคริมเจอร์",
+      "คิงส์ลีย์ แชคเคิลโบลต์",
+      "เพอร์ซี วีสลีย์",
+      "มอลลี่ วีสลีย์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-065",
     title: "โดโลเรส อัมบริดจ์",
     description: "แม่มดที่เป็นอธิการบดีใหญ่และโหดร้ายในฮอกวอตส์คือใคร?",
-    choices: ["โดโลเรส อัมบริดจ์", "เบลลาทริกซ์ เลสแตรงก์", "ริต้า สกีตเตอร์", "นาร์ซิสซา มัลฟอย"],
+    choices: [
+      "โดโลเรส อัมบริดจ์",
+      "เบลลาทริกซ์ เลสแตรงก์",
+      "ริต้า สกีตเตอร์",
+      "นาร์ซิสซา มัลฟอย",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-066",
     title: "ริต้า สกีตเตอร์",
     description: "นักข่าวของเดลี่พรอเฟ็ตที่มักเขียนบิดเบือนคือใคร?",
-    choices: ["ริต้า สกีตเตอร์", "เฮสเตอร์ โจนส์", "บาธิลดา แบ็กช็อต", "รูเบียส แฮกริด"],
+    choices: [
+      "ริต้า สกีตเตอร์",
+      "เฮสเตอร์ โจนส์",
+      "บาธิลดา แบ็กช็อต",
+      "รูเบียส แฮกริด",
+    ],
     correctIndex: 0,
   },
   {
@@ -10600,7 +13645,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-070",
     title: "เนวิลล์ ลองบ็อตทอม",
     description: "เพื่อนร่วมบ้านกริฟฟินดอร์ที่เก่งสมุนไพรศาสตร์คือใคร?",
-    choices: ["เนวิลล์ ลองบ็อตทอม", "ซิมัส ฟินนิแกน", "ดีน โทมัส", "โอลิเวอร์ วูด"],
+    choices: [
+      "เนวิลล์ ลองบ็อตทอม",
+      "ซิมัส ฟินนิแกน",
+      "ดีน โทมัส",
+      "โอลิเวอร์ วูด",
+    ],
     correctIndex: 0,
   },
   {
@@ -10621,35 +13671,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-073",
     title: "ซิเรียส แบล็ก",
     description: "พ่อทูนหัวของแฮร์รี่คือใคร?",
-    choices: ["ซิเรียส แบล็ก", "รีมัส ลูปิน", "ปีเตอร์ เพ็ตติกรูว์", "เจมส์ พอตเตอร์"],
+    choices: [
+      "ซิเรียส แบล็ก",
+      "รีมัส ลูปิน",
+      "ปีเตอร์ เพ็ตติกรูว์",
+      "เจมส์ พอตเตอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-074",
     title: "รีมัส ลูปิน",
     description: "อาจารย์ป้องกันตัวจากศาสตร์มืดปีสามคือใคร?",
-    choices: ["รีมัส ลูปิน", "กิลเดอรอย ล็อกฮาร์ต", "มัลคอล์ม พีฟส์", "ฮอเรซ สลักฮอร์น"],
+    choices: [
+      "รีมัส ลูปิน",
+      "กิลเดอรอย ล็อกฮาร์ต",
+      "มัลคอล์ม พีฟส์",
+      "ฮอเรซ สลักฮอร์น",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-075",
     title: "ปีเตอร์ เพ็ตติกรูว์",
     description: "หนูของรอนที่แท้จริงคือเดธอีตเตอร์ชื่ออะไร?",
-    choices: ["ปีเตอร์ เพ็ตติกรูว์", "เรกูลัส แบล็ก", "ลูเซียส มัลฟอย", "บาร์ตี้ เคร้าช์ จูเนียร์"],
+    choices: [
+      "ปีเตอร์ เพ็ตติกรูว์",
+      "เรกูลัส แบล็ก",
+      "ลูเซียส มัลฟอย",
+      "บาร์ตี้ เคร้าช์ จูเนียร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-076",
     title: "เจมส์ พอตเตอร์",
     description: "พ่อของแฮร์รี่ชื่ออะไร?",
-    choices: ["เจมส์ พอตเตอร์", "อัลบัส พอตเตอร์", "อาเธอร์ วีสลีย์", "เฟลอร์ เดอลากูร์"],
+    choices: [
+      "เจมส์ พอตเตอร์",
+      "อัลบัส พอตเตอร์",
+      "อาเธอร์ วีสลีย์",
+      "เฟลอร์ เดอลากูร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-077",
     title: "ลิลี่ พอตเตอร์",
     description: "แม่ของแฮร์รี่ชื่ออะไร?",
-    choices: ["ลิลี่ พอตเตอร์", "ลูน่า พอตเตอร์", "โมรีน พอตเตอร์", "มินerva พอตเตอร์"],
+    choices: [
+      "ลิลี่ พอตเตอร์",
+      "ลูน่า พอตเตอร์",
+      "โมรีน พอตเตอร์",
+      "มินerva พอตเตอร์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10663,49 +13738,84 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-079",
     title: "ดาบกริฟฟินดอร์",
     description: "อาวุธของกอดริก กริฟฟินดอร์คืออะไร?",
-    choices: ["ดาบกริฟฟินดอร์", "หอกกริฟฟินดอร์", "คทากริฟฟินดอร์", "ขวานกริฟฟินดอร์"],
+    choices: [
+      "ดาบกริฟฟินดอร์",
+      "หอกกริฟฟินดอร์",
+      "คทากริฟฟินดอร์",
+      "ขวานกริฟฟินดอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-080",
     title: "เฮลกา ฮัฟเฟิลพัฟ",
     description: "ทอม ริดเดิลทำโฮรครักซ์ชิ้นหนึ่งจากถ้วยของใคร?",
-    choices: ["เฮลกา ฮัฟเฟิลพัฟ", "โรวีนา เรเวนคลอ", "กอดริก กริฟฟินดอร์", "ซัลลาซาร์ สลิธีริน"],
+    choices: [
+      "เฮลกา ฮัฟเฟิลพัฟ",
+      "โรวีนา เรเวนคลอ",
+      "กอดริก กริฟฟินดอร์",
+      "ซัลลาซาร์ สลิธีริน",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-081",
     title: "มงกุฎเรเวนคลอ",
     description: "โฮรครักซ์ที่เป็นของเรเวนคลอคืออะไร?",
-    choices: ["มงกุฎเรเวนคลอ", "ถ้วยฮัฟเฟิลพัฟ", "ล็อกเก็ตสลิธีริน", "ดาบกริฟฟินดอร์"],
+    choices: [
+      "มงกุฎเรเวนคลอ",
+      "ถ้วยฮัฟเฟิลพัฟ",
+      "ล็อกเก็ตสลิธีริน",
+      "ดาบกริฟฟินดอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-082",
     title: "ล็อกเก็ตสลิธีริน",
     description: "โฮรครักซ์ที่เป็นล็อกเก็ตมาจากผู้ก่อตั้งบ้านใด?",
-    choices: ["ซัลลาซาร์ สลิธีริน", "กอดริก กริฟฟินดอร์", "โรวีนา เรเวนคลอ", "เฮลกา ฮัฟเฟิลพัฟ"],
+    choices: [
+      "ซัลลาซาร์ สลิธีริน",
+      "กอดริก กริฟฟินดอร์",
+      "โรวีนา เรเวนคลอ",
+      "เฮลกา ฮัฟเฟิลพัฟ",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-083",
     title: "ถ้วยฮัฟเฟิลพัฟ",
     description: "โฮรครักซ์ที่เป็นถ้วยมาจากผู้ก่อตั้งบ้านใด?",
-    choices: ["เฮลกา ฮัฟเฟิลพัฟ", "โรวีนา เรเวนคลอ", "ซัลลาซาร์ สลิธีริน", "กอดริก กริฟฟินดอร์"],
+    choices: [
+      "เฮลกา ฮัฟเฟิลพัฟ",
+      "โรวีนา เรเวนคลอ",
+      "ซัลลาซาร์ สลิธีริน",
+      "กอดริก กริฟฟินดอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-084",
     title: "ไดอารี่ของริดเดิล",
     description: "โฮรครักซ์ชิ้นแรกที่แฮร์รี่ทำลายคืออะไร?",
-    choices: ["ไดอารี่ของริดเดิล", "มงกุฎเรเวนคลอ", "ล็อกเก็ตสลิธีริน", "ถ้วยฮัฟเฟิลพัฟ"],
+    choices: [
+      "ไดอารี่ของริดเดิล",
+      "มงกุฎเรเวนคลอ",
+      "ล็อกเก็ตสลิธีริน",
+      "ถ้วยฮัฟเฟิลพัฟ",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-085",
     title: "เขี้ยวบาซิลิสก์",
     description: "แฮร์รี่ทำลายไดอารี่ของริดเดิลด้วยอะไร?",
-    choices: ["เขี้ยวบาซิลิสก์", "ดาบกริฟฟินดอร์", "ไม้กายสิทธิ์เอลเดอร์", "ไฟของฟีนิกซ์"],
+    choices: [
+      "เขี้ยวบาซิลิสก์",
+      "ดาบกริฟฟินดอร์",
+      "ไม้กายสิทธิ์เอลเดอร์",
+      "ไฟของฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
@@ -10733,7 +13843,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-089",
     title: "ริเดอิคิวลัส",
     description: "คาถาที่ทำให้บอกการ์ทดูน่าขำคืออะไร?",
-    choices: ["ริเดอิคิวลัส", "เอ็กซ์เปลลิอาร์มัส", "พรีออริ อินคันทาเตม", "อิมเพอริโอ"],
+    choices: [
+      "ริเดอิคิวลัส",
+      "เอ็กซ์เปลลิอาร์มัส",
+      "พรีออริ อินคันทาเตม",
+      "อิมเพอริโอ",
+    ],
     correctIndex: 0,
   },
   {
@@ -10768,7 +13883,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-094",
     title: "โพลีจูซ",
     description: "น้ำยาที่ทำให้แปลงร่างเป็นคนอื่นคืออะไร?",
-    choices: ["น้ำยาโพลีจูซ", "น้ำยาหยุดเวลา", "น้ำยาแห่งความกล้าหาญ", "น้ำยาสุขุม"],
+    choices: [
+      "น้ำยาโพลีจูซ",
+      "น้ำยาหยุดเวลา",
+      "น้ำยาแห่งความกล้าหาญ",
+      "น้ำยาสุขุม",
+    ],
     correctIndex: 0,
   },
   {
@@ -10803,7 +13923,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-099",
     title: "หนังสือเจ้าชายเลือดผสม",
     description: "หนังสือปรุงยาที่ช่วยแฮร์รี่ในปีหกคือของใคร?",
-    choices: ["เจ้าชายเลือดผสม", "กิลเดอรอย ล็อกฮาร์ต", "ทอม ริดเดิล", "เรกูลัส แบล็ก"],
+    choices: [
+      "เจ้าชายเลือดผสม",
+      "กิลเดอรอย ล็อกฮาร์ต",
+      "ทอม ริดเดิล",
+      "เรกูลัส แบล็ก",
+    ],
     correctIndex: 0,
   },
   {
@@ -10817,21 +13942,36 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-101",
     title: "นาร์ซิสซา มัลฟอย",
     description: "แม่ของเดรโก มัลฟอยชื่ออะไร?",
-    choices: ["นาร์ซิสซา มัลฟอย", "เบลลาทริกซ์ เลสแตรงก์", "แอนโดรเมดา ท็องก์", "มอลลี่ วีสลีย์"],
+    choices: [
+      "นาร์ซิสซา มัลฟอย",
+      "เบลลาทริกซ์ เลสแตรงก์",
+      "แอนโดรเมดา ท็องก์",
+      "มอลลี่ วีสลีย์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-102",
     title: "ลูเซียส มัลฟอย",
     description: "พ่อของเดรโก มัลฟอยคือใคร?",
-    choices: ["ลูเซียส มัลฟอย", "คอร์นีเลียส ฟัดจ์", "บาร์ตี้ เคร้าช์", "กอร์มเลส"],
+    choices: [
+      "ลูเซียส มัลฟอย",
+      "คอร์นีเลียส ฟัดจ์",
+      "บาร์ตี้ เคร้าช์",
+      "กอร์มเลส",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-103",
     title: "เดรโก มัลฟอย",
     description: "ศัตรูร่วมรุ่นของแฮร์รี่ในบ้านสลิธีรินคือใคร?",
-    choices: ["เดรโก มัลฟอย", "ธีโอดอร์ น็อตต์", "เบลส ซาบินี", "ลูเซียส มัลฟอย"],
+    choices: [
+      "เดรโก มัลฟอย",
+      "ธีโอดอร์ น็อตต์",
+      "เบลส ซาบินี",
+      "ลูเซียส มัลฟอย",
+    ],
     correctIndex: 0,
   },
   {
@@ -10873,21 +14013,36 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-109",
     title: "มาราวเดอร์สแมป",
     description: "แผนที่ที่แสดงตำแหน่งคนในฮอกวอตส์ชื่ออะไร?",
-    choices: ["มาราวเดอร์สแมป", "แผนที่ฮอกวอตส์", "เข็มทิศวิเศษ", "สมุดบันทึกลับ"],
+    choices: [
+      "มาราวเดอร์สแมป",
+      "แผนที่ฮอกวอตส์",
+      "เข็มทิศวิเศษ",
+      "สมุดบันทึกลับ",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-110",
     title: "เจ้าเล่ห์จอมกวน",
     description: "คำพูดในการเปิดใช้แผนที่มาราวเดอร์คืออะไร?",
-    choices: ["ข้าพเจ้าขอสาบานว่ากำลังก่อกวน", "ข้าพเจ้าขอตระหนักถึงความจริง", "ข้าพเจ้าขอตั้งใจเรียน", "ข้าพเจ้าขอเปิดเผยความลับ"],
+    choices: [
+      "ข้าพเจ้าขอสาบานว่ากำลังก่อกวน",
+      "ข้าพเจ้าขอตระหนักถึงความจริง",
+      "ข้าพเจ้าขอตั้งใจเรียน",
+      "ข้าพเจ้าขอเปิดเผยความลับ",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-111",
     title: "ปิดบัง",
     description: "คำพูดในการปิดแผนที่มาราวเดอร์คืออะไร?",
-    choices: ["ก่อกวนสิ้นสุดแล้ว", "ข้าพเจ้าขอปิดบัง", "ขอให้คืนสภาพ", "ข้าพเจ้าปลดปล่อย"],
+    choices: [
+      "ก่อกวนสิ้นสุดแล้ว",
+      "ข้าพเจ้าขอปิดบัง",
+      "ขอให้คืนสภาพ",
+      "ข้าพเจ้าปลดปล่อย",
+    ],
     correctIndex: 0,
   },
   {
@@ -10915,35 +14070,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-115",
     title: "สัญลักษณ์เดธลีแฮลโลว์",
     description: "สัญลักษณ์เดธลีแฮลโลว์ประกอบด้วยอะไร?",
-    choices: ["สามเหลี่ยม วงกลม และเส้นตรง", "วงกลมสองวงและดาว", "สามเหลี่ยมและกงล้อ", "เส้นตรงสองเส้นและจุด"],
+    choices: [
+      "สามเหลี่ยม วงกลม และเส้นตรง",
+      "วงกลมสองวงและดาว",
+      "สามเหลี่ยมและกงล้อ",
+      "เส้นตรงสองเส้นและจุด",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-116",
     title: "ฮอกวอตส์ เอ็กซ์เพรส",
     description: "รถไฟที่พานักเรียนไปฮอกวอตส์ชื่ออะไร?",
-    choices: ["ฮอกวอตส์ เอ็กซ์เพรส", "สกอตติช เอ็กซ์เพรส", "ไดแอกอน เอ็กซ์เพรส", "คิงส์ครอส เอ็กซ์เพรส"],
+    choices: [
+      "ฮอกวอตส์ เอ็กซ์เพรส",
+      "สกอตติช เอ็กซ์เพรส",
+      "ไดแอกอน เอ็กซ์เพรส",
+      "คิงส์ครอส เอ็กซ์เพรส",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-117",
     title: "คิงส์ครอส ชานชาลา 9 3/4",
     description: "ชานชาลาที่แฮร์รี่ขึ้นรถไฟฮอกวอตส์คือที่ใด?",
-    choices: ["คิงส์ครอส ชานชาลา 9 3/4", "ยูสตัน ชานชาลา 9", "คิงส์ครอส ชานชาลา 7", "วิกตอเรีย ชานชาลา 13"],
+    choices: [
+      "คิงส์ครอส ชานชาลา 9 3/4",
+      "ยูสตัน ชานชาลา 9",
+      "คิงส์ครอส ชานชาลา 7",
+      "วิกตอเรีย ชานชาลา 13",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-118",
     title: "โกดริกส์โฮลโลว์",
     description: "หมู่บ้านที่ครอบครัวพอตเตอร์อาศัยอยู่คือที่ใด?",
-    choices: ["โกดริกส์โฮลโลว์", "ฮอกส์มีด", "ลิตเติลแฮงเกิลตัน", "ออตเตอรี เซนต์แคตช์โพล"],
+    choices: [
+      "โกดริกส์โฮลโลว์",
+      "ฮอกส์มีด",
+      "ลิตเติลแฮงเกิลตัน",
+      "ออตเตอรี เซนต์แคตช์โพล",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-119",
     title: "ลิตเติลวินจิง",
     description: "ย่านที่บ้านเดอร์สลีย์ตั้งอยู่คือที่ใด?",
-    choices: ["ลิตเติลวินจิง", "โกดริกส์โฮลโลว์", "ลิตเติลแฮงเกิลตัน", "ออตเตอรี เซนต์แคตช์โพล"],
+    choices: [
+      "ลิตเติลวินจิง",
+      "โกดริกส์โฮลโลว์",
+      "ลิตเติลแฮงเกิลตัน",
+      "ออตเตอรี เซนต์แคตช์โพล",
+    ],
     correctIndex: 0,
   },
   {
@@ -10957,35 +14137,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-121",
     title: "ห้องต้องประสงค์",
     description: "ห้องลับที่ปรากฏตามความต้องการของผู้ใช้ชื่ออะไร?",
-    choices: ["ห้องต้องประสงค์", "ห้องแห่งความลับ", "ห้องแห่งปริศนา", "ห้องโถงใหญ่"],
+    choices: [
+      "ห้องต้องประสงค์",
+      "ห้องแห่งความลับ",
+      "ห้องแห่งปริศนา",
+      "ห้องโถงใหญ่",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-122",
     title: "ก๊อบสออฟไฟร์",
     description: "ถ้วยที่เลือกผู้เข้าแข่งขันไตรภาคีคืออะไร?",
-    choices: ["ก๊อบสออฟไฟร์", "ถ้วยกริฟฟินดอร์", "ถ้วยฮัฟเฟิลพัฟ", "กงล้อโชคชะตา"],
+    choices: [
+      "ก๊อบสออฟไฟร์",
+      "ถ้วยกริฟฟินดอร์",
+      "ถ้วยฮัฟเฟิลพัฟ",
+      "กงล้อโชคชะตา",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-123",
     title: "การแข่งขันไตรภาคี",
     description: "การแข่งขันระหว่างโรงเรียนเวทมนตร์สามแห่งเรียกว่าอะไร?",
-    choices: ["การแข่งขันไตรภาคี", "การแข่งขันสี่จตุภาค", "การแข่งขันควิดดิชเวิลด์คัพ", "การแข่งขันสลักฮอร์นคลับ"],
+    choices: [
+      "การแข่งขันไตรภาคี",
+      "การแข่งขันสี่จตุภาค",
+      "การแข่งขันควิดดิชเวิลด์คัพ",
+      "การแข่งขันสลักฮอร์นคลับ",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-124",
     title: "เซดริก ดิกกอรี่",
     description: "ผู้เข้าแข่งขันฮัฟเฟิลพัฟในไตรภาคีคือใคร?",
-    choices: ["เซดริก ดิกกอรี่", "วิคเตอร์ ครัม", "เฟลอร์ เดอลากูร์", "แฮร์รี่ พอตเตอร์"],
+    choices: [
+      "เซดริก ดิกกอรี่",
+      "วิคเตอร์ ครัม",
+      "เฟลอร์ เดอลากูร์",
+      "แฮร์รี่ พอตเตอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-125",
     title: "วิคเตอร์ ครัม",
     description: "ผู้เข้าแข่งขันจากเดอร์มสแตรงก์คือใคร?",
-    choices: ["วิคเตอร์ ครัม", "เซดริก ดิกกอรี่", "เฟลอร์ เดอลากูร์", "ดีน โทมัส"],
+    choices: [
+      "วิคเตอร์ ครัม",
+      "เซดริก ดิกกอรี่",
+      "เฟลอร์ เดอลากูร์",
+      "ดีน โทมัส",
+    ],
     correctIndex: 0,
   },
   {
@@ -10999,7 +14204,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-127",
     title: "บาร์ตี้ เคร้าช์ จูเนียร์",
     description: "ผู้แฝงตัวเป็นแมด-อาย มูดี้ในปีสี่คือใคร?",
-    choices: ["บาร์ตี้ เคร้าช์ จูเนียร์", "บาร์ตี้ เคร้าช์ ซีเนียร์", "ลูเซียส มัลฟอย", "เดรโก มัลฟอย"],
+    choices: [
+      "บาร์ตี้ เคร้าช์ จูเนียร์",
+      "บาร์ตี้ เคร้าช์ ซีเนียร์",
+      "ลูเซียส มัลฟอย",
+      "เดรโก มัลฟอย",
+    ],
     correctIndex: 0,
   },
   {
@@ -11013,13 +14223,19 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-129",
     title: "เวิลด์คัพควิดดิช",
     description: "การแข่งขันควิดดิชระดับโลกเรียกว่าอะไร?",
-    choices: ["เวิลด์คัพควิดดิช", "ซุปเปอร์คัพควิดดิช", "ไตรภาคีคัพ", "ลีกฮอกวอตส์"],
+    choices: [
+      "เวิลด์คัพควิดดิช",
+      "ซุปเปอร์คัพควิดดิช",
+      "ไตรภาคีคัพ",
+      "ลีกฮอกวอตส์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-130",
     title: "เดอร์มสแตรงก์",
-    description: "โรงเรียนเวทมนตร์ที่เน้นศาสตร์มืดและวิคเตอร์ ครัมเรียนคือที่ใด?",
+    description:
+      "โรงเรียนเวทมนตร์ที่เน้นศาสตร์มืดและวิคเตอร์ ครัมเรียนคือที่ใด?",
     choices: ["เดอร์มสแตรงก์", "โบซ์บาตง", "อิลเวอร์มอร์นี", "ฮอกวอตส์"],
     correctIndex: 0,
   },
@@ -11069,21 +14285,36 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-137",
     title: "นิวท์ สคามันเดอร์",
     description: "ผู้เขียนตำราสัตว์มหัศจรรย์และตัวเอก Fantastic Beasts คือใคร?",
-    choices: ["นิวท์ สคามันเดอร์", "ทีน่า โกลด์สตีน", "กรินเดลวัลด์", "เจคอบ โควาลสกี"],
+    choices: [
+      "นิวท์ สคามันเดอร์",
+      "ทีน่า โกลด์สตีน",
+      "กรินเดลวัลด์",
+      "เจคอบ โควาลสกี",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-138",
     title: "ทีน่า โกลด์สตีน",
     description: "ออโรร่าที่เป็นคู่หูของนิวท์ใน Fantastic Beasts คือใคร?",
-    choices: ["ทีน่า โกลด์สตีน", "ควีนนี่ โกลด์สตีน", "ลิตา เลสแตรงก์", "นากินี"],
+    choices: [
+      "ทีน่า โกลด์สตีน",
+      "ควีนนี่ โกลด์สตีน",
+      "ลิตา เลสแตรงก์",
+      "นากินี",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-139",
     title: "ควีนนี่ โกลด์สตีน",
     description: "น้องสาวของทีน่าที่อ่านใจคนได้คือใคร?",
-    choices: ["ควีนนี่ โกลด์สตีน", "ทีน่า โกลด์สตีน", "ลิตา เลสแตรงก์", "อิโลนา"],
+    choices: [
+      "ควีนนี่ โกลด์สตีน",
+      "ทีน่า โกลด์สตีน",
+      "ลิตา เลสแตรงก์",
+      "อิโลนา",
+    ],
     correctIndex: 0,
   },
   {
@@ -11097,35 +14328,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-141",
     title: "เกลเลิร์ต กรินเดลวัลด์",
     description: "พ่อมดมืดที่ต่อสู้กับดัมเบิลดอร์ในยุคก่อนคือใคร?",
-    choices: ["เกลเลิร์ต กรินเดลวัลด์", "ทอม ริดเดิล", "คอร์โวส เลสแตรงก์", "ลูเซียส มัลฟอย"],
+    choices: [
+      "เกลเลิร์ต กรินเดลวัลด์",
+      "ทอม ริดเดิล",
+      "คอร์โวส เลสแตรงก์",
+      "ลูเซียส มัลฟอย",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-142",
     title: "อเบอร์ฟอร์ธ ดัมเบิลดอร์",
     description: "น้องชายของดัมเบิลดอร์ชื่ออะไร?",
-    choices: ["อเบอร์ฟอร์ธ ดัมเบิลดอร์", "อาเรียนา ดัมเบิลดอร์", "เพอร์ซิวาล ดัมเบิลดอร์", "ไบรอัน ดัมเบิลดอร์"],
+    choices: [
+      "อเบอร์ฟอร์ธ ดัมเบิลดอร์",
+      "อาเรียนา ดัมเบิลดอร์",
+      "เพอร์ซิวาล ดัมเบิลดอร์",
+      "ไบรอัน ดัมเบิลดอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-143",
     title: "อาเรียนา ดัมเบิลดอร์",
     description: "น้องสาวของดัมเบิลดอร์ชื่ออะไร?",
-    choices: ["อาเรียนา ดัมเบิลดอร์", "มินerva ดัมเบิลดอร์", "ริต้า ดัมเบิลดอร์", "ลูน่า ดัมเบิลดอร์"],
+    choices: [
+      "อาเรียนา ดัมเบิลดอร์",
+      "มินerva ดัมเบิลดอร์",
+      "ริต้า ดัมเบิลดอร์",
+      "ลูน่า ดัมเบิลดอร์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-144",
     title: "กระจกสองหน้า",
     description: "อุปกรณ์สื่อสารที่ซิเรียสให้แฮร์รี่คืออะไร?",
-    choices: ["กระจกสองหน้า", "เหรียญร้อยสาย", "ลูกแก้วคริสตัล", "เข็มกลัดฟีนิกซ์"],
+    choices: [
+      "กระจกสองหน้า",
+      "เหรียญร้อยสาย",
+      "ลูกแก้วคริสตัล",
+      "เข็มกลัดฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-145",
     title: "ดาบกริฟฟินดอร์",
     description: "เนวิลล์ใช้สิ่งใดฆ่านากินี?",
-    choices: ["ดาบกริฟฟินดอร์", "ไม้กายสิทธิ์เอลเดอร์", "หอกสลิธีริน", "บาซิลิสก์แฟงส์"],
+    choices: [
+      "ดาบกริฟฟินดอร์",
+      "ไม้กายสิทธิ์เอลเดอร์",
+      "หอกสลิธีริน",
+      "บาซิลิสก์แฟงส์",
+    ],
     correctIndex: 0,
   },
   {
@@ -11153,7 +14409,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-149",
     title: "โพ션โพลีจูซ",
     description: "น้ำยาที่ทำให้แฮร์รี่และรอนปลอมตัวเข้าไปในสลิธีรินคืออะไร?",
-    choices: ["น้ำยาโพลีจูซ", "เวอริทาเซรุ่ม", "เฟลิกซ์ เฟลิซิส", "อามอร์เทนเทีย"],
+    choices: [
+      "น้ำยาโพลีจูซ",
+      "เวอริทาเซรุ่ม",
+      "เฟลิกซ์ เฟลิซิส",
+      "อามอร์เทนเทีย",
+    ],
     correctIndex: 0,
   },
   {
@@ -11181,7 +14442,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-153",
     title: "แกร์ริก โอลลิแวนเดอร์",
     description: "ชื่อจริงของเจ้าของร้านไม้กายสิทธิ์โอลลิแวนเดอร์คืออะไร?",
-    choices: ["แกร์ริก โอลลิแวนเดอร์", "อาบราฮัม โอลลิแวนเดอร์", "กิลเดอรอย โอลลิแวนเดอร์", "บาร์ตี้ โอลลิแวนเดอร์"],
+    choices: [
+      "แกร์ริก โอลลิแวนเดอร์",
+      "อาบราฮัม โอลลิแวนเดอร์",
+      "กิลเดอรอย โอลลิแวนเดอร์",
+      "บาร์ตี้ โอลลิแวนเดอร์",
+    ],
     correctIndex: 0,
   },
   {
@@ -11202,7 +14468,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-156",
     title: "เส้นเอ็นมังกร",
     description: "แกนไม้กายสิทธิ์ของเฮอร์ไมโอนี่ทำจากอะไร?",
-    choices: ["เส้นเอ็นมังกร", "ขนนกฟีนิกซ์", "เส้นขนยูนิคอร์น", "เขี้ยวบาซิลิสก์"],
+    choices: [
+      "เส้นเอ็นมังกร",
+      "ขนนกฟีนิกซ์",
+      "เส้นขนยูนิคอร์น",
+      "เขี้ยวบาซิลิสก์",
+    ],
     correctIndex: 0,
   },
   {
@@ -11237,35 +14508,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-161",
     title: "เพ็ตทูเนีย เดอร์สลีย์",
     description: "ป้าของแฮร์รี่ที่เป็นพี่สาวของลิลี่คือใคร?",
-    choices: ["เพ็ตทูเนีย เดอร์สลีย์", "มาร์จ เดอร์สลีย์", "โมลลี วีสลีย์", "ดอรีน"],
+    choices: [
+      "เพ็ตทูเนีย เดอร์สลีย์",
+      "มาร์จ เดอร์สลีย์",
+      "โมลลี วีสลีย์",
+      "ดอรีน",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-162",
     title: "เวอร์นอน เดอร์สลีย์",
     description: "ลุงของแฮร์รี่ชื่ออะไร?",
-    choices: ["เวอร์นอน เดอร์สลีย์", "วอลเตอร์ เดอร์สลีย์", "วอลเตอร์ วีสลีย์", "อัลเบิร์ต เดอร์สลีย์"],
+    choices: [
+      "เวอร์นอน เดอร์สลีย์",
+      "วอลเตอร์ เดอร์สลีย์",
+      "วอลเตอร์ วีสลีย์",
+      "อัลเบิร์ต เดอร์สลีย์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-163",
     title: "ดัดลีย์ เดอร์สลีย์",
     description: "ลูกชายของเดอร์สลีย์ที่รังแกแฮร์รี่คือใคร?",
-    choices: ["ดัดลีย์ เดอร์สลีย์", "เดนนิส เดอร์สลีย์", "เดรก เดอร์สลีย์", "เดเมียน เดอร์สลีย์"],
+    choices: [
+      "ดัดลีย์ เดอร์สลีย์",
+      "เดนนิส เดอร์สลีย์",
+      "เดรก เดอร์สลีย์",
+      "เดเมียน เดอร์สลีย์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-164",
     title: "บ้านเลขที่ 4 ถนนพรีเว็ต",
     description: "บ้านของเดอร์สลีย์ที่แฮร์รี่อาศัยอยู่คือที่ใด?",
-    choices: ["บ้านเลขที่ 4 ถนนพรีเว็ต", "บ้านเลขที่ 12 กริมโมลด์", "บ้านเลขที่ 13 ถนนแบ็กช็อต", "บ้านเลขที่ 7 ถนนด็อกวูด"],
+    choices: [
+      "บ้านเลขที่ 4 ถนนพรีเว็ต",
+      "บ้านเลขที่ 12 กริมโมลด์",
+      "บ้านเลขที่ 13 ถนนแบ็กช็อต",
+      "บ้านเลขที่ 7 ถนนด็อกวูด",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-165",
     title: "บ้านเลขที่ 12 กริมโมลด์ เพลส",
     description: "ฐานของออร์เดอร์ออฟเดอะฟีนิกซ์ในลอนดอนคือที่ใด?",
-    choices: ["บ้านเลขที่ 12 กริมโมลด์ เพลส", "บ้านเลขที่ 4 ถนนพรีเว็ต", "บ้านเลขที่ 1 ไดแอกอน", "บ้านเลขที่ 7 ฮอกส์มีด"],
+    choices: [
+      "บ้านเลขที่ 12 กริมโมลด์ เพลส",
+      "บ้านเลขที่ 4 ถนนพรีเว็ต",
+      "บ้านเลขที่ 1 ไดแอกอน",
+      "บ้านเลขที่ 7 ฮอกส์มีด",
+    ],
     correctIndex: 0,
   },
   {
@@ -11293,84 +14589,144 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-169",
     title: "ศิลาอาถรรพ์",
     description: "หนังสือเล่มแรกของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["ศิลาอาถรรพ์", "ห้องแห่งความลับ", "นักโทษแห่งอัซคาบัน", "ถ้วยอัคนี"],
+    choices: [
+      "ศิลาอาถรรพ์",
+      "ห้องแห่งความลับ",
+      "นักโทษแห่งอัซคาบัน",
+      "ถ้วยอัคนี",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-170",
     title: "ห้องแห่งความลับ",
     description: "หนังสือเล่มที่สองของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["ห้องแห่งความลับ", "ถ้วยอัคนี", "ภาคีนกฟีนิกซ์", "เจ้าชายเลือดผสม"],
+    choices: [
+      "ห้องแห่งความลับ",
+      "ถ้วยอัคนี",
+      "ภาคีนกฟีนิกซ์",
+      "เจ้าชายเลือดผสม",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-171",
     title: "นักโทษแห่งอัซคาบัน",
     description: "หนังสือเล่มที่สามของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["นักโทษแห่งอัซคาบัน", "ถ้วยอัคนี", "ภาคีนกฟีนิกซ์", "ศิลาอาถรรพ์"],
+    choices: [
+      "นักโทษแห่งอัซคาบัน",
+      "ถ้วยอัคนี",
+      "ภาคีนกฟีนิกซ์",
+      "ศิลาอาถรรพ์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-172",
     title: "ถ้วยอัคนี",
     description: "หนังสือเล่มที่สี่ของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["ถ้วยอัคนี", "เจ้าชายเลือดผสม", "ภาคีนกฟีนิกซ์", "นักโทษแห่งอัซคาบัน"],
+    choices: [
+      "ถ้วยอัคนี",
+      "เจ้าชายเลือดผสม",
+      "ภาคีนกฟีนิกซ์",
+      "นักโทษแห่งอัซคาบัน",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-173",
     title: "ภาคีนกฟีนิกซ์",
     description: "หนังสือเล่มที่ห้าของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["ภาคีนกฟีนิกซ์", "ถ้วยอัคนี", "ห้องแห่งความลับ", "เจ้าชายเลือดผสม"],
+    choices: [
+      "ภาคีนกฟีนิกซ์",
+      "ถ้วยอัคนี",
+      "ห้องแห่งความลับ",
+      "เจ้าชายเลือดผสม",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-174",
     title: "เจ้าชายเลือดผสม",
     description: "หนังสือเล่มที่หกของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["เจ้าชายเลือดผสม", "เครื่องรางยมทูต", "ถ้วยอัคนี", "ภาคีนกฟีนิกซ์"],
+    choices: [
+      "เจ้าชายเลือดผสม",
+      "เครื่องรางยมทูต",
+      "ถ้วยอัคนี",
+      "ภาคีนกฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-175",
     title: "เครื่องรางยมทูต",
     description: "หนังสือเล่มที่เจ็ดของแฮร์รี่ พอตเตอร์ชื่ออะไร?",
-    choices: ["เครื่องรางยมทูต", "เจ้าชายเลือดผสม", "ถ้วยอัคนี", "ภาคีนกฟีนิกซ์"],
+    choices: [
+      "เครื่องรางยมทูต",
+      "เจ้าชายเลือดผสม",
+      "ถ้วยอัคนี",
+      "ภาคีนกฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-176",
     title: "Fantastic Beasts and Where to Find Them",
     description: "หนังสือคู่มือสัตว์วิเศษที่นิวท์เขียนชื่ออะไร?",
-    choices: ["Fantastic Beasts and Where to Find Them", "Quidditch Through the Ages", "The Tales of Beedle the Bard", "The Rise of Dark Arts"],
+    choices: [
+      "Fantastic Beasts and Where to Find Them",
+      "Quidditch Through the Ages",
+      "The Tales of Beedle the Bard",
+      "The Rise of Dark Arts",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-177",
     title: "Quidditch Through the Ages",
     description: "หนังสือเกี่ยวกับประวัติควิดดิชชื่ออะไร?",
-    choices: ["Quidditch Through the Ages", "Fantastic Beasts and Where to Find Them", "The Tales of Beedle the Bard", "Hogwarts: A History"],
+    choices: [
+      "Quidditch Through the Ages",
+      "Fantastic Beasts and Where to Find Them",
+      "The Tales of Beedle the Bard",
+      "Hogwarts: A History",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-178",
     title: "The Tales of Beedle the Bard",
     description: "หนังสือนิทานที่มีเรื่องเดธลีแฮลโลว์คือเล่มใด?",
-    choices: ["The Tales of Beedle the Bard", "Fantastic Beasts and Where to Find Them", "Quidditch Through the Ages", "Hogwarts: A History"],
+    choices: [
+      "The Tales of Beedle the Bard",
+      "Fantastic Beasts and Where to Find Them",
+      "Quidditch Through the Ages",
+      "Hogwarts: A History",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-179",
     title: "Hogwarts: A History",
     description: "หนังสือที่เฮอร์ไมโอนี่อ่านบ่อยเกี่ยวกับฮอกวอตส์ชื่ออะไร?",
-    choices: ["Hogwarts: A History", "Quidditch Through the Ages", "Fantastic Beasts and Where to Find Them", "The Tales of Beedle the Bard"],
+    choices: [
+      "Hogwarts: A History",
+      "Quidditch Through the Ages",
+      "Fantastic Beasts and Where to Find Them",
+      "The Tales of Beedle the Bard",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-180",
     title: "กริมอลด์ เพลส",
     description: "บ้านของตระกูลแบล็กที่เป็นฐานออร์เดอร์ชื่ออะไร?",
-    choices: ["กริมอลด์ เพลส", "พรีเว็ตไดรฟ์", "บัคกิงแฮม เพลส", "ไดแอกอน เพลส"],
+    choices: [
+      "กริมอลด์ เพลส",
+      "พรีเว็ตไดรฟ์",
+      "บัคกิงแฮม เพลส",
+      "ไดแอกอน เพลส",
+    ],
     correctIndex: 0,
   },
   {
@@ -11384,7 +14740,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-182",
     title: "ฝ่ายบังคับใช้กฎหมายเวทมนตร์",
     description: "แผนกที่ดูแลออโรร่าในกระทรวงเวทมนตร์เรียกว่าอะไร?",
-    choices: ["ฝ่ายบังคับใช้กฎหมายเวทมนตร์", "กองสัตว์วิเศษ", "กองประสานมักเกิ้ล", "กองขนส่งเวทมนตร์"],
+    choices: [
+      "ฝ่ายบังคับใช้กฎหมายเวทมนตร์",
+      "กองสัตว์วิเศษ",
+      "กองประสานมักเกิ้ล",
+      "กองขนส่งเวทมนตร์",
+    ],
     correctIndex: 0,
   },
   {
@@ -11398,7 +14759,12 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-184",
     title: "มัลฟอย แมนชั่น",
     description: "คฤหาสน์ของตระกูลมัลฟอยชื่ออะไร?",
-    choices: ["มัลฟอย แมนชั่น", "แบล็ก แมนชั่น", "โรวีนา แมนชั่น", "ซัลลาซาร์ แมนชั่น"],
+    choices: [
+      "มัลฟอย แมนชั่น",
+      "แบล็ก แมนชั่น",
+      "โรวีนา แมนชั่น",
+      "ซัลลาซาร์ แมนชั่น",
+    ],
     correctIndex: 0,
   },
   {
@@ -11412,35 +14778,60 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-186",
     title: "นักโทษแห่งอัซคาบัน",
     description: "หนังภาคที่มีซิเรียส แบล็กหนีคุกคือภาคใด?",
-    choices: ["นักโทษแห่งอัซคาบัน", "ห้องแห่งความลับ", "ถ้วยอัคนี", "ภาคีนกฟีนิกซ์"],
+    choices: [
+      "นักโทษแห่งอัซคาบัน",
+      "ห้องแห่งความลับ",
+      "ถ้วยอัคนี",
+      "ภาคีนกฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-187",
     title: "ถ้วยอัคนี",
     description: "ภาคที่มีการแข่งขันไตรภาคีชื่ออะไร?",
-    choices: ["ถ้วยอัคนี", "นักโทษแห่งอัซคาบัน", "ห้องแห่งความลับ", "ภาคีนกฟีนิกซ์"],
+    choices: [
+      "ถ้วยอัคนี",
+      "นักโทษแห่งอัซคาบัน",
+      "ห้องแห่งความลับ",
+      "ภาคีนกฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-188",
     title: "ภาคีนกฟีนิกซ์",
     description: "ภาคที่มีดัมเบิลดอร์สอาร์มี่และอัมบริดจ์ชื่ออะไร?",
-    choices: ["ภาคีนกฟีนิกซ์", "ถ้วยอัคนี", "เจ้าชายเลือดผสม", "เครื่องรางยมทูต"],
+    choices: [
+      "ภาคีนกฟีนิกซ์",
+      "ถ้วยอัคนี",
+      "เจ้าชายเลือดผสม",
+      "เครื่องรางยมทูต",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-189",
     title: "เจ้าชายเลือดผสม",
     description: "ภาคที่มีหนังสือปรุงยาลึกลับของสเนปชื่ออะไร?",
-    choices: ["เจ้าชายเลือดผสม", "ภาคีนกฟีนิกซ์", "เครื่องรางยมทูต", "ถ้วยอัคนี"],
+    choices: [
+      "เจ้าชายเลือดผสม",
+      "ภาคีนกฟีนิกซ์",
+      "เครื่องรางยมทูต",
+      "ถ้วยอัคนี",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-190",
     title: "เครื่องรางยมทูต",
     description: "ภาคที่เล่าเรื่องการล่าโฮรครักซ์คือภาคใด?",
-    choices: ["เครื่องรางยมทูต", "เจ้าชายเลือดผสม", "ถ้วยอัคนี", "ภาคีนกฟีนิกซ์"],
+    choices: [
+      "เครื่องรางยมทูต",
+      "เจ้าชายเลือดผสม",
+      "ถ้วยอัคนี",
+      "ภาคีนกฟีนิกซ์",
+    ],
     correctIndex: 0,
   },
   {
@@ -11468,14 +14859,24 @@ const HARRY_POTTER_GUESS_DATA = [
     id: "hp-194",
     title: "ต่อสู้กับโวลเดอมอร์",
     description: "บทบาทสำคัญขององค์กรออร์เดอร์ออฟเดอะฟีนิกซ์คืออะไร?",
-    choices: ["ต่อสู้กับโวลเดอมอร์", "จัดการแข่งขันควิดดิช", "ดูแลฮอกวอตส์", "ค้นหาเดธลีแฮลโลว์"],
+    choices: [
+      "ต่อสู้กับโวลเดอมอร์",
+      "จัดการแข่งขันควิดดิช",
+      "ดูแลฮอกวอตส์",
+      "ค้นหาเดธลีแฮลโลว์",
+    ],
     correctIndex: 0,
   },
   {
     id: "hp-195",
     title: "ถ้วยไตรภาคี",
     description: "พอร์ทคีย์ที่พาแฮร์รี่ไปสุสานคืออะไร?",
-    choices: ["ถ้วยไตรภาคี", "ก๊อบสออฟไฟร์", "ไม้กายสิทธิ์เอลเดอร์", "นาฬิกามหัศจรรย์"],
+    choices: [
+      "ถ้วยไตรภาคี",
+      "ก๊อบสออฟไฟร์",
+      "ไม้กายสิทธิ์เอลเดอร์",
+      "นาฬิกามหัศจรรย์",
+    ],
     correctIndex: 0,
   },
   {
@@ -11531,9 +14932,8 @@ export const HARRY_POTTER_EVENTS: GameEvent[] = HARRY_POTTER_GUESS_DATA.map(
       correctRange: shuffled.correctIndex as TimelineRange,
       choices: shuffled.choices,
     };
-  }
+  },
 );
-
 
 export const THAILAND_EVENTS: GameEvent[] = [
   {
@@ -11918,7 +15318,7 @@ export function getCategoriesForMode(mode: GameMode = "GLOBAL"): Category[] {
 // Get events by category
 export function getEventsByCategory(
   category: Category,
-  mode: GameMode = "GLOBAL"
+  mode: GameMode = "GLOBAL",
 ): GameEvent[] {
   if (category === "RANDOM") {
     return getEventsForMode(mode);
@@ -11930,28 +15330,28 @@ export function getEventsByCategory(
 export function getRandomEvent(
   category?: Category,
   excludeIds?: string[],
-  mode: GameMode = "GLOBAL"
+  mode: GameMode = "GLOBAL",
 ): GameEvent {
   let events =
     category && category !== "RANDOM"
       ? getEventsByCategory(category, mode)
       : getEventsForMode(mode);
-  
+
   if (excludeIds && excludeIds.length > 0) {
     events = events.filter((e) => !excludeIds.includes(e.id));
   }
-  
+
   if (events.length === 0) {
     events = getEventsForMode(mode);
   }
-  
+
   return events[Math.floor(Math.random() * events.length)];
 }
 
 // Get event by ID (server-side only - includes correctRange)
 export function getEventById(
   id: string,
-  mode: GameMode = "GLOBAL"
+  mode: GameMode = "GLOBAL",
 ): GameEvent | undefined {
   return getEventsForMode(mode).find((event) => event.id === id);
 }
@@ -11959,11 +15359,11 @@ export function getEventById(
 // Get event for client (excludes correctRange)
 export function getEventForClient(
   id: string,
-  mode: GameMode = "GLOBAL"
+  mode: GameMode = "GLOBAL",
 ): Omit<GameEvent, "correctRange"> | undefined {
   const event = getEventById(id, mode);
   if (!event) return undefined;
-  
+
   const { correctRange, ...clientEvent } = event;
   if (mode === "MOVIE_GUESS") {
     return {
@@ -11983,7 +15383,7 @@ export function getEventForClient(
 // Generate hint for SUPPORT rounds
 export function generateHint(
   correctRange: TimelineRange,
-  mode: GameMode = "GLOBAL"
+  mode: GameMode = "GLOBAL",
 ): string {
   const ranges = getRangesForMode(mode);
   const maxRange = Math.max(...Object.keys(ranges).map(Number));

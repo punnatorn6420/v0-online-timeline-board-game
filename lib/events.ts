@@ -13029,7 +13029,7 @@ type MovieGuessSeed = [
 const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   [
     "The Wizard of Oz",
-    "A Kansas girl is swept into a colorful land and follows a yellow road with three unusual friends.",
+    "เด็กสาวจากแคนซัสหลุดไปยังดินแดนสีสันสดใส แล้วออกเดินทางตามถนนอิฐสีเหลืองกับเพื่อนแปลกหน้าสามคน",
     [
       "The Wizard of Oz",
       "Mary Poppins",
@@ -13039,12 +13039,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Casablanca",
-    "A nightclub owner in wartime Morocco must choose between old love and a dangerous act of resistance.",
+    "เจ้าของไนต์คลับในโมร็อกโกช่วงสงครามต้องเลือกระหว่างรักเก่ากับการช่วยภารกิจต่อต้านอันตราย",
     ["Casablanca", "Notorious", "The Third Man", "To Have and Have Not"],
   ],
   [
     "Citizen Kane",
-    "A reporter investigates the final word of a powerful newspaper tycoon by tracing his rise and loneliness.",
+    "นักข่าวสืบความหมายของคำสุดท้ายจากเจ้าพ่อสื่อผู้ยิ่งใหญ่ ผ่านร่องรอยชีวิตที่เต็มไปด้วยอำนาจและความโดดเดี่ยว",
     [
       "Citizen Kane",
       "Mr. Smith Goes to Washington",
@@ -13054,22 +13054,22 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Psycho",
-    "A woman on the run stops at a remote motel where the quiet owner hides a terrifying secret.",
+    "หญิงสาวที่กำลังหนีแวะพักที่โมเตลห่างไกล และพบว่าเจ้าของผู้สุภาพมีความลับน่ากลัวซ่อนอยู่",
     ["Psycho", "Halloween", "The Birds", "Rosemary's Baby"],
   ],
   [
     "Vertigo",
-    "A retired detective becomes obsessed with a woman he is hired to follow through San Francisco.",
+    "อดีตนักสืบผู้กลัวความสูงถูกว่าจ้างให้ตามหญิงลึกลับ ก่อนความหลงใหลจะพาเขาถลำลึกเกินควบคุม",
     ["Vertigo", "Rear Window", "North by Northwest", "Chinatown"],
   ],
   [
     "Rear Window",
-    "A photographer stuck in his apartment watches neighbors and begins to suspect one of murder.",
+    "ช่างภาพที่ขาหักต้องอยู่ในห้องพัก เฝ้ามองเพื่อนบ้านจนเริ่มสงสัยว่ามีคดีฆาตกรรมเกิดขึ้น",
     ["Rear Window", "Vertigo", "Dial M for Murder", "The Conversation"],
   ],
   [
     "North by Northwest",
-    "An advertising man is mistaken for a spy and chased across America by agents and aircraft.",
+    "ชายโฆษณาถูกเข้าใจผิดว่าเป็นสายลับ และต้องหนีการไล่ล่าข้ามอเมริกาแบบแทบไม่มีเวลาหายใจ",
     [
       "North by Northwest",
       "The Man Who Knew Too Much",
@@ -13079,7 +13079,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "12 Angry Men",
-    "One juror questions an easy guilty vote and slowly turns a tense room into a test of doubt.",
+    "ลูกขุนคนหนึ่งตั้งคำถามกับคำตัดสินที่ดูง่าย ทำให้ห้องพิจารณาคดีเดือดขึ้นด้วยเหตุผลและความสงสัย",
     [
       "12 Angry Men",
       "Anatomy of a Murder",
@@ -13089,7 +13089,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Singin' in the Rain",
-    "A silent film star struggles through Hollywood's jump to sound while falling for a new performer.",
+    "ดาราหนังเงียบต้องรับมือยุคภาพยนตร์เสียง พร้อมความรักครั้งใหม่และความวุ่นวายหลังฉากฮอลลีวูด",
     [
       "Singin' in the Rain",
       "An American in Paris",
@@ -13099,12 +13099,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Gone with the Wind",
-    "A headstrong Southern woman fights to survive love, war, and ruin during the American Civil War.",
+    "หญิงสาวหัวแข็งในอเมริกาใต้ต้องเอาตัวรอดผ่านสงคราม ความรัก และการล่มสลายของชีวิตเดิม",
     ["Gone with the Wind", "Doctor Zhivago", "Giant", "The English Patient"],
   ],
   [
     "Lawrence of Arabia",
-    "A British officer becomes a legend in the desert while helping Arab forces fight the Ottoman Empire.",
+    "นายทหารอังกฤษกลายเป็นตำนานกลางทะเลทราย เมื่อเข้าไปช่วยกองกำลังอาหรับต่อสู้กับจักรวรรดิออตโตมัน",
     [
       "Lawrence of Arabia",
       "Ben-Hur",
@@ -13114,17 +13114,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Ben-Hur",
-    "A betrayed nobleman survives slavery and returns for revenge in an epic famous for its chariot race.",
+    "ขุนนางที่ถูกหักหลังต้องรอดจากการเป็นทาส ก่อนกลับมาเผชิญอดีตในมหากาพย์ที่มีฉากแข่งรถม้าจำไม่ลืม",
     ["Ben-Hur", "The Ten Commandments", "Quo Vadis", "Spartacus"],
   ],
   [
     "The Sound of Music",
-    "A spirited governess brings music into a strict household as Europe moves toward war.",
+    "ครูพี่เลี้ยงผู้รักเสียงเพลงเข้ามาเปลี่ยนบ้านที่เคร่งครัด ในขณะที่เงาสงครามค่อย ๆ ปกคลุมยุโรป",
     ["The Sound of Music", "My Fair Lady", "Mary Poppins", "Oliver!"],
   ],
   [
     "Mary Poppins",
-    "A magical nanny arrives by umbrella and changes a London family's home with songs and impossible tricks.",
+    "พี่เลี้ยงเด็กเวทมนตร์ลอยมาพร้อมร่ม และเปลี่ยนชีวิตครอบครัวหนึ่งด้วยบทเพลงกับเรื่องมหัศจรรย์",
     [
       "Mary Poppins",
       "The Sound of Music",
@@ -13134,17 +13134,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Breakfast at Tiffany's",
-    "A stylish New York dreamer and a writer become neighbors while both avoid the truth about themselves.",
+    "หญิงสาวนิวยอร์กผู้มีสไตล์กับนักเขียนข้างห้องต่างหลบหนีความจริงของตัวเอง ก่อนจะค่อย ๆ เข้าใจกัน",
     ["Breakfast at Tiffany's", "Roman Holiday", "Sabrina", "Funny Face"],
   ],
   [
     "Roman Holiday",
-    "A runaway princess explores Rome with an American reporter who realizes he has found a story and a romance.",
+    "เจ้าหญิงหนีจากหน้าที่ออกเที่ยวโรมกับนักข่าวอเมริกันที่ต้องเลือกระหว่างข่าวใหญ่กับความรู้สึกจริง",
     ["Roman Holiday", "Sabrina", "Charade", "To Catch a Thief"],
   ],
   [
     "Some Like It Hot",
-    "Two musicians witness a crime and hide in an all-female band while gangsters close in.",
+    "นักดนตรีสองคนเห็นเหตุอาชญากรรมแล้วต้องปลอมตัวเข้าวงดนตรีหญิง เพื่อหลบเหล่าแก๊งสเตอร์",
     [
       "Some Like It Hot",
       "The Apartment",
@@ -13154,17 +13154,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Apartment",
-    "An office worker lends his apartment to executives and discovers the cost of chasing promotion.",
+    "พนักงานบริษัทให้ผู้บริหารยืมห้องพักเพื่อหวังความก้าวหน้า แต่กลับพบราคาที่ต้องจ่ายทางใจ",
     ["The Apartment", "Some Like It Hot", "Network", "The Graduate"],
   ],
   [
     "Dr. Strangelove",
-    "A nuclear crisis turns into a savage comedy about generals, politicians, and the end of the world.",
+    "วิกฤตนิวเคลียร์ถูกเล่าเป็นตลกร้าย เมื่อทหารและนักการเมืองพาโลกเข้าใกล้หายนะด้วยความบ้าคลั่ง",
     ["Dr. Strangelove", "Fail Safe", "MASH", "Network"],
   ],
   [
     "2001: A Space Odyssey",
-    "A mysterious black monolith links human evolution, a lunar discovery, and a voyage with a calm computer.",
+    "เสาหินลึกลับเชื่อมโยงวิวัฒนาการมนุษย์ การค้นพบบนดวงจันทร์ และภารกิจอวกาศกับคอมพิวเตอร์เย็นชา",
     [
       "2001: A Space Odyssey",
       "Solaris",
@@ -13174,37 +13174,37 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "A Clockwork Orange",
-    "A violent young man is captured and subjected to a disturbing experiment meant to erase his impulses.",
+    "วัยรุ่นหัวรุนแรงถูกจับและถูกทดลองบำบัดสุดสะเทือนใจ เพื่อกดทับสัญชาตญาณอันมืดมนของเขา",
     ["A Clockwork Orange", "Brazil", "THX 1138", "The Warriors"],
   ],
   [
     "Dog Day Afternoon",
-    "A desperate bank robbery turns into a tense public spectacle on a hot New York day.",
+    "การปล้นธนาคารที่สิ้นหวังกลายเป็นเหตุการณ์กลางเมืองสุดตึงเครียด ท่ามกลางผู้คน สื่อ และตำรวจ",
     ["Dog Day Afternoon", "Serpico", "Mean Streets", "The French Connection"],
   ],
   [
     "Apocalypse Now",
-    "A soldier travels up a jungle river to find a rogue colonel during the Vietnam War.",
+    "ทหารคนหนึ่งล่องเรือเข้าสู่ป่าลึกช่วงสงครามเวียดนาม เพื่อค้นหานายทหารผู้หลุดออกจากกฎทุกอย่าง",
     ["Apocalypse Now", "Platoon", "Full Metal Jacket", "The Deer Hunter"],
   ],
   [
     "Alien",
-    "A commercial spaceship answers a distress signal and brings aboard a creature that hunts the crew.",
+    "ยานขนส่งอวกาศรับสัญญาณขอความช่วยเหลือ แล้วนำสิ่งมีชีวิตนักล่าขึ้นมาบนยานโดยไม่รู้ตัว",
     ["Alien", "The Thing", "Predator", "Event Horizon"],
   ],
   [
     "The Exorcist",
-    "A desperate mother asks priests for help when her daughter appears possessed by a violent force.",
+    "แม่ผู้สิ้นหวังขอความช่วยเหลือจากบาทหลวง เมื่อลูกสาวเริ่มแสดงอาการเหมือนถูกสิ่งชั่วร้ายครอบงำ",
     ["The Exorcist", "The Omen", "Poltergeist", "Carrie"],
   ],
   [
     "Jaws",
-    "A seaside town is terrorized by a great white shark while officials try to protect tourism.",
+    "เมืองชายทะเลถูกฉลามยักษ์คุกคาม ขณะที่ผู้มีอำนาจพยายามปกป้องฤดูท่องเที่ยวมากกว่าความปลอดภัย",
     ["Jaws", "Orca", "Deep Blue Sea", "The Meg"],
   ],
   [
     "The Rocky Horror Picture Show",
-    "A stranded couple enters a strange mansion and lands inside a campy midnight musical nightmare.",
+    "คู่รักที่รถเสียหลงเข้าไปในคฤหาสน์ประหลาด และพบค่ำคืนดนตรีสุดเพี้ยนที่ไม่มีอะไรปกติ",
     [
       "The Rocky Horror Picture Show",
       "Little Shop of Horrors",
@@ -13214,7 +13214,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Close Encounters of the Third Kind",
-    "Ordinary people are drawn by visions and music toward a mountain where visitors from space arrive.",
+    "คนธรรมดาหลายคนถูกนิมิตและเสียงดนตรีดึงดูดไปยังภูเขาแห่งหนึ่ง ซึ่งบางสิ่งจากฟากฟ้ากำลังมาเยือน",
     [
       "Close Encounters of the Third Kind",
       "E.T. the Extra-Terrestrial",
@@ -13224,37 +13224,37 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Superman",
-    "An alien raised in Kansas becomes Earth's bright heroic protector while hiding as a mild reporter.",
+    "มนุษย์ต่างดาวที่เติบโตในแคนซัสกลายเป็นฮีโร่ผู้ปกป้องโลก พร้อมปิดบังตัวตนในฐานะนักข่าวธรรมดา",
     ["Superman", "Batman Begins", "The Rocketeer", "The Phantom"],
   ],
   [
     "Grease",
-    "A summer romance returns to high school with leather jackets, pink ladies, and big musical numbers.",
+    "ความรักช่วงซัมเมอร์กลับมาเจอกันในโรงเรียนมัธยม พร้อมแจ็กเก็ตหนัง แก๊งเพื่อน และเพลงติดหู",
     ["Grease", "Footloose", "Hairspray", "Dirty Dancing"],
   ],
   [
     "Annie Hall",
-    "A neurotic comedian looks back at a witty romance and why it fell apart.",
+    "นักแสดงตลกผู้คิดมากย้อนมองความรักอันเฉียบคมและขมหวาน เพื่อทำความเข้าใจว่าทำไมมันถึงจบลง",
     ["Annie Hall", "Manhattan", "When Harry Met Sally...", "The Apartment"],
   ],
   [
     "The Deer Hunter",
-    "Friends from a steel town are changed forever by war, captivity, and trauma.",
+    "เพื่อนจากเมืองโรงงานถูกสงครามเปลี่ยนชีวิตตลอดกาล ทั้งจากสนามรบ การถูกจับ และบาดแผลในใจ",
     ["The Deer Hunter", "Coming Home", "Platoon", "Born on the Fourth of July"],
   ],
   [
     "Raging Bull",
-    "A gifted boxer destroys his relationships as jealousy and rage follow him outside the ring.",
+    "นักมวยฝีมือจัดทำลายความสัมพันธ์รอบตัวด้วยความหึงหวงและความโกรธที่ตามเขาออกจากสังเวียน",
     ["Raging Bull", "Rocky", "The Fighter", "Million Dollar Baby"],
   ],
   [
     "The Shining",
-    "A family spends winter in an isolated hotel where the father unravels under supernatural pressure.",
+    "ครอบครัวหนึ่งไปเฝ้าโรงแรมโดดเดี่ยวกลางฤดูหนาว ก่อนพ่อของบ้านจะค่อย ๆ แตกสลายจากแรงลึกลับ",
     ["The Shining", "Misery", "Carrie", "Doctor Sleep"],
   ],
   [
     "E.T. the Extra-Terrestrial",
-    "A lonely child hides a gentle alien and tries to help him contact home.",
+    "เด็กชายขี้เหงาซ่อนมนุษย์ต่างดาวใจดีไว้ในบ้าน และพยายามช่วยให้เขาติดต่อกลับดาวของตัวเอง",
     [
       "E.T. the Extra-Terrestrial",
       "Close Encounters of the Third Kind",
@@ -13264,27 +13264,27 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Blade Runner",
-    "A weary detective hunts artificial humans in a rain-soaked future Los Angeles.",
+    "นักสืบผู้เหนื่อยล้าตามล่ามนุษย์เทียมในลอสแอนเจลิสอนาคตที่เปียกฝนและเต็มไปด้วยคำถามเรื่องตัวตน",
     ["Blade Runner", "Total Recall", "Minority Report", "Ghost in the Shell"],
   ],
   [
     "Scarface",
-    "A Cuban immigrant builds a Miami drug empire and is consumed by power and paranoia.",
+    "ผู้อพยพชาวคิวบาสร้างอาณาจักรยาเสพติดในไมอามี ก่อนถูกอำนาจ ความระแวง และความทะเยอทะยานกลืนกิน",
     ["Scarface", "Carlito's Way", "Casino", "Donnie Brasco"],
   ],
   [
     "The Terminator",
-    "A machine assassin travels from the future to kill the woman whose son will lead a resistance.",
+    "จักรกลสังหารถูกส่งจากอนาคตมาไล่ล่าหญิงคนหนึ่ง เพราะลูกชายของเธอจะเป็นผู้นำการต่อต้าน",
     ["The Terminator", "RoboCop", "Predator", "Total Recall"],
   ],
   [
     "Ghostbusters",
-    "A team of paranormal investigators starts a business catching ghosts in New York City.",
+    "กลุ่มนักล่าผีเปิดธุรกิจจับวิญญาณในนิวยอร์ก แล้วพบว่าปัญหาเหนือธรรมชาติใหญ่กว่าที่คิด",
     ["Ghostbusters", "Beetlejuice", "Men in Black", "Gremlins"],
   ],
   [
     "Back to the Future",
-    "A teenager accidentally travels to the past and must make his parents fall in love.",
+    "วัยรุ่นคนหนึ่งย้อนเวลาโดยบังเอิญ และต้องทำให้พ่อแม่ในอดีตรักกันเพื่อรักษาการเกิดของตัวเอง",
     [
       "Back to the Future",
       "Bill & Ted's Excellent Adventure",
@@ -13294,7 +13294,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Breakfast Club",
-    "Five students from different cliques spend Saturday detention discovering what they share.",
+    "นักเรียนห้าคนจากคนละกลุ่มต้องใช้วันเสาร์ในห้องกักตัวร่วมกัน จนพบว่าพวกเขาไม่ได้ต่างกันเท่าที่คิด",
     [
       "The Breakfast Club",
       "Sixteen Candles",
@@ -13304,7 +13304,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Ferris Bueller's Day Off",
-    "A charming teen skips school and turns one day in Chicago into a legendary escape.",
+    "วัยรุ่นเจ้าเสน่ห์โดดเรียนหนึ่งวัน แล้วพาเพื่อนออกผจญภัยทั่วชิคาโกแบบครูจับไม่ได้",
     [
       "Ferris Bueller's Day Off",
       "Risky Business",
@@ -13314,32 +13314,32 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Platoon",
-    "A young soldier in Vietnam is pulled between two sergeants and the moral collapse around him.",
+    "ทหารหนุ่มในเวียดนามถูกดึงอยู่ระหว่างจ่าสองคน และต้องเผชิญความพังทลายทางศีลธรรมของสงคราม",
     ["Platoon", "Full Metal Jacket", "Hamburger Hill", "Apocalypse Now"],
   ],
   [
     "Stand by Me",
-    "Four boys hike to find a rumored body and face friendship, fear, and growing up.",
+    "เด็กชายสี่คนออกเดินทางไปหาศพตามข่าวลือ และพบทั้งมิตรภาพ ความกลัว และการเติบโตระหว่างทาง",
     ["Stand by Me", "The Goonies", "The Sandlot", "My Girl"],
   ],
   [
     "RoboCop",
-    "A murdered police officer is rebuilt as a corporate-controlled machine in a violent future Detroit.",
+    "ตำรวจที่ถูกฆ่าถูกสร้างใหม่เป็นเครื่องจักรปราบอาชญากรรม ภายใต้เงาบริษัทที่ต้องการควบคุมเขา",
     ["RoboCop", "The Terminator", "Judge Dredd", "Total Recall"],
   ],
   [
     "Die Hard",
-    "An off-duty cop fights terrorists inside a Los Angeles skyscraper during a Christmas party.",
+    "ตำรวจนอกเวลางานต้องต่อสู้กับผู้ก่อการร้ายในตึกสูงระหว่างปาร์ตี้คริสต์มาส",
     ["Die Hard", "Lethal Weapon", "Under Siege", "Speed"],
   ],
   [
     "Rain Man",
-    "A selfish man discovers his autistic brother and takes him on a cross-country trip.",
+    "ชายเห็นแก่ตัวพบว่าตัวเองมีพี่ชายออทิสติก และออกเดินทางข้ามประเทศที่เปลี่ยนความสัมพันธ์ของทั้งคู่",
     ["Rain Man", "Awakenings", "Forrest Gump", "The Savages"],
   ],
   [
     "Dead Poets Society",
-    "An English teacher inspires boarding-school students to think freely and seize the day.",
+    "ครูวรรณกรรมคนใหม่ปลุกให้นักเรียนโรงเรียนประจำกล้าคิด กล้าฝัน และคว้าวันเวลาของตัวเอง",
     [
       "Dead Poets Society",
       "Good Will Hunting",
@@ -13349,7 +13349,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "When Harry Met Sally...",
-    "Two friends argue about love for years before realizing their own chemistry.",
+    "เพื่อนสองคนเถียงเรื่องความรักมาหลายปี ก่อนค่อย ๆ รู้ว่าความผูกพันของพวกเขาอาจไม่ธรรมดา",
     [
       "When Harry Met Sally...",
       "Sleepless in Seattle",
@@ -13359,17 +13359,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Edward Scissorhands",
-    "A gentle artificial man with blades for hands is brought into a pastel suburban neighborhood.",
+    "ชายประดิษฐ์ผู้มีกรรไกรแทนมือถูกพาเข้าสู่ย่านชานเมืองสีหวาน และเผยความอ่อนโยนท่ามกลางความแปลกแยก",
     ["Edward Scissorhands", "Beetlejuice", "Big Fish", "Sleepy Hollow"],
   ],
   [
     "Home Alone",
-    "A boy accidentally left behind defends his house from two burglars with elaborate traps.",
+    "เด็กชายถูกทิ้งไว้บ้านคนเดียวโดยไม่ตั้งใจ และต้องใช้กับดักสารพัดป้องกันบ้านจากโจรสองคน",
     ["Home Alone", "Uncle Buck", "The Santa Clause", "Mrs. Doubtfire"],
   ],
   [
     "Thelma & Louise",
-    "Two friends flee across the American Southwest after one violent night changes everything.",
+    "เพื่อนหญิงสองคนหนีข้ามทะเลทรายหลังค่ำคืนหนึ่งเปลี่ยนชีวิต จนเสรีภาพและอันตรายวิ่งคู่กัน",
     [
       "Thelma & Louise",
       "Bonnie and Clyde",
@@ -13379,72 +13379,72 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Beauty and the Beast",
-    "A book-loving young woman becomes prisoner in an enchanted castle and sees kindness in a cursed prince.",
+    "หญิงสาวรักหนังสือกลายเป็นนักโทษในปราสาทต้องคำสาป และค่อย ๆ เห็นหัวใจของเจ้าชายอสูร",
     ["Beauty and the Beast", "The Little Mermaid", "Aladdin", "Cinderella"],
   ],
   [
     "The Bodyguard",
-    "A former Secret Service agent protects a superstar singer while danger and romance grow.",
+    "อดีตเจ้าหน้าที่หน่วยลับถูกจ้างมาคุ้มกันนักร้องซูเปอร์สตาร์ ท่ามกลางภัยคุกคามและความรู้สึกที่ก่อตัว",
     ["The Bodyguard", "Pretty Woman", "Ghost", "Sleepless in Seattle"],
   ],
   [
     "Groundhog Day",
-    "A cynical weather reporter relives the same small-town day until he changes himself.",
+    "ผู้รายงานอากาศจอมประชดต้องใช้ชีวิตวันเดิมซ้ำ ๆ ในเมืองเล็ก จนเรียนรู้ที่จะเปลี่ยนตัวเอง",
     ["Groundhog Day", "Multiplicity", "Palm Springs", "Click"],
   ],
   [
     "Schindler's List",
-    "A German businessman saves Jewish workers during the Holocaust by turning his factory into refuge.",
+    "นักธุรกิจเยอรมันใช้โรงงานของตัวเองช่วยชีวิตแรงงานชาวยิวจำนวนมากในช่วงโฮโลคอสต์",
     ["Schindler's List", "The Pianist", "Life Is Beautiful", "The Reader"],
   ],
   [
     "The Fugitive",
-    "A wrongly convicted doctor escapes custody and searches for the one-armed man who killed his wife.",
+    "หมอผู้ถูกตัดสินผิดหนีจากการคุมตัว และตามหาชายแขนเดียวที่เกี่ยวข้องกับการตายของภรรยา",
     ["The Fugitive", "U.S. Marshals", "The Client", "Air Force One"],
   ],
   [
     "Speed",
-    "A cop tries to save passengers on a bus rigged to explode if it slows down.",
+    "ตำรวจต้องช่วยผู้โดยสารบนรถบัสที่ถูกวางระเบิดให้ระเบิดทันทีหากรถวิ่งช้าลง",
     ["Speed", "Die Hard with a Vengeance", "Con Air", "The Rock"],
   ],
   [
     "The Crow",
-    "A murdered musician returns from the dead to avenge himself and his fiancee.",
+    "นักดนตรีที่ถูกฆ่ากลับมาจากความตายเพื่อแก้แค้นคนที่ทำลายชีวิตของเขาและคนรัก",
     ["The Crow", "Dark City", "Spawn", "Blade"],
   ],
   [
     "Leon: The Professional",
-    "A lonely hitman takes in a young girl after corrupt cops murder her family.",
+    "มือสังหารผู้โดดเดี่ยวรับเด็กหญิงข้างห้องไว้ดูแล หลังครอบครัวของเธอถูกตำรวจทุจริตสังหาร",
     ["Leon: The Professional", "Nikita", "Ronin", "The Transporter"],
   ],
   [
     "Heat",
-    "A master thief and a driven detective circle each other in Los Angeles.",
+    "โจรมืออาชีพกับตำรวจผู้มุ่งมั่นไล่ล่ากันในลอสแอนเจลิส จนเส้นแบ่งระหว่างคู่ปรับและเงาสะท้อนเริ่มบางลง",
     ["Heat", "Collateral", "Point Break", "Ronin"],
   ],
   [
     "Apollo 13",
-    "NASA engineers and astronauts fight to bring a damaged moon mission safely home.",
+    "นักบินอวกาศและทีมวิศวกรนาซ่าต้องร่วมกันพาภารกิจดวงจันทร์ที่เสียหายกลับโลกอย่างปลอดภัย",
     ["Apollo 13", "The Right Stuff", "First Man", "October Sky"],
   ],
   [
     "Clueless",
-    "A rich Beverly Hills teen plays matchmaker and slowly learns she has growing up to do.",
+    "สาวมัธยมผู้ร่ำรวยในเบเวอร์ลีฮิลส์ชอบจับคู่ให้คนอื่น ก่อนจะเรียนรู้เรื่องความรักและการโตขึ้นของตัวเอง",
     ["Clueless", "Mean Girls", "10 Things I Hate About You", "Legally Blonde"],
   ],
   [
     "Before Sunrise",
-    "Two strangers meet on a train and spend one night walking and talking in Vienna.",
+    "คนแปลกหน้าสองคนพบกันบนรถไฟ แล้วใช้หนึ่งคืนเดินคุยกันในเวียนนาจนเกิดความผูกพันลึกซึ้ง",
     ["Before Sunrise", "Lost in Translation", "Once", "In the Mood for Love"],
   ],
   [
     "Babe",
-    "A small pig raised by sheepdogs dreams of proving he can herd sheep too.",
+    "ลูกหมูตัวเล็กที่ถูกเลี้ยงโดยสุนัขต้อนแกะฝันจะพิสูจน์ว่ามันก็ทำหน้าที่ต้อนฝูงได้",
     ["Babe", "Charlotte's Web", "Stuart Little", "Paddington"],
   ],
   [
     "Trainspotting",
-    "A group of young friends in Edinburgh chase thrills while addiction wrecks their lives.",
+    "กลุ่มเพื่อนหนุ่มในเอดินบะระไล่ตามความสนุกและยาเสพติด ขณะที่ชีวิตค่อย ๆ พังลงรอบตัว",
     [
       "Trainspotting",
       "Lock, Stock and Two Smoking Barrels",
@@ -13454,7 +13454,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Scream",
-    "A masked killer targets teens who know every rule of scary movies.",
+    "ฆาตกรสวมหน้ากากตามล่าวัยรุ่นที่รู้กฎหนังสยองขวัญดีเกินไป แต่ก็ยังหนีเกมนี้ไม่ง่าย",
     [
       "Scream",
       "I Know What You Did Last Summer",
@@ -13464,12 +13464,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Jerry Maguire",
-    "A sports agent loses everything after writing an honest memo and rebuilding with one client.",
+    "เอเยนต์กีฬาสูญเสียทุกอย่างหลังเขียนบันทึกซื่อสัตย์เกินไป และต้องเริ่มใหม่กับลูกค้าเพียงคนเดียว",
     ["Jerry Maguire", "Moneyball", "Draft Day", "Any Given Sunday"],
   ],
   [
     "The Fifth Element",
-    "A cab driver and a mysterious woman must save the future from cosmic evil.",
+    "คนขับแท็กซี่ในอนาคตกับหญิงปริศนาต้องร่วมมือกันหยุดภัยจักรวาลที่กำลังทำลายโลก",
     [
       "The Fifth Element",
       "Valerian and the City of a Thousand Planets",
@@ -13479,12 +13479,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Men in Black",
-    "Secret agents police aliens living on Earth while keeping humanity unaware.",
+    "เจ้าหน้าที่ลับคอยควบคุมมนุษย์ต่างดาวที่อาศัยบนโลก พร้อมลบความทรงจำมนุษย์ที่เห็นมากเกินไป",
     ["Men in Black", "Ghostbusters", "Evolution", "Galaxy Quest"],
   ],
   [
     "Good Will Hunting",
-    "A brilliant janitor is pushed by a therapist and friends to face his future.",
+    "ภารโรงอัจฉริยะด้านคณิตศาสตร์ถูกนักบำบัดและเพื่อนผลักให้เผชิญอดีตและอนาคตของตัวเอง",
     [
       "Good Will Hunting",
       "Dead Poets Society",
@@ -13494,37 +13494,37 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "L.A. Confidential",
-    "Three very different cops uncover corruption and celebrity scandal in 1950s Los Angeles.",
+    "ตำรวจสามคนที่ต่างกันสุดขั้วสืบคดีในลอสแอนเจลิสยุค 1950 และเจอเครือข่ายคอร์รัปชันกับโลกดารา",
     ["L.A. Confidential", "Chinatown", "Mulholland Falls", "The Black Dahlia"],
   ],
   [
     "Armageddon",
-    "Oil drillers are sent into space to stop an asteroid from destroying Earth.",
+    "ทีมขุดเจาะน้ำมันถูกส่งขึ้นอวกาศเพื่อหยุดดาวเคราะห์น้อยที่กำลังมุ่งหน้ามาทำลายโลก",
     ["Armageddon", "Deep Impact", "The Core", "Independence Day"],
   ],
   [
     "The Mummy",
-    "Adventurers awaken an ancient cursed priest while searching for treasure in Egypt.",
+    "นักผจญภัยปลุกนักบวชโบราณต้องคำสาปขึ้นมาระหว่างตามหาขุมทรัพย์ในอียิปต์",
     ["The Mummy", "The Scorpion King", "Van Helsing", "National Treasure"],
   ],
   [
     "The Blair Witch Project",
-    "Student filmmakers enter the woods to investigate a legend and leave behind frightening footage.",
+    "นักศึกษาทำสารคดีเข้าไปในป่าเพื่อตามตำนานท้องถิ่น ก่อนเหลือเพียงฟุตเทจที่ชวนหลอน",
     ["The Blair Witch Project", "Paranormal Activity", "REC", "Cloverfield"],
   ],
   [
     "American Beauty",
-    "A suburban father has a midlife crisis while his family and neighbors hide their own cracks.",
+    "พ่อบ้านชานเมืองเผชิญวิกฤตวัยกลางคน ขณะที่ครอบครัวและเพื่อนบ้านต่างซ่อนรอยร้าวของตัวเอง",
     ["American Beauty", "Magnolia", "The Ice Storm", "Revolutionary Road"],
   ],
   [
     "The Insider",
-    "A whistleblower and a television producer risk careers to expose the tobacco industry.",
+    "ผู้แจ้งเบาะแสกับโปรดิวเซอร์รายการข่าวเสี่ยงอาชีพเพื่อเปิดโปงความจริงของอุตสาหกรรมยาสูบ",
     ["The Insider", "Spotlight", "All the President's Men", "The Post"],
   ],
   [
     "Notting Hill",
-    "A shy London bookseller unexpectedly falls for one of the world's biggest movie stars.",
+    "เจ้าของร้านหนังสือขี้อายได้พบรักกับดาราระดับโลกโดยบังเอิญ ท่ามกลางช่องว่างของชีวิตคนละแบบ",
     [
       "Notting Hill",
       "Four Weddings and a Funeral",
@@ -13534,7 +13534,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Being John Malkovich",
-    "A puppeteer discovers a portal into the mind of a famous actor.",
+    "นักเชิดหุ่นค้นพบประตูลับที่พาเข้าไปอยู่ในจิตใจของนักแสดงชื่อดังคนหนึ่ง",
     [
       "Being John Malkovich",
       "Adaptation",
@@ -13544,7 +13544,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Crouching Tiger, Hidden Dragon",
-    "Warriors, hidden love, and a stolen sword collide in a graceful martial arts epic.",
+    "ยอดนักรบ ความรักที่ซ่อนอยู่ และกระบี่ที่ถูกขโมยมาปะทะกันในมหากาพย์กำลังภายในอันงดงาม",
     [
       "Crouching Tiger, Hidden Dragon",
       "Hero",
@@ -13554,22 +13554,22 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Amelie",
-    "A whimsical Parisian waitress secretly improves other people's lives while avoiding her own heart.",
+    "สาวเสิร์ฟปารีสผู้ช่างฝันแอบเปลี่ยนชีวิตผู้คนรอบตัวให้ดีขึ้น แต่กลับหลบเลี่ยงหัวใจของตัวเอง",
     ["Amelie", "Chocolat", "Midnight in Paris", "The Science of Sleep"],
   ],
   [
     "Moulin Rouge!",
-    "A poor writer falls for a cabaret star in a feverish musical love story.",
+    "นักเขียนยากจนตกหลุมรักดาวคาบาเรต์ในเรื่องรักดนตรีที่เต็มไปด้วยสีสัน ความฝัน และโศกนาฏกรรม",
     ["Moulin Rouge!", "Chicago", "Nine", "Dreamgirls"],
   ],
   [
     "Donnie Darko",
-    "A troubled teen sees a sinister rabbit figure and becomes caught in a strange timeline.",
+    "วัยรุ่นมีปัญหาเห็นร่างกระต่ายลึกลับ และถูกดึงเข้าไปในเหตุการณ์ประหลาดเกี่ยวกับเวลาและชะตา",
     ["Donnie Darko", "The Butterfly Effect", "Dark City", "Southland Tales"],
   ],
   [
     "The Lord of the Rings: The Two Towers",
-    "The fellowship is broken while kingdoms prepare for war and two hobbits near Mordor.",
+    "คณะเดินทางแตกกระจาย ขณะที่อาณาจักรต่าง ๆ เตรียมรับสงคราม และฮอบบิทสองคนเข้าใกล้แดนมืด",
     [
       "The Lord of the Rings: The Two Towers",
       "The Hobbit: The Desolation of Smaug",
@@ -13579,7 +13579,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Lord of the Rings: The Return of the King",
-    "Final battles decide the fate of Middle-earth as two hobbits reach the mountain.",
+    "ศึกสุดท้ายชี้ชะตาโลกแฟนตาซี ขณะที่ฮอบบิทสองคนมุ่งหน้าไปยังภูเขาเพื่อทำลายสิ่งอันตราย",
     [
       "The Lord of the Rings: The Return of the King",
       "The Two Towers",
@@ -13589,57 +13589,57 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "City of God",
-    "Young people grow up amid crime and violence in a Rio de Janeiro neighborhood.",
+    "เด็กหนุ่มในสลัมริโอเติบโตท่ามกลางอาชญากรรม ความรุนแรง และความฝันที่จะหนีจากวงจรนั้น",
     ["City of God", "Elite Squad", "Amores Perros", "Tsotsi"],
   ],
   [
     "Finding Nemo",
-    "A cautious clownfish crosses the ocean to rescue his son from a dentist's aquarium.",
+    "ปลาการ์ตูนขี้กังวลข้ามมหาสมุทรเพื่อตามหาลูกชายที่ถูกจับไปอยู่ในตู้ปลา",
     ["Finding Nemo", "Shark Tale", "The Little Mermaid", "Luca"],
   ],
   [
     "Oldboy",
-    "A man imprisoned for years without explanation is released and hunts the person behind it.",
+    "ชายคนหนึ่งถูกขังนานหลายปีโดยไม่รู้เหตุผล ก่อนถูกปล่อยออกมาเพื่อตามหาคนที่อยู่เบื้องหลัง",
     ["Oldboy", "I Saw the Devil", "Memories of Murder", "The Chaser"],
   ],
   [
     "The Notebook",
-    "An elderly man reads a sweeping romance about young lovers separated by class and time.",
+    "ชายชราหนึ่งคนอ่านเรื่องรักยาวนานของคู่หนุ่มสาวที่ถูกชนชั้น เวลา และความทรงจำทดสอบ",
     ["The Notebook", "Dear John", "The Vow", "A Walk to Remember"],
   ],
   [
     "Shaun of the Dead",
-    "A slacker tries to win back his girlfriend during a zombie outbreak.",
+    "ชายเฉื่อยชาพยายามง้อแฟนเก่าและจัดการชีวิตตัวเอง ท่ามกลางเหตุการณ์ซอมบี้บุกเมือง",
     ["Shaun of the Dead", "Hot Fuzz", "Zombieland", "Warm Bodies"],
   ],
   [
     "Mean Girls",
-    "A homeschooled teen enters public school and gets pulled into a ruthless popular clique.",
+    "เด็กสาวที่เคยเรียนที่บ้านเข้าสู่โรงเรียนมัธยม และถูกดึงเข้าแก๊งสาวป๊อปที่เกมสังคมโหดกว่าที่คิด",
     ["Mean Girls", "Clueless", "Easy A", "Bring It On"],
   ],
   [
     "Million Dollar Baby",
-    "A determined woman trains as a boxer under a guarded old coach.",
+    "หญิงสาวมุ่งมั่นฝึกมวยกับโค้ชสูงวัยผู้ปิดใจ ก่อนทั้งคู่จะพบความหมายของครอบครัวและความฝัน",
     ["Million Dollar Baby", "The Fighter", "Creed", "Cinderella Man"],
   ],
   [
     "Batman Begins",
-    "A billionaire trains with a secretive order and returns home to become a masked vigilante.",
+    "มหาเศรษฐีฝึกฝนกับองค์กรลับก่อนกลับเมืองบ้านเกิด เพื่อสร้างตัวตนฮีโร่ในเงามืด",
     ["Batman Begins", "The Dark Knight", "The Batman", "Man of Steel"],
   ],
   [
     "Brokeback Mountain",
-    "Two cowboys begin a hidden relationship that shapes their lives for years.",
+    "คาวบอยสองคนเริ่มความสัมพันธ์ต้องห้ามที่ส่งผลต่อชีวิต ความรัก และความเจ็บปวดของพวกเขาหลายปี",
     ["Brokeback Mountain", "Call Me by Your Name", "Carol", "Moonlight"],
   ],
   [
     "The Departed",
-    "An undercover cop and a police mole race to expose each other inside Boston crime networks.",
+    "ตำรวจนอกเครื่องแบบกับสายของแก๊งในกรมตำรวจแข่งกันเปิดโปงตัวตนของอีกฝ่ายในบอสตัน",
     ["The Departed", "Infernal Affairs", "Donnie Brasco", "Black Mass"],
   ],
   [
     "The Devil Wears Prada",
-    "A young assistant enters the brutal world of high fashion under a legendary editor.",
+    "ผู้ช่วยสาวหน้าใหม่เข้าสู่โลกแฟชั่นสุดโหดภายใต้บรรณาธิการระดับตำนานที่ไม่มีคำว่าง่าย",
     [
       "The Devil Wears Prada",
       "Confessions of a Shopaholic",
@@ -13649,17 +13649,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Little Miss Sunshine",
-    "A chaotic family road trip forms around a child's beauty pageant dream.",
+    "ครอบครัวสุดวุ่นออกโรดทริปเพื่อพาเด็กหญิงไปประกวดนางงาม และได้เรียนรู้กันระหว่างทาง",
     ["Little Miss Sunshine", "Juno", "The Royal Tenenbaums", "Garden State"],
   ],
   [
     "Casino Royale",
-    "A newly promoted spy faces a high-stakes poker game and a dangerous romance.",
+    "สายลับคนใหม่ต้องลงเล่นโป๊กเกอร์เดิมพันสูง และพบความรักที่ทำให้ภารกิจอันตรายยิ่งขึ้น",
     ["Casino Royale", "Skyfall", "Quantum of Solace", "The Bourne Identity"],
   ],
   [
     "Ratatouille",
-    "A rat with a gift for cooking secretly helps a clumsy Paris kitchen worker.",
+    "หนูที่มีพรสวรรค์ด้านอาหารแอบช่วยพนักงานครัวมือใหม่ในร้านหรูของปารีส",
     [
       "Ratatouille",
       "Chef",
@@ -13669,7 +13669,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "There Will Be Blood",
-    "An oil prospector builds an empire while clashing with faith, family, and greed.",
+    "นักขุดน้ำมันสร้างอาณาจักรด้วยความทะเยอทะยาน ก่อนปะทะศรัทธา ครอบครัว และความโลภของตัวเอง",
     [
       "There Will Be Blood",
       "The Master",
@@ -13679,12 +13679,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Juno",
-    "A sharp-tongued teen faces an unexpected pregnancy and chooses an adoptive couple.",
+    "วัยรุ่นปากคมเผชิญการตั้งครรภ์ไม่คาดคิด และตัดสินใจเลือกคู่รับเลี้ยงเด็กในแบบของเธอ",
     ["Juno", "Lady Bird", "Easy A", "Little Miss Sunshine"],
   ],
   [
     "Iron Man",
-    "A billionaire weapons maker builds a powered suit after captivity changes his view of his legacy.",
+    "มหาเศรษฐีผู้ผลิตอาวุธสร้างชุดเกราะหลังถูกจับตัว และเริ่มมองมรดกของตัวเองต่างไปจากเดิม",
     [
       "Iron Man",
       "Doctor Strange",
@@ -13694,7 +13694,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Slumdog Millionaire",
-    "A young man from Mumbai explains how his life gave him answers on a quiz show.",
+    "ชายหนุ่มจากสลัมมุมไบอธิบายว่าชีวิตของเขาพาไปสู่คำตอบในรายการเกมโชว์ได้อย่างไร",
     [
       "Slumdog Millionaire",
       "Lion",
@@ -13704,12 +13704,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Hangover",
-    "Three friends wake up after a wild Las Vegas night and must find the missing groom.",
+    "เพื่อนเจ้าบ่าวตื่นขึ้นหลังคืนสุดเหวี่ยงในลาสเวกัส แล้วต้องตามหาเจ้าบ่าวที่หายไปให้ทันงานแต่ง",
     ["The Hangover", "Superbad", "Wedding Crashers", "Old School"],
   ],
   [
     "Avatar",
-    "A marine uses an alien body on a lush moon and becomes torn between orders and belonging.",
+    "ทหารใช้ร่างต่างดาวบนดวงจันทร์อันอุดมสมบูรณ์ และเริ่มลังเลระหว่างคำสั่งกับโลกใหม่ที่เขาผูกพัน",
     [
       "Avatar",
       "Valerian and the City of a Thousand Planets",
@@ -13719,47 +13719,47 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "District 9",
-    "An alien refugee zone in Johannesburg becomes the center of corporate cruelty and transformation.",
+    "เขตผู้ลี้ภัยต่างดาวในโจฮันเนสเบิร์กกลายเป็นศูนย์กลางของความโหดร้ายจากองค์กรและการเปลี่ยนแปลงที่คาดไม่ถึง",
     ["District 9", "Elysium", "Chappie", "Arrival"],
   ],
   [
     "Up in the Air",
-    "A corporate downsizer who lives in airports begins to question his detached lifestyle.",
+    "ชายผู้ใช้ชีวิตตามสนามบินและทำงานเลิกจ้างคนอื่น เริ่มตั้งคำถามกับความโดดเดี่ยวที่เขาเลือกเอง",
     ["Up in the Air", "The Terminal", "Lost in Translation", "Sideways"],
   ],
   [
     "The Hurt Locker",
-    "A bomb disposal team in Iraq faces danger, stress, and addiction to war.",
+    "ทีมเก็บกู้ระเบิดในอิรักเผชิญอันตราย ความเครียด และแรงดึงดูดอันน่ากลัวของสงคราม",
     ["The Hurt Locker", "Zero Dark Thirty", "American Sniper", "Jarhead"],
   ],
   [
     "The King's Speech",
-    "A reluctant king works with an unconventional speech therapist before a defining wartime broadcast.",
+    "กษัตริย์ผู้ไม่มั่นใจในเสียงของตัวเองฝึกกับนักบำบัดพูดแหวกแนว ก่อนต้องกล่าวสุนทรพจน์สำคัญช่วงสงคราม",
     ["The King's Speech", "Darkest Hour", "The Queen", "The Iron Lady"],
   ],
   [
     "The Fighter",
-    "A boxer tries to step out of his troubled brother's shadow and earn a title shot.",
+    "นักมวยพยายามก้าวออกจากเงาของพี่ชายผู้มีปัญหา เพื่อคว้าโอกาสชิงแชมป์และศักดิ์ศรีของตัวเอง",
     ["The Fighter", "Raging Bull", "Cinderella Man", "Southpaw"],
   ],
   [
     "Bridesmaids",
-    "A struggling woman spirals while trying to be maid of honor for her best friend.",
+    "หญิงสาวชีวิตรวนพยายามเป็นเพื่อนเจ้าสาวที่ดี แต่ความอิจฉาและความกดดันทำให้งานแต่งป่วนขึ้นเรื่อย ๆ",
     ["Bridesmaids", "Girls Trip", "The Heat", "Trainwreck"],
   ],
   [
     "The Help",
-    "Women in 1960s Mississippi share stories that challenge the racial rules around them.",
+    "ผู้หญิงหลายคนในมิสซิสซิปปีช่วงทศวรรษ 1960 เล่าเรื่องที่ท้าทายกฎเหยียดผิวรอบตัว",
     ["The Help", "Hidden Figures", "Fried Green Tomatoes", "The Color Purple"],
   ],
   [
     "The Artist",
-    "A silent film star faces fading fame as Hollywood embraces sound.",
+    "ดาราหนังเงียบต้องรับมือชื่อเสียงที่จางลง เมื่อฮอลลีวูดเปลี่ยนผ่านเข้าสู่ยุคเสียง",
     ["The Artist", "Hugo", "La La Land", "Mank"],
   ],
   [
     "The Cabin in the Woods",
-    "A group of friends visits a remote cabin where horror movie rules are secretly engineered.",
+    "กลุ่มเพื่อนไปพักกระท่อมห่างไกล แต่กฎหนังสยองขวัญที่เกิดขึ้นถูกควบคุมโดยบางอย่างลับ ๆ",
     [
       "The Cabin in the Woods",
       "Evil Dead",
@@ -13769,12 +13769,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Argo",
-    "A CIA rescue plan uses a fake science fiction movie to extract Americans from Iran.",
+    "แผนช่วยตัวประกันของซีไอเอใช้ภาพยนตร์ไซไฟปลอมเป็นฉากบังหน้าในการพาคนอเมริกันออกจากอิหร่าน",
     ["Argo", "Munich", "Zero Dark Thirty", "Bridge of Spies"],
   ],
   [
     "Silver Linings Playbook",
-    "Two wounded people bond through dance practice, family pressure, and second chances.",
+    "คนสองคนที่มีบาดแผลทางใจเชื่อมโยงกันผ่านการซ้อมเต้น ครอบครัว และโอกาสเริ่มต้นใหม่",
     [
       "Silver Linings Playbook",
       "Crazy, Stupid, Love",
@@ -13784,22 +13784,22 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Hunger Games",
-    "A teenage girl volunteers for a deadly televised contest run by a dystopian government.",
+    "เด็กสาวอาสาเข้าร่วมการแข่งขันถ่ายทอดสดสุดโหดที่รัฐบาลเผด็จการใช้ควบคุมประชาชน",
     ["The Hunger Games", "Divergent", "The Maze Runner", "Battle Royale"],
   ],
   [
     "Skyfall",
-    "A spy's loyalty is tested when a former agent attacks the intelligence service from within.",
+    "ความภักดีของสายลับถูกทดสอบ เมื่ออดีตเจ้าหน้าที่หวนกลับมาโจมตีองค์กรข่าวกรองจากภายใน",
     ["Skyfall", "Casino Royale", "Spectre", "Mission: Impossible - Fallout"],
   ],
   [
     "Les Miserables",
-    "Fugitives, revolutionaries, and lost souls sing through love and suffering in 19th-century France.",
+    "ผู้หลบหนี นักปฏิวัติ และคนหัวใจแตกสลายร้องเพลงผ่านความรัก ความทุกข์ และฝรั่งเศสศตวรรษที่ 19",
     ["Les Miserables", "Moulin Rouge!", "The Phantom of the Opera", "Chicago"],
   ],
   [
     "The Great Gatsby",
-    "A mysterious millionaire throws lavish parties while chasing a lost love across Long Island.",
+    "มหาเศรษฐีลึกลับจัดงานเลี้ยงหรูไม่รู้จบ เพื่อไล่ตามรักเก่าที่อยู่ฝั่งตรงข้ามของอ่าว",
     [
       "The Great Gatsby",
       "Revolutionary Road",
@@ -13809,7 +13809,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "12 Years a Slave",
-    "A free Black man is kidnapped and forced into slavery before fighting to reclaim his life.",
+    "ชายผิวดำอิสระถูกลักพาตัวไปเป็นทาส และต้องต่อสู้เพื่อทวงชีวิตของตัวเองกลับมา",
     [
       "12 Years a Slave",
       "Amistad",
@@ -13819,47 +13819,47 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Lego Movie",
-    "An ordinary construction figure is mistaken for the chosen one in a world made of bricks.",
+    "ตัวต่อก่อสร้างธรรมดาถูกเข้าใจว่าเป็นผู้ถูกเลือก ในโลกที่ทุกอย่างประกอบจากบล็อกสีสัน",
     ["The Lego Movie", "Wreck-It Ralph", "Megamind", "The Boss Baby"],
   ],
   [
     "Boyhood",
-    "A boy grows from childhood to college age across years of small family moments.",
+    "เด็กชายคนหนึ่งเติบโตจากวัยเด็กสู่มหาวิทยาลัย ผ่านช่วงเวลาครอบครัวเล็ก ๆ ที่สะสมเป็นชีวิต",
     ["Boyhood", "The Tree of Life", "Moonlight", "Lady Bird"],
   ],
   [
     "The Babadook",
-    "A grieving mother and her son face a frightening figure from a mysterious children's book.",
+    "แม่ผู้สูญเสียกับลูกชายพบเงาน่ากลัวจากหนังสือเด็กปริศนา และความเศร้าในบ้านเริ่มมีรูปร่าง",
     ["The Babadook", "Hereditary", "It Follows", "The Witch"],
   ],
   [
     "Spotlight",
-    "Boston journalists investigate a massive abuse cover-up inside the Catholic Church.",
+    "นักข่าวบอสตันสืบคดีปกปิดการล่วงละเมิดครั้งใหญ่ในสถาบันศาสนา",
     ["Spotlight", "The Post", "All the President's Men", "The Insider"],
   ],
   [
     "Room",
-    "A young mother and her child escape captivity and try to understand the outside world.",
+    "แม่ลูกที่ถูกกักขังหลบหนีออกสู่โลกภายนอก และต้องเรียนรู้ความหมายของอิสรภาพใหม่ทั้งหมด",
     ["Room", "Short Term 12", "The Lovely Bones", "Wild"],
   ],
   [
     "Sicario",
-    "An FBI agent joins a shadowy operation against a cartel and questions what justice means.",
+    "เจ้าหน้าที่เอฟบีไอเข้าร่วมปฏิบัติการลับต่อต้านแก๊งค้ายา และเริ่มสงสัยว่าเส้นแบ่งความยุติธรรมอยู่ตรงไหน",
     ["Sicario", "Traffic", "Zero Dark Thirty", "Prisoners"],
   ],
   [
     "Carol",
-    "A shopgirl and an elegant older woman begin a forbidden romance in 1950s New York.",
+    "พนักงานขายสาวกับหญิงผู้สง่างามเริ่มความรักต้องห้ามในนิวยอร์กยุค 1950",
     ["Carol", "Far from Heaven", "Brokeback Mountain", "A Single Man"],
   ],
   [
     "Moonlight",
-    "A boy grows into a man across three chapters shaped by identity, love, and survival.",
+    "ชีวิตของเด็กชายคนหนึ่งถูกเล่าเป็นสามช่วงวัย ผ่านตัวตน ความรัก และการเอาตัวรอด",
     ["Moonlight", "Boyhood", "Precious", "If Beale Street Could Talk"],
   ],
   [
     "Fences",
-    "A former baseball player wrestles with pride, bitterness, and family responsibility in Pittsburgh.",
+    "อดีตนักเบสบอลต้องต่อสู้กับความภูมิใจ ความขมขื่น และหน้าที่ต่อครอบครัวในพิตต์สเบิร์ก",
     [
       "Fences",
       "A Raisin in the Sun",
@@ -13869,7 +13869,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Three Billboards Outside Ebbing, Missouri",
-    "A grieving mother challenges local police with roadside signs after her daughter's murder remains unsolved.",
+    "แม่ผู้โศกเศร้าท้าทายตำรวจท้องถิ่นด้วยป้ายริมถนน หลังคดีลูกสาวยังไร้คำตอบ",
     [
       "Three Billboards Outside Ebbing, Missouri",
       "Wind River",
@@ -13879,7 +13879,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Call Me by Your Name",
-    "A teenager in northern Italy experiences a life-changing summer romance with a visiting scholar.",
+    "วัยรุ่นในอิตาลีตอนเหนือได้พบรักช่วงฤดูร้อนกับนักวิชาการผู้มาเยือน และมันเปลี่ยนชีวิตเขา",
     [
       "Call Me by Your Name",
       "Brokeback Mountain",
@@ -13889,32 +13889,32 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "I, Tonya",
-    "A controversial figure skater's rise and scandal are retold with dark comedy and unreliable memories.",
+    "เรื่องราวนักสเกตลีลาผู้เป็นข่าวฉาวถูกเล่าแบบตลกร้าย ผ่านความทรงจำที่ไม่น่าเชื่อถือของหลายฝ่าย",
     ["I, Tonya", "Black Swan", "Battle of the Sexes", "Foxcatcher"],
   ],
   [
     "Roma",
-    "A housekeeper's life unfolds amid family change and political unrest in 1970s Mexico City.",
+    "ชีวิตแม่บ้านคนหนึ่งในเม็กซิโกซิตียุค 1970 ดำเนินไปท่ามกลางครอบครัวที่เปลี่ยนแปลงและการเมืองที่ปั่นป่วน",
     ["Roma", "Y Tu Mama Tambien", "Babel", "Amores Perros"],
   ],
   [
     "The Favourite",
-    "Two cousins compete for influence over a frail queen in a vicious royal court.",
+    "หญิงสาวสองคนแข่งขันแย่งอิทธิพลเหนือราชินีผู้เปราะบางในราชสำนักที่เต็มไปด้วยเกมอำนาจ",
     ["The Favourite", "Marie Antoinette", "The Duchess", "Amadeus"],
   ],
   [
     "Jojo Rabbit",
-    "A boy in Nazi Germany has an imaginary dictator friend and discovers his mother is hiding someone.",
+    "เด็กชายในเยอรมนีนาซีมีเพื่อนในจินตนาการเป็นผู้นำเผด็จการ ก่อนพบความลับที่แม่ซ่อนไว้",
     ["Jojo Rabbit", "The Book Thief", "Life Is Beautiful", "Moonrise Kingdom"],
   ],
   [
     "Uncut Gems",
-    "A New York jeweler risks everything through gambling, debts, and one rare opal.",
+    "ช่างอัญมณีนิวยอร์กเดิมพันทุกอย่างกับหนี้ การพนัน และโอปอลหายากที่อาจพลิกชีวิตเขา",
     ["Uncut Gems", "Good Time", "The Gambler", "Rounders"],
   ],
   [
     "Promising Young Woman",
-    "A woman lives a double life as she targets predatory men after a traumatic loss.",
+    "หญิงสาวใช้ชีวิตสองด้านเพื่อตามล่าผู้ชายอันตราย หลังบาดแผลในอดีตยังไม่เคยได้รับความยุติธรรม",
     [
       "Promising Young Woman",
       "Gone Girl",
@@ -13924,12 +13924,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Minari",
-    "A Korean American family starts a farm in Arkansas while chasing a fragile dream.",
+    "ครอบครัวเกาหลีอเมริกันเริ่มทำฟาร์มในอาร์คันซอ ขณะไล่ตามความฝันที่เปราะบางแต่เต็มไปด้วยหวัง",
     ["Minari", "The Farewell", "Past Lives", "Shoplifters"],
   ],
   [
     "The Power of the Dog",
-    "A harsh rancher torments his brother's new family until quiet tensions turn dangerous.",
+    "เจ้าของฟาร์มผู้แข็งกร้าวคุกคามครอบครัวใหม่ของน้องชาย จนความเงียบและแรงกดดันกลายเป็นอันตราย",
     [
       "The Power of the Dog",
       "There Will Be Blood",
@@ -13939,22 +13939,22 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "CODA",
-    "The hearing daughter of a Deaf fishing family dreams of singing while her family needs her voice.",
+    "ลูกสาวคนเดียวที่ได้ยินเสียงในครอบครัวคนหูหนวกฝันอยากร้องเพลง แต่ครอบครัวยังต้องพึ่งเสียงของเธอ",
     ["CODA", "Sound of Metal", "Sing Street", "The Bélier Family"],
   ],
   [
     "The Fabelmans",
-    "A young filmmaker falls in love with movies while uncovering painful family truths.",
+    "เด็กหนุ่มหลงรักการทำหนัง พร้อมค้นพบความจริงเจ็บปวดของครอบครัวผ่านเลนส์กล้อง",
     ["The Fabelmans", "Hugo", "Cinema Paradiso", "Super 8"],
   ],
   [
     "The Whale",
-    "A reclusive teacher tries to reconnect with his daughter while his health fails.",
+    "ครูสอนเขียนผู้เก็บตัวพยายามกลับไปเชื่อมกับลูกสาว ขณะที่สุขภาพของเขาแย่ลงเรื่อย ๆ",
     ["The Whale", "The Wrestler", "Leaving Las Vegas", "The Father"],
   ],
   [
     "Glass Onion",
-    "A detective attends a billionaire's island party where a murder mystery gets dangerously real.",
+    "นักสืบชื่อดังไปร่วมงานบนเกาะส่วนตัวของมหาเศรษฐี ที่เกมปริศนาฆาตกรรมกลายเป็นเรื่องจริง",
     [
       "Glass Onion",
       "Knives Out",
@@ -13964,17 +13964,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "May December",
-    "An actress studies a controversial couple whose past scandal still shapes their family.",
+    "นักแสดงหญิงเข้าศึกษาคู่รักที่เคยเป็นข่าวฉาว และพบว่าอดีตยังคงกัดกินครอบครัวนั้น",
     ["May December", "Carol", "Notes on a Scandal", "The Reader"],
   ],
   [
     "The Zone of Interest",
-    "A commandant's family lives beside a concentration camp while domestic routine hides horror.",
+    "ครอบครัวนายทหารใช้ชีวิตประจำวันข้างค่ายกักกัน โดยความสยองถูกซ่อนไว้หลังความปกติอันเย็นชา",
     ["The Zone of Interest", "Son of Saul", "The White Ribbon", "The Pianist"],
   ],
   [
     "Killers of the Flower Moon",
-    "A series of murders targets wealthy Osage people while greed and betrayal spread through a community.",
+    "คดีฆาตกรรมต่อเนื่องมุ่งเป้าไปที่ชาวโอเซจผู้มั่งคั่ง เมื่อความโลภและการทรยศแทรกซึมทั้งชุมชน",
     [
       "Killers of the Flower Moon",
       "There Will Be Blood",
@@ -13984,72 +13984,72 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Godzilla Minus One",
-    "Postwar Japan faces a massive monster as survivors struggle with guilt, loss, and courage.",
+    "ญี่ปุ่นหลังสงครามต้องเผชิญสัตว์ประหลาดยักษ์ ขณะที่ผู้รอดชีวิตต่อสู้กับความรู้สึกผิดและความสูญเสีย",
     ["Godzilla Minus One", "Shin Godzilla", "Pacific Rim", "Cloverfield"],
   ],
   [
     "Seven Samurai",
-    "Poor farmers hire masterless warriors to defend their village from bandits.",
+    "ชาวนาผู้ยากจนจ้างซามูไรไร้นายมาปกป้องหมู่บ้านจากกลุ่มโจร",
     ["Seven Samurai", "Yojimbo", "Rashomon", "13 Assassins"],
   ],
   [
     "Rashomon",
-    "A crime in the forest is retold through conflicting accounts that question truth itself.",
+    "อาชญากรรมในป่าถูกเล่าจากหลายมุมมองที่ขัดแย้งกัน จนความจริงกลายเป็นสิ่งไม่น่าไว้วางใจ",
     ["Rashomon", "Seven Samurai", "Ugetsu", "Harakiri"],
   ],
   [
     "Yojimbo",
-    "A wandering samurai plays two rival gangs against each other in a corrupt town.",
+    "ซามูไรพเนจรเข้าเมืองที่แก๊งสองฝ่ายคุมอยู่ และใช้ไหวพริบปั่นให้พวกเขาห้ำหั่นกันเอง",
     ["Yojimbo", "Sanjuro", "Seven Samurai", "The Hidden Fortress"],
   ],
   [
     "The Seventh Seal",
-    "A knight returning from the Crusades plays chess with Death during a plague.",
+    "อัศวินที่กลับจากสงครามครูเสดเล่นหมากรุกกับความตาย ระหว่างโรคระบาดกัดกินผู้คนรอบตัว",
     ["The Seventh Seal", "Wild Strawberries", "Persona", "Stalker"],
   ],
   [
     "Persona",
-    "A silent actress and her nurse retreat to an island where identities begin to blur.",
+    "นักแสดงหญิงผู้ไม่พูดกับพยาบาลของเธอไปพักบนเกาะ ก่อนตัวตนของทั้งคู่เริ่มพร่าเลือนเข้าหากัน",
     ["Persona", "Cries and Whispers", "The Seventh Seal", "Mulholland Drive"],
   ],
   [
     "Cinema Paradiso",
-    "A filmmaker remembers his childhood friendship with a projectionist in a small Italian town.",
+    "ผู้กำกับหนังย้อนคิดถึงวัยเด็กและมิตรภาพกับคนฉายหนังในเมืองเล็กของอิตาลี",
     ["Cinema Paradiso", "Life Is Beautiful", "The Postman", "Amarcord"],
   ],
   [
     "Bicycle Thieves",
-    "A poor father searches Rome for his stolen bicycle because his job depends on it.",
+    "พ่อผู้ยากจนตามหาจักรยานที่ถูกขโมยทั่วกรุงโรม เพราะมันคือสิ่งเดียวที่ทำให้เขาทำงานได้",
     ["Bicycle Thieves", "Umberto D.", "La Strada", "Rome, Open City"],
   ],
   [
     "The 400 Blows",
-    "A misunderstood Paris boy drifts into rebellion and trouble with school, family, and police.",
+    "เด็กชายปารีสที่ผู้ใหญ่ไม่เข้าใจค่อย ๆ หลุดเข้าสู่การต่อต้าน ครอบครัว โรงเรียน และกฎหมาย",
     ["The 400 Blows", "Breathless", "Jules and Jim", "Au Revoir les Enfants"],
   ],
   [
     "Breathless",
-    "A small-time criminal and an American student wander Paris while police close in.",
+    "อาชญากรรายย่อยกับนักศึกษาสาวอเมริกันล่องลอยในปารีส ขณะที่ตำรวจค่อย ๆ ปิดล้อม",
     ["Breathless", "The 400 Blows", "Pierrot le Fou", "Band of Outsiders"],
   ],
   [
     "La Dolce Vita",
-    "A gossip journalist moves through Rome's glamorous nightlife while searching for meaning.",
+    "นักข่าวซุบซิบเดินผ่านชีวิตกลางคืนอันหรูหราของโรม พร้อมค้นหาความหมายที่ดูจะหลุดมือเสมอ",
     ["La Dolce Vita", "8 1/2", "L'Avventura", "The Great Beauty"],
   ],
   [
     "8 1/2",
-    "A blocked film director escapes into memory and fantasy while his production collapses around him.",
+    "ผู้กำกับที่คิดงานไม่ออกหลบหนีเข้าสู่ความทรงจำและจินตนาการ ขณะที่กองถ่ายของเขากำลังพัง",
     ["8 1/2", "La Dolce Vita", "Amarcord", "Fellini Satyricon"],
   ],
   [
     "The Battle of Algiers",
-    "Urban guerrilla warfare and colonial power clash in a tense reconstruction of Algeria's struggle.",
+    "สงครามเมืองระหว่างนักสู้กู้เอกราชกับอำนาจอาณานิคมถูกเล่าอย่างตึงเครียดและสมจริง",
     ["The Battle of Algiers", "Z", "Army of Shadows", "The Conformist"],
   ],
   [
     "Once Upon a Time in the West",
-    "A mysterious harmonica player, a widow, and outlaws collide around a railroad land grab.",
+    "ชายปริศนาผู้เล่นฮาร์โมนิกา แม่ม่าย และอาชญากรมาพัวพันกับการแย่งชิงที่ดินทางรถไฟ",
     [
       "Once Upon a Time in the West",
       "The Good, the Bad and the Ugly",
@@ -14059,7 +14059,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Good, the Bad and the Ugly",
-    "Three gunslingers race across the Civil War frontier to find buried gold.",
+    "มือปืนสามคนแข่งกันตามหาทองที่ถูกฝังไว้ ท่ามกลางฉากหลังสงครามกลางเมือง",
     [
       "The Good, the Bad and the Ugly",
       "For a Few Dollars More",
@@ -14069,82 +14069,82 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Amores Perros",
-    "A car crash connects stories of love, violence, and dogs across Mexico City.",
+    "อุบัติเหตุรถชนเชื่อมชีวิตหลายคนในเม็กซิโกซิตี ทั้งความรัก ความรุนแรง และสุนัข",
     ["Amores Perros", "Babel", "21 Grams", "City of God"],
   ],
   [
     "Y Tu Mama Tambien",
-    "Two teenagers and an older woman take a road trip that exposes desire, friendship, and class.",
+    "วัยรุ่นสองคนกับหญิงสาวผู้ใหญ่กว่าออกโรดทริปที่เผยทั้งความปรารถนา มิตรภาพ และชนชั้น",
     ["Y Tu Mama Tambien", "Roma", "Motorcycle Diaries", "The Dreamers"],
   ],
   [
     "The Motorcycle Diaries",
-    "A young medical student travels across South America and begins to see injustice differently.",
+    "นักศึกษาแพทย์หนุ่มเดินทางทั่วอเมริกาใต้ และเริ่มมองเห็นความอยุติธรรมของโลกด้วยสายตาใหม่",
     ["The Motorcycle Diaries", "Central Station", "The Mission", "Frida"],
   ],
   [
     "The Lives of Others",
-    "An East German surveillance officer secretly changes while spying on artists.",
+    "เจ้าหน้าที่สอดแนมเยอรมันตะวันออกค่อย ๆ เปลี่ยนไป เมื่อได้รับคำสั่งให้จับตาศิลปินคู่หนึ่ง",
     ["The Lives of Others", "Good Bye Lenin!", "Downfall", "The Conversation"],
   ],
   [
     "Downfall",
-    "The final days inside Hitler's bunker are shown as Berlin collapses around the Nazi regime.",
+    "วันสุดท้ายในบังเกอร์ของผู้นำนาซีถูกเล่าในขณะที่เบอร์ลินพังทลายลงรอบตัว",
     ["Downfall", "Valkyrie", "Das Boot", "The Lives of Others"],
   ],
   [
     "Amour",
-    "An elderly couple's devotion is tested when illness changes their life together.",
+    "คู่สามีภรรยาสูงวัยต้องพิสูจน์ความรักและความอดทน เมื่ออาการป่วยเปลี่ยนชีวิตประจำวันของพวกเขา",
     ["Amour", "The Father", "Still Alice", "Away from Her"],
   ],
   [
     "The Intouchables",
-    "A wealthy quadriplegic man hires an unconventional caregiver and forms an unlikely friendship.",
+    "ชายร่ำรวยที่เป็นอัมพาตจ้างผู้ดูแลนอกขนบ และทั้งคู่สร้างมิตรภาพที่ไม่มีใครคาดคิด",
     ["The Intouchables", "The Upside", "Green Book", "A Man Called Ove"],
   ],
   [
     "The Hunt",
-    "A teacher's life is shattered when a child's accusation spreads through his small community.",
+    "ชีวิตครูคนหนึ่งพังทลายเมื่อคำกล่าวหาจากเด็กแพร่ไปทั่วชุมชนเล็ก ๆ",
     ["The Hunt", "Another Round", "Doubt", "The Celebration"],
   ],
   [
     "Another Round",
-    "Teachers test a theory about maintaining alcohol in their blood and confront midlife emptiness.",
+    "ครูกลุ่มหนึ่งทดลองทฤษฎีการดื่มเพื่อคงระดับแอลกอฮอล์ในเลือด ก่อนต้องเผชิญความว่างเปล่ากลางชีวิต",
     ["Another Round", "The Hunt", "Sideways", "The World's End"],
   ],
   [
     "A Separation",
-    "A couple's divorce decision triggers a moral crisis involving another family.",
+    "การตัดสินใจหย่าของคู่สามีภรรยานำไปสู่วิกฤตศีลธรรมที่เกี่ยวพันกับอีกครอบครัวหนึ่ง",
     ["A Separation", "The Salesman", "About Elly", "The Past"],
   ],
   [
     "Shoplifters",
-    "A poor found family survives through petty theft until a rescued child changes everything.",
+    "ครอบครัวที่อยู่รอดด้วยการลักเล็กขโมยน้อยรับเด็กคนหนึ่งเข้ามา และความจริงของพวกเขาค่อย ๆ เปิดเผย",
     ["Shoplifters", "Nobody Knows", "Like Father, Like Son", "Broker"],
   ],
   [
     "Burning",
-    "A young man becomes suspicious of a wealthy stranger after a woman disappears.",
+    "ชายหนุ่มเริ่มสงสัยชายร่ำรวยลึกลับ หลังหญิงสาวที่เขารู้จักหายตัวไปอย่างไร้ร่องรอย",
     ["Burning", "Decision to Leave", "Memories of Murder", "The Handmaiden"],
   ],
   [
     "Memories of Murder",
-    "Detectives in rural Korea hunt a serial killer with limited tools and mounting frustration.",
+    "ตำรวจชนบทเกาหลีตามล่าฆาตกรต่อเนื่องด้วยเครื่องมือจำกัด ความกดดัน และความผิดพลาดที่เพิ่มขึ้น",
     ["Memories of Murder", "Zodiac", "The Chaser", "Mother"],
   ],
   [
     "The Wailing",
-    "A village policeman investigates strange deaths after a mysterious outsider arrives.",
+    "ตำรวจหมู่บ้านสืบเหตุเสียชีวิตประหลาดหลังคนแปลกหน้ามาถึง และความเชื่อกับความกลัวเริ่มกลืนเหตุผล",
     ["The Wailing", "Train to Busan", "The Host", "I Saw the Devil"],
   ],
   [
     "Decision to Leave",
-    "A detective investigating a mountain death becomes fascinated by the victim's widow.",
+    "นักสืบคดีตกเขาเริ่มหลงใหลภรรยาม่ายของผู้ตาย จนการสืบสวนกับความรู้สึกปะปนกัน",
     ["Decision to Leave", "Burning", "The Handmaiden", "Vertigo"],
   ],
   [
     "Hero",
-    "An assassin tells a king different versions of encounters with warriors in ancient China.",
+    "มือสังหารเล่าเหตุการณ์หลายเวอร์ชันเกี่ยวกับยอดนักรบต่อหน้ากษัตริย์ เพื่อเข้าใกล้เป้าหมายที่แท้จริง",
     [
       "Hero",
       "House of Flying Daggers",
@@ -14154,22 +14154,22 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "House of Flying Daggers",
-    "An undercover officer and a blind dancer become entangled in rebellion and romance.",
+    "เจ้าหน้าที่สายลับกับนักเต้นตาบอดเข้าไปพัวพันกับกบฏ ความรัก และการหักหลังในยุทธภพ",
     ["House of Flying Daggers", "Hero", "Shadow", "Curse of the Golden Flower"],
   ],
   [
     "Infernal Affairs",
-    "A police mole and an undercover cop inside a triad try to discover each other's identity.",
+    "สายตำรวจในแก๊งกับสายแก๊งในกรมตำรวจต่างพยายามเปิดโปงกัน ก่อนตัวตนของอีกฝ่ายจะถูกพบ",
     ["Infernal Affairs", "The Departed", "Hard Boiled", "Election"],
   ],
   [
     "In the Mood for Love",
-    "Two neighbors in 1960s Hong Kong form a restrained bond after suspecting their spouses.",
+    "เพื่อนบ้านสองคนในฮ่องกงยุค 1960 สงสัยว่าคู่ของตนนอกใจ และก่อความสัมพันธ์ที่ถูกกดไว้",
     ["In the Mood for Love", "Chungking Express", "2046", "Days of Being Wild"],
   ],
   [
     "Chungking Express",
-    "Two lovesick Hong Kong policemen drift through neon nights, food stalls, and chance encounters.",
+    "ตำรวจฮ่องกงสองคนที่อกหักล่องลอยผ่านแสงนีออน ร้านอาหาร และการพบเจอโดยบังเอิญ",
     [
       "Chungking Express",
       "Fallen Angels",
@@ -14179,17 +14179,17 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Hard Boiled",
-    "A tough cop and an undercover officer battle gun runners in explosive Hong Kong action.",
+    "ตำรวจเลือดร้อนกับสายลับร่วมมือกันบุกเครือข่ายค้าอาวุธในฉากแอ็กชันฮ่องกงสุดระห่ำ",
     ["Hard Boiled", "The Killer", "Police Story", "A Better Tomorrow"],
   ],
   [
     "Police Story",
-    "A Hong Kong cop protects a witness and launches into dangerous stunt-filled battles.",
+    "ตำรวจฮ่องกงต้องปกป้องพยานและรับมือผู้ร้าย พร้อมฉากสตันต์เสี่ยงตายที่แทบไม่หยุดพัก",
     ["Police Story", "Drunken Master", "Project A", "Rush Hour"],
   ],
   [
     "Drunken Master",
-    "A reckless martial artist learns an unpredictable fighting style from an eccentric master.",
+    "นักสู้หนุ่มหัวรั้นเรียนวิชาต่อสู้เมามายจากอาจารย์ประหลาด เพื่อเปลี่ยนความหุนหันเป็นฝีมือจริง",
     [
       "Drunken Master",
       "Police Story",
@@ -14199,12 +14199,12 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Ip Man",
-    "A Wing Chun master in Foshan is pulled into conflict during Japanese occupation.",
+    "ปรมาจารย์วิงชุนในฝอซานถูกดึงเข้าสู่ความขัดแย้งช่วงการยึดครองของญี่ปุ่น",
     ["Ip Man", "Fearless", "The Grandmaster", "Man of Tai Chi"],
   ],
   [
     "Shaolin Soccer",
-    "Former monks combine martial arts with football to form a wildly powerful team.",
+    "อดีตศิษย์วัดเส้าหลินนำกังฟูมาผสมฟุตบอล จนทีมธรรมดากลายเป็นทีมสุดเหลือเชื่อ",
     [
       "Shaolin Soccer",
       "Kung Fu Hustle",
@@ -14214,7 +14214,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "Kung Fu Hustle",
-    "A wannabe gangster stumbles into a slum filled with hidden martial arts masters.",
+    "ชายอยากเป็นแก๊งสเตอร์เข้าไปป่วนชุมชนแออัดที่เต็มไปด้วยยอดฝีมือกังฟูซ่อนตัวอยู่",
     [
       "Kung Fu Hustle",
       "Shaolin Soccer",
@@ -14224,32 +14224,32 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "RRR",
-    "Two legendary rebels form a brotherhood and fight colonial power in explosive style.",
+    "สองนักสู้ในตำนานสร้างสายสัมพันธ์แบบพี่น้อง ก่อนลุกขึ้นสู้กับอำนาจอาณานิคมอย่างอลังการ",
     ["RRR", "Baahubali: The Beginning", "Pathaan", "Kantara"],
   ],
   [
     "3 Idiots",
-    "Three engineering students challenge a pressure-cooker education system and search for a missing friend.",
+    "นักศึกษาวิศวกรรมสามคนท้าทายระบบการศึกษาที่กดดัน และออกตามหาเพื่อนผู้หายไปหลังเรียนจบ",
     ["3 Idiots", "PK", "Taare Zameen Par", "Dangal"],
   ],
   [
     "Dangal",
-    "A former wrestler trains his daughters to compete at elite levels despite social resistance.",
+    "อดีตนักมวยปล้ำฝึกลูกสาวให้ขึ้นสู่ระดับแชมป์ ท่ามกลางแรงต้านจากสังคมรอบตัว",
     ["Dangal", "Sultan", "Chak De! India", "Mary Kom"],
   ],
   [
     "Lagaan",
-    "Villagers under British rule wager their taxes on a cricket match they barely understand.",
+    "ชาวบ้านอินเดียเดิมพันภาษีกับการแข่งขันคริกเก็ตกับเจ้าอาณานิคม ทั้งที่แทบไม่รู้จักกติกา",
     ["Lagaan", "Swades", "Jodhaa Akbar", "Rang De Basanti"],
   ],
   [
     "Baahubali: The Beginning",
-    "A young warrior discovers his royal heritage and the truth behind a legendary kingdom.",
+    "นักรบหนุ่มค้นพบชาติกำเนิดราชวงศ์ของตัวเอง และความจริงเบื้องหลังอาณาจักรในตำนาน",
     ["Baahubali: The Beginning", "RRR", "K.G.F: Chapter 1", "Magadheera"],
   ],
   [
     "Baahubali 2: The Conclusion",
-    "A prince's betrayal, exile, and revenge reveal why a beloved king was killed.",
+    "การทรยศ การเนรเทศ และการแก้แค้นเปิดเผยเหตุผลว่าทำไมกษัตริย์ผู้เป็นที่รักจึงถูกสังหาร",
     [
       "Baahubali 2: The Conclusion",
       "Baahubali: The Beginning",
@@ -14259,22 +14259,22 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Raid",
-    "An elite police squad is trapped inside a high-rise controlled by a crime lord.",
+    "หน่วยตำรวจพิเศษติดอยู่ในตึกสูงที่อาชญากรครอง และต้องฝ่าขึ้นลงผ่านการต่อสู้ระยะประชิด",
     ["The Raid", "Dredd", "Ong-Bak", "Headshot"],
   ],
   [
     "The Raid 2",
-    "A cop goes undercover after prison to infiltrate Jakarta's criminal underworld.",
+    "ตำรวจคนหนึ่งต้องแฝงตัวเข้าคุกและโลกอาชญากรรมจาการ์ตา เพื่อเจาะเครือข่ายที่ใหญ่กว่าเดิม",
     ["The Raid 2", "The Night Comes for Us", "The Raid", "Infernal Affairs"],
   ],
   [
     "The Princess Bride",
-    "A farmhand, a princess, pirates, giants, and swordplay collide in a storybook adventure.",
+    "เจ้าหญิง ชายไร่ โจรสลัด นักดาบ และยักษ์มาพัวพันกันในนิทานผจญภัยสุดขี้เล่น",
     ["The Princess Bride", "Stardust", "Willow", "Labyrinth"],
   ],
   [
     "Willy Wonka & the Chocolate Factory",
-    "Children tour a mysterious candy factory run by an eccentric maker of sweets.",
+    "เด็ก ๆ ได้เข้าเยี่ยมโรงงานลูกกวาดลึกลับของเจ้าของผู้แปลกประหลาด ที่เต็มไปด้วยบททดสอบ",
     [
       "Willy Wonka & the Chocolate Factory",
       "The Wizard of Oz",
@@ -14284,7 +14284,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "One Flew Over the Cuckoo's Nest",
-    "A rebellious patient challenges the authority of a strict nurse inside a mental institution.",
+    "ผู้ป่วยหัวขบถท้าทายอำนาจของพยาบาลผู้เข้มงวดในสถานบำบัดจิตเวช",
     [
       "One Flew Over the Cuckoo's Nest",
       "Awakenings",
@@ -14294,7 +14294,7 @@ const EXTRA_MOVIE_GUESS_SEEDS: MovieGuessSeed[] = [
   ],
   [
     "The Graduate",
-    "A confused college graduate drifts into an affair and then falls for the woman's daughter.",
+    "บัณฑิตใหม่ผู้สับสนเข้าไปพัวพันกับความสัมพันธ์ต้องห้าม ก่อนจะตกหลุมรักหญิงสาวอีกคนในครอบครัวเดียวกัน",
     ["The Graduate", "The Apartment", "Harold and Maude", "Annie Hall"],
   ],
 ];
